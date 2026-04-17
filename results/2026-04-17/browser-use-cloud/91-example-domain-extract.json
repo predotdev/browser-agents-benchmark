@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "91-example-domain-extract",
+  "taskUrl": "https://example.com/",
+  "success": true,
+  "successReason": "example",
+  "wallTimeMs": 19327,
+  "data": {
+    "heading": "Example Domain",
+    "linkUrl": "https://iana.org/domains/example"
+  },
+  "inputTokens": 63006,
+  "outputTokens": 370,
+  "totalCostUsd": 0.069665,
+  "trace": [
+    {
+      "t": 1776443320881,
+      "type": "step",
+      "title": "Extract the h1 text and the URL in the \"More information...\" link. Return JSON: { \"heading\": string, \"linkUrl\": string }\n\nStart by navigating to: https://exampl"
+    },
+    {
+      "t": 1776443321319,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443322831,
+      "type": "step",
+      "title": "Fetch: Fetched https://example.com/ (HTTP 200, 167 chars)\n\n# Example Domain\n\nThis domain is for use in documentation examples without needing permission. ..."
+    },
+    {
+      "t": 1776443326375,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443326632,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443328900,
+      "type": "step",
+      "title": "Let me verify the exact link URL from the raw HTML: — Fetch"
+    },
+    {
+      "t": 1776443329453,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 528, \"text\": \"<!doctype html><html lang=\\\"en\\\"><head><title>Example Domain</title><meta name=\\\"viewport..."
+    },
+    {
+      "t": 1776443331456,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443331536,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443334184,
+      "type": "step",
+      "title": "Done: Extracted from https://example.com/:\n- **heading**: \"Example Domain\"\n- **linkUrl**: \"https://iana.org/domains/example\""
+    },
+    {
+      "t": 1776443334327,
+      "type": "step",
+      "title": "Extracted from https://example.com/:\n- **heading**: \"Example Domain\"\n- **linkUrl**: \"https://iana.org/domains/example\""
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "71-httpbin-html-table",
+  "taskUrl": "https://httpbin.org/html",
+  "success": true,
+  "successReason": "found",
+  "wallTimeMs": 14752,
+  "data": {
+    "author": "Herman Melville",
+    "title": "Moby-Dick"
+  },
+  "inputTokens": 29589,
+  "outputTokens": 206,
+  "totalCostUsd": 0.064522,
+  "trace": [
+    {
+      "t": 1776443313484,
+      "type": "step",
+      "title": "Extract the author and title from the page. Return JSON: { \"author\": string, \"title\": string }\n\nStart by navigating to: https://httpbin.org/html"
+    },
+    {
+      "t": 1776443313877,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443314633,
+      "type": "step",
+      "title": "Fetch: Fetched https://httpbin.org/html (HTTP 200, 3597 chars)\n\n# Herman Melville - Moby-Dick\n\nAvailing himself of the mild, summer-cool weather that now ..."
+    },
+    {
+      "t": 1776443318124,
+      "type": "step",
+      "title": "Python: save_output_json({\"author\": \"Herman Melville\", ..."
+    },
+    {
+      "t": 1776443318200,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443320380,
+      "type": "step",
+      "title": "Done: Extracted from https://httpbin.org/html:\n- **Author**: Herman Melville\n- **Title**: Moby-Dick"
+    },
+    {
+      "t": 1776443320461,
+      "type": "step",
+      "title": "Extracted from https://httpbin.org/html:\n- **Author**: Herman Melville\n- **Title**: Moby-Dick"
+    }
+  ]
+}

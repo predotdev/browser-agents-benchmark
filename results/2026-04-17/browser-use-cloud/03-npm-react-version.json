@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "03-npm-react-version",
+  "taskUrl": "https://www.npmjs.com/package/react",
+  "success": true,
+  "successReason": "v19.2.5",
+  "wallTimeMs": 15897,
+  "data": {
+    "version": "19.2.5",
+    "weeklyDownloads": "122,367,092"
+  },
+  "inputTokens": 26110,
+  "outputTokens": 195,
+  "totalCostUsd": 0.09253700000000001,
+  "trace": [
+    {
+      "t": 1776443292672,
+      "type": "step",
+      "title": "Extract the current version and weekly downloads. Return JSON: { \"version\": string, \"weeklyDownloads\": string | number }\n\nStart by navigating to: https://www.np"
+    },
+    {
+      "t": 1776443293122,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443295264,
+      "type": "step",
+      "title": "Fetch: Fetched https://www.npmjs.com/package/react (HTTP 200, 3791 chars)\n\nskip to:[content](#main)[package search](#search)[sign in](#signin)\n\n- [Pro](/p..."
+    },
+    {
+      "t": 1776443299366,
+      "type": "step",
+      "title": "Python: save_output_json({\"version\": \"19.2.5\", \"weeklyD..."
+    },
+    {
+      "t": 1776443299539,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443301513,
+      "type": "step",
+      "title": "Done: Extracted from https://www.npmjs.com/package/react:\n- **Version**: 19.2.5\n- **Weekly Downloads**: 122,367,092"
+    },
+    {
+      "t": 1776443301552,
+      "type": "step",
+      "title": "Extracted from https://www.npmjs.com/package/react:\n- **Version**: 19.2.5\n- **Weekly Downloads**: 122,367,092"
+    }
+  ]
+}

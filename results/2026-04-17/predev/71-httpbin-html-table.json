@@ -1,0 +1,52 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "71-httpbin-html-table",
+  "taskUrl": "https://httpbin.org/html",
+  "success": true,
+  "successReason": "found",
+  "wallTimeMs": 23090,
+  "data": {
+    "author": "Herman Melville",
+    "title": "Moby-Dick"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308839,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448318639,
+      "type": "navigation",
+      "title": "navigate → https://httpbin.org/html"
+    },
+    {
+      "t": 1776448319270,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a340/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448323379,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The page title and visible text block clearly show 'Herman Melville - Moby-Dick'. Extracted author and title match the schema."
+    },
+    {
+      "t": 1776448323380,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448324889,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

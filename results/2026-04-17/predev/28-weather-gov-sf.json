@@ -1,0 +1,66 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "28-weather-gov-sf",
+  "taskUrl": "https://forecast.weather.gov/MapClick.php?CityName=San+Francisco&state=CA&site=MTR",
+  "success": true,
+  "successReason": "temp=60°F",
+  "wallTimeMs": 33558,
+  "data": {
+    "temperature": "60°F",
+    "conditions": "NA"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308735,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448315392,
+      "type": "navigation",
+      "title": "navigate → https://forecast.weather.gov/MapClick.php?CityName=San+Francisco&state=CA&site=MTR"
+    },
+    {
+      "t": 1776448316304,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a312/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448316305,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a312/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448316306,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a312/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448318834,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The current temperature (60°F) and conditions (Sunny) for San Francisco are clearly visible in the 'Current conditions' section of the page. No further actions needed."
+    },
+    {
+      "t": 1776448318835,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448335474,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

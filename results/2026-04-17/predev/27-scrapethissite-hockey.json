@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "27-scrapethissite-hockey",
+  "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+  "success": true,
+  "successReason": "5 teams",
+  "wallTimeMs": 24730,
+  "data": {
+    "teams": [
+      {
+        "name": "Boston Bruins",
+        "wins": 44
+      },
+      {
+        "name": "Buffalo Sabres",
+        "wins": 31
+      },
+      {
+        "name": "Calgary Flames",
+        "wins": 46
+      },
+      {
+        "name": "Chicago Blackhawks",
+        "wins": 49
+      },
+      {
+        "name": "Detroit Red Wings",
+        "wins": 34
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308764,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448315965,
+      "type": "navigation",
+      "title": "navigate → https://www.scrapethissite.com/pages/forms/"
+    },
+    {
+      "t": 1776448317164,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30a/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448317165,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30a/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448322423,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The table is fully visible on the current page. The first 5 teams and their wins are extracted directly from the visible DOM."
+    },
+    {
+      "t": 1776448322424,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448325714,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "08-stackoverflow-git-undo",
+  "taskUrl": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+  "success": true,
+  "successReason": "votes=608",
+  "wallTimeMs": 51442,
+  "data": {
+    "title": "How do I undo the most recent local commits in Git?",
+    "votes": 608,
+    "acceptedAnswer": "Undo a commit & redo"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308731,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448316636,
+      "type": "navigation",
+      "title": "navigate → https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git"
+    },
+    {
+      "t": 1776448338650,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30d/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448338651,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30d/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448338651,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30d/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448338652,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30d/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448342879,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 1 actions: The cookie consent banner is blocking the page. I will reject it to ensure the page is fully accessible for extraction.",
+      "detail": "click #onetrust-reject-all-handler"
+    },
+    {
+      "t": 1776448345101,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click #onetrust-reject-all-handler"
+    },
+    {
+      "t": 1776448348262,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30d/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448348263,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30d/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448348263,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30d/task-0/iter-2-c2.jpg"
+    },
+    {
+      "t": 1776448348264,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30d/task-0/iter-2-c3.jpg"
+    },
+    {
+      "t": 1776448348265,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30d/task-0/iter-2-c4.jpg"
+    },
+    {
+      "t": 1776448351779,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · : The page is still loading (visible 'Loading...' text). The cookie consent banner is present but not blocking the main content. I can see the question title 'How do I undo the most recent local commits in Git?' and the first answer text 'Undo a commit & redo' in the visible text blocks. The vote count 608 is also visible. I will wait for the page to fully load and then extract the data."
+    },
+    {
+      "t": 1776448351780,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

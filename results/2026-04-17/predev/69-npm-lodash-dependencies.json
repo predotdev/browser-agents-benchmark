@@ -1,0 +1,66 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "69-npm-lodash-dependencies",
+  "taskUrl": "https://www.npmjs.com/package/lodash",
+  "success": true,
+  "successReason": "MIT",
+  "wallTimeMs": 24935,
+  "data": {
+    "maintainer": "jdalton",
+    "license": "MIT"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308817,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448318461,
+      "type": "navigation",
+      "title": "navigate → https://www.npmjs.com/package/lodash"
+    },
+    {
+      "t": 1776448319334,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a3b6/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448319334,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a3b6/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448319335,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a3b6/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448323740,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The maintainer 'jdalton' is visible in the sidebar under 'Collaborators', and the license 'MIT' is visible in the right sidebar under 'License'. Both values are directly extractable from the current page."
+    },
+    {
+      "t": 1776448323741,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448325786,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

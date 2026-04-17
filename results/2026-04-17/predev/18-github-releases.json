@@ -1,0 +1,86 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "18-github-releases",
+  "taskUrl": "https://github.com/denoland/deno/releases",
+  "success": true,
+  "successReason": "3 releases",
+  "wallTimeMs": 27767,
+  "data": {
+    "releases": [
+      {
+        "title": "v2.7.12",
+        "date": "2026.04.09"
+      },
+      {
+        "title": "v2.7.11",
+        "date": "2026.04.01"
+      },
+      {
+        "title": "v2.7.10",
+        "date": "2026.03.31"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308734,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448318868,
+      "type": "navigation",
+      "title": "navigate → https://github.com/denoland/deno/releases"
+    },
+    {
+      "t": 1776448321406,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a309/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448321407,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a309/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448321408,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a309/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448321408,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a309/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448321409,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a309/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448328569,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : The page shows the 3 most recent releases in the visible text blocks: v2.7.12 (2026.04.09), v2.7.11 (2026.04.01), and v2.7.10 (2026.03.31). These are already sorted by date and are the top 3. I can extract this data directly from the visible text blocks."
+    },
+    {
+      "t": 1776448328570,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

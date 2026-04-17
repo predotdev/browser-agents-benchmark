@@ -1,0 +1,76 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "21-quotes-tag-page",
+  "taskUrl": "https://quotes.toscrape.com",
+  "success": true,
+  "successReason": "3 quotes",
+  "wallTimeMs": 24677,
+  "data": {
+    "quotes": [
+      {
+        "text": "It is better to be hated for what you are than to be loved for what you are not.",
+        "author": "André Gide"
+      },
+      {
+        "text": "This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.",
+        "author": "Marilyn Monroe"
+      },
+      {
+        "text": "You may not be her first, her last, or her only. She loved before she may love again. But if she loves you now, what else matters? She's not perfect—you aren't either, and the two of you may never be perfect together but if she can make you laugh, cause you to think twice, and admit to being human and making mistakes, hold onto her and give her the most you can. She may not be thinking about you every second of the day, but she will give you a part of her that she knows you can break—her heart. So don't hurt her, don't change her, don't analyze and don't expect more than she can give. Smile when she makes you happy, let her know when she makes you mad, and miss her when she's not there.",
+        "author": "Bob Marley"
+      }
+    ]
+  },
+  "inputTokens": 52137,
+  "outputTokens": 858,
+  "totalCostUsd": 0.09561,
+  "trace": [
+    {
+      "t": 1776443293053,
+      "type": "step",
+      "title": "Click on the \"love\" tag link to navigate to the love quotes page. Then extract the first 3 quotes and their authors. Return JSON: { \"quotes\": [{ \"text\": string,"
+    },
+    {
+      "t": 1776443295258,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443296889,
+      "type": "step",
+      "title": "Fetch: Fetched https://quotes.toscrape.com (HTTP 200, 2964 chars)\n\n# [Quotes to Scrape](/)\n\n[Login](/login)\n\n“The world as we have created it is a process..."
+    },
+    {
+      "t": 1776443300650,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443301534,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 5017, \"text\": \"# [Quotes to Scrape](/)\\n\\n[Login](/login)\\n\\n### Viewing tag: [love](/tag/love/page/1/)..."
+    },
+    {
+      "t": 1776443307159,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443307233,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\nSaved\n"
+    },
+    {
+      "t": 1776443310265,
+      "type": "step",
+      "title": "Done: Extracted the first 3 quotes from the \"love\" tag page (https://quotes.toscrape.com/tag/love/):\n\n1. \"It is better to be hated for what you are than ..."
+    },
+    {
+      "t": 1776443310290,
+      "type": "step",
+      "title": "Extracted the first 3 quotes from the \"love\" tag page (https://quotes.toscrape.com/tag/love/):\n\n1. \"It is better to be hated for what you are than to be loved f"
+    }
+  ]
+}

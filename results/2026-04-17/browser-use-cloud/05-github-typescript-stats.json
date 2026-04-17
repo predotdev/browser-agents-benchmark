@@ -1,0 +1,55 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "05-github-typescript-stats",
+  "taskUrl": "https://github.com/microsoft/typescript",
+  "success": true,
+  "successReason": "lang=typescript",
+  "wallTimeMs": 17969,
+  "data": {
+    "stars": 109000,
+    "language": "TypeScript",
+    "latestRelease": "TypeScript 6.0.3"
+  },
+  "inputTokens": 44288,
+  "outputTokens": 258,
+  "totalCostUsd": 0.136998,
+  "trace": [
+    {
+      "t": 1776443292434,
+      "type": "step",
+      "title": "Extract star count, primary language, and latest release. Return JSON: { \"stars\": string | number, \"language\": string, \"latestRelease\": string | null }\n\nStart b"
+    },
+    {
+      "t": 1776443292914,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443295722,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/microsoft/typescript (HTTP 200, 18538 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle navigatio..."
+    },
+    {
+      "t": 1776443301531,
+      "type": "step",
+      "title": "Python: save_output_json({\"stars\": 109000, \"language\": ..."
+    },
+    {
+      "t": 1776443301666,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443304383,
+      "type": "step",
+      "title": "Done: Extracted from https://github.com/microsoft/TypeScript:\n- Stars: 109k (109,000)\n- Primary Language: TypeScript (99.9%)\n- Latest Release: TypeScript..."
+    },
+    {
+      "t": 1776443304420,
+      "type": "step",
+      "title": "Extracted from https://github.com/microsoft/TypeScript:\n- Stars: 109k (109,000)\n- Primary Language: TypeScript (99.9%)\n- Latest Release: TypeScript 6.0.3 (Apr 1"
+    }
+  ]
+}

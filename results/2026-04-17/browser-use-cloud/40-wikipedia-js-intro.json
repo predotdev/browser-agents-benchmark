@@ -1,0 +1,53 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "40-wikipedia-js-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "245 chars",
+  "wallTimeMs": 19568,
+  "data": {
+    "intro": "JavaScript (JS) is a programming language and core technology of the Web, alongside HTML and CSS. It was created by Brendan Eich in 1995. As of 2025, the overwhelming majority of websites (98.9%) uses JavaScript for client side webpage behavior."
+  },
+  "inputTokens": 60744,
+  "outputTokens": 289,
+  "totalCostUsd": 0.217595,
+  "trace": [
+    {
+      "t": 1776443292239,
+      "type": "step",
+      "title": "Extract the first paragraph of the article body. Return JSON: { \"intro\": string }\n\nStart by navigating to: https://en.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "t": 1776443292767,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443295271,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/JavaScript (HTTP 200, 162557 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmove to sidebar h..."
+    },
+    {
+      "t": 1776443301520,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443301602,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443304465,
+      "type": "step",
+      "title": "Done: Extracted the first paragraph of the JavaScript Wikipedia article: \"JavaScript (JS) is a programming language and core technology of the Web, along..."
+    },
+    {
+      "t": 1776443304482,
+      "type": "step",
+      "title": "Extracted the first paragraph of the JavaScript Wikipedia article: \"JavaScript (JS) is a programming language and core technology of the Web, alongside HTML and"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "47-quotes-all-tags",
+  "taskUrl": "https://quotes.toscrape.com",
+  "success": true,
+  "successReason": "10 tags",
+  "wallTimeMs": 18950,
+  "data": {
+    "tags": [
+      "love",
+      "inspirational",
+      "life",
+      "humor",
+      "books",
+      "reading",
+      "friendship",
+      "friends",
+      "truth",
+      "simile"
+    ]
+  },
+  "inputTokens": 29746,
+  "outputTokens": 185,
+  "totalCostUsd": 0.064763,
+  "trace": [
+    {
+      "t": 1776443295740,
+      "type": "step",
+      "title": "Extract the top 10 tags shown in the sidebar tag cloud. Return JSON: { \"tags\": string[] }\n\nStart by navigating to: https://quotes.toscrape.com"
+    },
+    {
+      "t": 1776443296204,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443298611,
+      "type": "step",
+      "title": "Fetch: Fetched https://quotes.toscrape.com (HTTP 200, 2964 chars)\n\n# [Quotes to Scrape](/)\n\n[Login](/login)\n\n“The world as we have created it is a process..."
+    },
+    {
+      "t": 1776443301602,
+      "type": "step",
+      "title": "Python: save_output_json({\"tags\": [\"love\", \"inspiration..."
+    },
+    {
+      "t": 1776443301675,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443304520,
+      "type": "step",
+      "title": "Done: Extracted the top 10 tags from the sidebar tag cloud on quotes.toscrape.com: love, inspirational, life, humor, books, reading, friendship, friends,..."
+    },
+    {
+      "t": 1776443304549,
+      "type": "step",
+      "title": "Extracted the top 10 tags from the sidebar tag cloud on quotes.toscrape.com: love, inspirational, life, humor, books, reading, friendship, friends, truth, simil"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "01-hn-top-stories",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 23492,
+  "data": {
+    "stories": [
+      {
+        "title": "Claude Design",
+        "points": 252
+      },
+      {
+        "title": "Claude Opus 4.7 costs 20–30% more per session",
+        "points": 57
+      },
+      {
+        "title": "Isaac Asimov: The Last Question (1956)",
+        "points": 388
+      },
+      {
+        "title": "Middle schooler finds coin from Troy in Berlin",
+        "points": 72
+      },
+      {
+        "title": "NIST gives up enriching most CVEs",
+        "points": 43
+      }
+    ]
+  },
+  "inputTokens": 39751,
+  "outputTokens": 469,
+  "totalCostUsd": 0.119451,
+  "trace": [
+    {
+      "t": 1776443295913,
+      "type": "step",
+      "title": "Extract the top 5 story titles and their point counts. Return JSON: { \"stories\": [{ \"title\": string, \"points\": number }] }\n\nStart by navigating to: https://news"
+    },
+    {
+      "t": 1776443296616,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443297587,
+      "type": "step",
+      "title": "Fetch: Fetched https://news.ycombinator.com (HTTP 200, 10675 chars)\n\n[![](y18.svg)](https://news.ycombinator.com)[**Hacker News**](news)[new](newest) | [p..."
+    },
+    {
+      "t": 1776443304419,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443304498,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443308280,
+      "type": "step",
+      "title": "Done: Extracted the top 5 stories from Hacker News front page:\n\n1. Claude Design — 252 points\n2. Claude Opus 4.7 costs 20–30% more per session — 57 point..."
+    },
+    {
+      "t": 1776443308304,
+      "type": "step",
+      "title": "Extracted the top 5 stories from Hacker News front page:\n\n1. Claude Design — 252 points\n2. Claude Opus 4.7 costs 20–30% more per session — 57 points\n3. Isaac As"
+    }
+  ]
+}

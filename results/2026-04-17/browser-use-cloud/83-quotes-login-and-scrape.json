@@ -1,0 +1,15 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "83-quotes-login-and-scrape",
+  "taskUrl": "https://quotes.toscrape.com/login",
+  "success": false,
+  "successReason": "no quotes",
+  "wallTimeMs": 30002,
+  "error": "This operation was aborted",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0,
+  "trace": []
+}

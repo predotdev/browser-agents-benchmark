@@ -1,0 +1,187 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "82-wikipedia-search-result",
+  "taskUrl": "https://en.wikipedia.org/wiki/Main_Page",
+  "success": true,
+  "successReason": "2006",
+  "wallTimeMs": 40507,
+  "data": {
+    "designedYear": 2006
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308688,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448313170,
+      "type": "navigation",
+      "title": "navigate → https://en.wikipedia.org/wiki/Main_Page"
+    },
+    {
+      "t": 1776448314573,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448314574,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448314578,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448314579,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448314579,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448317531,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 2 actions: The task requires searching for 'Rust (programming language)' on Wikipedia, clicking the top result, and extracting the year it was designed. The first action is to type the search query into the search box and press Enter. The second action is to click the top result. The third action is to extract the year it was designed. The extracted data is { ",
+      "detail": "fill #searchInput = \"Rust (programming language)\"\npress #searchInput = \"Enter\""
+    },
+    {
+      "t": 1776448322976,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #searchInput"
+    },
+    {
+      "t": 1776448322976,
+      "type": "action",
+      "iter": 1,
+      "title": "action: press #searchInput"
+    },
+    {
+      "t": 1776448324458,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448324460,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448324461,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-2-c2.jpg"
+    },
+    {
+      "t": 1776448324461,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-2-c3.jpg"
+    },
+    {
+      "t": 1776448324462,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-2-c4.jpg"
+    },
+    {
+      "t": 1776448332931,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · 2 actions: The previous fill action failed due to a timeout. I will retry filling the search box with the query 'Rust (programming language)' and then press Enter to submit the search. The search input is available and the previous fill action failed due to a timeout. I will retry filling the search box with the query 'Rust (programming language)' and then press Enter to submit the search.",
+      "detail": "fill input[name=\"search\"] = \"Rust (programming language)\"\npress input[name=\"search\"] = \"Enter\""
+    },
+    {
+      "t": 1776448333553,
+      "type": "action",
+      "iter": 2,
+      "title": "action: fill input[name=\"search\"]"
+    },
+    {
+      "t": 1776448333553,
+      "type": "action",
+      "iter": 2,
+      "title": "action: press input[name=\"search\"]"
+    },
+    {
+      "t": 1776448335121,
+      "type": "screenshot",
+      "iter": 3,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-3-c0.jpg"
+    },
+    {
+      "t": 1776448335122,
+      "type": "screenshot",
+      "iter": 3,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-3-c1.jpg"
+    },
+    {
+      "t": 1776448335123,
+      "type": "screenshot",
+      "iter": 3,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-3-c2.jpg"
+    },
+    {
+      "t": 1776448335124,
+      "type": "screenshot",
+      "iter": 3,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-3-c3.jpg"
+    },
+    {
+      "t": 1776448335124,
+      "type": "screenshot",
+      "iter": 3,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a329/task-0/iter-3-c4.jpg"
+    },
+    {
+      "t": 1776448339864,
+      "type": "plan",
+      "iter": 3,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The page is already at the Rust (programming language) Wikipedia article. The visible text block states: 'Software developer Graydon Hoare created Rust in 2006 while working at Mozilla...' This confirms the designed year is 2006. The task is complete."
+    },
+    {
+      "t": 1776448339865,
+      "type": "validation",
+      "iter": 3,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448342432,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

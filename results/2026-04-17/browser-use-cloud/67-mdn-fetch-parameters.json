@@ -1,0 +1,56 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "67-mdn-fetch-parameters",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/API/fetch",
+  "success": true,
+  "successReason": "2",
+  "wallTimeMs": 17517,
+  "data": {
+    "parameters": [
+      "resource",
+      "options"
+    ]
+  },
+  "inputTokens": 58511,
+  "outputTokens": 233,
+  "totalCostUsd": 0.205433,
+  "trace": [
+    {
+      "t": 1776443313271,
+      "type": "step",
+      "title": "Extract the parameters listed for the fetch() function. Return JSON: { \"parameters\": [string] }\n\nStart by navigating to: https://developer.mozilla.org/en-US/doc"
+    },
+    {
+      "t": 1776443313811,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443314942,
+      "type": "step",
+      "title": "Fetch: Fetched https://developer.mozilla.org/en-US/docs/Web/API/fetch (HTTP 200, 29086 chars)\n\n- [Skip to main content](#content)\n- [Skip to search](#sear..."
+    },
+    {
+      "t": 1776443318361,
+      "type": "step",
+      "title": "Python: save_output_json({\"parameters\": [\"resource\", \"o..."
+    },
+    {
+      "t": 1776443318439,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443321761,
+      "type": "step",
+      "title": "Done: Extracted the two parameters of the `fetch()` function from MDN:\n\n1. **`resource`** — The resource to fetch (a URL string, URL object, or Request o..."
+    },
+    {
+      "t": 1776443321778,
+      "type": "step",
+      "title": "Extracted the two parameters of the `fetch()` function from MDN:\n\n1. **`resource`** — The resource to fetch (a URL string, URL object, or Request object).\n2. **"
+    }
+  ]
+}

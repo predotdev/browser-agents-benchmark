@@ -1,0 +1,73 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "36-wikipedia-search-submit-extract",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 22130,
+  "data": {
+    "results": [
+      {
+        "title": "Machine learning"
+      },
+      {
+        "title": "Attention (machine learning)"
+      },
+      {
+        "title": "Neural network (machine learning)"
+      }
+    ]
+  },
+  "inputTokens": 58026,
+  "outputTokens": 367,
+  "totalCostUsd": 0.10750900000000001,
+  "trace": [
+    {
+      "t": 1776443292673,
+      "type": "step",
+      "title": "Type \"machine learning\" into the search field and submit. Extract the first 3 result titles. Return JSON: { \"results\": [{ \"title\": string }] }\n\nStart by navigat"
+    },
+    {
+      "t": 1776443293106,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443296028,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/Special:Search (HTTP 200, 4473 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmove to sidebar..."
+    },
+    {
+      "t": 1776443299518,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443301550,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 14940, \"text\": \"{\\\"title\\\":\\\"machine learning - Search results - Wikipedia\\\",\\\"headings\\\":[\\\"Search res..."
+    },
+    {
+      "t": 1776443305596,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443305666,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443308094,
+      "type": "step",
+      "title": "Done: Extracted the first 3 Wikipedia search results for \"machine learning\":\n1. Machine learning\n2. Attention (machine learning)\n3. Neural network (machi..."
+    },
+    {
+      "t": 1776443308131,
+      "type": "step",
+      "title": "Extracted the first 3 Wikipedia search results for \"machine learning\":\n1. Machine learning\n2. Attention (machine learning)\n3. Neural network (machine learning)"
+    }
+  ]
+}

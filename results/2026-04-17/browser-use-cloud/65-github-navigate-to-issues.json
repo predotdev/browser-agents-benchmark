@@ -1,0 +1,73 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "65-github-navigate-to-issues",
+  "taskUrl": "https://github.com/nodejs/node",
+  "success": true,
+  "successReason": "3 issues",
+  "wallTimeMs": 22855,
+  "data": {
+    "issues": [
+      {
+        "title": "AIX: clang libc++ std::filesystem::remove_all() Returns Wrong Error Code"
+      },
+      {
+        "title": "Nightly macos15-release-pkg builds failing to build libffi"
+      },
+      {
+        "title": "require.extensions is undefined on synthetic require for CJS loaded through ESM loader (regression in v24.15.0)"
+      }
+    ]
+  },
+  "inputTokens": 116005,
+  "outputTokens": 544,
+  "totalCostUsd": 0.266719,
+  "trace": [
+    {
+      "t": 1776443312393,
+      "type": "step",
+      "title": "Click on the Issues tab and extract the titles of the top 3 open issues. Return JSON: { \"issues\": [{ \"title\": string }] }\n\nStart by navigating to: https://githu"
+    },
+    {
+      "t": 1776443312814,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443314178,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/nodejs/node (HTTP 200, 70036 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle navigation\n\n[](/)\n..."
+    },
+    {
+      "t": 1776443317146,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443318784,
+      "type": "step",
+      "title": "Fetch: [Output truncated: 5789 tokens exceeded limit of 5000. Full output: /workspace/.ephemeral/truncated-27e072f7.log]\n\n{\"status\": 200, \"content_type\": ..."
+    },
+    {
+      "t": 1776443323479,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443323551,
+      "type": "step",
+      "title": "Python: Saved\n"
+    },
+    {
+      "t": 1776443326763,
+      "type": "step",
+      "title": "Done: Extracted the top 3 open issues from https://github.com/nodejs/node/issues:\n\n1. AIX: clang libc++ std::filesystem::remove_all() Returns Wrong Error..."
+    },
+    {
+      "t": 1776443326797,
+      "type": "step",
+      "title": "Extracted the top 3 open issues from https://github.com/nodejs/node/issues:\n\n1. AIX: clang libc++ std::filesystem::remove_all() Returns Wrong Error Code\n2. Nigh"
+    }
+  ]
+}

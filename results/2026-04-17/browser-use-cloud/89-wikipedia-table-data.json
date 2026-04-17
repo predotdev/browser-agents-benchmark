@@ -1,0 +1,15 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "89-wikipedia-table-data",
+  "taskUrl": "https://en.wikipedia.org/wiki/List_of_tallest_buildings",
+  "success": false,
+  "successReason": "few",
+  "wallTimeMs": 30001,
+  "error": "This operation was aborted",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0,
+  "trace": []
+}

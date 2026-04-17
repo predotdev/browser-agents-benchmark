@@ -1,0 +1,124 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "67-mdn-fetch-parameters",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/API/fetch",
+  "success": true,
+  "successReason": "2",
+  "wallTimeMs": 34458,
+  "data": {
+    "parameters": [
+      "resource",
+      "options"
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308797,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448319677,
+      "type": "navigation",
+      "title": "navigate → https://developer.mozilla.org/en-US/docs/Web/API/fetch"
+    },
+    {
+      "t": 1776448320896,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448320897,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448320898,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448320899,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448320899,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448328204,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 1 actions: Navigating to the Parameters section to extract the parameters for the fetch() function.",
+      "detail": "click div:nth-of-type(2) > section:nth-of-type(2) > h3:nth-of-type(1) > a:nth-of-type(1)"
+    },
+    {
+      "t": 1776448330919,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click div:nth-of-type(2) > section:nth-of-type(2) > h3:nth-of-type(1) > a:nth-of-type(1)"
+    },
+    {
+      "t": 1776448332339,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448332340,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448332340,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-2-c2.jpg"
+    },
+    {
+      "t": 1776448332341,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-2-c3.jpg"
+    },
+    {
+      "t": 1776448332342,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a337/task-0/iter-2-c4.jpg"
+    },
+    {
+      "t": 1776448335484,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · : The Parameters section is visible on the current page. The parameters for fetch() are 'resource' and 'options' as shown in the visible text blocks. I can extract these directly without needing to navigate."
+    },
+    {
+      "t": 1776448335484,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

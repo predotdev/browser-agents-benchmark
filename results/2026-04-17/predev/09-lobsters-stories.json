@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "09-lobsters-stories",
+  "taskUrl": "https://lobste.rs",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 33060,
+  "data": {
+    "stories": [
+      {
+        "title": "Okay, what actually uses Rust",
+        "score": 37
+      },
+      {
+        "title": "tangled newsletter 01 -- hello",
+        "score": 22
+      },
+      {
+        "title": "The Claude Coding Vibes Are Getting Worse",
+        "score": 38
+      },
+      {
+        "title": "HTTP desync in Discord's media proxy: Spying on a whole platform",
+        "score": 21
+      },
+      {
+        "title": "We beat Google's zero-knowledge proof of quantum cryptanalysis",
+        "score": 12
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308738,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448316829,
+      "type": "navigation",
+      "title": "navigate → https://lobste.rs"
+    },
+    {
+      "t": 1776448317640,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a310/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448317641,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a310/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448332010,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: Extracted the top 5 stories from the visible list on the current page, including their titles and scores. The data matches the required schema."
+    },
+    {
+      "t": 1776448332011,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448334797,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

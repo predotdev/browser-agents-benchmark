@@ -1,0 +1,73 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "62-hn-newest-stories",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 23768,
+  "data": {
+    "stories": [
+      {
+        "title": "AI's Mainframe Moment"
+      },
+      {
+        "title": "Where Enterprises Are Adopting AI"
+      },
+      {
+        "title": "Apple's Mac Mini Went Viral. Why Can't You Buy One?"
+      }
+    ]
+  },
+  "inputTokens": 77785,
+  "outputTokens": 467,
+  "totalCostUsd": 0.166735,
+  "trace": [
+    {
+      "t": 1776443311822,
+      "type": "step",
+      "title": "Click the \"new\" link in the top navigation, then extract the top 3 story titles. Return JSON: { \"stories\": [{ \"title\": string }] }\n\nStart by navigating to: http"
+    },
+    {
+      "t": 1776443312301,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443313349,
+      "type": "step",
+      "title": "Fetch: Fetched https://news.ycombinator.com/ (HTTP 200, 10675 chars)\n\n[![](y18.svg)](https://news.ycombinator.com)[**Hacker News**](news)[new](newest) | [..."
+    },
+    {
+      "t": 1776443317646,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443318480,
+      "type": "step",
+      "title": "Fetch: [Output truncated: 10884 tokens exceeded limit of 5000. Full output: /workspace/.ephemeral/truncated-19e59c61.log]\n\n{\"status\": 200, \"content_type\":..."
+    },
+    {
+      "t": 1776443323562,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443323641,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443326798,
+      "type": "step",
+      "title": "Done: Navigated to https://news.ycombinator.com/newest (the \"new\" link) and extracted the top 3 story titles:\n\n1. AI's Mainframe Moment\n2. Where Enterpri..."
+    },
+    {
+      "t": 1776443326826,
+      "type": "step",
+      "title": "Navigated to https://news.ycombinator.com/newest (the \"new\" link) and extracted the top 3 story titles:\n\n1. AI's Mainframe Moment\n2. Where Enterprises Are Adopt"
+    }
+  ]
+}

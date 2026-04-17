@@ -1,0 +1,110 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "30-demoqa-textbox",
+  "taskUrl": "https://demoqa.com/text-box",
+  "success": true,
+  "successReason": "alice found",
+  "wallTimeMs": 35731,
+  "data": {
+    "name": "Alice Smith",
+    "email": "alice@example.com"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308730,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448316441,
+      "type": "navigation",
+      "title": "navigate → https://demoqa.com/text-box"
+    },
+    {
+      "t": 1776448317792,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a311/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448317792,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a311/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448328982,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 5 actions: Filled all required fields and clicked the Submit button. The extracted data matches the provided input values.",
+      "detail": "fill #userName = \"Alice Smith\"\nfill #userEmail = \"alice@example.com\"\nfill #currentAddress = \"123 Main St\"\nfill #permanentAddress = \"456 Oak Ave\"\nclick #submit = \"Submit\""
+    },
+    {
+      "t": 1776448330022,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #userName"
+    },
+    {
+      "t": 1776448330022,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #userEmail"
+    },
+    {
+      "t": 1776448330022,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #currentAddress"
+    },
+    {
+      "t": 1776448330022,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #permanentAddress"
+    },
+    {
+      "t": 1776448330022,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click #submit"
+    },
+    {
+      "t": 1776448331135,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a311/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448331136,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a311/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448333802,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: All fields are already filled with the correct values (Full Name: Alice Smith, Email: alice@example.com). The form has been submitted (as indicated by the output section showing the submitted data). The extracted JSON matches the required schema."
+    },
+    {
+      "t": 1776448333803,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448336445,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

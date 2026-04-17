@@ -1,0 +1,63 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "60-wikipedia-references-count",
+  "taskUrl": "https://en.wikipedia.org/wiki/HTTP",
+  "success": true,
+  "successReason": "71 refs",
+  "wallTimeMs": 19456,
+  "data": {
+    "count": 71
+  },
+  "inputTokens": 118886,
+  "outputTokens": 297,
+  "totalCostUsd": 0.253706,
+  "trace": [
+    {
+      "t": 1776443311761,
+      "type": "step",
+      "title": "Scroll to the References section and count how many references are listed. Return JSON: { \"count\": number }\n\nStart by navigating to: https://en.wikipedia.org/wi"
+    },
+    {
+      "t": 1776443312237,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443313348,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/HTTP (HTTP 200, 163704 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmove to sidebar hide\n\nN..."
+    },
+    {
+      "t": 1776443318082,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443318934,
+      "type": "step",
+      "title": "Python: 71\n"
+    },
+    {
+      "t": 1776443320854,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443321046,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443323205,
+      "type": "step",
+      "title": "Done: The References section of the Wikipedia HTTP article contains **71** references."
+    },
+    {
+      "t": 1776443323226,
+      "type": "step",
+      "title": "The References section of the Wikipedia HTTP article contains **71** references."
+    }
+  ]
+}

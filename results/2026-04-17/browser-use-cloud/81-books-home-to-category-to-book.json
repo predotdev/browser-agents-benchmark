@@ -1,0 +1,15 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "81-books-home-to-category-to-book",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": false,
+  "successReason": "no upc",
+  "wallTimeMs": 30001,
+  "error": "This operation was aborted",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0,
+  "trace": []
+}

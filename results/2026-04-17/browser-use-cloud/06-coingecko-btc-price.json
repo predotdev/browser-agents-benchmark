@@ -1,0 +1,53 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "06-coingecko-btc-price",
+  "taskUrl": "https://www.coingecko.com/en/coins/bitcoin",
+  "success": true,
+  "successReason": "$78210.27",
+  "wallTimeMs": 16858,
+  "data": {
+    "priceUSD": 78210.27
+  },
+  "inputTokens": 52237,
+  "outputTokens": 190,
+  "totalCostUsd": 0.174199,
+  "trace": [
+    {
+      "t": 1776443293396,
+      "type": "step",
+      "title": "Extract the current Bitcoin price in USD (as a number). Return JSON: { \"priceUSD\": number }\n\nStart by navigating to: https://www.coingecko.com/en/coins/bitcoin"
+    },
+    {
+      "t": 1776443293827,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294938,
+      "type": "step",
+      "title": "Fetch: Fetched https://www.coingecko.com/en/coins/bitcoin (HTTP 200, 68884 chars)\n\n📊 Now LIVE: [**2026 Q1 Crypto Industry Report**](https://www.coingecko...."
+    },
+    {
+      "t": 1776443300733,
+      "type": "step",
+      "title": "Python: save_output_json({\"priceUSD\": 78210.27})"
+    },
+    {
+      "t": 1776443300865,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443303057,
+      "type": "step",
+      "title": "Done: Bitcoin price extracted from CoinGecko: $78,210.27 USD. Output saved to output.json as {\"priceUSD\": 78210.27}."
+    },
+    {
+      "t": 1776443303085,
+      "type": "step",
+      "title": "Bitcoin price extracted from CoinGecko: $78,210.27 USD. Output saved to output.json as {\"priceUSD\": 78210.27}."
+    }
+  ]
+}

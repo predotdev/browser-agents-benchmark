@@ -1,0 +1,103 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "45-wikipedia-rust-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+  "success": true,
+  "successReason": "137 chars",
+  "wallTimeMs": 43679,
+  "data": {
+    "intro": "Rust is a general-purpose programming language. It is noted for its emphasis on performance, type safety, concurrency, and memory safety."
+  },
+  "inputTokens": 210717,
+  "outputTokens": 1260,
+  "totalCostUsd": 0.218242,
+  "trace": [
+    {
+      "t": 1776443293332,
+      "type": "step",
+      "title": "Extract the first paragraph of the article. Return JSON: { \"intro\": string }\n\nStart by navigating to: https://en.wikipedia.org/wiki/Rust_(programming_language)"
+    },
+    {
+      "t": 1776443295257,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443297050,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/Rust_(programming_language (HTTP 404, 10007 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmo..."
+    },
+    {
+      "t": 1776443302373,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443303956,
+      "type": "step",
+      "title": "Fetch: [Output truncated: 13450 tokens exceeded limit of 5000. Full output: /workspace/.ephemeral/truncated-c16ebc5c.log]\n\n{\"status\": 200, \"content_type\":..."
+    },
+    {
+      "t": 1776443310879,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443310949,
+      "type": "step",
+      "title": "Python: '**Rust** is a [general-purpose](/wiki/General-purpose_programming_language \\\\\"General-purpose programming language\\\\\") [programming language](/wik..."
+    },
+    {
+      "t": 1776443315838,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443315915,
+      "type": "step",
+      "title": "Python: Rust is a general-purpose programming language. It is noted for its emphasis on performance, type safety, concurrency\\\"), and memory safety.\n\nRust ..."
+    },
+    {
+      "t": 1776443320356,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443320480,
+      "type": "step",
+      "title": "Python: Rust is a general-purpose programming language. It is noted for its emphasis on performance, type safety, concurrency\\\"), and memory safety.\n"
+    },
+    {
+      "t": 1776443323971,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443324593,
+      "type": "step",
+      "title": "Python: Rust is a general-purpose programming language. It is noted for its emphasis on performance, type safety, concurrency, and memory safety.\n"
+    },
+    {
+      "t": 1776443327095,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443327168,
+      "type": "step",
+      "title": "Python: Rust is a general-purpose programming language. It is noted for its emphasis on performance, type safety, concurrency, and memory safety.\n✓ Wrote f..."
+    },
+    {
+      "t": 1776443329778,
+      "type": "step",
+      "title": "Done: Extracted the first paragraph from the Wikipedia article on Rust (programming language):\n\n\"Rust is a general-purpose programming language. It is no..."
+    },
+    {
+      "t": 1776443329799,
+      "type": "step",
+      "title": "Extracted the first paragraph from the Wikipedia article on Rust (programming language):\n\n\"Rust is a general-purpose programming language. It is noted for its e"
+    }
+  ]
+}

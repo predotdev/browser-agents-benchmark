@@ -1,0 +1,73 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "24-wikipedia-search-rust",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 23180,
+  "data": {
+    "results": [
+      {
+        "title": "Rust programming language"
+      },
+      {
+        "title": "Rust (programming language)"
+      },
+      {
+        "title": "Outline of the Rust programming language"
+      }
+    ]
+  },
+  "inputTokens": 58812,
+  "outputTokens": 608,
+  "totalCostUsd": 0.11483800000000001,
+  "trace": [
+    {
+      "t": 1776443293279,
+      "type": "step",
+      "title": "Type \"Rust programming language\" into the search field and submit. Extract the first 3 result titles. Return JSON: { \"results\": [{ \"title\": string }] }\n\nStart b"
+    },
+    {
+      "t": 1776443293705,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294578,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/Special:Search (HTTP 200, 4473 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmove to sidebar..."
+    },
+    {
+      "t": 1776443297762,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443298638,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 13943, \"text\": \"{\\\"title\\\":\\\"Rust programming language - Search results - Wikipedia\\\",\\\"headings\\\":[\\\"S..."
+    },
+    {
+      "t": 1776443306659,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443306740,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n[{'title': 'Rust programming language'}, {'title': 'Rust (programming language)'}, {'title': 'Outline of the Rust program..."
+    },
+    {
+      "t": 1776443309228,
+      "type": "step",
+      "title": "Done: Searched Wikipedia for \"Rust programming language\" and extracted the first 3 result titles:\n\n1. Rust programming language (direct page match)\n2. Ru..."
+    },
+    {
+      "t": 1776443309245,
+      "type": "step",
+      "title": "Searched Wikipedia for \"Rust programming language\" and extracted the first 3 result titles:\n\n1. Rust programming language (direct page match)\n2. Rust (programmi"
+    }
+  ]
+}

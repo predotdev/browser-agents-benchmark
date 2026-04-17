@@ -1,0 +1,52 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "41-example-com",
+  "taskUrl": "https://example.com",
+  "success": true,
+  "successReason": "example domain",
+  "wallTimeMs": 19548,
+  "data": {
+    "heading": "Example Domain",
+    "paragraph": "This domain is for use in documentation examples without needing permission. Avoid use in operations."
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308732,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448314268,
+      "type": "navigation",
+      "title": "navigate → https://example.com"
+    },
+    {
+      "t": 1776448314933,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30b/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448317758,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The heading and first paragraph are visible in the VISIBLE TEXT BLOCKS. No navigation or interaction is needed."
+    },
+    {
+      "t": 1776448317760,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448320561,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

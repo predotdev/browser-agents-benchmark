@@ -1,0 +1,73 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "31-quotes-login",
+  "taskUrl": "https://quotes.toscrape.com/login",
+  "success": true,
+  "successReason": "login ok",
+  "wallTimeMs": 23257,
+  "data": {
+    "loggedIn": true
+  },
+  "inputTokens": 63320,
+  "outputTokens": 370,
+  "totalCostUsd": 0.070322,
+  "trace": [
+    {
+      "t": 1776443293303,
+      "type": "step",
+      "title": "Fill username \"admin\" and password \"admin\", click Login. Return JSON: { \"loggedIn\": true } if successful.\n\nStart by navigating to: https://quotes.toscrape.com/l"
+    },
+    {
+      "t": 1776443295261,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443296661,
+      "type": "step",
+      "title": "Fetch: Fetched https://quotes.toscrape.com/login (HTTP 200, 167 chars)\n\n# [Quotes to Scrape](/)\n\n[Login](/login)\n\nUsername\n\nPassword\n\nQuotes by: [GoodRead..."
+    },
+    {
+      "t": 1776443301071,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443302247,
+      "type": "step",
+      "title": "Python: 200 <!DOCTYPE html>\n<html lang=\"en\">\n<head>\n\t<meta charset=\"UTF-8\">\n\t<title>Quotes to Scrape</title>\n    <link rel=\"stylesheet\" href=\"/static/boots..."
+    },
+    {
+      "t": 1776443305155,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443305240,
+      "type": "step",
+      "title": "Python: True\n"
+    },
+    {
+      "t": 1776443306875,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443306952,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443309342,
+      "type": "step",
+      "title": "Done: Successfully logged in with username \"admin\" and password \"admin\". The response contained a logout link confirming successful authentication. Resul..."
+    },
+    {
+      "t": 1776443309369,
+      "type": "step",
+      "title": "Successfully logged in with username \"admin\" and password \"admin\". The response contained a logout link confirming successful authentication. Result: { \"loggedI"
+    }
+  ]
+}

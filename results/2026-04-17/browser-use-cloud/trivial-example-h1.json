@@ -1,0 +1,53 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "trivial-example-h1",
+  "taskUrl": "https://example.com",
+  "success": true,
+  "successReason": "Example Domain",
+  "wallTimeMs": 10732,
+  "data": {
+    "heading": "Example Domain"
+  },
+  "inputTokens": 26970,
+  "outputTokens": 157,
+  "totalCostUsd": 0.050745,
+  "trace": [
+    {
+      "t": 1776443325977,
+      "type": "step",
+      "title": "Extract the H1 heading text from the page. Return JSON: { \"heading\": string }\n\nStart by navigating to: https://example.com"
+    },
+    {
+      "t": 1776443326408,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443326799,
+      "type": "step",
+      "title": "Fetch: Fetched https://example.com (HTTP 200, 167 chars)\n\n# Example Domain\n\nThis domain is for use in documentation examples without needing permission. A..."
+    },
+    {
+      "t": 1776443329451,
+      "type": "step",
+      "title": "Python: save_output_json({\"heading\": \"Example Domain\"})"
+    },
+    {
+      "t": 1776443329572,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443331337,
+      "type": "step",
+      "title": "Done: The H1 heading from https://example.com is: **\"Example Domain\"**"
+    },
+    {
+      "t": 1776443331357,
+      "type": "step",
+      "title": "The H1 heading from https://example.com is: **\"Example Domain\"**"
+    }
+  ]
+}

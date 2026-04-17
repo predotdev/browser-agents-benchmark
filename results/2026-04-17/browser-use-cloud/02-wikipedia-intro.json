@@ -1,0 +1,53 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "02-wikipedia-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/Web_scraping",
+  "success": true,
+  "successReason": "548 chars",
+  "wallTimeMs": 21094,
+  "data": {
+    "intro": "Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites. Web scraping software may directly access the World Wide Web using the Hypertext Transfer Protocol or a web browser. While web scraping can be done manually by a software user, the term typically refers to automated processes implemented using a bot or web crawler. It is a form of copying in which specific data is gathered and copied from the web, typically into a central local database or spreadsheet, for later retrieval or analysis."
+  },
+  "inputTokens": 53005,
+  "outputTokens": 397,
+  "totalCostUsd": 0.182158,
+  "trace": [
+    {
+      "t": 1776443293465,
+      "type": "step",
+      "title": "Extract the first paragraph of the article (the lede, at least 100 chars). Return JSON: { \"intro\": string }\n\nStart by navigating to: https://en.wikipedia.org/wi"
+    },
+    {
+      "t": 1776443293956,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443295250,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/Web_scraping (HTTP 200, 57027 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmove to sidebar ..."
+    },
+    {
+      "t": 1776443302701,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443302817,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443305754,
+      "type": "step",
+      "title": "Done: Extracted the first paragraph (lede) from the Wikipedia Web scraping article: \"Web scraping, web harvesting, or web data extraction is data scrapin..."
+    },
+    {
+      "t": 1776443305781,
+      "type": "step",
+      "title": "Extracted the first paragraph (lede) from the Wikipedia Web scraping article: \"Web scraping, web harvesting, or web data extraction is data scraping used for ex"
+    }
+  ]
+}

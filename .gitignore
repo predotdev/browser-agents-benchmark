@@ -1,0 +1,7 @@
+node_modules/
+.env
+.env.local
+*.log
+results/*
+!results/2026-04-17
+!results/2026-04-17/**

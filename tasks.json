@@ -1,0 +1,2381 @@
+[
+  {
+    "name": "01-hn-top-stories",
+    "url": "https://news.ycombinator.com",
+    "instruction": "Extract the top 5 story titles and their point counts. Return JSON: { \"stories\": [{ \"title\": string, \"points\": number }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "stories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "points": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "title",
+              "points"
+            ]
+          }
+        }
+      },
+      "required": [
+        "stories"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&(it.title||it.name)&&(it.points??it.score)!==void 0);return v.length>=3?{success:true,reason:`${v.length} stories`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "02-wikipedia-intro",
+    "url": "https://en.wikipedia.org/wiki/Web_scraping",
+    "instruction": "Extract the first paragraph of the article (the lede, at least 100 chars). Return JSON: { \"intro\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "intro": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "intro"
+      ]
+    },
+    "successCheckSrc": "r=>{const intro=findStr(r.data,\"web scraping\")||findValue(r.data,v=>typeof v===\"string\"&&v.length>100);return intro?{success:true,reason:`${String(intro).length} chars`}:{success:false,reason:\"no intro\"}}"
+  },
+  {
+    "name": "03-npm-react-version",
+    "url": "https://www.npmjs.com/package/react",
+    "instruction": "Extract the current version and weekly downloads. Return JSON: { \"version\": string, \"weeklyDownloads\": string | number }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "weeklyDownloads": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "weeklyDownloads"
+      ]
+    },
+    "successCheckSrc": "r=>{const v=findValue(r.data,v2=>typeof v2===\"string\"&&/^\\d+\\.\\d+\\.\\d+/.test(v2));return v?{success:true,reason:`v${v}`}:{success:false,reason:\"no version\"}}"
+  },
+  {
+    "name": "04-wikipedia-linus-nationality",
+    "url": "https://en.wikipedia.org/wiki/Linus_Torvalds",
+    "instruction": "From the infobox, extract Linus Torvalds' nationality. Return JSON: { \"nationality\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "nationality": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "nationality"
+      ]
+    },
+    "successCheckSrc": "r=>{const hay=JSON.stringify(r.data||{}).toLowerCase();const hits=[\"finnish\",\"american\",\"finland\",\"united states\",\"usa\",\"u.s.\"].filter(k=>hay.includes(k));return hits.length>0?{success:true,reason:hits.join(\"/\").slice(0,40)}:{success:false,reason:\"not found\"}}"
+  },
+  {
+    "name": "05-github-typescript-stats",
+    "url": "https://github.com/microsoft/typescript",
+    "instruction": "Extract star count, primary language, and latest release. Return JSON: { \"stars\": string | number, \"language\": string, \"latestRelease\": string | null }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "stars": {
+          "type": "number"
+        },
+        "language": {
+          "type": "string"
+        },
+        "latestRelease": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "stars",
+        "language"
+      ]
+    },
+    "successCheckSrc": "r=>{const lang=findStr(r.data,\"typescript\");return lang?{success:true,reason:\"lang=typescript\"}:{success:false,reason:\"no language\"}}"
+  },
+  {
+    "name": "06-coingecko-btc-price",
+    "url": "https://www.coingecko.com/en/coins/bitcoin",
+    "instruction": "Extract the current Bitcoin price in USD (as a number). Return JSON: { \"priceUSD\": number }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "priceUSD": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "priceUSD"
+      ]
+    },
+    "successCheckSrc": "r=>{const p=findValue(r.data,v=>typeof v===\"number\"&&v>1e3&&v<1e6);return p!==void 0?{success:true,reason:`$${p}`}:{success:false,reason:\"no price\"}}"
+  },
+  {
+    "name": "07-mdn-html-elements",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+    "instruction": "Extract the names of any 5 HTML elements (like \"div\", \"span\"). Return JSON: { \"elements\": string[] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "elements"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(x=>typeof x===\"string\"&&/^[<a-z]/i.test(x));return v.length>=3?{success:true,reason:`${v.length} elements`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "08-stackoverflow-git-undo",
+    "url": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+    "instruction": "Extract the question title, vote count, and first sentence of the accepted answer. Return JSON: { \"title\": string, \"votes\": number, \"acceptedAnswer\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "votes": {
+          "type": "number"
+        },
+        "acceptedAnswer": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "votes",
+        "acceptedAnswer"
+      ]
+    },
+    "successCheckSrc": "r=>{const t=findStr(r.data,\"undo\")||findStr(r.data,\"commit\");const v=findValue(r.data,v2=>typeof v2===\"number\"&&v2>100);return t&&v!==void 0?{success:true,reason:`votes=${v}`}:{success:false,reason:\"missing title or votes\"}}"
+  },
+  {
+    "name": "09-lobsters-stories",
+    "url": "https://lobste.rs",
+    "instruction": "Extract the top 5 story titles and scores. Return JSON: { \"stories\": [{ \"title\": string, \"score\": number }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "stories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "score": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "title",
+              "score"
+            ]
+          }
+        }
+      },
+      "required": [
+        "stories"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&(it.title||it.name));return v.length>=3?{success:true,reason:`${v.length} stories`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "10-books-toscrape",
+    "url": "https://books.toscrape.com",
+    "instruction": "Extract the first 5 book titles and prices. Return JSON: { \"books\": [{ \"title\": string, \"price\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "books": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "price": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "price"
+            ]
+          }
+        }
+      },
+      "required": [
+        "books"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.title&&it.price);return v.length>=5?{success:true,reason:`${v.length} books`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "11-github-react-stats",
+    "url": "https://github.com/facebook/react",
+    "instruction": "Extract star count and primary language. Return JSON: { \"stars\": string | number, \"language\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "stars": {
+          "type": "number"
+        },
+        "language": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "stars",
+        "language"
+      ]
+    },
+    "successCheckSrc": "r=>{const lang=findStr(r.data,\"javascript\");return lang?{success:true,reason:\"lang=javascript\"}:{success:false,reason:\"no language\"}}"
+  },
+  {
+    "name": "12-wikipedia-python",
+    "url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    "instruction": "Extract the programming paradigms listed in the infobox (e.g. \"multi-paradigm\", \"object-oriented\"). Return JSON: { \"paradigms\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "paradigms": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "paradigms"
+      ]
+    },
+    "successCheckSrc": "r=>{const p=findStr(r.data,\"object\")||findStr(r.data,\"paradigm\")||findStr(r.data,\"functional\");return p?{success:true,reason:p.slice(0,40)}:{success:false,reason:\"no paradigms\"}}"
+  },
+  {
+    "name": "13-scrapethissite-countries",
+    "url": "https://www.scrapethissite.com/pages/simple/",
+    "instruction": "Extract the first 5 country names and their capitals. Return JSON: { \"countries\": [{ \"name\": string, \"capital\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "countries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "capital": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "capital"
+            ]
+          }
+        }
+      },
+      "required": [
+        "countries"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.name&&it.capital);return v.length>=5?{success:true,reason:`${v.length} countries`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "14-npm-express-info",
+    "url": "https://www.npmjs.com/package/express",
+    "instruction": "Extract the package version and description. Return JSON: { \"version\": string, \"description\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "description"
+      ]
+    },
+    "successCheckSrc": "r=>{const v=findValue(r.data,v2=>typeof v2===\"string\"&&/^\\d+\\.\\d+/.test(v2));const d=findValue(r.data,v2=>typeof v2===\"string\"&&v2.length>10&&v2.length<200);return v&&d?{success:true,reason:`v${v}`}:{success:false,reason:\"missing version or desc\"}}"
+  },
+  {
+    "name": "15-the-internet-tables",
+    "url": "https://the-internet.herokuapp.com/tables",
+    "instruction": "Extract the data from the first table (Table 1). Return JSON: { \"rows\": [{ \"lastName\": string, \"firstName\": string, \"email\": string }] } for the first 4 rows.",
+    "output": {
+      "type": "object",
+      "properties": {
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "lastName": {
+                "type": "string"
+              },
+              "firstName": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "lastName",
+              "firstName",
+              "email"
+            ]
+          }
+        }
+      },
+      "required": [
+        "rows"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&(it.lastName||it.last_name||it.name)&&(it.email||it.mail));return v.length>=4?{success:true,reason:`${v.length} rows`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "16-hn-comments",
+    "url": "https://news.ycombinator.com",
+    "instruction": "Click on the \"comments\" link of the first story. After the comments page loads, extract the story title. Return JSON: { \"storyTitle\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "storyTitle": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "storyTitle"
+      ]
+    },
+    "successCheckSrc": "r=>{const t=findValue(r.data,v=>typeof v===\"string\"&&v.length>10&&v.length<300);return t?{success:true,reason:String(t).slice(0,50)}:{success:false,reason:\"no title\"}}"
+  },
+  {
+    "name": "17-github-issues",
+    "url": "https://github.com/microsoft/typescript/issues",
+    "instruction": "Extract the titles of the first 5 open issues. Return JSON: { \"issues\": [{ \"title\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "required": [
+        "issues"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&typeof(it.title||it.name)===\"string\");return v.length>=3?{success:true,reason:`${v.length} issues`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "18-github-releases",
+    "url": "https://github.com/denoland/deno/releases",
+    "instruction": "Extract the title and date of the 3 most recent releases. Return JSON: { \"releases\": [{ \"title\": string, \"date\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "releases": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "date": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "date"
+            ]
+          }
+        }
+      },
+      "required": [
+        "releases"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.title&&it.date);return v.length>=3?{success:true,reason:`${v.length} releases`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "19-books-page2",
+    "url": "https://books.toscrape.com",
+    "instruction": "Click the \"next\" button to go to page 2, then extract the first 3 book titles from page 2. Return JSON: { \"books\": [{ \"title\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "books": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "required": [
+        "books"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};return arr.length>=3?{success:true,reason:`${arr.length} books`}:{success:false,reason:`${arr.length} books`}}"
+  },
+  {
+    "name": "20-mdn-array-methods",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "instruction": "Extract 5 Array instance method names from this page (like \"map\", \"filter\", \"reduce\"). Return JSON: { \"methods\": string[] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "methods": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "methods"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(x=>typeof x===\"string\"&&x.length<30);return v.length>=5?{success:true,reason:`${v.length} methods`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "21-quotes-tag-page",
+    "url": "https://quotes.toscrape.com",
+    "instruction": "Click on the \"love\" tag link to navigate to the love quotes page. Then extract the first 3 quotes and their authors. Return JSON: { \"quotes\": [{ \"text\": string, \"author\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "author"
+            ]
+          }
+        }
+      },
+      "required": [
+        "quotes"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.text&&it.author);return v.length>=3?{success:true,reason:`${v.length} quotes`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "22-books-science-category",
+    "url": "https://books.toscrape.com",
+    "instruction": "Click on the \"Science\" category link in the sidebar, then extract the first 3 book titles and prices from the Science category page. Return JSON: { \"books\": [{ \"title\": string, \"price\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "books": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "price": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "price"
+            ]
+          }
+        }
+      },
+      "required": [
+        "books"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.title&&it.price);return v.length>=3?{success:true,reason:`${v.length} books`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "23-wikipedia-search-openai",
+    "url": "https://en.wikipedia.org/wiki/Special:Search",
+    "instruction": "Type \"OpenAI\" into the search field and press Enter to submit. Extract the first 3 result titles. Return JSON: { \"results\": [{ \"title\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "required": [
+        "results"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr||arr.length<2)return{success:false,reason:`${arr?.length||0} results`};const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"openai\")?{success:true,reason:`${arr.length} results`}:{success:false,reason:\"no openai mention\"}}"
+  },
+  {
+    "name": "24-wikipedia-search-rust",
+    "url": "https://en.wikipedia.org/wiki/Special:Search",
+    "instruction": "Type \"Rust programming language\" into the search field and press Enter to submit. Extract the first 3 result titles. Return JSON: { \"results\": [{ \"title\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "required": [
+        "results"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr||arr.length<2)return{success:false,reason:`${arr?.length||0} results`};const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"rust\")?{success:true,reason:`${arr.length} results`}:{success:false,reason:\"no rust mention\"}}"
+  },
+  {
+    "name": "25-npm-search-express",
+    "url": "https://www.npmjs.com/search?q=express",
+    "instruction": "Extract the names and descriptions of the first 3 packages. Return JSON: { \"packages\": [{ \"name\": string, \"description\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "packages": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "description"
+            ]
+          }
+        }
+      },
+      "required": [
+        "packages"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.name);const d=JSON.stringify(r.data||{}).toLowerCase();return v.length>=2&&d.includes(\"express\")?{success:true,reason:`${v.length} packages`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "26-quotes-pagination",
+    "url": "https://quotes.toscrape.com",
+    "instruction": "Click the \"Next\" button to go to page 2. Extract the first 3 quotes and authors from page 2. Return JSON: { \"quotes\": [{ \"text\": string, \"author\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "author"
+            ]
+          }
+        }
+      },
+      "required": [
+        "quotes"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.text&&it.author);return v.length>=3?{success:true,reason:`${v.length} quotes`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "27-scrapethissite-hockey",
+    "url": "https://www.scrapethissite.com/pages/forms/",
+    "instruction": "This page has a table of hockey teams. Extract the first 5 team names and their wins. Return JSON: { \"teams\": [{ \"name\": string, \"wins\": number }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "teams": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "wins": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "name",
+              "wins"
+            ]
+          }
+        }
+      },
+      "required": [
+        "teams"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.name&&typeof it.wins===\"number\");return v.length>=5?{success:true,reason:`${v.length} teams`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "28-weather-gov-sf",
+    "url": "https://forecast.weather.gov/MapClick.php?CityName=San+Francisco&state=CA&site=MTR",
+    "instruction": "Extract the current temperature and conditions for San Francisco. Return JSON: { \"temperature\": string, \"conditions\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "temperature": {
+          "type": "string"
+        },
+        "conditions": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "temperature",
+        "conditions"
+      ]
+    },
+    "timeoutMs": 60000,
+    "successCheckSrc": "r=>{const temp=findValue(r.data,v=>typeof v===\"string\"&&/\\d+.*[\u00b0FfCc]/.test(v));return temp?{success:true,reason:`temp=${String(temp).slice(0,20)}`}:{success:false,reason:\"no temp\"}}"
+  },
+  {
+    "name": "29-httpbin-pizza",
+    "url": "https://httpbin.org/forms/post",
+    "instruction": "Fill: customer name \"Test User\", phone \"555-1234\", email \"test@example.com\", comments \"Ring the bell\". Click Submit. Extract the customer name from the response. Return JSON: { \"submittedName\": string }",
+    "input": {
+      "name": "Test User",
+      "phone": "555-1234",
+      "email": "test@example.com",
+      "message": "Ring the bell"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "submittedName": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "submittedName"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"test user\")?{success:true,reason:\"echoed\"}:{success:false,reason:\"no echo\"}}"
+  },
+  {
+    "name": "30-demoqa-textbox",
+    "url": "https://demoqa.com/text-box",
+    "instruction": "Fill: Full Name \"Alice Smith\", Email \"alice@example.com\", Current Address \"123 Main St\", Permanent Address \"456 Oak Ave\". Click Submit. Extract the displayed output. Return JSON: { \"name\": string, \"email\": string }",
+    "input": {
+      "name": "Alice Smith",
+      "email": "alice@example.com"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name",
+        "email"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"alice\")?{success:true,reason:\"alice found\"}:{success:false,reason:\"no alice\"}}"
+  },
+  {
+    "name": "31-quotes-login",
+    "url": "https://quotes.toscrape.com/login",
+    "instruction": "Fill username \"admin\" and password \"admin\", click Login. Return JSON: { \"loggedIn\": true } if successful.",
+    "input": {
+      "username": "admin",
+      "password": "admin"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "loggedIn": {}
+      },
+      "required": [
+        "loggedIn"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"true\")||d.includes(\"logged\")||d.includes(\"success\")?{success:true,reason:\"login ok\"}:{success:false,reason:\"no login\"}}"
+  },
+  {
+    "name": "32-the-internet-login",
+    "url": "https://the-internet.herokuapp.com/login",
+    "instruction": "Fill username \"tomsmith\" and password \"SuperSecretPassword!\", click Login. Return JSON: { \"loggedIn\": true } if you see the secure area page.",
+    "input": {
+      "username": "tomsmith",
+      "password": "SuperSecretPassword!"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "loggedIn": {}
+      },
+      "required": [
+        "loggedIn"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"true\")||d.includes(\"secure\")||d.includes(\"logged\")?{success:true,reason:\"login ok\"}:{success:false,reason:\"no login\"}}"
+  },
+  {
+    "name": "33-httpbin-anything",
+    "url": "https://httpbin.org/forms/post",
+    "instruction": "Fill the form with customer \"Bob Jones\", size \"Large\", and topping \"Bacon\". Click Submit. Extract the customer name. Return JSON: { \"customer\": string }",
+    "input": {
+      "name": "Bob Jones"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "customer": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "customer"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"bob\")?{success:true,reason:\"bob found\"}:{success:false,reason:\"no bob\"}}"
+  },
+  {
+    "name": "34-the-internet-dropdown",
+    "url": "https://the-internet.herokuapp.com/dropdown",
+    "instruction": "Select \"Option 2\" from the dropdown menu. Return JSON: { \"selected\": string } with the selected value.",
+    "output": {
+      "type": "object",
+      "properties": {
+        "selected": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "selected"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"option 2\")||d.includes(\"2\")?{success:true,reason:\"option 2\"}:{success:false,reason:\"wrong option\"}}"
+  },
+  {
+    "name": "35-the-internet-checkboxes",
+    "url": "https://the-internet.herokuapp.com/checkboxes",
+    "instruction": "Check the first checkbox (if unchecked) and uncheck the second (if checked). Then report the state of both. Return JSON: { \"checkbox1\": boolean, \"checkbox2\": boolean }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "checkbox1": {
+          "type": "boolean"
+        },
+        "checkbox2": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "checkbox1",
+        "checkbox2"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=r.data;if(!d)return{success:false,reason:\"no data\"};return typeof d.checkbox1===\"boolean\"&&typeof d.checkbox2===\"boolean\"?{success:true,reason:`cb1=${d.checkbox1}, cb2=${d.checkbox2}`}:{success:false,reason:\"missing booleans\"}}"
+  },
+  {
+    "name": "36-wikipedia-search-submit-extract",
+    "url": "https://en.wikipedia.org/wiki/Special:Search",
+    "instruction": "Type \"machine learning\" into the search field and press Enter to submit. Extract the first 3 result titles. Return JSON: { \"results\": [{ \"title\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "results": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "required": [
+        "results"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr||arr.length<2)return{success:false,reason:`${arr?.length||0} results`};const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"machine\")||d.includes(\"learning\")?{success:true,reason:`${arr.length} results`}:{success:false,reason:\"no ML mention\"}}"
+  },
+  {
+    "name": "37-quotes-login-then-scrape",
+    "url": "https://quotes.toscrape.com/login",
+    "instruction": "Log in with username \"admin\" and password \"admin\". After login, extract the first 3 quotes and their authors from the homepage. Return JSON: { \"quotes\": [{ \"text\": string, \"author\": string }] }",
+    "input": {
+      "username": "admin",
+      "password": "admin"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "author": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text",
+              "author"
+            ]
+          }
+        }
+      },
+      "required": [
+        "quotes"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.text&&it.author);return v.length>=3?{success:true,reason:`${v.length} quotes`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "38-github-nextjs-stats",
+    "url": "https://github.com/vercel/next.js",
+    "instruction": "Extract the star count, primary language, and description. Return JSON: { \"stars\": string | number, \"language\": string, \"description\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "stars": {
+          "type": "number"
+        },
+        "language": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "stars",
+        "language",
+        "description"
+      ]
+    },
+    "successCheckSrc": "r=>{const lang=findStr(r.data,\"javascript\")||findStr(r.data,\"typescript\");const desc=findValue(r.data,v=>typeof v===\"string\"&&v.length>=15);return lang&&desc?{success:true,reason:`lang=${String(lang).slice(0,15)}`}:{success:false,reason:\"missing data\"}}"
+  },
+  {
+    "name": "39-npm-zod-info",
+    "url": "https://www.npmjs.com/package/zod",
+    "instruction": "Extract the version number and description. Return JSON: { \"version\": string, \"description\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "description"
+      ]
+    },
+    "successCheckSrc": "r=>{const v=findValue(r.data,v2=>typeof v2===\"string\"&&/^\\d+\\.\\d+/.test(v2));return v?{success:true,reason:`v${v}`}:{success:false,reason:\"no version\"}}"
+  },
+  {
+    "name": "40-wikipedia-js-intro",
+    "url": "https://en.wikipedia.org/wiki/JavaScript",
+    "instruction": "Extract the first paragraph of the article body. Return JSON: { \"intro\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "intro": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "intro"
+      ]
+    },
+    "successCheckSrc": "r=>{const intro=findStr(r.data,\"javascript\")||findStr(r.data,\"programming\");return intro?{success:true,reason:`${String(intro).length} chars`}:{success:false,reason:\"no intro\"}}"
+  },
+  {
+    "name": "41-example-com",
+    "url": "https://example.com",
+    "instruction": "Extract the main heading text and the first paragraph text. Return JSON: { \"heading\": string, \"paragraph\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "heading": {
+          "type": "string"
+        },
+        "paragraph": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "heading",
+        "paragraph"
+      ]
+    },
+    "successCheckSrc": "r=>{const h=findStr(r.data,\"example domain\");return h?{success:true,reason:\"example domain\"}:{success:false,reason:\"no heading\"}}"
+  },
+  {
+    "name": "42-jsonplaceholder-users",
+    "url": "https://jsonplaceholder.typicode.com/users",
+    "instruction": "This page shows raw JSON. Extract the names and emails of the first 3 users. Return JSON: { \"users\": [{ \"name\": string, \"email\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "users": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "email": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "email"
+            ]
+          }
+        }
+      },
+      "required": [
+        "users"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const v=arr.filter(it=>it&&it.name&&it.email);return v.length>=3?{success:true,reason:`${v.length} users`}:{success:false,reason:`${v.length} valid`}}"
+  },
+  {
+    "name": "44-turnstile-login",
+    "url": "https://demo.turnstile.workers.dev/",
+    "instruction": "Fill username \"testuser\" and password \"testpass\", wait for Turnstile to validate, then click Sign in. Return JSON: { \"submitted\": true } if successful.",
+    "input": {
+      "username": "testuser",
+      "password": "testpass"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "loggedIn": {}
+      },
+      "required": [
+        "loggedIn"
+      ]
+    },
+    "timeoutMs": 120000,
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"true\")||d.includes(\"success\")||d.includes(\"logged\")?{success:true,reason:\"turnstile ok\"}:{success:false,reason:\"no confirm\"}}"
+  },
+  {
+    "name": "45-wikipedia-rust-intro",
+    "url": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+    "instruction": "Extract the first paragraph of the article. Return JSON: { \"intro\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "intro": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "intro"
+      ]
+    },
+    "successCheckSrc": "r=>{const intro=findStr(r.data,\"rust\")||findStr(r.data,\"programming\");return intro?{success:true,reason:`${String(intro).length} chars`}:{success:false,reason:\"no intro\"}}"
+  },
+  {
+    "name": "46-mdn-css-display",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+    "instruction": "Extract the formal syntax values for the CSS display property (e.g. \"block\", \"inline\", \"flex\", \"grid\", \"none\"). Return JSON: { \"values\": string[] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "values": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "values"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const d=JSON.stringify(arr).toLowerCase();return d.includes(\"block\")||d.includes(\"flex\")||d.includes(\"inline\")?{success:true,reason:`${arr.length} values`}:{success:false,reason:\"no display values\"}}"
+  },
+  {
+    "name": "47-quotes-all-tags",
+    "url": "https://quotes.toscrape.com",
+    "instruction": "Extract the top 10 tags shown in the sidebar tag cloud. Return JSON: { \"tags\": string[] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "tags"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr)return{success:false,reason:\"no array\"};const d=JSON.stringify(arr).toLowerCase();return d.includes(\"love\")||d.includes(\"life\")||d.includes(\"inspirational\")?{success:true,reason:`${arr.length} tags`}:{success:false,reason:\"no expected tags\"}}"
+  },
+  {
+    "name": "48-github-deno-releases",
+    "url": "https://github.com/denoland/deno/releases",
+    "instruction": "Extract the latest release version tag (e.g. \"v2.3.1\") and its title. Return JSON: { \"version\": string, \"title\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "title"
+      ]
+    },
+    "successCheckSrc": "r=>{const v=findValue(r.data,v2=>typeof v2===\"string\"&&/v?\\d+\\.\\d+/.test(v2));return v?{success:true,reason:String(v).slice(0,20)}:{success:false,reason:\"no version\"}}"
+  },
+  {
+    "name": "49-books-toscrape-details",
+    "url": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+    "instruction": "Extract the book title, price, availability, and number of reviews. Return JSON: { \"title\": string, \"price\": string, \"availability\": string, \"reviews\": number }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "price": {
+          "type": "string"
+        },
+        "availability": {
+          "type": "string"
+        },
+        "reviews": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "title",
+        "price",
+        "availability",
+        "reviews"
+      ]
+    },
+    "successCheckSrc": "r=>{const t=findStr(r.data,\"light in the attic\");const p=findValue(r.data,v=>typeof v===\"string\"&&/[\u00a3$\\d]/.test(v));return t&&p?{success:true,reason:String(t).slice(0,30)}:{success:false,reason:\"missing data\"}}"
+  },
+  {
+    "name": "50-quotes-toscrape-specific",
+    "url": "https://quotes.toscrape.com/page/1/",
+    "instruction": "Extract all quotes by Albert Einstein on this page (there should be at least 1). Return JSON: { \"quotes\": [{ \"text\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text"
+            ]
+          }
+        }
+      },
+      "required": [
+        "quotes"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);if(!arr||arr.length<1)return{success:false,reason:\"no quotes\"};const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"einstein\")||arr.length>=1?{success:true,reason:`${arr.length} quotes`}:{success:false,reason:\"no einstein\"}}"
+  },
+  {
+    "name": "51-books-category-extract",
+    "url": "https://books.toscrape.com/",
+    "instruction": "Click on the \"Travel\" category in the sidebar, then extract all book titles listed. Return JSON: { \"books\": [{ \"title\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "books": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "required": [
+        "books"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=1?{success:true,reason:`${arr.length} books`}:{success:false,reason:\"no books\"}}"
+  },
+  {
+    "name": "52-books-mystery-category",
+    "url": "https://books.toscrape.com/",
+    "instruction": "Navigate to the Mystery category and extract the first 5 book titles and prices. Return JSON: { \"books\": [{ \"title\": string, \"price\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "books": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "price": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "price"
+            ]
+          }
+        }
+      },
+      "required": [
+        "books"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length} books`}:{success:false,reason:\"need 3+ books\"}}"
+  },
+  {
+    "name": "53-books-click-and-detail",
+    "url": "https://books.toscrape.com/",
+    "instruction": "Click on the first book shown on the homepage, then extract its full title, price, UPC, and stock availability. Return JSON: { \"title\": string, \"price\": string, \"upc\": string, \"stock\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "price": {
+          "type": "string"
+        },
+        "upc": {
+          "type": "string"
+        },
+        "stock": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "price",
+        "upc",
+        "stock"
+      ]
+    },
+    "successCheckSrc": "r=>{const t=findValue(r.data,v=>typeof v===\"string\"&&v.length>3);const p=findValue(r.data,v=>typeof v===\"string\"&&/[\u00a3$]/.test(v));return t&&p?{success:true,reason:\"title+price\"}:{success:false,reason:\"missing\"}}"
+  },
+  {
+    "name": "54-books-paginate-count",
+    "url": "https://books.toscrape.com/catalogue/page-1.html",
+    "instruction": "Count the number of books displayed on this catalogue page. Return JSON: { \"count\": number }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "count"
+      ]
+    },
+    "successCheckSrc": "r=>{const n=findValue(r.data,v=>typeof v===\"number\"&&v>0);return n?{success:true,reason:`${n} books`}:{success:false,reason:\"no count\"}}"
+  },
+  {
+    "name": "55-quotes-next-page",
+    "url": "https://quotes.toscrape.com/",
+    "instruction": "Click the Next page button and extract the first 3 quote texts from page 2. Return JSON: { \"quotes\": [{ \"text\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text"
+            ]
+          }
+        }
+      },
+      "required": [
+        "quotes"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length} quotes`}:{success:false,reason:\"need 2+\"}}"
+  },
+  {
+    "name": "56-quotes-author-page",
+    "url": "https://quotes.toscrape.com/",
+    "instruction": "Click on the first author's name link (not the tag), then extract the author's birth date and place from the author detail page. Return JSON: { \"bornDate\": string, \"bornPlace\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "bornDate": {
+          "type": "string"
+        },
+        "bornPlace": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "bornDate",
+        "bornPlace"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=findValue(r.data,v=>typeof v===\"string\"&&v.length>3);return d?{success:true,reason:\"got data\"}:{success:false,reason:\"no data\"}}"
+  },
+  {
+    "name": "57-quotes-tag-filter",
+    "url": "https://quotes.toscrape.com/",
+    "instruction": "Click on the \"love\" tag, then return the number of quotes shown on the filtered page. Return JSON: { \"count\": number }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "count"
+      ]
+    },
+    "successCheckSrc": "r=>{const n=findValue(r.data,v=>typeof v===\"number\"&&v>=1);return n?{success:true,reason:`${n}`}:{success:false,reason:\"no count\"}}"
+  },
+  {
+    "name": "58-wikipedia-follow-link",
+    "url": "https://en.wikipedia.org/wiki/JavaScript",
+    "instruction": "Click on the \"ECMAScript\" link in the article and extract the first paragraph of the resulting page. Return JSON: { \"intro\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "intro": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "intro"
+      ]
+    },
+    "successCheckSrc": "r=>{const s=findValue(r.data,v=>typeof v===\"string\"&&v.length>80);return s?{success:true,reason:`${String(s).length} chars`}:{success:false,reason:\"no intro\"}}"
+  },
+  {
+    "name": "59-wikipedia-infobox-data",
+    "url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    "instruction": "Extract from the infobox on the right side: the designer name, the date of first appearance, and the current stable release version. Return JSON: { \"designer\": string, \"firstAppeared\": string, \"stableRelease\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "designer": {
+          "type": "string"
+        },
+        "firstAppeared": {
+          "type": "string"
+        },
+        "stableRelease": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "designer",
+        "firstAppeared",
+        "stableRelease"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"guido\")||d.includes(\"rossum\")?{success:true,reason:\"found designer\"}:{success:false,reason:\"no designer\"}}"
+  },
+  {
+    "name": "60-wikipedia-references-count",
+    "url": "https://en.wikipedia.org/wiki/HTTP",
+    "instruction": "Scroll to the References section and count how many references are listed. Return JSON: { \"count\": number }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "count"
+      ]
+    },
+    "successCheckSrc": "r=>{const n=findValue(r.data,v=>typeof v===\"number\"&&v>5);return n?{success:true,reason:`${n} refs`}:{success:false,reason:\"too few\"}}"
+  },
+  {
+    "name": "61-hn-comments-navigate",
+    "url": "https://news.ycombinator.com/",
+    "instruction": "Click on the comments link of the top story and extract the title of that story and the number of comments. Return JSON: { \"title\": string, \"commentCount\": number }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "commentCount": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "title",
+        "commentCount"
+      ]
+    },
+    "successCheckSrc": "r=>{const t=findValue(r.data,v=>typeof v===\"string\"&&v.length>3);const c=findValue(r.data,v=>typeof v===\"number\"&&v>=0);return t&&c!==void 0?{success:true,reason:\"got both\"}:{success:false,reason:\"missing\"}}"
+  },
+  {
+    "name": "62-hn-newest-stories",
+    "url": "https://news.ycombinator.com/",
+    "instruction": "Click the \"new\" link in the top navigation, then extract the top 3 story titles. Return JSON: { \"stories\": [{ \"title\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "stories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "required": [
+        "stories"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length}`}:{success:false,reason:\"need 3\"}}"
+  },
+  {
+    "name": "63-hn-user-profile",
+    "url": "https://news.ycombinator.com/user?id=dang",
+    "instruction": "Extract the user's karma score and account creation date. Return JSON: { \"karma\": number, \"createdDate\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "karma": {
+          "type": "number"
+        },
+        "createdDate": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "karma",
+        "createdDate"
+      ]
+    },
+    "successCheckSrc": "r=>{const k=findValue(r.data,v=>typeof v===\"number\"&&v>100);return k?{success:true,reason:`karma ${k}`}:{success:false,reason:\"no karma\"}}"
+  },
+  {
+    "name": "64-github-repo-readme-header",
+    "url": "https://github.com/microsoft/TypeScript",
+    "instruction": "Extract the repository description (the tagline at the top) and the programming language used. Return JSON: { \"description\": string, \"language\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "description": {
+          "type": "string"
+        },
+        "language": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "description",
+        "language"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"typescript\")?{success:true,reason:\"typescript\"}:{success:false,reason:\"no ts\"}}"
+  },
+  {
+    "name": "65-github-navigate-to-issues",
+    "url": "https://github.com/nodejs/node",
+    "instruction": "Click on the Issues tab and extract the titles of the top 3 open issues. Return JSON: { \"issues\": [{ \"title\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "issues": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "required": [
+        "issues"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length} issues`}:{success:false,reason:\"few issues\"}}"
+  },
+  {
+    "name": "66-mdn-javascript-array-methods",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "instruction": "Extract the first 5 method names from the instance methods section. Return JSON: { \"methods\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "methods": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "methods"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "67-mdn-fetch-parameters",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/API/fetch",
+    "instruction": "Extract the parameters listed for the fetch() function. Return JSON: { \"parameters\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "parameters": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "parameters"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=1?{success:true,reason:`${arr.length}`}:{success:false,reason:\"none\"}}"
+  },
+  {
+    "name": "68-npm-package-version",
+    "url": "https://www.npmjs.com/package/react",
+    "instruction": "Extract the current version number and weekly download count. Return JSON: { \"version\": string, \"weeklyDownloads\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "version": {
+          "type": "string"
+        },
+        "weeklyDownloads": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "version",
+        "weeklyDownloads"
+      ]
+    },
+    "successCheckSrc": "r=>{const v=findValue(r.data,vv=>typeof vv===\"string\"&&/\\d+\\.\\d+/.test(vv));return v?{success:true,reason:`v${v}`}:{success:false,reason:\"no version\"}}"
+  },
+  {
+    "name": "69-npm-lodash-dependencies",
+    "url": "https://www.npmjs.com/package/lodash",
+    "instruction": "Extract the package maintainer and the license type. Return JSON: { \"maintainer\": string, \"license\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "maintainer": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "maintainer",
+        "license"
+      ]
+    },
+    "successCheckSrc": "r=>{const l=findValue(r.data,v=>typeof v===\"string\"&&/MIT|apache|bsd/i.test(v));return l?{success:true,reason:`${l}`}:{success:false,reason:\"no license\"}}"
+  },
+  {
+    "name": "71-httpbin-html-table",
+    "url": "https://httpbin.org/html",
+    "instruction": "Extract the author and title from the page. Return JSON: { \"author\": string, \"title\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "author": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "author",
+        "title"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"herman\")||d.includes(\"melville\")||d.includes(\"moby\")?{success:true,reason:\"found\"}:{success:false,reason:\"no author\"}}"
+  },
+  {
+    "name": "72-jsonplaceholder-nav-post",
+    "url": "https://jsonplaceholder.typicode.com/",
+    "instruction": "Navigate to /posts/1 and extract the title and body. Return JSON: { \"title\": string, \"body\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "body": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "body"
+      ]
+    },
+    "successCheckSrc": "r=>{const t=findValue(r.data,v=>typeof v===\"string\"&&v.length>5);return t?{success:true,reason:\"ok\"}:{success:false,reason:\"no title\"}}"
+  },
+  {
+    "name": "73-w3schools-css-colors",
+    "url": "https://www.w3schools.com/cssref/css_colors.php",
+    "instruction": "Extract the first 5 CSS color names and their hex codes from the reference table. Return JSON: { \"colors\": [{ \"name\": string, \"hex\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "colors": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "hex": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "hex"
+            ]
+          }
+        }
+      },
+      "required": [
+        "colors"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "74-scrapethissite-countries",
+    "url": "https://www.scrapethissite.com/pages/simple/",
+    "instruction": "Extract the first 5 country names and their capitals from the list. Return JSON: { \"countries\": [{ \"name\": string, \"capital\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "countries": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "capital": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "name",
+              "capital"
+            ]
+          }
+        }
+      },
+      "required": [
+        "countries"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "75-scrapethissite-hockey-table",
+    "url": "https://www.scrapethissite.com/pages/forms/",
+    "instruction": "Extract the first 5 team names and their years from the hockey teams table. Return JSON: { \"teams\": [{ \"name\": string, \"year\": number }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "teams": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "year": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "name",
+              "year"
+            ]
+          }
+        }
+      },
+      "required": [
+        "teams"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "76-the-internet-dropdown",
+    "url": "https://the-internet.herokuapp.com/dropdown",
+    "instruction": "Select \"Option 2\" from the dropdown and then return the currently selected option text. Return JSON: { \"selected\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "selected": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "selected"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"option 2\")?{success:true,reason:\"option 2\"}:{success:false,reason:\"no option\"}}"
+  },
+  {
+    "name": "77-the-internet-checkboxes",
+    "url": "https://the-internet.herokuapp.com/checkboxes",
+    "instruction": "Check the first checkbox and uncheck the second, then return the final checked state of both. Return JSON: { \"first\": boolean, \"second\": boolean }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "first": {
+          "type": "boolean"
+        },
+        "second": {
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "first",
+        "second"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=r.data||{};return typeof d.first===\"boolean\"||findValue(r.data,v=>typeof v===\"boolean\")!==void 0?{success:true,reason:\"bools\"}:{success:false,reason:\"no bools\"}}"
+  },
+  {
+    "name": "78-the-internet-dynamic-content",
+    "url": "https://the-internet.herokuapp.com/dynamic_content",
+    "instruction": "Extract the text content of the first 3 paragraphs on the page. Return JSON: { \"paragraphs\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "paragraphs": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "paragraphs"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "79-the-internet-add-remove",
+    "url": "https://the-internet.herokuapp.com/add_remove_elements/",
+    "instruction": "Click the \"Add Element\" button 3 times, then return the number of \"Delete\" buttons visible. Return JSON: { \"count\": number }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "count"
+      ]
+    },
+    "successCheckSrc": "r=>{const n=findValue(r.data,v=>typeof v===\"number\"&&v>=3);return n?{success:true,reason:`${n}`}:{success:false,reason:\"too few\"}}"
+  },
+  {
+    "name": "80-the-internet-iframe",
+    "url": "https://the-internet.herokuapp.com/iframe",
+    "instruction": "Extract the heading text from the page. Return JSON: { \"heading\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "heading": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "heading"
+      ]
+    },
+    "successCheckSrc": "r=>{const s=findValue(r.data,v=>typeof v===\"string\"&&v.length>3);return s?{success:true,reason:\"ok\"}:{success:false,reason:\"missing\"}}"
+  },
+  {
+    "name": "81-books-home-to-category-to-book",
+    "url": "https://books.toscrape.com/",
+    "instruction": "Click the Travel category, then click the first book, then extract its UPC code. Return JSON: { \"upc\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "upc": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "upc"
+      ]
+    },
+    "successCheckSrc": "r=>{const s=findValue(r.data,v=>typeof v===\"string\"&&v.length>=5&&/^[a-f0-9]/i.test(v));return s?{success:true,reason:\"got upc\"}:{success:false,reason:\"no upc\"}}"
+  },
+  {
+    "name": "82-wikipedia-search-result",
+    "url": "https://en.wikipedia.org/wiki/Main_Page",
+    "instruction": "Type \"Rust (programming language)\" into the Wikipedia search box and press Enter to submit, click the top result, and extract the year it was designed. Return JSON: { \"designedYear\": number }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "designedYear": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "designedYear"
+      ]
+    },
+    "successCheckSrc": "r=>{const n=findValue(r.data,v=>typeof v===\"number\"&&v>=2e3&&v<=2020);return n?{success:true,reason:`${n}`}:{success:false,reason:\"wrong year\"}}"
+  },
+  {
+    "name": "83-quotes-login-and-scrape",
+    "url": "https://quotes.toscrape.com/login",
+    "instruction": "Login with username \"user\" and password \"user\", then go to the homepage and extract the first 2 quote texts. Return JSON: { \"quotes\": [{ \"text\": string }] }",
+    "input": {
+      "username": "user",
+      "password": "user"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "text"
+            ]
+          }
+        }
+      },
+      "required": [
+        "quotes"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=1?{success:true,reason:`${arr.length}`}:{success:false,reason:\"no quotes\"}}"
+  },
+  {
+    "name": "84-books-sort-or-filter",
+    "url": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+    "instruction": "Extract the total number of fiction books shown and the lowest-priced book title. Return JSON: { \"count\": number, \"cheapestTitle\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "count": {
+          "type": "number"
+        },
+        "cheapestTitle": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "count",
+        "cheapestTitle"
+      ]
+    },
+    "successCheckSrc": "r=>{const n=findValue(r.data,v=>typeof v===\"number\"&&v>0);const t=findValue(r.data,v=>typeof v===\"string\"&&v.length>2);return n&&t?{success:true,reason:\"got both\"}:{success:false,reason:\"missing\"}}"
+  },
+  {
+    "name": "85-scrapethissite-paginate",
+    "url": "https://www.scrapethissite.com/pages/",
+    "instruction": "Click on the \"Hockey Teams\" link, then extract the first 3 team names. Return JSON: { \"teams\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "teams": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "teams"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "86-hn-filter-by-points",
+    "url": "https://news.ycombinator.com/",
+    "instruction": "Extract the titles of stories that have more than 100 points. Return JSON: { \"stories\": [{ \"title\": string, \"points\": number }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "stories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "points": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "title",
+              "points"
+            ]
+          }
+        }
+      },
+      "required": [
+        "stories"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=1?{success:true,reason:`${arr.length}`}:{success:false,reason:\"none\"}}"
+  },
+  {
+    "name": "87-books-price-under",
+    "url": "https://books.toscrape.com/",
+    "instruction": "Extract the titles and prices of the first 3 books with a price under \u00a320. Return JSON: { \"books\": [{ \"title\": string, \"price\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "books": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "price": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title",
+              "price"
+            ]
+          }
+        }
+      },
+      "required": [
+        "books"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=1?{success:true,reason:`${arr.length}`}:{success:false,reason:\"none\"}}"
+  },
+  {
+    "name": "88-wikipedia-list-items",
+    "url": "https://en.wikipedia.org/wiki/List_of_programming_languages",
+    "instruction": "Extract the first 10 programming language names from the list. Return JSON: { \"languages\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "languages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "languages"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=5?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "89-wikipedia-table-data",
+    "url": "https://en.wikipedia.org/wiki/List_of_tallest_buildings",
+    "instruction": "Extract the names and heights (in meters) of the top 3 tallest buildings from the table. Return JSON: { \"buildings\": [{ \"name\": string, \"heightM\": number }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "buildings": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "name": {
+                "type": "string"
+              },
+              "heightM": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "name",
+              "heightM"
+            ]
+          }
+        }
+      },
+      "required": [
+        "buildings"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "90-wikipedia-category-listing",
+    "url": "https://en.wikipedia.org/wiki/Category:Web_frameworks",
+    "instruction": "Extract the first 5 framework names listed on the category page. Return JSON: { \"frameworks\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "frameworks": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "frameworks"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "91-example-domain-extract",
+    "url": "https://example.com/",
+    "instruction": "Extract the h1 text and the URL in the \"More information...\" link. Return JSON: { \"heading\": string, \"linkUrl\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "heading": {
+          "type": "string"
+        },
+        "linkUrl": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "heading",
+        "linkUrl"
+      ]
+    },
+    "successCheckSrc": "r=>{const d=JSON.stringify(r.data||{}).toLowerCase();return d.includes(\"example\")?{success:true,reason:\"example\"}:{success:false,reason:\"no example\"}}"
+  },
+  {
+    "name": "92-quotes-scroll-mode",
+    "url": "https://quotes.toscrape.com/scroll",
+    "instruction": "Extract the first 5 quote texts shown on this infinite-scroll page. Return JSON: { \"quotes\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "quotes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "quotes"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "93-quotes-js-rendered",
+    "url": "https://quotes.toscrape.com/js",
+    "instruction": "Extract the first 3 quote authors from the JS-rendered page. Return JSON: { \"authors\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "authors": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "authors"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "94-hn-ask-stories",
+    "url": "https://news.ycombinator.com/ask",
+    "instruction": "Extract the titles and point counts of the top 3 Ask HN stories. Return JSON: { \"stories\": [{ \"title\": string, \"points\": number }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "stories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "points": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "title",
+              "points"
+            ]
+          }
+        }
+      },
+      "required": [
+        "stories"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "95-hn-show-stories",
+    "url": "https://news.ycombinator.com/show",
+    "instruction": "Extract the top 3 Show HN story titles. Return JSON: { \"stories\": [{ \"title\": string }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "stories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "title"
+            ]
+          }
+        }
+      },
+      "required": [
+        "stories"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "96-github-trending-like",
+    "url": "https://github.com/explore",
+    "instruction": "Extract the names of the first 3 trending repositories shown. Return JSON: { \"repos\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "repos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "repos"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "97-mdn-html-elements",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+    "instruction": "Extract the first 5 HTML element names listed in the reference. Return JSON: { \"elements\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "elements": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "elements"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=3?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "98-books-add-to-cart-not",
+    "url": "https://books.toscrape.com/",
+    "instruction": "Find the first book whose title starts with \"The\" and return its title and price. Return JSON: { \"title\": string, \"price\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "price": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "title",
+        "price"
+      ]
+    },
+    "successCheckSrc": "r=>{const s=findValue(r.data,v=>typeof v===\"string\"&&/^the\\s/i.test(v));return s?{success:true,reason:'found \"The...\"'}:{success:false,reason:\"no The title\"}}"
+  },
+  {
+    "name": "99-jsonplaceholder-todos",
+    "url": "https://jsonplaceholder.typicode.com/todos",
+    "instruction": "Extract the titles of the first 3 todos from the JSON response displayed. Return JSON: { \"todos\": [string] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "todos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "required": [
+        "todos"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "100-scrapethissite-ajax",
+    "url": "https://www.scrapethissite.com/pages/ajax-javascript/",
+    "instruction": "Click the 2015 link/button and extract the first 3 film titles and their Oscars count. Return JSON: { \"films\": [{ \"title\": string, \"oscars\": number }] }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "films": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string"
+              },
+              "oscars": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "title",
+              "oscars"
+            ]
+          }
+        }
+      },
+      "required": [
+        "films"
+      ]
+    },
+    "successCheckSrc": "r=>{const arr=findArray(r.data);return arr&&arr.length>=2?{success:true,reason:`${arr.length}`}:{success:false,reason:\"few\"}}"
+  },
+  {
+    "name": "trivial-example-h1",
+    "url": "https://example.com",
+    "instruction": "Extract the H1 heading text from the page. Return JSON: { \"heading\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "heading": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "heading"
+      ]
+    },
+    "successCheckSrc": "(r) => { const s = findStr(r.data, 'example'); return s ? { success: true, reason: s.slice(0, 40) } : { success: false, reason: 'no example' }; }"
+  },
+  {
+    "name": "trivial-jsonplaceholder-user",
+    "url": "https://jsonplaceholder.typicode.com/users/1",
+    "instruction": "Extract the user's name from the JSON response. Return JSON: { \"name\": string }",
+    "output": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "name"
+      ]
+    },
+    "successCheckSrc": "(r) => { const s = findStr(r.data, 'leanne') || findStr(r.data, 'graham'); return s ? { success: true, reason: s.slice(0, 40) } : { success: false, reason: 'no name' }; }"
+  }
+]

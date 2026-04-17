@@ -1,0 +1,66 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "68-npm-package-version",
+  "taskUrl": "https://www.npmjs.com/package/react",
+  "success": true,
+  "successReason": "v19.2.5",
+  "wallTimeMs": 21551,
+  "data": {
+    "version": "19.2.5",
+    "weeklyDownloads": "122,367,092"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308793,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448315949,
+      "type": "navigation",
+      "title": "navigate → https://www.npmjs.com/package/react"
+    },
+    {
+      "t": 1776448316962,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37e/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448316963,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37e/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448316963,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37e/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448320046,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The current page already displays the version number (19.2.5) and weekly download count (122,367,092) in the visible text blocks. No navigation or extraction actions are needed."
+    },
+    {
+      "t": 1776448320047,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448321809,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

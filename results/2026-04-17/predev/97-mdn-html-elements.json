@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "97-mdn-html-elements",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 23248,
+  "data": {
+    "elements": [
+      "html",
+      "base",
+      "head",
+      "link",
+      "meta"
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308815,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448316544,
+      "type": "navigation",
+      "title": "navigate → https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+    },
+    {
+      "t": 1776448317757,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37d/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448317758,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37d/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448317759,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37d/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448317760,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37d/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448317761,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37d/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448324550,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : The task asks for the first 5 HTML element names listed in the reference. Looking at the VISIBLE TEXT BLOCKS, I can see the elements are listed in order: html, base, head, link, meta, style, title, body, address, article, aside, footer, header, h1-h6, hgroup, main, nav, section, search, blockquote, div, dl, dt, figcaption, figure, hr, menu, ol, p, pre, ul, a, abbr, bdi, bdo, br, cite, code, data, dfn. The first 5 are: html, base, head, link, meta. I can extract these directly from the visible text blocks without needing to navigate or scroll."
+    },
+    {
+      "t": 1776448324550,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "02-wikipedia-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/Web_scraping",
+  "success": true,
+  "successReason": "551 chars",
+  "wallTimeMs": 21704,
+  "data": {
+    "intro": "Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites.[1] Web scraping software may directly access the World Wide Web using the Hypertext Transfer Protocol or a web browser. While web scraping can be done manually by a software user, the term typically refers to automated processes implemented using a bot or web crawler. It is a form of copying in which specific data is gathered and copied from the web, typically into a central local database or spreadsheet, for later retrieval or analysis."
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308713,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448313320,
+      "type": "navigation",
+      "title": "navigate → https://en.wikipedia.org/wiki/Web_scraping"
+    },
+    {
+      "t": 1776448314587,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a300/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448314589,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a300/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448314592,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a300/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448314592,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a300/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448314595,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a300/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448318453,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The first paragraph (lede) of the article was identified in the visible text blocks. It starts with 'Web scraping, web harvesting...' and ends with '...retrieval or analysis.' This paragraph is over 100 characters as required. The extraction is complete."
+    },
+    {
+      "t": 1776448318455,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448321997,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

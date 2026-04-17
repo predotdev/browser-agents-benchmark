@@ -1,0 +1,61 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "49-books-toscrape-details",
+  "taskUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+  "success": true,
+  "successReason": "A Light in the Attic",
+  "wallTimeMs": 23111,
+  "data": {
+    "title": "A Light in the Attic",
+    "price": "£51.77",
+    "availability": "In stock (22 available)",
+    "reviews": 0
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308736,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448315982,
+      "type": "navigation",
+      "title": "navigate → https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+    },
+    {
+      "t": 1776448316850,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a324/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448316851,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a324/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448320928,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: All required fields extracted from visible text blocks: title='A Light in the Attic', price='£51.77', availability='In stock (22 available)', reviews=0 (no review count visible on page)."
+    },
+    {
+      "t": 1776448320930,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448324343,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "98-books-add-to-cart-not",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "found \"The...\"",
+  "wallTimeMs": 27566,
+  "data": {
+    "title": "The Coming Woman: A ...",
+    "price": "£17.93"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308797,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448319982,
+      "type": "navigation",
+      "title": "navigate → https://books.toscrape.com/"
+    },
+    {
+      "t": 1776448320842,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a327/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448320843,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a327/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448320843,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a327/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448328329,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : The first book whose title starts with 'The' is 'The Coming Woman: A ...' with price £17.93. This is visible in the VISIBLE TEXT BLOCKS list. I can extract this directly."
+    },
+    {
+      "t": 1776448328329,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

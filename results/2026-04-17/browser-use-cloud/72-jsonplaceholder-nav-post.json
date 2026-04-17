@@ -1,0 +1,15 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "72-jsonplaceholder-nav-post",
+  "taskUrl": "https://jsonplaceholder.typicode.com/",
+  "success": false,
+  "successReason": "no title",
+  "wallTimeMs": 30002,
+  "error": "This operation was aborted",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0,
+  "trace": []
+}

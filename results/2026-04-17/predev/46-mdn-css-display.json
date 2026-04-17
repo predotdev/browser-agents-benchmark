@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "46-mdn-css-display",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+  "success": true,
+  "successReason": "5 values",
+  "wallTimeMs": 27726,
+  "data": {
+    "values": [
+      "block",
+      "inline",
+      "flex",
+      "grid",
+      "none"
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308814,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448321417,
+      "type": "navigation",
+      "title": "navigate → https://developer.mozilla.org/en-US/docs/Web/CSS/display"
+    },
+    {
+      "t": 1776448322575,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a34b/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448322576,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a34b/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448322576,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a34b/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448322577,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a34b/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448322577,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a34b/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448328156,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : The task asks for the formal syntax values for the CSS display property. Based on the visible text blocks, I can see the following values mentioned: block, inline, flex, grid, and none. These are the standard formal syntax values for the display property as described in the MDN documentation. I will extract these values directly from the visible text."
+    },
+    {
+      "t": 1776448328157,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "12-wikipedia-python",
+  "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "success": true,
+  "successReason": "multi-paradigm: object-oriented, procedu",
+  "wallTimeMs": 35357,
+  "data": {
+    "paradigms": "multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective"
+  },
+  "inputTokens": 145944,
+  "outputTokens": 897,
+  "totalCostUsd": 0.192873,
+  "trace": [
+    {
+      "t": 1776443293048,
+      "type": "step",
+      "title": "Extract the programming paradigms listed in the infobox (e.g. \"multi-paradigm\", \"object-oriented\"). Return JSON: { \"paradigms\": string }\n\nStart by navigating to"
+    },
+    {
+      "t": 1776443293486,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294796,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/Python_(programming_language (HTTP 404, 10105 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\n..."
+    },
+    {
+      "t": 1776443300849,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443301627,
+      "type": "step",
+      "title": "Fetch: [Output truncated: 12221 tokens exceeded limit of 5000. Full output: /workspace/.ephemeral/truncated-add161ef.log]\n\n{\"status\": 200, \"content_type\":..."
+    },
+    {
+      "t": 1776443309378,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443310961,
+      "type": "step",
+      "title": "Python: | paradigm = [[Multi-paradigm]]: [[Object-oriented programming\n"
+    },
+    {
+      "t": 1776443314997,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443315073,
+      "type": "step",
+      "title": "Python: Multi-paradigm: object-oriented,{{Cite web |title=General Python FAQ – Python 3 documentation |url=https://docs.python.org/3/faq/general.html#what-..."
+    },
+    {
+      "t": 1776443317534,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443317606,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443320764,
+      "type": "step",
+      "title": "Done: Extracted the programming paradigms from the Python (programming language) Wikipedia infobox:\n\n**\"multi-paradigm: object-oriented, procedural (impe..."
+    },
+    {
+      "t": 1776443320779,
+      "type": "step",
+      "title": "Extracted the programming paradigms from the Python (programming language) Wikipedia infobox:\n\n**\"multi-paradigm: object-oriented, procedural (imperative), func"
+    }
+  ]
+}

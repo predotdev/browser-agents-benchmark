@@ -1,0 +1,76 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "100-scrapethissite-ajax",
+  "taskUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 17189,
+  "data": {
+    "films": [
+      {
+        "title": "Spotlight",
+        "oscars": 2
+      },
+      {
+        "title": "Mad Max: Fury Road",
+        "oscars": 6
+      },
+      {
+        "title": "The Revenant",
+        "oscars": 3
+      }
+    ]
+  },
+  "inputTokens": 48590,
+  "outputTokens": 340,
+  "totalCostUsd": 0.07307999999999999,
+  "trace": [
+    {
+      "t": 1776443326318,
+      "type": "step",
+      "title": "Click the 2015 link/button and extract the first 3 film titles and their Oscars count. Return JSON: { \"films\": [{ \"title\": string, \"oscars\": number }] }\n\nStart "
+    },
+    {
+      "t": 1776443326765,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443327357,
+      "type": "step",
+      "title": "Fetch: Fetched https://www.scrapethissite.com/pages/ajax-javascript/ (HTTP 200, 959 chars)\n\n- [![](/static/images/scraper-icon.png) Scrape This Site](/)\n-..."
+    },
+    {
+      "t": 1776443330373,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443331506,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 1570, \"text\": \"[\\n  {\\n    \\\"title\\\": \\\"Spotlight  \\\",\\n    \\\"year\\\": 2015,\\n    \\\"awards\\\": 2,\\n    \\\"..."
+    },
+    {
+      "t": 1776443334656,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443334735,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443337944,
+      "type": "step",
+      "title": "Done: Extracted the first 3 films from the 2015 AJAX endpoint:\n1. Spotlight — 2 Oscars\n2. Mad Max: Fury Road — 6 Oscars\n3. The Revenant — 3 Oscars\n\nOutpu..."
+    },
+    {
+      "t": 1776443337965,
+      "type": "step",
+      "title": "Extracted the first 3 films from the 2015 AJAX endpoint:\n1. Spotlight — 2 Oscars\n2. Mad Max: Fury Road — 6 Oscars\n3. The Revenant — 3 Oscars\n\nOutput saved to ou"
+    }
+  ]
+}

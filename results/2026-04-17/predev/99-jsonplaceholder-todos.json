@@ -1,0 +1,83 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "99-jsonplaceholder-todos",
+  "taskUrl": "https://jsonplaceholder.typicode.com/todos",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 24878,
+  "data": {
+    "todos": [
+      "delectus aut autem",
+      "quis ut nam facilis et officia qui",
+      "fugiat veniam minus"
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308818,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448318093,
+      "type": "navigation",
+      "title": "navigate → https://jsonplaceholder.typicode.com/todos"
+    },
+    {
+      "t": 1776448319166,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a3a8/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448319168,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a3a8/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448319168,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a3a8/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448319168,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a3a8/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448319169,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a3a8/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448322890,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The JSON response is visible on the page. The first 3 todo titles are: 'delectus aut autem', 'quis ut nam facilis et officia qui', and 'fugiat veniam minus'."
+    },
+    {
+      "t": 1776448322890,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448326164,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "01-hn-top-stories",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 22642,
+  "data": {
+    "stories": [
+      {
+        "title": "Claude Design",
+        "points": 423
+      },
+      {
+        "title": "Claude Opus 4.7 costs 20\n\n–30% more per session",
+        "points": 230
+      },
+      {
+        "title": "Isaac Asimov: The Last Question (1956)",
+        "points": 450
+      },
+      {
+        "title": "Middle schooler finds coin from Troy in Berlin",
+        "points": 107
+      },
+      {
+        "title": "NIST gives up enriching most CVEs",
+        "points": 79
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308583,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448312737,
+      "type": "navigation",
+      "title": "navigate → https://news.ycombinator.com"
+    },
+    {
+      "t": 1776448313499,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273323c35fe72d194a2fc/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448313501,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273323c35fe72d194a2fc/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448317834,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: Extracted the top 5 story titles and their point counts from the visible text blocks on the Hacker News front page. The data matches the required JSON schema."
+    },
+    {
+      "t": 1776448317836,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448322915,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

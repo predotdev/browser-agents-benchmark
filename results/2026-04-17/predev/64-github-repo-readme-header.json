@@ -1,0 +1,73 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "64-github-repo-readme-header",
+  "taskUrl": "https://github.com/microsoft/TypeScript",
+  "success": true,
+  "successReason": "typescript",
+  "wallTimeMs": 28565,
+  "data": {
+    "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+    "language": "TypeScript"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308730,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448319700,
+      "type": "navigation",
+      "title": "navigate → https://github.com/microsoft/TypeScript"
+    },
+    {
+      "t": 1776448321393,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a316/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448321394,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a316/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448321394,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a316/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448321395,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a316/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448325884,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The repository description and programming language are visible in the About section on the current page. The description is 'TypeScript is a superset of JavaScript that compiles to clean JavaScript output.' and the language is JavaScript."
+    },
+    {
+      "t": 1776448325885,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448328647,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

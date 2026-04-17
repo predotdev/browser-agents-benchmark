@@ -1,0 +1,86 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "37-quotes-login-then-scrape",
+  "taskUrl": "https://quotes.toscrape.com/login",
+  "success": true,
+  "successReason": "3 quotes",
+  "wallTimeMs": 28918,
+  "data": {
+    "quotes": [
+      {
+        "text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.",
+        "author": "Albert Einstein"
+      },
+      {
+        "text": "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+        "author": "J.K. Rowling"
+      },
+      {
+        "text": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
+        "author": "Albert Einstein"
+      }
+    ]
+  },
+  "inputTokens": 64939,
+  "outputTokens": 825,
+  "totalCostUsd": 0.082699,
+  "trace": [
+    {
+      "t": 1776443292583,
+      "type": "step",
+      "title": "Log in with username \"admin\" and password \"admin\". After login, extract the first 3 quotes and their authors from the homepage. Return JSON: { \"quotes\": [{ \"tex"
+    },
+    {
+      "t": 1776443293047,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443293660,
+      "type": "step",
+      "title": "Fetch: Fetched https://quotes.toscrape.com/login (HTTP 200, 167 chars)\n\n# [Quotes to Scrape](/)\n\n[Login](/login)\n\nUsername\n\nPassword\n\nQuotes by: [GoodRead..."
+    },
+    {
+      "t": 1776443301806,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443301923,
+      "type": "step",
+      "title": "Python failed: Error executing tool: ValueError: session_id must be alphanumeric with hyphens as separators\nTraceback (most recent call last):\n  File \"/usr/loca"
+    },
+    {
+      "t": 1776443305273,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443306367,
+      "type": "step",
+      "title": "Python: 200\n[{'text': 'The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.', 'author': 'Alber..."
+    },
+    {
+      "t": 1776443311064,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443311424,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443314559,
+      "type": "step",
+      "title": "Done: Logged in and extracted the first 3 quotes:\n\n1. \"The world as we have created it is a process of our thinking...\" — Albert Einstein\n2. \"It is our c..."
+    },
+    {
+      "t": 1776443314574,
+      "type": "step",
+      "title": "Logged in and extracted the first 3 quotes:\n\n1. \"The world as we have created it is a process of our thinking...\" — Albert Einstein\n2. \"It is our choices, Harry"
+    }
+  ]
+}

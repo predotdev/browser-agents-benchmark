@@ -1,0 +1,66 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "94-hn-ask-stories",
+  "taskUrl": "https://news.ycombinator.com/ask",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 15189,
+  "data": {
+    "stories": [
+      {
+        "title": "Ask HN: Building a solo business is impossible",
+        "points": 25
+      },
+      {
+        "title": "Ask HN: Who is using OpenClaw?",
+        "points": 330
+      },
+      {
+        "title": "Ask HN: Getting depressed day by day, how to cope?",
+        "points": 7
+      }
+    ]
+  },
+  "inputTokens": 35784,
+  "outputTokens": 390,
+  "totalCostUsd": 0.098477,
+  "trace": [
+    {
+      "t": 1776443321370,
+      "type": "step",
+      "title": "Extract the titles and point counts of the top 3 Ask HN stories. Return JSON: { \"stories\": [{ \"title\": string, \"points\": number }] }\n\nStart by navigating to: ht"
+    },
+    {
+      "t": 1776443321801,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443322422,
+      "type": "step",
+      "title": "Fetch: Fetched https://news.ycombinator.com/ask (HTTP 200, 7220 chars)\n\n[![](y18.svg)](https://news.ycombinator.com)[**Hacker News**](news)[new](newest) |..."
+    },
+    {
+      "t": 1776443327379,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443327451,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443330132,
+      "type": "step",
+      "title": "Done: Extracted the top 3 Ask HN stories from https://news.ycombinator.com/ask:\n\n1. \"Ask HN: Building a solo business is impossible\" — 25 points\n2. \"Ask ..."
+    },
+    {
+      "t": 1776443330153,
+      "type": "step",
+      "title": "Extracted the top 3 Ask HN stories from https://news.ycombinator.com/ask:\n\n1. \"Ask HN: Building a solo business is impossible\" — 25 points\n2. \"Ask HN: Who is us"
+    }
+  ]
+}

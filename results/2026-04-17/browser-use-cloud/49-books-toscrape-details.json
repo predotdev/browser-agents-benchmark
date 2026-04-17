@@ -1,0 +1,56 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "49-books-toscrape-details",
+  "taskUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+  "success": true,
+  "successReason": "A Light in the Attic",
+  "wallTimeMs": 14490,
+  "data": {
+    "title": "A Light in the Attic",
+    "price": "£51.77",
+    "availability": "In stock (22 available)",
+    "reviews": 0
+  },
+  "inputTokens": 28544,
+  "outputTokens": 230,
+  "totalCostUsd": 0.059879,
+  "trace": [
+    {
+      "t": 1776443292911,
+      "type": "step",
+      "title": "Extract the book title, price, availability, and number of reviews. Return JSON: { \"title\": string, \"price\": string, \"availability\": string, \"reviews\": number }"
+    },
+    {
+      "t": 1776443293368,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294137,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html (HTTP 200, 1711 chars)\n\n[Books to Scrape](../../index.html) We lo..."
+    },
+    {
+      "t": 1776443297595,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443298235,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443300558,
+      "type": "step",
+      "title": "Done: Extracted book data from books.toscrape.com:\n- **Title**: A Light in the Attic\n- **Price**: £51.77\n- **Availability**: In stock (22 available)\n- **..."
+    },
+    {
+      "t": 1776443300587,
+      "type": "step",
+      "title": "Extracted book data from books.toscrape.com:\n- **Title**: A Light in the Attic\n- **Price**: £51.77\n- **Availability**: In stock (22 available)\n- **Reviews**: 0"
+    }
+  ]
+}

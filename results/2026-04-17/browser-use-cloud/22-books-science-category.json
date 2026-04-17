@@ -1,0 +1,76 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "22-books-science-category",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "3 books",
+  "wallTimeMs": 22302,
+  "data": {
+    "books": [
+      {
+        "title": "The Most Perfect Thing: Inside (and Outside) a Bird's Egg",
+        "price": "£42.96"
+      },
+      {
+        "title": "Immunity: How Elie Metchnikoff Changed the Course of Modern Medicine",
+        "price": "£57.36"
+      },
+      {
+        "title": "Sorting the Beef from the Bull: The Science of Food Fraud Forensics",
+        "price": "£44.74"
+      }
+    ]
+  },
+  "inputTokens": 70726,
+  "outputTokens": 446,
+  "totalCostUsd": 0.139098,
+  "trace": [
+    {
+      "t": 1776443293323,
+      "type": "step",
+      "title": "Click on the \"Science\" category link in the sidebar, then extract the first 3 book titles and prices from the Science category page. Return JSON: { \"books\": [{ "
+    },
+    {
+      "t": 1776443293785,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443296147,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produc..."
+    },
+    {
+      "t": 1776443299747,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443300620,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 8879, \"text\": \"[Books to Scrape](../../../../index.html) We love being scraped!\\n\\n- [Home](../../../....."
+    },
+    {
+      "t": 1776443305583,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443305703,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n{'books': [{'title': \"The Most Perfect Thing: Inside (and Outside) a Bird's Egg\", 'price': '£42.96'}, {'title': 'Immunity..."
+    },
+    {
+      "t": 1776443308940,
+      "type": "step",
+      "title": "Done: Extracted the first 3 books from the Science category:\n\n1. \"The Most Perfect Thing: Inside (and Outside) a Bird's Egg\" — £42.96\n2. \"Immunity: How E..."
+    },
+    {
+      "t": 1776443309044,
+      "type": "step",
+      "title": "Extracted the first 3 books from the Science category:\n\n1. \"The Most Perfect Thing: Inside (and Outside) a Bird's Egg\" — £42.96\n2. \"Immunity: How Elie Metchniko"
+    }
+  ]
+}

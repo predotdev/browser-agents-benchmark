@@ -1,0 +1,51 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "80-the-internet-iframe",
+  "taskUrl": "https://the-internet.herokuapp.com/iframe",
+  "success": true,
+  "successReason": "ok",
+  "wallTimeMs": 19938,
+  "data": {
+    "heading": "An iFrame containing the TinyMCE WYSIWYG Editor"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308768,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448315089,
+      "type": "navigation",
+      "title": "navigate → https://the-internet.herokuapp.com/iframe"
+    },
+    {
+      "t": 1776448315808,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a348/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448317930,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The heading text is clearly visible at the top of the page: 'An iFrame containing the TinyMCE WYSIWYG Editor'. This matches the task requirement to extract the heading text."
+    },
+    {
+      "t": 1776448317934,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448320157,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

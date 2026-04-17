@@ -1,0 +1,15 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "73-w3schools-css-colors",
+  "taskUrl": "https://www.w3schools.com/cssref/css_colors.php",
+  "success": false,
+  "successReason": "few",
+  "wallTimeMs": 30000,
+  "error": "This operation was aborted",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0,
+  "trace": []
+}

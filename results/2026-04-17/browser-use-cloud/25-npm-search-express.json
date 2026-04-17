@@ -1,0 +1,66 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "25-npm-search-express",
+  "taskUrl": "https://www.npmjs.com/search?q=express",
+  "success": true,
+  "successReason": "3 packages",
+  "wallTimeMs": 18041,
+  "data": {
+    "packages": [
+      {
+        "name": "express",
+        "description": "Fast, unopinionated, minimalist web framework"
+      },
+      {
+        "name": "@types/express",
+        "description": "TypeScript definitions for express"
+      },
+      {
+        "name": "swagger-ui-express",
+        "description": "Swagger UI Express"
+      }
+    ]
+  },
+  "inputTokens": 52793,
+  "outputTokens": 254,
+  "totalCostUsd": 0.17819800000000002,
+  "trace": [
+    {
+      "t": 1776443292765,
+      "type": "step",
+      "title": "Extract the names and descriptions of the first 3 packages. Return JSON: { \"packages\": [{ \"name\": string, \"description\": string }] }\n\nStart by navigating to: ht"
+    },
+    {
+      "t": 1776443293306,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443295252,
+      "type": "step",
+      "title": "Fetch: Fetched https://www.npmjs.com/search?q=express (HTTP 200, 17093 chars)\n\nskip to:[content](#main)[package search](#search)[sign in](#signin)\n\n- [Pro..."
+    },
+    {
+      "t": 1776443301057,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443301155,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443304181,
+      "type": "step",
+      "title": "Done: Extracted the first 3 packages from https://www.npmjs.com/search?q=express:\n\n1. **express** — Fast, unopinionated, minimalist web framework\n2. **@t..."
+    },
+    {
+      "t": 1776443304210,
+      "type": "step",
+      "title": "Extracted the first 3 packages from https://www.npmjs.com/search?q=express:\n\n1. **express** — Fast, unopinionated, minimalist web framework\n2. **@types/express*"
+    }
+  ]
+}

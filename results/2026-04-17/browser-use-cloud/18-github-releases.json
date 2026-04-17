@@ -1,0 +1,66 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "18-github-releases",
+  "taskUrl": "https://github.com/denoland/deno/releases",
+  "success": true,
+  "successReason": "3 releases",
+  "wallTimeMs": 18381,
+  "data": {
+    "releases": [
+      {
+        "title": "v2.7.12",
+        "date": "2026-04-09"
+      },
+      {
+        "title": "v2.7.11",
+        "date": "2026-04-01"
+      },
+      {
+        "title": "v2.7.10",
+        "date": "2026-03-31"
+      }
+    ]
+  },
+  "inputTokens": 59705,
+  "outputTokens": 276,
+  "totalCostUsd": 0.21222100000000002,
+  "trace": [
+    {
+      "t": 1776443292740,
+      "type": "step",
+      "title": "Extract the title and date of the 3 most recent releases. Return JSON: { \"releases\": [{ \"title\": string, \"date\": string }] }\n\nStart by navigating to: https://gi"
+    },
+    {
+      "t": 1776443293313,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443295406,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/denoland/deno/releases (HTTP 200, 61904 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle navigat..."
+    },
+    {
+      "t": 1776443300559,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443300624,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443303449,
+      "type": "step",
+      "title": "Done: Extracted the 3 most recent Deno releases from https://github.com/denoland/deno/releases:\n\n1. **v2.7.12** — 2026-04-09\n2. **v2.7.11** — 2026-04-01\n..."
+    },
+    {
+      "t": 1776443303503,
+      "type": "step",
+      "title": "Extracted the 3 most recent Deno releases from https://github.com/denoland/deno/releases:\n\n1. **v2.7.12** — 2026-04-09\n2. **v2.7.11** — 2026-04-01\n3. **v2.7.10*"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "41-example-com",
+  "taskUrl": "https://example.com",
+  "success": true,
+  "successReason": "example domain",
+  "wallTimeMs": 17177,
+  "data": {
+    "heading": "Example Domain",
+    "paragraph": "This domain is for use in documentation examples without needing permission. Avoid use in operations."
+  },
+  "inputTokens": 26999,
+  "outputTokens": 225,
+  "totalCostUsd": 0.052266,
+  "trace": [
+    {
+      "t": 1776443295739,
+      "type": "step",
+      "title": "Extract the main heading text and the first paragraph text. Return JSON: { \"heading\": string, \"paragraph\": string }\n\nStart by navigating to: https://example.com"
+    },
+    {
+      "t": 1776443296388,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443296873,
+      "type": "step",
+      "title": "Fetch: Fetched https://example.com (HTTP 200, 167 chars)\n\n# Example Domain\n\nThis domain is for use in documentation examples without needing permission. A..."
+    },
+    {
+      "t": 1776443300585,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443300749,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443303450,
+      "type": "step",
+      "title": "Done: Extracted from https://example.com:\n- **Heading:** \"Example Domain\"\n- **Paragraph:** \"This domain is for use in documentation examples without need..."
+    },
+    {
+      "t": 1776443303484,
+      "type": "step",
+      "title": "Extracted from https://example.com:\n- **Heading:** \"Example Domain\"\n- **Paragraph:** \"This domain is for use in documentation examples without needing permissio"
+    }
+  ]
+}

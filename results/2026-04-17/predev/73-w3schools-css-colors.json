@@ -1,0 +1,87 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "73-w3schools-css-colors",
+  "taskUrl": "https://www.w3schools.com/cssref/css_colors.php",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 47588,
+  "data": {
+    "colors": [
+      {
+        "name": "AliceBlue",
+        "hex": "#F0F8FF"
+      },
+      {
+        "name": "AntiqueWhite",
+        "hex": "#FAEBD7"
+      },
+      {
+        "name": "Aqua",
+        "hex": "#00FFFF"
+      },
+      {
+        "name": "Aquamarine",
+        "hex": "#7FFFD4"
+      },
+      {
+        "name": "Azure",
+        "hex": "#F0FFFF"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308808,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448334236,
+      "type": "navigation",
+      "title": "navigate → https://www.w3schools.com/cssref/css_colors.php"
+    },
+    {
+      "t": 1776448339423,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a343/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448339424,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a343/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448339425,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a343/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448339426,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a343/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448347865,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : The first 5 CSS color names and their hex codes are visible in the reference table on the current page: AliceBlue (#F0F8FF), AntiqueWhite (#FAEBD7), Aqua (#00FFFF), Aquamarine (#7FFFD4), and Azure (#F0FFFF). Extracted directly from the visible DOM elements."
+    },
+    {
+      "t": 1776448347866,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "59-wikipedia-infobox-data",
+  "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "success": true,
+  "successReason": "found designer",
+  "wallTimeMs": 41013,
+  "data": {
+    "designer": "Guido van Rossum",
+    "firstAppeared": "20 February 1991",
+    "stableRelease": "3.14.4"
+  },
+  "inputTokens": 146592,
+  "outputTokens": 1009,
+  "totalCostUsd": 0.198701,
+  "trace": [
+    {
+      "t": 1776443319500,
+      "type": "step",
+      "title": "Extract from the infobox on the right side: the designer name, the date of first appearance, and the current stable release version. Return JSON: { \"designer\": "
+    },
+    {
+      "t": 1776443319931,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443320709,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/Python_(programming_language (HTTP 404, 10105 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\n..."
+    },
+    {
+      "t": 1776443323669,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443324396,
+      "type": "step",
+      "title": "Fetch: [Output truncated: 12221 tokens exceeded limit of 5000. Full output: /workspace/.ephemeral/truncated-6e47625a.log]\n\n{\"status\": 200, \"content_type\":..."
+    },
+    {
+      "t": 1776443332341,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443333021,
+      "type": "step",
+      "title": "Python: infobox-subbox{padding:0;border:none;margin:-3px;width:auto;min-width:100%;font-size:100%;clear:none;float:none;background-color:transparent;color:..."
+    },
+    {
+      "t": 1776443337719,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443338070,
+      "type": "step",
+      "title": "Python: Designed by: Guido van Rossum\nFirst appeared: 20 February 1991 ; 35 years ago ( 1991-02-20 ) [ 2 ]\nStable release: 3.14.4 [ 3 ] / 7 April 2026 ; 10..."
+    },
+    {
+      "t": 1776443340611,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443340682,
+      "type": "step",
+      "title": "Python: {'designer': 'Guido van Rossum', 'firstAppeared': '20 February 1991', 'stableRelease': '3.14.4'}\n"
+    },
+    {
+      "t": 1776443343932,
+      "type": "step",
+      "title": "Done: Extracted from the Python (programming language) Wikipedia infobox:\n- **Designer**: Guido van Rossum\n- **First Appeared**: 20 February 1991\n- **Sta..."
+    },
+    {
+      "t": 1776443343956,
+      "type": "step",
+      "title": "Extracted from the Python (programming language) Wikipedia infobox:\n- **Designer**: Guido van Rossum\n- **First Appeared**: 20 February 1991\n- **Stable Release**"
+    }
+  ]
+}

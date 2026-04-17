@@ -1,0 +1,72 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "90-wikipedia-category-listing",
+  "taskUrl": "https://en.wikipedia.org/wiki/Category:Web_frameworks",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 23071,
+  "data": {
+    "frameworks": [
+      "JWt (Java web toolkit)",
+      "Kitura",
+      "Knockout (web framework)",
+      "List of Ajax frameworks",
+      "Microframework"
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308736,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448316731,
+      "type": "navigation",
+      "title": "navigate → https://en.wikipedia.org/wiki/Category:Web_frameworks"
+    },
+    {
+      "t": 1776448317871,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a352/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448317873,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a352/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448317873,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a352/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448317873,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a352/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448323999,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : The first 5 framework names are visible in the 'Pages in category' section: JWt (Java web toolkit), Kitura, Knockout (web framework), List of Ajax frameworks, and Microframework. These are extracted directly from the visible text blocks."
+    },
+    {
+      "t": 1776448324000,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

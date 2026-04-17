@@ -1,0 +1,78 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "35-the-internet-checkboxes",
+  "taskUrl": "https://the-internet.herokuapp.com/checkboxes",
+  "success": true,
+  "successReason": "cb1=true, cb2=false",
+  "wallTimeMs": 40519,
+  "data": {
+    "checkbox1": true,
+    "checkbox2": false
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308840,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448319814,
+      "type": "navigation",
+      "title": "navigate → https://the-internet.herokuapp.com/checkboxes"
+    },
+    {
+      "t": 1776448320541,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a307/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448335331,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 2 actions: I will check the first checkbox and uncheck the second checkbox as per the task requirements. The current state shows checkbox1 is unchecked and checkbox2 is checked.",
+      "detail": "check div:nth-of-type(1) > div:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1) = \"on\"\nuncheck div:nth-of-type(1) > div:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2) = \"on\""
+    },
+    {
+      "t": 1776448335672,
+      "type": "action",
+      "iter": 1,
+      "title": "action: check div:nth-of-type(1) > div:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(1)"
+    },
+    {
+      "t": 1776448335672,
+      "type": "action",
+      "iter": 1,
+      "title": "action: uncheck div:nth-of-type(1) > div:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2)"
+    },
+    {
+      "t": 1776448336691,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a307/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448338859,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The current state shows checkbox1 is checked (true) and checkbox2 is unchecked (false). This matches the desired state (first checkbox checked, second unchecked). No actions needed."
+    },
+    {
+      "t": 1776448338861,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448341097,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "10-books-toscrape",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "5 books",
+  "wallTimeMs": 16866,
+  "data": {
+    "books": [
+      {
+        "title": "A Light in the Attic",
+        "price": "£51.77"
+      },
+      {
+        "title": "Tipping the Velvet",
+        "price": "£53.74"
+      },
+      {
+        "title": "Soumission",
+        "price": "£50.10"
+      },
+      {
+        "title": "Sharp Objects",
+        "price": "£47.82"
+      },
+      {
+        "title": "Sapiens: A Brief History of Humankind",
+        "price": "£54.23"
+      }
+    ]
+  },
+  "inputTokens": 38258,
+  "outputTokens": 356,
+  "totalCostUsd": 0.109736,
+  "trace": [
+    {
+      "t": 1776443293371,
+      "type": "step",
+      "title": "Extract the first 5 book titles and prices. Return JSON: { \"books\": [{ \"title\": string, \"price\": string }] }\n\nStart by navigating to: https://books.toscrape.com"
+    },
+    {
+      "t": 1776443293809,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294397,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produc..."
+    },
+    {
+      "t": 1776443299585,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443299663,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443302537,
+      "type": "step",
+      "title": "Done: Extracted the first 5 books from books.toscrape.com:\n\n1. A Light in the Attic — £51.77\n2. Tipping the Velvet — £53.74\n3. Soumission — £50.10\n4. Sha..."
+    },
+    {
+      "t": 1776443302607,
+      "type": "step",
+      "title": "Extracted the first 5 books from books.toscrape.com:\n\n1. A Light in the Attic — £51.77\n2. Tipping the Velvet — £53.74\n3. Soumission — £50.10\n4. Sharp Objects — "
+    }
+  ]
+}

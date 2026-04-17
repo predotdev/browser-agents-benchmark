@@ -1,0 +1,59 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "97-mdn-html-elements",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 15212,
+  "data": {
+    "elements": [
+      "<html>",
+      "<base>",
+      "<head>",
+      "<link>",
+      "<meta>"
+    ]
+  },
+  "inputTokens": 26112,
+  "outputTokens": 256,
+  "totalCostUsd": 0.28815799999999997,
+  "trace": [
+    {
+      "t": 1776443325177,
+      "type": "step",
+      "title": "Extract the first 5 HTML element names listed in the reference. Return JSON: { \"elements\": [string] }\n\nStart by navigating to: https://developer.mozilla.org/en-"
+    },
+    {
+      "t": 1776443325615,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443326598,
+      "type": "step",
+      "title": "Fetch: Fetched https://developer.mozilla.org/en-US/docs/Web/HTML/Element (HTTP 200, 70104 chars)\n\n- [Skip to main content](#content)\n- [Skip to search](#s..."
+    },
+    {
+      "t": 1776443331086,
+      "type": "step",
+      "title": "Python: save_output_json({\"elements\": [\"<html>\", \"<base..."
+    },
+    {
+      "t": 1776443331153,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443333912,
+      "type": "step",
+      "title": "Done: The first 5 HTML elements listed in the MDN HTML elements reference are:\n1. `<html>` — Main root\n2. `<base>` — Document metadata\n3. `<head>` — Docu..."
+    },
+    {
+      "t": 1776443333927,
+      "type": "step",
+      "title": "The first 5 HTML elements listed in the MDN HTML elements reference are:\n1. `<html>` — Main root\n2. `<base>` — Document metadata\n3. `<head>` — Document metadata"
+    }
+  ]
+}

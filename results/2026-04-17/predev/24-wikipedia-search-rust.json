@@ -1,0 +1,95 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "24-wikipedia-search-rust",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 34154,
+  "data": {
+    "results": [
+      {
+        "title": "Rust (programming language)"
+      },
+      {
+        "title": "Ruby (programming language)"
+      },
+      {
+        "title": "Search for pages containing Rust programming language"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308733,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448317129,
+      "type": "navigation",
+      "title": "navigate → https://en.wikipedia.org/wiki/Special:Search"
+    },
+    {
+      "t": 1776448318291,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a306/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448318291,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a306/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448326851,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 2 actions: I will type 'Rust programming language' into the search field and press Enter to submit the search. Then I will extract the first 3 result titles from the search results page.",
+      "detail": "fill #searchInput = \"Rust programming language\"\npress #searchInput = \"Enter\""
+    },
+    {
+      "t": 1776448329773,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #searchInput"
+    },
+    {
+      "t": 1776448329773,
+      "type": "action",
+      "iter": 1,
+      "title": "action: press #searchInput"
+    },
+    {
+      "t": 1776448330951,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a306/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448330952,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a306/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448335210,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · : The search field already contains 'Rust programming language' and the search results are visible. I can extract the first 3 result titles directly from the visible text blocks: 'Rust (programming language)', 'Ruby (programming language)', and 'Search for pages containing Rust programming language'. The task is complete."
+    },
+    {
+      "t": 1776448335211,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

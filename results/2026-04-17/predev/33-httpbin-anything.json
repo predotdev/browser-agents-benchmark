@@ -1,0 +1,89 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "33-httpbin-anything",
+  "taskUrl": "https://httpbin.org/forms/post",
+  "success": true,
+  "successReason": "bob found",
+  "wallTimeMs": 28861,
+  "data": {
+    "customer": "Bob Jones"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308737,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448313967,
+      "type": "navigation",
+      "title": "navigate → https://httpbin.org/forms/post"
+    },
+    {
+      "t": 1776448314713,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30e/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448318964,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 4 actions: Filled the customer name field with 'Bob Jones', selected the 'Large' pizza size, checked the 'Bacon' topping, and clicked the Submit order button. The customer name 'Bob Jones' is extracted as the final answer.",
+      "detail": "fill input[name=\"custname\"] = \"Bob Jones\"\nclick input[name=\"size\"][value=\"large\"] = \"large\"\nclick input[name=\"topping\"][value=\"bacon\"] = \"bacon\"\nclick button:has-text(\"Submit order\") = \"Submit order\""
+    },
+    {
+      "t": 1776448320377,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill input[name=\"custname\"]"
+    },
+    {
+      "t": 1776448320377,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click input[name=\"size\"][value=\"large\"]"
+    },
+    {
+      "t": 1776448320377,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click input[name=\"topping\"][value=\"bacon\"]"
+    },
+    {
+      "t": 1776448320377,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click button:has-text(\"Submit order\")"
+    },
+    {
+      "t": 1776448321380,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30e/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448326123,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The form was successfully filled with customer 'Bob Jones', size 'Large', and topping 'Bacon', then submitted. The screenshot shows the httpbin response confirming the form data was received with 'custname': 'Bob Jones'. The customer name is extracted as required."
+    },
+    {
+      "t": 1776448326123,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448329101,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "72-jsonplaceholder-nav-post",
+  "taskUrl": "https://jsonplaceholder.typicode.com/",
+  "success": true,
+  "successReason": "ok",
+  "wallTimeMs": 31037,
+  "data": {
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308693,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448312690,
+      "type": "navigation",
+      "title": "navigate → https://jsonplaceholder.typicode.com/"
+    },
+    {
+      "t": 1776448313942,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a33b/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448313943,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a33b/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448313943,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a33b/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448313943,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a33b/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448313943,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a33b/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448318655,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 3 actions: Navigating to /posts/1 and extracting title and body from the page",
+      "detail": "click tbody:nth-of-type(1) > tr:nth-of-type(2) > td:nth-of-type(2) > a:nth-of-type(1)\nevaluate = \"document.querySelector('h1').innerText\"\nevaluate = \"document.querySelector('p').innerText\""
+    },
+    {
+      "t": 1776448319836,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click tbody:nth-of-type(1) > tr:nth-of-type(2) > td:nth-of-type(2) > a:nth-of-type(1)"
+    },
+    {
+      "t": 1776448319836,
+      "type": "action",
+      "iter": 1,
+      "title": "action: evaluate"
+    },
+    {
+      "t": 1776448319836,
+      "type": "action",
+      "iter": 1,
+      "title": "action: evaluate"
+    },
+    {
+      "t": 1776448320854,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a33b/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448325636,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The JSON data is visible on the page. I can extract the title and body directly from the displayed JSON content."
+    },
+    {
+      "t": 1776448325638,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448332510,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

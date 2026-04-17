@@ -1,0 +1,127 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "58-wikipedia-follow-link",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "316 chars",
+  "wallTimeMs": 38118,
+  "data": {
+    "intro": "ECMAScript (/'ɛkməskrɪpt/; ES)[1] is a standard for scripting languages including JavaScript, JScript, and ActionScript. It is best known as a JavaScript standard intended to ensure the interoperability of web pages across different web browsers.[2] It is standardized by Ecma International in the document ECMA-262."
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308797,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448319823,
+      "type": "navigation",
+      "title": "navigate → https://en.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "t": 1776448321243,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448321244,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448321245,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448321246,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448321247,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448330146,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 1 actions: Clicked the ECMAScript link to navigate to the ECMAScript page. The intro paragraph of the ECMAScript page is now visible and can be extracted.",
+      "detail": "click a:has-text(\"ECMAScript\")"
+    },
+    {
+      "t": 1776448331296,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click a:has-text(\"ECMAScript\")"
+    },
+    {
+      "t": 1776448332825,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448332826,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448332826,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-2-c2.jpg"
+    },
+    {
+      "t": 1776448332827,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-2-c3.jpg"
+    },
+    {
+      "t": 1776448332828,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a332/task-0/iter-2-c4.jpg"
+    },
+    {
+      "t": 1776448335923,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The first paragraph of the ECMAScript page is visible and matches the schema. Extracted the text directly from the visible content."
+    },
+    {
+      "t": 1776448335923,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448339001,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

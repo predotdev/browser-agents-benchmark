@@ -1,0 +1,53 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "04-wikipedia-linus-nationality",
+  "taskUrl": "https://en.wikipedia.org/wiki/Linus_Torvalds",
+  "success": true,
+  "successReason": "Finnish and American",
+  "wallTimeMs": 19159,
+  "data": {
+    "nationality": "Finnish and American"
+  },
+  "inputTokens": 69144,
+  "outputTokens": 210,
+  "totalCostUsd": 0.256776,
+  "trace": [
+    {
+      "t": 1776443293863,
+      "type": "step",
+      "title": "From the infobox, extract Linus Torvalds' nationality. Return JSON: { \"nationality\": string }\n\nStart by navigating to: https://en.wikipedia.org/wiki/Linus_Torva"
+    },
+    {
+      "t": 1776443294282,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294864,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/Linus_Torvalds (HTTP 200, 136884 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmove to sideb..."
+    },
+    {
+      "t": 1776443300967,
+      "type": "step",
+      "title": "Python: save_output_json({\"nationality\": \"Finnish and A..."
+    },
+    {
+      "t": 1776443301552,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443305025,
+      "type": "step",
+      "title": "Done: Extracted from the Wikipedia infobox: Linus Torvalds' nationality is \"Finnish and American\" (the page describes him as a \"Finnish and American soft..."
+    },
+    {
+      "t": 1776443305038,
+      "type": "step",
+      "title": "Extracted from the Wikipedia infobox: Linus Torvalds' nationality is \"Finnish and American\" (the page describes him as a \"Finnish and American software engineer"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "trivial-example-h1",
+  "taskUrl": "https://example.com",
+  "success": true,
+  "successReason": "Example Domain",
+  "wallTimeMs": 24759,
+  "data": {
+    "heading": "Example Domain"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308798,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448319701,
+      "type": "navigation",
+      "title": "navigate → https://example.com"
+    },
+    {
+      "t": 1776448320346,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a34e/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448323337,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The H1 heading text 'Example Domain' is visible in the VISIBLE TEXT BLOCKS and matches the page title. No navigation or interaction is needed."
+    },
+    {
+      "t": 1776448323338,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448325339,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

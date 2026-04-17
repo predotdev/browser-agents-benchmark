@@ -1,0 +1,81 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "17-github-issues",
+  "taskUrl": "https://github.com/microsoft/typescript/issues",
+  "success": true,
+  "successReason": "5 issues",
+  "wallTimeMs": 30807,
+  "data": {
+    "issues": [
+      {
+        "title": "TS incorrectly downgrades class fields"
+      },
+      {
+        "title": "VSCode's TypeScript Language Server Keeps Crashing on a Project"
+      },
+      {
+        "title": "skipLibChecks specificity"
+      },
+      {
+        "title": "Review/update https://typescriptlang.org/tsconfig for TS 6.0"
+      },
+      {
+        "title": "The module namespace object returned by __importStar is not the same when import the same module multiple times"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308769,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448320982,
+      "type": "navigation",
+      "title": "navigate → https://github.com/microsoft/typescript/issues"
+    },
+    {
+      "t": 1776448322470,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a328/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448322471,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a328/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448322471,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a328/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448328286,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The first 5 open issue titles are visible in the DOM and match the schema. No actions needed."
+    },
+    {
+      "t": 1776448328287,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448332066,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

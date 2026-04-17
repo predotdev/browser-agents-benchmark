@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "11-github-react-stats",
+  "taskUrl": "https://github.com/facebook/react",
+  "success": true,
+  "successReason": "lang=javascript",
+  "wallTimeMs": 15037,
+  "data": {
+    "stars": 245000,
+    "language": "JavaScript"
+  },
+  "inputTokens": 48587,
+  "outputTokens": 157,
+  "totalCostUsd": 0.155721,
+  "trace": [
+    {
+      "t": 1776443293283,
+      "type": "step",
+      "title": "Extract star count and primary language. Return JSON: { \"stars\": string | number, \"language\": string }\n\nStart by navigating to: https://github.com/facebook/reac"
+    },
+    {
+      "t": 1776443293696,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294933,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/facebook/react (HTTP 200, 22313 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle navigation\n\n[](..."
+    },
+    {
+      "t": 1776443297457,
+      "type": "step",
+      "title": "Python: save_output_json({\"stars\": 245000, \"language\": ..."
+    },
+    {
+      "t": 1776443297526,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443300124,
+      "type": "step",
+      "title": "Done: Extracted from https://github.com/facebook/react:\n- **Stars**: 245k (245,000)\n- **Primary Language**: JavaScript (68.2%)"
+    },
+    {
+      "t": 1776443300191,
+      "type": "step",
+      "title": "Extracted from https://github.com/facebook/react:\n- **Stars**: 245k (245,000)\n- **Primary Language**: JavaScript (68.2%)"
+    }
+  ]
+}

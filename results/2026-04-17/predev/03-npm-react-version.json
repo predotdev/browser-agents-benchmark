@@ -1,0 +1,66 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "03-npm-react-version",
+  "taskUrl": "https://www.npmjs.com/package/react",
+  "success": true,
+  "successReason": "v19.2.5",
+  "wallTimeMs": 19831,
+  "data": {
+    "version": "19.2.5",
+    "weeklyDownloads": "122,367,092"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308712,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448313745,
+      "type": "navigation",
+      "title": "navigate → https://www.npmjs.com/package/react"
+    },
+    {
+      "t": 1776448314756,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a304/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448314757,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a304/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448314757,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a304/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448317995,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The current page shows the react package details. The version is clearly visible as '19.2.5' and weekly downloads as '122,367,092'. Both values are extracted directly from the visible text blocks."
+    },
+    {
+      "t": 1776448317996,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448320846,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

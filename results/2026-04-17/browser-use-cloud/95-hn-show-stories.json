@@ -1,0 +1,63 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "95-hn-show-stories",
+  "taskUrl": "https://news.ycombinator.com/show",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 14926,
+  "data": {
+    "stories": [
+      {
+        "title": "Show HN: Stage – Putting humans back in control of code review"
+      },
+      {
+        "title": "Show HN: SPICE simulation → oscilloscope → verification with Claude Code"
+      },
+      {
+        "title": "Show HN: React Email 6.0 – An open-source email editor you can embed in your app"
+      }
+    ]
+  },
+  "inputTokens": 38371,
+  "outputTokens": 320,
+  "totalCostUsd": 0.109496,
+  "trace": [
+    {
+      "t": 1776443322758,
+      "type": "step",
+      "title": "Extract the top 3 Show HN story titles. Return JSON: { \"stories\": [{ \"title\": string }] }\n\nStart by navigating to: https://news.ycombinator.com/show"
+    },
+    {
+      "t": 1776443323178,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443325557,
+      "type": "step",
+      "title": "Fetch: Fetched https://news.ycombinator.com/show (HTTP 200, 9486 chars)\n\n[![](y18.svg)](https://news.ycombinator.com)[**Hacker News**](news)[new](newest) ..."
+    },
+    {
+      "t": 1776443329795,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443329867,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443332514,
+      "type": "step",
+      "title": "Done: Extracted the top 3 Show HN story titles from https://news.ycombinator.com/show:\n\n1. Show HN: Stage – Putting humans back in control of code review..."
+    },
+    {
+      "t": 1776443332586,
+      "type": "step",
+      "title": "Extracted the top 3 Show HN story titles from https://news.ycombinator.com/show:\n\n1. Show HN: Stage – Putting humans back in control of code review\n2. Show HN: "
+    }
+  ]
+}

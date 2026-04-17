@@ -1,0 +1,95 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "29-httpbin-pizza",
+  "taskUrl": "https://httpbin.org/forms/post",
+  "success": true,
+  "successReason": "echoed",
+  "wallTimeMs": 40170,
+  "data": {
+    "submittedName": "Test User"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308737,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448322938,
+      "type": "navigation",
+      "title": "navigate → https://httpbin.org/forms/post"
+    },
+    {
+      "t": 1776448323634,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a334/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448334502,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 5 actions: Filling all required form fields and clicking submit. The response from httpbin.org will contain the submitted data including the customer name.",
+      "detail": "fill input[name=\"custname\"] = \"Test User\"\nfill input[name=\"custtel\"] = \"555-1234\"\nfill input[name=\"custemail\"] = \"test@example.com\"\nfill textarea[name=\"comments\"] = \"Ring the bell\"\nclick button:has-text(\"Submit order\")"
+    },
+    {
+      "t": 1776448335980,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill input[name=\"custname\"]"
+    },
+    {
+      "t": 1776448335980,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill input[name=\"custtel\"]"
+    },
+    {
+      "t": 1776448335980,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill input[name=\"custemail\"]"
+    },
+    {
+      "t": 1776448335980,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill textarea[name=\"comments\"]"
+    },
+    {
+      "t": 1776448335980,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click button:has-text(\"Submit order\")"
+    },
+    {
+      "t": 1776448336987,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a334/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448338864,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The form submission was successful. The response JSON shows the submitted data including 'custname': 'Test User'. Extracting this value as required."
+    },
+    {
+      "t": 1776448338866,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448341990,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

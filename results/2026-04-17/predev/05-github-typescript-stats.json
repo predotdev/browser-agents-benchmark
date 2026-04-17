@@ -1,0 +1,74 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "05-github-typescript-stats",
+  "taskUrl": "https://github.com/microsoft/typescript",
+  "success": true,
+  "successReason": "lang=typescript",
+  "wallTimeMs": 29150,
+  "data": {
+    "stars": 109000,
+    "language": "TypeScript",
+    "latestRelease": "TypeScript 6.0.3"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308715,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448316975,
+      "type": "navigation",
+      "title": "navigate → https://github.com/microsoft/typescript"
+    },
+    {
+      "t": 1776448318910,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a2ff/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448318912,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a2ff/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448318913,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a2ff/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448318913,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a2ff/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448328441,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: Extracted stars (109k = 109000), language (TypeScript from About section), and latest release (TypeScript 6.0.3) from the visible page content."
+    },
+    {
+      "t": 1776448328442,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448330960,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

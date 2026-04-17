@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "75-scrapethissite-hockey-table",
+  "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 19615,
+  "data": {
+    "teams": [
+      {
+        "name": "Boston Bruins",
+        "year": 1990
+      },
+      {
+        "name": "Buffalo Sabres",
+        "year": 1990
+      },
+      {
+        "name": "Calgary Flames",
+        "year": 1990
+      },
+      {
+        "name": "Chicago Blackhawks",
+        "year": 1990
+      },
+      {
+        "name": "Detroit Red Wings",
+        "year": 1990
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308739,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448314447,
+      "type": "navigation",
+      "title": "navigate → https://www.scrapethissite.com/pages/forms/"
+    },
+    {
+      "t": 1776448315229,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a32d/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448315230,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a32d/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448318738,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The first 5 team names and their years are visible in the table: Boston Bruins (1990), Buffalo Sabres (1990), Calgary Flames (1990), Chicago Blackhawks (1990), Detroit Red Wings (1990). Extracted directly from the visible content."
+    },
+    {
+      "t": 1776448318739,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448321199,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

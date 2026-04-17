@@ -1,0 +1,55 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "38-github-nextjs-stats",
+  "taskUrl": "https://github.com/vercel/next.js",
+  "success": true,
+  "successReason": "lang=JavaScript",
+  "wallTimeMs": 20751,
+  "data": {
+    "stars": 139000,
+    "language": "JavaScript",
+    "description": "The React Framework"
+  },
+  "inputTokens": 51245,
+  "outputTokens": 294,
+  "totalCostUsd": 0.092584,
+  "trace": [
+    {
+      "t": 1776443294475,
+      "type": "step",
+      "title": "Extract the star count, primary language, and description. Return JSON: { \"stars\": string | number, \"language\": string, \"description\": string }\n\nStart by naviga"
+    },
+    {
+      "t": 1776443299148,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443300523,
+      "type": "step",
+      "title": "Fetch: [Output truncated: 5795 tokens exceeded limit of 5000. Full output: /workspace/.ephemeral/truncated-67786756.log]\n\n{\"status\": 200, \"content_type\": ..."
+    },
+    {
+      "t": 1776443303176,
+      "type": "step",
+      "title": "Python: save_output_json({"
+    },
+    {
+      "t": 1776443303248,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443305732,
+      "type": "step",
+      "title": "Done: Extracted from https://github.com/vercel/next.js:\n- **Stars**: 139k (139,000)\n- **Primary Language**: JavaScript (54.7%)\n- **Description**: \"The Re..."
+    },
+    {
+      "t": 1776443305888,
+      "type": "step",
+      "title": "Extracted from https://github.com/vercel/next.js:\n- **Stars**: 139k (139,000)\n- **Primary Language**: JavaScript (54.7%)\n- **Description**: \"The React Framework"
+    }
+  ]
+}

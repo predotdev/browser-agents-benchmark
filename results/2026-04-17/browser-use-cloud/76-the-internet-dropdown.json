@@ -1,0 +1,15 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "76-the-internet-dropdown",
+  "taskUrl": "https://the-internet.herokuapp.com/dropdown",
+  "success": false,
+  "successReason": "no option",
+  "wallTimeMs": 30000,
+  "error": "This operation was aborted",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0,
+  "trace": []
+}

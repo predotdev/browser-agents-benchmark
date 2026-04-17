@@ -1,0 +1,80 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "48-github-deno-releases",
+  "taskUrl": "https://github.com/denoland/deno/releases",
+  "success": true,
+  "successReason": "v2.7.12",
+  "wallTimeMs": 32628,
+  "data": {
+    "version": "v2.7.12",
+    "title": "2.7.12 / 2026.04.09"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308841,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448323579,
+      "type": "navigation",
+      "title": "navigate → https://github.com/denoland/deno/releases"
+    },
+    {
+      "t": 1776448325644,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a322/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448325645,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a322/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448325646,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a322/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448325646,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a322/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448325646,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a322/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448330505,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The latest release is clearly visible on the page: version 'v2.7.12' with title '2.7.12 / 2026.04.09'. No navigation or extraction needed."
+    },
+    {
+      "t": 1776448330507,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448333076,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

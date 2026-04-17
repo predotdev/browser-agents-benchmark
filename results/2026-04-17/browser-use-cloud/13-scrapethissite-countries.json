@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "13-scrapethissite-countries",
+  "taskUrl": "https://www.scrapethissite.com/pages/simple/",
+  "success": true,
+  "successReason": "5 countries",
+  "wallTimeMs": 17980,
+  "data": {
+    "countries": [
+      {
+        "name": "Andorra",
+        "capital": "Andorra la Vella"
+      },
+      {
+        "name": "United Arab Emirates",
+        "capital": "Abu Dhabi"
+      },
+      {
+        "name": "Afghanistan",
+        "capital": "Kabul"
+      },
+      {
+        "name": "Antigua and Barbuda",
+        "capital": "St. John's"
+      },
+      {
+        "name": "Anguilla",
+        "capital": "The Valley"
+      }
+    ]
+  },
+  "inputTokens": 53210,
+  "outputTokens": 349,
+  "totalCostUsd": 0.182282,
+  "trace": [
+    {
+      "t": 1776443294531,
+      "type": "step",
+      "title": "Extract the first 5 country names and their capitals. Return JSON: { \"countries\": [{ \"name\": string, \"capital\": string }] }\n\nStart by navigating to: https://www"
+    },
+    {
+      "t": 1776443294977,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443295620,
+      "type": "step",
+      "title": "Fetch: Fetched https://www.scrapethissite.com/pages/simple/ (HTTP 200, 23318 chars)\n\n- [![](/static/images/scraper-icon.png) Scrape This Site](/)\n- [Sandb..."
+    },
+    {
+      "t": 1776443300028,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443300108,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443304045,
+      "type": "step",
+      "title": "Done: Extracted the first 5 countries and their capitals from scrapethissite.com/pages/simple/:\n\n1. Andorra → Andorra la Vella\n2. United Arab Emirates → ..."
+    },
+    {
+      "t": 1776443304070,
+      "type": "step",
+      "title": "Extracted the first 5 countries and their capitals from scrapethissite.com/pages/simple/:\n\n1. Andorra → Andorra la Vella\n2. United Arab Emirates → Abu Dhabi\n3. "
+    }
+  ]
+}

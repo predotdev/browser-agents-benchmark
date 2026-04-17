@@ -1,0 +1,15 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "80-the-internet-iframe",
+  "taskUrl": "https://the-internet.herokuapp.com/iframe",
+  "success": false,
+  "successReason": "missing",
+  "wallTimeMs": 30002,
+  "error": "This operation was aborted",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0,
+  "trace": []
+}

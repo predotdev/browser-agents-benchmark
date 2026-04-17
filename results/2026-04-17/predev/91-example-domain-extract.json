@@ -1,0 +1,52 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "91-example-domain-extract",
+  "taskUrl": "https://example.com/",
+  "success": true,
+  "successReason": "example",
+  "wallTimeMs": 29093,
+  "data": {
+    "heading": "Example Domain",
+    "linkUrl": "https://iana.org/domains/example"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308811,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448322136,
+      "type": "navigation",
+      "title": "navigate → https://example.com/"
+    },
+    {
+      "t": 1776448322820,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a326/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448325875,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The h1 text is 'Example Domain' and the 'Learn more' link URL is 'https://iana.org/domains/example' — both are directly available from the provided elements list."
+    },
+    {
+      "t": 1776448325877,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448330068,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

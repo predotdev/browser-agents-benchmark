@@ -1,0 +1,120 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "51-books-category-extract",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "11 books",
+  "wallTimeMs": 37699,
+  "data": {
+    "books": [
+      {
+        "title": "It's Only the Himalayas"
+      },
+      {
+        "title": "Full Moon over Noah's Ark"
+      },
+      {
+        "title": "See America: A Celebration of the USA"
+      },
+      {
+        "title": "Vagabonding: An Uncommon Guide to the Art of Long-Term Travel"
+      },
+      {
+        "title": "Under the Tuscan Sun"
+      },
+      {
+        "title": "A Summer In Europe"
+      },
+      {
+        "title": "The Great Railway Bazaar"
+      },
+      {
+        "title": "A Year in Provence"
+      },
+      {
+        "title": "The Road to Little Dribbling"
+      },
+      {
+        "title": "Neither Here nor There: Travels in Europe"
+      },
+      {
+        "title": "1,000 Places to See, Do, and Be Before You're 10"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308839,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448323040,
+      "type": "navigation",
+      "title": "navigate → https://books.toscrape.com/"
+    },
+    {
+      "t": 1776448324037,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a344/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448324037,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a344/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448324038,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a344/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448331665,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 1 actions: Clicking the 'Travel' link will navigate to the Travel category page. After navigation, I will extract the book titles from that page.",
+      "detail": "click li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(1)"
+    },
+    {
+      "t": 1776448332455,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(1) > a:nth-of-type(1)"
+    },
+    {
+      "t": 1776448333587,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a344/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448333588,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a344/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448339095,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · : The Travel category page is already loaded and visible. I can see 11 book titles in the visible area. I will extract all 11 book titles from the page."
+    },
+    {
+      "t": 1776448339095,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

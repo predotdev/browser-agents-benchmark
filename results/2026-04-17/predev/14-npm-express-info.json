@@ -1,0 +1,80 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "14-npm-express-info",
+  "taskUrl": "https://www.npmjs.com/package/express",
+  "success": true,
+  "successReason": "v5.2.1",
+  "wallTimeMs": 26417,
+  "data": {
+    "version": "5.2.1",
+    "description": "Fast, unopinionated, minimalist web framework for Node.js."
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308768,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448316466,
+      "type": "navigation",
+      "title": "navigate → https://www.npmjs.com/package/express"
+    },
+    {
+      "t": 1776448317636,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a305/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448317637,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a305/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448317637,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a305/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448317637,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a305/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448317638,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a305/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448325223,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The version (5.2.1) and description ('Fast, unopinionated, minimalist web framework for Node.js.') are clearly visible in the VISIBLE TEXT BLOCKS and on the page. No further actions needed."
+    },
+    {
+      "t": 1776448325224,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448327167,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

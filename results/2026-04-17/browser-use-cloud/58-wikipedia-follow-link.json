@@ -1,0 +1,93 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "58-wikipedia-follow-link",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "310 chars",
+  "wallTimeMs": 39086,
+  "data": {
+    "intro": "ECMAScript (/ˈɛkməskrɪpt/; ES) is a standard for scripting languages including JavaScript, JScript, and ActionScript. It is best known as a JavaScript standard intended to ensure the interoperability of web pages across different web browsers. It is standardized by Ecma International in the document ECMA-262."
+  },
+  "inputTokens": 310320,
+  "outputTokens": 1101,
+  "totalCostUsd": 0.394206,
+  "trace": [
+    {
+      "t": 1776443309227,
+      "type": "step",
+      "title": "Click on the \"ECMAScript\" link in the article and extract the first paragraph of the resulting page. Return JSON: { \"intro\": string }\n\nStart by navigating to: h"
+    },
+    {
+      "t": 1776443309641,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443310506,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/JavaScript (HTTP 200, 162557 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmove to sidebar h..."
+    },
+    {
+      "t": 1776443316058,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443316939,
+      "type": "step",
+      "title": "Fetch: [Output truncated: 13320 tokens exceeded limit of 5000. Full output: /workspace/.ephemeral/truncated-68395f6e.log]\n\n{\"status\": 200, \"content_type\":..."
+    },
+    {
+      "t": 1776443323830,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443323899,
+      "type": "step",
+      "title": "Python: ''\n"
+    },
+    {
+      "t": 1776443326013,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443326090,
+      "type": "step",
+      "title": "Python: '**ECMAScript** ([/\\\\u02c8\\\\u025bkm\\\\u0259skr\\\\u026apt/](/wiki/Help:IPA/English \\\\\"Help:IPA/English\\\\\"); **ES**)[\\\\\\\\[1\\\\\\\\]](#cite_note-1) is a st..."
+    },
+    {
+      "t": 1776443330844,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443330928,
+      "type": "step",
+      "title": "Python: ECMAScript (/\\u02c8\\u025bkm\\u0259skr\\u026apt/; ES)](#cite_note-1) is a standard for scripting languages including JavaScript, JScript, and ActionSc..."
+    },
+    {
+      "t": 1776443335989,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443336067,
+      "type": "step",
+      "title": "Python: Done\n"
+    },
+    {
+      "t": 1776443339307,
+      "type": "step",
+      "title": "Done: Extracted the first paragraph from the ECMAScript Wikipedia page (linked from the JavaScript article). The output.json contains:\n\n{\"intro\": \"ECMASc..."
+    },
+    {
+      "t": 1776443339326,
+      "type": "step",
+      "title": "Extracted the first paragraph from the ECMAScript Wikipedia page (linked from the JavaScript article). The output.json contains:\n\n{\"intro\": \"ECMAScript (/ˈɛkməs"
+    }
+  ]
+}

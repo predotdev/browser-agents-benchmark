@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "15-the-internet-tables",
+  "taskUrl": "https://the-internet.herokuapp.com/tables",
+  "success": true,
+  "successReason": "4 rows",
+  "wallTimeMs": 18756,
+  "data": {
+    "rows": [
+      {
+        "lastName": "Smith",
+        "firstName": "John",
+        "email": "jsmith@gmail.com"
+      },
+      {
+        "lastName": "Bach",
+        "firstName": "Frank",
+        "email": "fbach@yahoo.com"
+      },
+      {
+        "lastName": "Doe",
+        "firstName": "Jason",
+        "email": "jdoe@hotmail.com"
+      },
+      {
+        "lastName": "Conway",
+        "firstName": "Tim",
+        "email": "tconway@earthlink.net"
+      }
+    ]
+  },
+  "inputTokens": 28885,
+  "outputTokens": 330,
+  "totalCostUsd": 0.063683,
+  "trace": [
+    {
+      "t": 1776443293054,
+      "type": "step",
+      "title": "Extract the data from the first table (Table 1). Return JSON: { \"rows\": [{ \"lastName\": string, \"firstName\": string, \"email\": string }] } for the first 4 rows.\n\n"
+    },
+    {
+      "t": 1776443293489,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294199,
+      "type": "step",
+      "title": "Fetch: Fetched https://the-internet.herokuapp.com/tables (HTTP 200, 1437 chars)\n\n[![Fork me on GitHub](/img/forkme_right_green_007200.png)](https://github..."
+    },
+    {
+      "t": 1776443300543,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443300619,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443303302,
+      "type": "step",
+      "title": "Done: Extracted the first 4 rows from Table 1:\n1. Smith, John — jsmith@gmail.com\n2. Bach, Frank — fbach@yahoo.com\n3. Doe, Jason — jdoe@hotmail.com\n4. Con..."
+    },
+    {
+      "t": 1776443303334,
+      "type": "step",
+      "title": "Extracted the first 4 rows from Table 1:\n1. Smith, John — jsmith@gmail.com\n2. Bach, Frank — fbach@yahoo.com\n3. Doe, Jason — jdoe@hotmail.com\n4. Conway, Tim — tc"
+    }
+  ]
+}

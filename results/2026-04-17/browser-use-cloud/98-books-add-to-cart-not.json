@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "98-books-add-to-cart-not",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "found \"The...\"",
+  "wallTimeMs": 14926,
+  "data": {
+    "title": "The Requiem Red",
+    "price": "£22.65"
+  },
+  "inputTokens": 38202,
+  "outputTokens": 221,
+  "totalCostUsd": 0.106614,
+  "trace": [
+    {
+      "t": 1776443324963,
+      "type": "step",
+      "title": "Find the first book whose title starts with \"The\" and return its title and price. Return JSON: { \"title\": string, \"price\": string }\n\nStart by navigating to: htt"
+    },
+    {
+      "t": 1776443325402,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443325923,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com/ (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produ..."
+    },
+    {
+      "t": 1776443330167,
+      "type": "step",
+      "title": "Python: save_output_json({\"title\": \"The Requiem Red\", \"..."
+    },
+    {
+      "t": 1776443330233,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443333385,
+      "type": "step",
+      "title": "Done: Found the first book whose title starts with \"The\" on books.toscrape.com:\n\n- **Title**: The Requiem Red\n- **Price**: £22.65\n\nIt appears as the 6th ..."
+    },
+    {
+      "t": 1776443333409,
+      "type": "step",
+      "title": "Found the first book whose title starts with \"The\" on books.toscrape.com:\n\n- **Title**: The Requiem Red\n- **Price**: £22.65\n\nIt appears as the 6th book on the f"
+    }
+  ]
+}

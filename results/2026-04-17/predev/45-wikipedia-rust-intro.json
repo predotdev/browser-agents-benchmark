@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "45-wikipedia-rust-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+  "success": true,
+  "successReason": "137 chars",
+  "wallTimeMs": 24842,
+  "data": {
+    "intro": "Rust is a general-purpose programming language. It is noted for its emphasis on performance, type safety, concurrency, and memory safety."
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308768,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448318650,
+      "type": "navigation",
+      "title": "navigate → https://en.wikipedia.org/wiki/Rust_(programming_language)"
+    },
+    {
+      "t": 1776448320163,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a346/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448320166,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a346/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448320167,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a346/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448320168,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a346/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448320169,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a346/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448323151,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The first paragraph of the article is visible in the VISIBLE TEXT BLOCKS and matches the intro text. No actions needed."
+    },
+    {
+      "t": 1776448323152,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448325011,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

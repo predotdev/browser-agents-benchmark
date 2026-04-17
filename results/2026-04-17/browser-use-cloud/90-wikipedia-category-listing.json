@@ -1,0 +1,15 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "90-wikipedia-category-listing",
+  "taskUrl": "https://en.wikipedia.org/wiki/Category:Web_frameworks",
+  "success": false,
+  "successReason": "few",
+  "wallTimeMs": 30001,
+  "error": "This operation was aborted",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0,
+  "trace": []
+}

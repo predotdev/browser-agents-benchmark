@@ -1,0 +1,55 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "78-the-internet-dynamic-content",
+  "taskUrl": "https://the-internet.herokuapp.com/dynamic_content",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 23117,
+  "data": {
+    "paragraphs": [
+      "This example demonstrates the ever-evolving nature of content by loading new text and images on each page refresh.",
+      "To make some of the content static append ?with_content=static or click here.",
+      "Alias ipsam quia vero inventore eaque quidem voluptatem provident eos assumenda dolor qui doloremque ab ducimus cupiditate incidunt quisquam voluptatem et nisi sed ratione pariatur omnis quo quasi voluptatibus est et nulla ut eos enim."
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308791,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448314218,
+      "type": "navigation",
+      "title": "navigate → https://the-internet.herokuapp.com/dynamic_content"
+    },
+    {
+      "t": 1776448314856,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a323/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448318094,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The first 3 paragraphs are visible in the DOM: the intro paragraph, the instruction paragraph, and the first Lorem Ipsum paragraph. Extracted them directly."
+    },
+    {
+      "t": 1776448318096,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448323731,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "17-github-issues",
+  "taskUrl": "https://github.com/microsoft/typescript/issues",
+  "success": true,
+  "successReason": "5 issues",
+  "wallTimeMs": 20247,
+  "data": {
+    "issues": [
+      {
+        "title": "TS incorrectly downgrades class fields"
+      },
+      {
+        "title": "VSCode's TypeScript Language Server Keeps Crashing on a Project"
+      },
+      {
+        "title": "skipLibChecks specificity"
+      },
+      {
+        "title": "Review/update https://typescriptlang.org/tsconfig for TS 6.0"
+      },
+      {
+        "title": "The module namespace object returned by __importStar is not the same when import the same module multiple times"
+      }
+    ]
+  },
+  "inputTokens": 42835,
+  "outputTokens": 339,
+  "totalCostUsd": 0.13153299999999998,
+  "trace": [
+    {
+      "t": 1776443293052,
+      "type": "step",
+      "title": "Extract the titles of the first 5 open issues. Return JSON: { \"issues\": [{ \"title\": string }] }\n\nStart by navigating to: https://github.com/microsoft/typescript"
+    },
+    {
+      "t": 1776443293507,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294923,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/microsoft/typescript/issues (HTTP 200, 15888 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle na..."
+    },
+    {
+      "t": 1776443302376,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443302493,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443306406,
+      "type": "step",
+      "title": "Done: Extracted the first 5 open issues from https://github.com/microsoft/typescript/issues:\n\n1. TS incorrectly downgrades class fields\n2. VSCode's TypeS..."
+    },
+    {
+      "t": 1776443306431,
+      "type": "step",
+      "title": "Extracted the first 5 open issues from https://github.com/microsoft/typescript/issues:\n\n1. TS incorrectly downgrades class fields\n2. VSCode's TypeScript Languag"
+    }
+  ]
+}

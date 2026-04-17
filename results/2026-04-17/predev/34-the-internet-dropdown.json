@@ -1,0 +1,71 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "34-the-internet-dropdown",
+  "taskUrl": "https://the-internet.herokuapp.com/dropdown",
+  "success": true,
+  "successReason": "option 2",
+  "wallTimeMs": 34190,
+  "data": {
+    "selected": "Option 2"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308796,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448316641,
+      "type": "navigation",
+      "title": "navigate → https://the-internet.herokuapp.com/dropdown"
+    },
+    {
+      "t": 1776448317358,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a31f/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448330669,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 1 actions: The dropdown menu is visible and accessible. The action to select 'Option 2' is planned using the '#dropdown' selector.",
+      "detail": "select #dropdown = \"Option 2\""
+    },
+    {
+      "t": 1776448330829,
+      "type": "action",
+      "iter": 1,
+      "title": "action: select #dropdown"
+    },
+    {
+      "t": 1776448331823,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a31f/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448334329,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The dropdown already shows 'Option 2' selected. The task is complete."
+    },
+    {
+      "t": 1776448334330,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448336074,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "15-the-internet-tables",
+  "taskUrl": "https://the-internet.herokuapp.com/tables",
+  "success": true,
+  "successReason": "4 rows",
+  "wallTimeMs": 15936,
+  "data": {
+    "rows": [
+      {
+        "lastName": "Smith",
+        "firstName": "John",
+        "email": "jsmith@gmail.com"
+      },
+      {
+        "lastName": "Bach",
+        "firstName": "Frank",
+        "email": "fbach@yahoo.com"
+      },
+      {
+        "lastName": "Doe",
+        "firstName": "Jason",
+        "email": "jdoe@hotmail.com"
+      },
+      {
+        "lastName": "Conway",
+        "firstName": "Tim",
+        "email": "tconway@earthlink.net"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308692,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448312960,
+      "type": "navigation",
+      "title": "navigate → https://the-internet.herokuapp.com/tables"
+    },
+    {
+      "t": 1776448313609,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a31a/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448316691,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : The first table (Example 1) is visible and contains 4 rows. The data for lastName, firstName, and email can be extracted directly from the visible text blocks. The extracted data matches the required schema."
+    },
+    {
+      "t": 1776448316693,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

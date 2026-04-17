@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "09-lobsters-stories",
+  "taskUrl": "https://lobste.rs",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 23278,
+  "data": {
+    "stories": [
+      {
+        "title": "Okay, what actually uses Rust",
+        "score": 35
+      },
+      {
+        "title": "The Claude Coding Vibes Are Getting Worse",
+        "score": 36
+      },
+      {
+        "title": "HTTP desync in Discord's media proxy: Spying on a whole platform",
+        "score": 17
+      },
+      {
+        "title": "tangled newsletter 01 — hello",
+        "score": 15
+      },
+      {
+        "title": "We beat Google's zero-knowledge proof of quantum cryptanalysis",
+        "score": 11
+      }
+    ]
+  },
+  "inputTokens": 50474,
+  "outputTokens": 488,
+  "totalCostUsd": 0.171934,
+  "trace": [
+    {
+      "t": 1776443293432,
+      "type": "step",
+      "title": "Extract the top 5 story titles and scores. Return JSON: { \"stories\": [{ \"title\": string, \"score\": number }] }\n\nStart by navigating to: https://lobste.rs"
+    },
+    {
+      "t": 1776443293862,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443295253,
+      "type": "step",
+      "title": "Fetch: Fetched https://lobste.rs (HTTP 200, 18872 chars)\n\n[](/ \"Lobsters (Current traffic: 13%)\")\n\n[Active](/active) [Recent](/recent) [Comments](/comment..."
+    },
+    {
+      "t": 1776443305088,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443305187,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443309200,
+      "type": "step",
+      "title": "Done: Extracted the top 5 stories from lobste.rs:\n\n1. \"Okay, what actually uses Rust\" — score: 35\n2. \"The Claude Coding Vibes Are Getting Worse\" — score:..."
+    },
+    {
+      "t": 1776443309218,
+      "type": "step",
+      "title": "Extracted the top 5 stories from lobste.rs:\n\n1. \"Okay, what actually uses Rust\" — score: 35\n2. \"The Claude Coding Vibes Are Getting Worse\" — score: 36\n3. \"HTTP "
+    }
+  ]
+}

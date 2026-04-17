@@ -1,0 +1,81 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "38-github-nextjs-stats",
+  "taskUrl": "https://github.com/vercel/next.js",
+  "success": true,
+  "successReason": "lang=JavaScript",
+  "wallTimeMs": 31364,
+  "data": {
+    "stars": 139000,
+    "language": "JavaScript",
+    "description": "The React Framework"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448309680,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448324971,
+      "type": "navigation",
+      "title": "navigate → https://github.com/vercel/next.js"
+    },
+    {
+      "t": 1776448326895,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37b/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448326896,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37b/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448326897,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37b/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448326898,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37b/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448326898,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a37b/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448329742,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: All required data is visible on the current page: stars (139k), primary language (JavaScript), and description (The React Framework). Extracted directly from visible text blocks."
+    },
+    {
+      "t": 1776448329743,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448332278,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

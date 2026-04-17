@@ -1,0 +1,83 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "32-the-internet-login",
+  "taskUrl": "https://the-internet.herokuapp.com/login",
+  "success": true,
+  "successReason": "login ok",
+  "wallTimeMs": 32958,
+  "data": {
+    "loggedIn": true
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448309071,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448318599,
+      "type": "navigation",
+      "title": "navigate → https://the-internet.herokuapp.com/login"
+    },
+    {
+      "t": 1776448319586,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a330/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448328404,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 3 actions: Filled the username and password fields and clicked the Login button. The next turn will check if the login was successful and the user is redirected to the secure area.",
+      "detail": "fill #username = \"tomsmith\"\nfill #password = \"SuperSecretPassword!\"\nclick div:nth-of-type(1) > div:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(1) = \"Login\""
+    },
+    {
+      "t": 1776448329595,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #username"
+    },
+    {
+      "t": 1776448329595,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #password"
+    },
+    {
+      "t": 1776448329595,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click div:nth-of-type(1) > div:nth-of-type(1) > form:nth-of-type(1) > button:nth-of-type(1)"
+    },
+    {
+      "t": 1776448330594,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a330/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448332787,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The page shows 'You logged into a secure area!' and 'Welcome to the Secure Area', confirming successful login. The task is complete."
+    },
+    {
+      "t": 1776448332788,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448334912,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

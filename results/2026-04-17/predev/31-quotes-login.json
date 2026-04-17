@@ -1,0 +1,97 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "31-quotes-login",
+  "taskUrl": "https://quotes.toscrape.com/login",
+  "success": true,
+  "successReason": "login ok",
+  "wallTimeMs": 28090,
+  "data": {
+    "loggedIn": true
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308731,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448314003,
+      "type": "navigation",
+      "title": "navigate → https://quotes.toscrape.com/login"
+    },
+    {
+      "t": 1776448315024,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a349/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448315025,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a349/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448321602,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 3 actions: Filled username and password fields with 'admin' and clicked the Login button. The task is complete as the login was successful.",
+      "detail": "fill #username = \"admin\"\nfill #password = \"admin\"\nclick div:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2) = \"Login\""
+    },
+    {
+      "t": 1776448322804,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #username"
+    },
+    {
+      "t": 1776448322804,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #password"
+    },
+    {
+      "t": 1776448322804,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click div:nth-of-type(1) > form:nth-of-type(1) > input:nth-of-type(2)"
+    },
+    {
+      "t": 1776448323892,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a349/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448323892,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a349/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448327943,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The previous attempt successfully logged in. The presence of the 'Logout' link in the visible text blocks confirms that the login was successful. The task is complete."
+    },
+    {
+      "t": 1776448327944,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448329759,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

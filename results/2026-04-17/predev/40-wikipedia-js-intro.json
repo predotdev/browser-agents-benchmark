@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "40-wikipedia-js-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "255 chars",
+  "wallTimeMs": 26274,
+  "data": {
+    "intro": "JavaScript (JS)[a] is a programming language and core technology of the Web, alongside HTML and CSS. It was created by Brendan Eich in 1995.[6] As of 2025, the overwhelming majority of websites (98.9%) uses JavaScript for client side webpage behavior.[10]"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308737,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448317323,
+      "type": "navigation",
+      "title": "navigate → https://en.wikipedia.org/wiki/JavaScript"
+    },
+    {
+      "t": 1776448318786,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a32b/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448318788,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a32b/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448318789,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a32b/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448318790,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a32b/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448318791,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a32b/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448324156,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The first paragraph of the article body is visible in the VISIBLE TEXT BLOCKS. Extracted directly as required."
+    },
+    {
+      "t": 1776448324157,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448327051,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

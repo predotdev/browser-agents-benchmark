@@ -1,0 +1,63 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "29-httpbin-pizza",
+  "taskUrl": "https://httpbin.org/forms/post",
+  "success": true,
+  "successReason": "echoed",
+  "wallTimeMs": 18105,
+  "data": {
+    "submittedName": "Test User"
+  },
+  "inputTokens": 44878,
+  "outputTokens": 330,
+  "totalCostUsd": 0.068534,
+  "trace": [
+    {
+      "t": 1776443292913,
+      "type": "step",
+      "title": "Fill: customer name \"Test User\", phone \"555-1234\", email \"test@example.com\", comments \"Ring the bell\". Click Submit. Extract the customer name from the response"
+    },
+    {
+      "t": 1776443293351,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443294727,
+      "type": "step",
+      "title": "Fetch: Fetched https://httpbin.org/forms/post (HTTP 200, 195 chars)\n\nCustomer name:\n\nTelephone:\n\nE-mail address:\n\nPizza Size\n\nSmall\n\nMedium\n\nLarge\n\nPizza ..."
+    },
+    {
+      "t": 1776443298205,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443298638,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 1235, \"text\": \"{\\n  \\\"args\\\": {}, \\n  \\\"data\\\": \\\"\\\", \\n  \\\"files\\\": {}, \\n  \\\"form\\\": {\\n    \\\"comment..."
+    },
+    {
+      "t": 1776443301176,
+      "type": "step",
+      "title": "Python: save_output_json({\"submittedName\": \"Test User\"})"
+    },
+    {
+      "t": 1776443301248,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443303595,
+      "type": "step",
+      "title": "Done: Form submitted successfully. The response confirms `custname: \"Test User\"`. Output: `{ \"submittedName\": \"Test User\" }`"
+    },
+    {
+      "t": 1776443303622,
+      "type": "step",
+      "title": "Form submitted successfully. The response confirms `custname: \"Test User\"`. Output: `{ \"submittedName\": \"Test User\" }`"
+    }
+  ]
+}

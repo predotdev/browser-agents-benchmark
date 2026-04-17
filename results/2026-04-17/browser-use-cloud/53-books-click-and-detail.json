@@ -1,0 +1,66 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "53-books-click-and-detail",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "title+price",
+  "wallTimeMs": 18205,
+  "data": {
+    "title": "A Light in the Attic",
+    "price": "£51.77",
+    "upc": "a897fe39b1053632",
+    "stock": "In stock (22 available)"
+  },
+  "inputTokens": 68252,
+  "outputTokens": 372,
+  "totalCostUsd": 0.125273,
+  "trace": [
+    {
+      "t": 1776443307497,
+      "type": "step",
+      "title": "Click on the first book shown on the homepage, then extract its full title, price, UPC, and stock availability. Return JSON: { \"title\": string, \"price\": string,"
+    },
+    {
+      "t": 1776443307957,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443308668,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com/ (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produ..."
+    },
+    {
+      "t": 1776443312686,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443313522,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 2744, \"text\": \"{\\\"title\\\":\\\"A Light in the Attic | Books to Scrape - Sandbox\\\",\\\"description\\\":\\\"\\\\n   ..."
+    },
+    {
+      "t": 1776443316689,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443316806,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n{'title': 'A Light in the Attic', 'price': '£51.77', 'upc': 'a897fe39b1053632', 'stock': 'In stock (22 available)'}\n"
+    },
+    {
+      "t": 1776443319940,
+      "type": "step",
+      "title": "Done: Extracted details for the first book on the homepage:\n- **Title**: A Light in the Attic\n- **Price**: £51.77\n- **UPC**: a897fe39b1053632\n- **Stock**..."
+    },
+    {
+      "t": 1776443319959,
+      "type": "step",
+      "title": "Extracted details for the first book on the homepage:\n- **Title**: A Light in the Attic\n- **Price**: £51.77\n- **UPC**: a897fe39b1053632\n- **Stock**: In stock (2"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "74-scrapethissite-countries",
+  "taskUrl": "https://www.scrapethissite.com/pages/simple/",
+  "success": false,
+  "successReason": "few",
+  "wallTimeMs": 30003,
+  "error": "This operation was aborted",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0,
+  "trace": []
+}

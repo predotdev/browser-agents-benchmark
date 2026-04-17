@@ -1,0 +1,4275 @@
+{
+  "runStamp": "2026-04-17T17-51-44",
+  "startedAt": "2026-04-17T17:51:44.403Z",
+  "finishedAt": "2026-04-17T17:53:07.308Z",
+  "taskCount": 100,
+  "configIds": [
+    "predev",
+    "browser-use-cloud"
+  ],
+  "results": [
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "15-the-internet-tables",
+      "taskUrl": "https://the-internet.herokuapp.com/tables",
+      "success": true,
+      "successReason": "4 rows",
+      "wallTimeMs": 15936,
+      "data": {
+        "rows": [
+          {
+            "lastName": "Smith",
+            "firstName": "John",
+            "email": "jsmith@gmail.com"
+          },
+          {
+            "lastName": "Bach",
+            "firstName": "Frank",
+            "email": "fbach@yahoo.com"
+          },
+          {
+            "lastName": "Doe",
+            "firstName": "Jason",
+            "email": "jdoe@hotmail.com"
+          },
+          {
+            "lastName": "Conway",
+            "firstName": "Tim",
+            "email": "tconway@earthlink.net"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "47-quotes-all-tags",
+      "taskUrl": "https://quotes.toscrape.com",
+      "success": true,
+      "successReason": "10 tags",
+      "wallTimeMs": 18007,
+      "data": {
+        "tags": [
+          "love",
+          "inspirational",
+          "life",
+          "humor",
+          "books",
+          "reading",
+          "friendship",
+          "friends",
+          "truth",
+          "value"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "41-example-com",
+      "taskUrl": "https://example.com",
+      "success": true,
+      "successReason": "example domain",
+      "wallTimeMs": 19548,
+      "data": {
+        "heading": "Example Domain",
+        "paragraph": "This domain is for use in documentation examples without needing permission. Avoid use in operations."
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "75-scrapethissite-hockey-table",
+      "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 19615,
+      "data": {
+        "teams": [
+          {
+            "name": "Boston Bruins",
+            "year": 1990
+          },
+          {
+            "name": "Buffalo Sabres",
+            "year": 1990
+          },
+          {
+            "name": "Calgary Flames",
+            "year": 1990
+          },
+          {
+            "name": "Chicago Blackhawks",
+            "year": 1990
+          },
+          {
+            "name": "Detroit Red Wings",
+            "year": 1990
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "84-books-sort-or-filter",
+      "taskUrl": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+      "success": true,
+      "successReason": "got both",
+      "wallTimeMs": 19617,
+      "data": {
+        "count": 65,
+        "cheapestTitle": "Thirst"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "03-npm-react-version",
+      "taskUrl": "https://www.npmjs.com/package/react",
+      "success": true,
+      "successReason": "v19.2.5",
+      "wallTimeMs": 19831,
+      "data": {
+        "version": "19.2.5",
+        "weeklyDownloads": "122,367,092"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "25-npm-search-express",
+      "taskUrl": "https://www.npmjs.com/search?q=express",
+      "success": true,
+      "successReason": "3 packages",
+      "wallTimeMs": 19903,
+      "data": {
+        "packages": [
+          {
+            "name": "express",
+            "description": "Fast, unopinionated, minimalist web framework"
+          },
+          {
+            "name": "@types/express",
+            "description": "TypeScript definitions for express"
+          },
+          {
+            "name": "swagger-ui-express",
+            "description": "Swagger UI Express"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "42-jsonplaceholder-users",
+      "taskUrl": "https://jsonplaceholder.typicode.com/users",
+      "success": true,
+      "successReason": "3 users",
+      "wallTimeMs": 19958,
+      "data": {
+        "users": [
+          {
+            "name": "Leanne Graham",
+            "email": "Sincere@april.biz"
+          },
+          {
+            "name": "Ervin Howell",
+            "email": "Shanna@melissa.tv"
+          },
+          {
+            "name": "Clementine Bauch",
+            "email": "Nathan@yesenia.net"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "80-the-internet-iframe",
+      "taskUrl": "https://the-internet.herokuapp.com/iframe",
+      "success": true,
+      "successReason": "ok",
+      "wallTimeMs": 19938,
+      "data": {
+        "heading": "An iFrame containing the TinyMCE WYSIWYG Editor"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "88-wikipedia-list-items",
+      "taskUrl": "https://en.wikipedia.org/wiki/List_of_programming_languages",
+      "success": true,
+      "successReason": "10",
+      "wallTimeMs": 19987,
+      "data": {
+        "languages": [
+          "A.NET (A#/A sharp)",
+          "A-0 System",
+          "A+ (A plus)",
+          "Accent (Rational Synergy)",
+          "Action!",
+          "ActionScript",
+          "Actor",
+          "Ada \u2013 ISO/IEC 8652",
+          "Adenine (Haystack)",
+          "AdvPL"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "93-quotes-js-rendered",
+      "taskUrl": "https://quotes.toscrape.com/js",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 21067,
+      "data": {
+        "authors": [
+          "Albert Einstein",
+          "J.K. Rowling",
+          "Albert Einstein"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "68-npm-package-version",
+      "taskUrl": "https://www.npmjs.com/package/react",
+      "success": true,
+      "successReason": "v19.2.5",
+      "wallTimeMs": 21551,
+      "data": {
+        "version": "19.2.5",
+        "weeklyDownloads": "122,367,092"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "02-wikipedia-intro",
+      "taskUrl": "https://en.wikipedia.org/wiki/Web_scraping",
+      "success": true,
+      "successReason": "551 chars",
+      "wallTimeMs": 21704,
+      "data": {
+        "intro": "Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites.[1] Web scraping software may directly access the World Wide Web using the Hypertext Transfer Protocol or a web browser. While web scraping can be done manually by a software user, the term typically refers to automated processes implemented using a bot or web crawler. It is a form of copying in which specific data is gathered and copied from the web, typically into a central local database or spreadsheet, for later retrieval or analysis."
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "20-mdn-array-methods",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "success": true,
+      "successReason": "5 methods",
+      "wallTimeMs": 22595,
+      "data": {
+        "methods": [
+          "at()",
+          "concat()",
+          "copyWithin()",
+          "entries()",
+          "every()"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "01-hn-top-stories",
+      "taskUrl": "https://news.ycombinator.com",
+      "success": true,
+      "successReason": "5 stories",
+      "wallTimeMs": 22642,
+      "data": {
+        "stories": [
+          {
+            "title": "Claude Design",
+            "points": 423
+          },
+          {
+            "title": "Claude Opus 4.7 costs 20\n\n\u201330% more per session",
+            "points": 230
+          },
+          {
+            "title": "Isaac Asimov: The Last Question (1956)",
+            "points": 450
+          },
+          {
+            "title": "Middle schooler finds coin from Troy in Berlin",
+            "points": 107
+          },
+          {
+            "title": "NIST gives up enriching most CVEs",
+            "points": 79
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "90-wikipedia-category-listing",
+      "taskUrl": "https://en.wikipedia.org/wiki/Category:Web_frameworks",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 23071,
+      "data": {
+        "frameworks": [
+          "JWt (Java web toolkit)",
+          "Kitura",
+          "Knockout (web framework)",
+          "List of Ajax frameworks",
+          "Microframework"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "71-httpbin-html-table",
+      "taskUrl": "https://httpbin.org/html",
+      "success": true,
+      "successReason": "found",
+      "wallTimeMs": 23090,
+      "data": {
+        "author": "Herman Melville",
+        "title": "Moby-Dick"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "49-books-toscrape-details",
+      "taskUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+      "success": true,
+      "successReason": "A Light in the Attic",
+      "wallTimeMs": 23111,
+      "data": {
+        "title": "A Light in the Attic",
+        "price": "\u00a351.77",
+        "availability": "In stock (22 available)",
+        "reviews": 0
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "76-the-internet-dropdown",
+      "taskUrl": "https://the-internet.herokuapp.com/dropdown",
+      "success": true,
+      "successReason": "option 2",
+      "wallTimeMs": 23092,
+      "data": {
+        "selected": "Option 2"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "78-the-internet-dynamic-content",
+      "taskUrl": "https://the-internet.herokuapp.com/dynamic_content",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 23117,
+      "data": {
+        "paragraphs": [
+          "This example demonstrates the ever-evolving nature of content by loading new text and images on each page refresh.",
+          "To make some of the content static append ?with_content=static or click here.",
+          "Alias ipsam quia vero inventore eaque quidem voluptatem provident eos assumenda dolor qui doloremque ab ducimus cupiditate incidunt quisquam voluptatem et nisi sed ratione pariatur omnis quo quasi voluptatibus est et nulla ut eos enim."
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "97-mdn-html-elements",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 23248,
+      "data": {
+        "elements": [
+          "html",
+          "base",
+          "head",
+          "link",
+          "meta"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "13-scrapethissite-countries",
+      "taskUrl": "https://www.scrapethissite.com/pages/simple/",
+      "success": true,
+      "successReason": "5 countries",
+      "wallTimeMs": 23351,
+      "data": {
+        "countries": [
+          {
+            "name": "Andorra",
+            "capital": "Andorra la Vella"
+          },
+          {
+            "name": "United Arab Emirates",
+            "capital": "Abu Dhabi"
+          },
+          {
+            "name": "Afghanistan",
+            "capital": "Kabul"
+          },
+          {
+            "name": "Antigua and Barbuda",
+            "capital": "St. John's"
+          },
+          {
+            "name": "Anguilla",
+            "capital": "The Valley"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "04-wikipedia-linus-nationality",
+      "taskUrl": "https://en.wikipedia.org/wiki/Linus_Torvalds",
+      "success": true,
+      "successReason": "finland/united states",
+      "wallTimeMs": 23868,
+      "data": {
+        "nationality": "Finland United States"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "54-books-paginate-count",
+      "taskUrl": "https://books.toscrape.com/catalogue/page-1.html",
+      "success": true,
+      "successReason": "20 books",
+      "wallTimeMs": 24169,
+      "data": {
+        "count": 20
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "07-mdn-html-elements",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+      "success": true,
+      "successReason": "5 elements",
+      "wallTimeMs": 24349,
+      "data": {
+        "elements": [
+          "html",
+          "base",
+          "head",
+          "link",
+          "meta"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "59-wikipedia-infobox-data",
+      "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+      "success": true,
+      "successReason": "found designer",
+      "wallTimeMs": 24492,
+      "data": {
+        "designer": "Guido van Rossum",
+        "firstAppeared": "20 February 1991",
+        "stableRelease": "3.14.4"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "trivial-jsonplaceholder-user",
+      "taskUrl": "https://jsonplaceholder.typicode.com/users/1",
+      "success": true,
+      "successReason": "Leanne Graham",
+      "wallTimeMs": 24674,
+      "data": {
+        "name": "Leanne Graham"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "27-scrapethissite-hockey",
+      "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+      "success": true,
+      "successReason": "5 teams",
+      "wallTimeMs": 24730,
+      "data": {
+        "teams": [
+          {
+            "name": "Boston Bruins",
+            "wins": 44
+          },
+          {
+            "name": "Buffalo Sabres",
+            "wins": 31
+          },
+          {
+            "name": "Calgary Flames",
+            "wins": 46
+          },
+          {
+            "name": "Chicago Blackhawks",
+            "wins": 49
+          },
+          {
+            "name": "Detroit Red Wings",
+            "wins": 34
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "trivial-example-h1",
+      "taskUrl": "https://example.com",
+      "success": true,
+      "successReason": "Example Domain",
+      "wallTimeMs": 24759,
+      "data": {
+        "heading": "Example Domain"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "45-wikipedia-rust-intro",
+      "taskUrl": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+      "success": true,
+      "successReason": "137 chars",
+      "wallTimeMs": 24842,
+      "data": {
+        "intro": "Rust is a general-purpose programming language. It is noted for its emphasis on performance, type safety, concurrency, and memory safety."
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "99-jsonplaceholder-todos",
+      "taskUrl": "https://jsonplaceholder.typicode.com/todos",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 24878,
+      "data": {
+        "todos": [
+          "delectus aut autem",
+          "quis ut nam facilis et officia qui",
+          "fugiat veniam minus"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "92-quotes-scroll-mode",
+      "taskUrl": "https://quotes.toscrape.com/scroll",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 24896,
+      "data": {
+        "quotes": [
+          "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.",
+          "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+          "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
+          "The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.",
+          "Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring."
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "87-books-price-under",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 24925,
+      "data": {
+        "books": [
+          {
+            "title": "Starving Hearts (Triangular Trade ...",
+            "price": "\u00a313.99"
+          },
+          {
+            "title": "Set Me Free",
+            "price": "\u00a317.46"
+          },
+          {
+            "title": "The Coming Woman: A ...",
+            "price": "\u00a317.93"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "69-npm-lodash-dependencies",
+      "taskUrl": "https://www.npmjs.com/package/lodash",
+      "success": true,
+      "successReason": "MIT",
+      "wallTimeMs": 24935,
+      "data": {
+        "maintainer": "jdalton",
+        "license": "MIT"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "10-books-toscrape",
+      "taskUrl": "https://books.toscrape.com",
+      "success": true,
+      "successReason": "5 books",
+      "wallTimeMs": 26052,
+      "data": {
+        "books": [
+          {
+            "title": "A Light in the Attic",
+            "price": "\u00a351.77"
+          },
+          {
+            "title": "Tipping the Velvet",
+            "price": "\u00a353.74"
+          },
+          {
+            "title": "Soumission",
+            "price": "\u00a350.10"
+          },
+          {
+            "title": "Sharp Objects",
+            "price": "\u00a347.82"
+          },
+          {
+            "title": "Sapiens: A Brief History of Humankind",
+            "price": "\u00a354.23"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "66-mdn-javascript-array-methods",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 26179,
+      "data": {
+        "methods": [
+          "at()",
+          "concat()",
+          "copyWithin()",
+          "entries()",
+          "every()"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "40-wikipedia-js-intro",
+      "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+      "success": true,
+      "successReason": "255 chars",
+      "wallTimeMs": 26274,
+      "data": {
+        "intro": "JavaScript (JS)[a] is a programming language and core technology of the Web, alongside HTML and CSS. It was created by Brendan Eich in 1995.[6] As of 2025, the overwhelming majority of websites (98.9%) uses JavaScript for client side webpage behavior.[10]"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "12-wikipedia-python",
+      "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+      "success": true,
+      "successReason": "Multi-paradigm: object-oriented,[1] proc",
+      "wallTimeMs": 26276,
+      "data": {
+        "paradigms": "Multi-paradigm: object-oriented,[1] procedural (imperative), functional, structured, reflective"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "63-hn-user-profile",
+      "taskUrl": "https://news.ycombinator.com/user?id=dang",
+      "success": true,
+      "successReason": "karma 38941",
+      "wallTimeMs": 26361,
+      "data": {
+        "karma": 38941,
+        "createdDate": "August 18, 2007"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "50-quotes-toscrape-specific",
+      "taskUrl": "https://quotes.toscrape.com/page/1/",
+      "success": true,
+      "successReason": "2 quotes",
+      "wallTimeMs": 26415,
+      "data": {
+        "quotes": [
+          {
+            "text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking."
+          },
+          {
+            "text": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle."
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "14-npm-express-info",
+      "taskUrl": "https://www.npmjs.com/package/express",
+      "success": true,
+      "successReason": "v5.2.1",
+      "wallTimeMs": 26417,
+      "data": {
+        "version": "5.2.1",
+        "description": "Fast, unopinionated, minimalist web framework for Node.js."
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "19-books-page2",
+      "taskUrl": "https://books.toscrape.com",
+      "success": true,
+      "successReason": "3 books",
+      "wallTimeMs": 26631,
+      "data": {
+        "books": [
+          {
+            "title": "Black Dust"
+          },
+          {
+            "title": "Birdsong: A Story in ..."
+          },
+          {
+            "title": "America's Cradle of Quarterbacks: ..."
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "23-wikipedia-search-openai",
+      "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+      "success": true,
+      "successReason": "3 results",
+      "wallTimeMs": 27570,
+      "data": {
+        "results": [
+          {
+            "title": "OpenAI"
+          },
+          {
+            "title": "OpenAI Codex (AI agent)"
+          },
+          {
+            "title": "OpenAI o1"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "98-books-add-to-cart-not",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "found \"The...\"",
+      "wallTimeMs": 27566,
+      "data": {
+        "title": "The Coming Woman: A ...",
+        "price": "\u00a317.93"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "46-mdn-css-display",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "success": true,
+      "successReason": "5 values",
+      "wallTimeMs": 27726,
+      "data": {
+        "values": [
+          "block",
+          "inline",
+          "flex",
+          "grid",
+          "none"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "18-github-releases",
+      "taskUrl": "https://github.com/denoland/deno/releases",
+      "success": true,
+      "successReason": "3 releases",
+      "wallTimeMs": 27767,
+      "data": {
+        "releases": [
+          {
+            "title": "v2.7.12",
+            "date": "2026.04.09"
+          },
+          {
+            "title": "v2.7.11",
+            "date": "2026.04.01"
+          },
+          {
+            "title": "v2.7.10",
+            "date": "2026.03.31"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "22-books-science-category",
+      "taskUrl": "https://books.toscrape.com",
+      "success": true,
+      "successReason": "3 books",
+      "wallTimeMs": 28069,
+      "data": {
+        "books": [
+          {
+            "title": "Mesaerion: The Best Science ...",
+            "price": "\u00a337.59"
+          },
+          {
+            "title": "Join",
+            "price": "\u00a335.67"
+          },
+          {
+            "title": "William Shakespeare's Star Wars: ...",
+            "price": "\u00a343.30"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "31-quotes-login",
+      "taskUrl": "https://quotes.toscrape.com/login",
+      "success": true,
+      "successReason": "login ok",
+      "wallTimeMs": 28090,
+      "data": {
+        "loggedIn": true
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "39-npm-zod-info",
+      "taskUrl": "https://www.npmjs.com/package/zod",
+      "success": true,
+      "successReason": "v4.3.6",
+      "wallTimeMs": 28121,
+      "data": {
+        "version": "4.3.6",
+        "description": "TypeScript-first schema validation with static type inference"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "96-github-trending-like",
+      "taskUrl": "https://github.com/explore",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 28130,
+      "data": {
+        "repos": [
+          "EvoMap / evolver",
+          "lsdefine / GenericAgent",
+          "SimoneAvogadro / android-reverse-engineering-skill"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "64-github-repo-readme-header",
+      "taskUrl": "https://github.com/microsoft/TypeScript",
+      "success": true,
+      "successReason": "typescript",
+      "wallTimeMs": 28565,
+      "data": {
+        "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+        "language": "TypeScript"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "33-httpbin-anything",
+      "taskUrl": "https://httpbin.org/forms/post",
+      "success": true,
+      "successReason": "bob found",
+      "wallTimeMs": 28861,
+      "data": {
+        "customer": "Bob Jones"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "91-example-domain-extract",
+      "taskUrl": "https://example.com/",
+      "success": true,
+      "successReason": "example",
+      "wallTimeMs": 29093,
+      "data": {
+        "heading": "Example Domain",
+        "linkUrl": "https://iana.org/domains/example"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "05-github-typescript-stats",
+      "taskUrl": "https://github.com/microsoft/typescript",
+      "success": true,
+      "successReason": "lang=typescript",
+      "wallTimeMs": 29150,
+      "data": {
+        "stars": 109000,
+        "language": "TypeScript",
+        "latestRelease": "TypeScript 6.0.3"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "77-the-internet-checkboxes",
+      "taskUrl": "https://the-internet.herokuapp.com/checkboxes",
+      "success": true,
+      "successReason": "bools",
+      "wallTimeMs": 29297,
+      "data": {
+        "first": true,
+        "second": false
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "95-hn-show-stories",
+      "taskUrl": "https://news.ycombinator.com/show",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 29286,
+      "data": {
+        "stories": [
+          {
+            "title": "Show HN: PanicLock \u2013 Close your MacBook lid disable TouchID \u2013> password unlock"
+          },
+          {
+            "title": "Show HN: Stage \u2013 Putting humans back in control of code review"
+          },
+          {
+            "title": "Show HN: Smol machines \u2013 subsecond coldstart, portable virtual machines"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "74-scrapethissite-countries",
+      "taskUrl": "https://www.scrapethissite.com/pages/simple/",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 29566,
+      "data": {
+        "countries": [
+          {
+            "name": "Andorra",
+            "capital": "Andorra la Vella"
+          },
+          {
+            "name": "United Arab Emirates",
+            "capital": "Abu Dhabi"
+          },
+          {
+            "name": "Afghanistan",
+            "capital": "Kabul"
+          },
+          {
+            "name": "Antigua and Barbuda",
+            "capital": "St. John's"
+          },
+          {
+            "name": "Anguilla",
+            "capital": "The Valley"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "89-wikipedia-table-data",
+      "taskUrl": "https://en.wikipedia.org/wiki/List_of_tallest_buildings",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 29565,
+      "data": {
+        "buildings": [
+          {
+            "name": "Burj Khalifa",
+            "heightM": 828
+          },
+          {
+            "name": "Merdeka 118",
+            "heightM": 678.9
+          },
+          {
+            "name": "Shanghai Tower",
+            "heightM": 632
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "11-github-react-stats",
+      "taskUrl": "https://github.com/facebook/react",
+      "success": true,
+      "successReason": "lang=javascript",
+      "wallTimeMs": 29620,
+      "data": {
+        "stars": 245000,
+        "language": "JavaScript"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "17-github-issues",
+      "taskUrl": "https://github.com/microsoft/typescript/issues",
+      "success": true,
+      "successReason": "5 issues",
+      "wallTimeMs": 30807,
+      "data": {
+        "issues": [
+          {
+            "title": "TS incorrectly downgrades class fields"
+          },
+          {
+            "title": "VSCode's TypeScript Language Server Keeps Crashing on a Project"
+          },
+          {
+            "title": "skipLibChecks specificity"
+          },
+          {
+            "title": "Review/update https://typescriptlang.org/tsconfig for TS 6.0"
+          },
+          {
+            "title": "The module namespace object returned by __importStar is not the same when import the same module multiple times"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "72-jsonplaceholder-nav-post",
+      "taskUrl": "https://jsonplaceholder.typicode.com/",
+      "success": true,
+      "successReason": "ok",
+      "wallTimeMs": 31037,
+      "data": {
+        "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+        "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "38-github-nextjs-stats",
+      "taskUrl": "https://github.com/vercel/next.js",
+      "success": true,
+      "successReason": "lang=JavaScript",
+      "wallTimeMs": 31364,
+      "data": {
+        "stars": 139000,
+        "language": "JavaScript",
+        "description": "The React Framework"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "81-books-home-to-category-to-book",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "got upc",
+      "wallTimeMs": 31363,
+      "data": {
+        "upc": "9780007137119"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "94-hn-ask-stories",
+      "taskUrl": "https://news.ycombinator.com/ask",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 31941,
+      "data": {
+        "stories": [
+          {
+            "title": "Ask HN: Teaching life skills through games, am I crazy?",
+            "points": 2
+          },
+          {
+            "title": "Ask HN: Who is using OpenClaw?",
+            "points": 332
+          },
+          {
+            "title": "Ask HN: Getting depressed day by day, how to cope?",
+            "points": 9
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "48-github-deno-releases",
+      "taskUrl": "https://github.com/denoland/deno/releases",
+      "success": true,
+      "successReason": "v2.7.12",
+      "wallTimeMs": 32628,
+      "data": {
+        "version": "v2.7.12",
+        "title": "2.7.12 / 2026.04.09"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "56-quotes-author-page",
+      "taskUrl": "https://quotes.toscrape.com/",
+      "success": true,
+      "successReason": "got data",
+      "wallTimeMs": 32831,
+      "data": {
+        "bornDate": "1879-03-14",
+        "bornPlace": "Ulm, Germany"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "85-scrapethissite-paginate",
+      "taskUrl": "https://www.scrapethissite.com/pages/",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 32839,
+      "data": {
+        "teams": [
+          "Boston Bruins",
+          "Buffalo Sabres",
+          "Calgary Flames"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "83-quotes-login-and-scrape",
+      "taskUrl": "https://quotes.toscrape.com/login",
+      "success": true,
+      "successReason": "2",
+      "wallTimeMs": 32931,
+      "data": {
+        "quotes": [
+          {
+            "text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking."
+          },
+          {
+            "text": "It is our choices, Harry, that show what we truly are, far more than our abilities."
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "32-the-internet-login",
+      "taskUrl": "https://the-internet.herokuapp.com/login",
+      "success": true,
+      "successReason": "login ok",
+      "wallTimeMs": 32958,
+      "data": {
+        "loggedIn": true
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "09-lobsters-stories",
+      "taskUrl": "https://lobste.rs",
+      "success": true,
+      "successReason": "5 stories",
+      "wallTimeMs": 33060,
+      "data": {
+        "stories": [
+          {
+            "title": "Okay, what actually uses Rust",
+            "score": 37
+          },
+          {
+            "title": "tangled newsletter 01 -- hello",
+            "score": 22
+          },
+          {
+            "title": "The Claude Coding Vibes Are Getting Worse",
+            "score": 38
+          },
+          {
+            "title": "HTTP desync in Discord's media proxy: Spying on a whole platform",
+            "score": 21
+          },
+          {
+            "title": "We beat Google's zero-knowledge proof of quantum cryptanalysis",
+            "score": 12
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "28-weather-gov-sf",
+      "taskUrl": "https://forecast.weather.gov/MapClick.php?CityName=San+Francisco&state=CA&site=MTR",
+      "success": true,
+      "successReason": "temp=60\u00b0F",
+      "wallTimeMs": 33558,
+      "data": {
+        "temperature": "60\u00b0F",
+        "conditions": "NA"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "24-wikipedia-search-rust",
+      "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+      "success": true,
+      "successReason": "3 results",
+      "wallTimeMs": 34154,
+      "data": {
+        "results": [
+          {
+            "title": "Rust (programming language)"
+          },
+          {
+            "title": "Ruby (programming language)"
+          },
+          {
+            "title": "Search for pages containing Rust programming language"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "34-the-internet-dropdown",
+      "taskUrl": "https://the-internet.herokuapp.com/dropdown",
+      "success": true,
+      "successReason": "option 2",
+      "wallTimeMs": 34190,
+      "data": {
+        "selected": "Option 2"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "67-mdn-fetch-parameters",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/API/fetch",
+      "success": true,
+      "successReason": "2",
+      "wallTimeMs": 34458,
+      "data": {
+        "parameters": [
+          "resource",
+          "options"
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "100-scrapethissite-ajax",
+      "taskUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 34478,
+      "data": {
+        "films": [
+          {
+            "title": "Spotlight",
+            "oscars": 2
+          },
+          {
+            "title": "Mad Max: Fury Road",
+            "oscars": 6
+          },
+          {
+            "title": "The Revenant",
+            "oscars": 3
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "61-hn-comments-navigate",
+      "taskUrl": "https://news.ycombinator.com/",
+      "success": true,
+      "successReason": "got both",
+      "wallTimeMs": 35710,
+      "data": {
+        "title": "Claude Design",
+        "commentCount": 259
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "30-demoqa-textbox",
+      "taskUrl": "https://demoqa.com/text-box",
+      "success": true,
+      "successReason": "alice found",
+      "wallTimeMs": 35731,
+      "data": {
+        "name": "Alice Smith",
+        "email": "alice@example.com"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "79-the-internet-add-remove",
+      "taskUrl": "https://the-internet.herokuapp.com/add_remove_elements/",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 35916,
+      "data": {
+        "count": 3
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "55-quotes-next-page",
+      "taskUrl": "https://quotes.toscrape.com/",
+      "success": true,
+      "successReason": "3 quotes",
+      "wallTimeMs": 36161,
+      "data": {
+        "quotes": [
+          {
+            "text": "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends."
+          },
+          {
+            "text": "If you can't explain it to a six year old, you don't understand it yourself."
+          },
+          {
+            "text": "I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living."
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "37-quotes-login-then-scrape",
+      "taskUrl": "https://quotes.toscrape.com/login",
+      "success": true,
+      "successReason": "3 quotes",
+      "wallTimeMs": 37326,
+      "data": {
+        "quotes": [
+          {
+            "text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.",
+            "author": "Albert Einstein"
+          },
+          {
+            "text": "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+            "author": "J.K. Rowling"
+          },
+          {
+            "text": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
+            "author": "Albert Einstein"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "57-quotes-tag-filter",
+      "taskUrl": "https://quotes.toscrape.com/",
+      "success": true,
+      "successReason": "10",
+      "wallTimeMs": 37566,
+      "data": {
+        "count": 10
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "51-books-category-extract",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "11 books",
+      "wallTimeMs": 37699,
+      "data": {
+        "books": [
+          {
+            "title": "It's Only the Himalayas"
+          },
+          {
+            "title": "Full Moon over Noah's Ark"
+          },
+          {
+            "title": "See America: A Celebration of the USA"
+          },
+          {
+            "title": "Vagabonding: An Uncommon Guide to the Art of Long-Term Travel"
+          },
+          {
+            "title": "Under the Tuscan Sun"
+          },
+          {
+            "title": "A Summer In Europe"
+          },
+          {
+            "title": "The Great Railway Bazaar"
+          },
+          {
+            "title": "A Year in Provence"
+          },
+          {
+            "title": "The Road to Little Dribbling"
+          },
+          {
+            "title": "Neither Here nor There: Travels in Europe"
+          },
+          {
+            "title": "1,000 Places to See, Do, and Be Before You're 10"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "58-wikipedia-follow-link",
+      "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+      "success": true,
+      "successReason": "316 chars",
+      "wallTimeMs": 38118,
+      "data": {
+        "intro": "ECMAScript (/'\u025bkm\u0259skr\u026apt/; ES)[1] is a standard for scripting languages including JavaScript, JScript, and ActionScript. It is best known as a JavaScript standard intended to ensure the interoperability of web pages across different web browsers.[2] It is standardized by Ecma International in the document ECMA-262."
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "26-quotes-pagination",
+      "taskUrl": "https://quotes.toscrape.com",
+      "success": true,
+      "successReason": "3 quotes",
+      "wallTimeMs": 38166,
+      "data": {
+        "quotes": [
+          {
+            "text": "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.",
+            "author": "J.K. Rowling"
+          },
+          {
+            "text": "If you can't explain it to a six year old, you don't understand it yourself.",
+            "author": "Albert Einstein"
+          },
+          {
+            "text": "I like nonsense, it wakes up the brain cells. Fantasy is a necessary ingredient in living.",
+            "author": "Dr. Seuss"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "62-hn-newest-stories",
+      "taskUrl": "https://news.ycombinator.com/",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 39132,
+      "data": {
+        "stories": [
+          {
+            "title": "The American consumer market is larger than the EU and China's combined"
+          },
+          {
+            "title": "xAI has Released Grok 4.3 (beta)"
+          },
+          {
+            "title": "Robots learn: A brief, contemporary history"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "16-hn-comments",
+      "taskUrl": "https://news.ycombinator.com",
+      "success": true,
+      "successReason": "Claude Design",
+      "wallTimeMs": 39246,
+      "data": {
+        "storyTitle": "Claude Design"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "29-httpbin-pizza",
+      "taskUrl": "https://httpbin.org/forms/post",
+      "success": true,
+      "successReason": "echoed",
+      "wallTimeMs": 40170,
+      "data": {
+        "submittedName": "Test User"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "35-the-internet-checkboxes",
+      "taskUrl": "https://the-internet.herokuapp.com/checkboxes",
+      "success": true,
+      "successReason": "cb1=true, cb2=false",
+      "wallTimeMs": 40519,
+      "data": {
+        "checkbox1": true,
+        "checkbox2": false
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "82-wikipedia-search-result",
+      "taskUrl": "https://en.wikipedia.org/wiki/Main_Page",
+      "success": true,
+      "successReason": "2006",
+      "wallTimeMs": 40507,
+      "data": {
+        "designedYear": 2006
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "65-github-navigate-to-issues",
+      "taskUrl": "https://github.com/nodejs/node",
+      "success": true,
+      "successReason": "3 issues",
+      "wallTimeMs": 42378,
+      "data": {
+        "issues": [
+          {
+            "title": "Worse-than-linear assert performance for trivial mismatch"
+          },
+          {
+            "title": "AIX: clang libc++ std::filesystem::remove_all() Returns Wrong Error Code"
+          },
+          {
+            "title": "Nightly macos15-release-pkg builds failing to build libffi"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "36-wikipedia-search-submit-extract",
+      "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+      "success": true,
+      "successReason": "3 results",
+      "wallTimeMs": 42545,
+      "data": {
+        "results": [
+          {
+            "title": "Machine learning"
+          },
+          {
+            "title": "Machine Learning (journal)"
+          },
+          {
+            "title": "Statistical learning"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "52-books-mystery-category",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "5 books",
+      "wallTimeMs": 44223,
+      "data": {
+        "books": [
+          {
+            "title": "Sharp Objects",
+            "price": "\u00a347.82"
+          },
+          {
+            "title": "In a Dark, Dark ...",
+            "price": "\u00a319.63"
+          },
+          {
+            "title": "The Past Never Ends",
+            "price": "\u00a356.50"
+          },
+          {
+            "title": "A Murder in Time",
+            "price": "\u00a316.64"
+          },
+          {
+            "title": "The Murder of Roger Ackroyd",
+            "price": "\u00a344.10"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "21-quotes-tag-page",
+      "taskUrl": "https://quotes.toscrape.com",
+      "success": true,
+      "successReason": "3 quotes",
+      "wallTimeMs": 44369,
+      "data": {
+        "quotes": [
+          {
+            "text": "It is better to be hated for what you are than to be loved for what you are not.",
+            "author": "Andr\u00e9 Gide"
+          },
+          {
+            "text": "This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.",
+            "author": "Marilyn Monroe"
+          },
+          {
+            "text": "You may not be her first, her last, or her only. She loved before she may love again. But if she loves you now, what else matters? She's not perfect\u2014you aren't either, and the two of you may never be perfect together but if she can make you laugh, cause you to think twice, and admit to being human and making mistakes, hold onto her and give you the most you can. She may not be thinking about you every second of the day, but she will give you a part of her that she knows you will break\u2014so don't hurt her, don't change her.",
+            "author": "Unknown"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "86-hn-filter-by-points",
+      "taskUrl": "https://news.ycombinator.com/",
+      "success": true,
+      "successReason": "14",
+      "wallTimeMs": 47294,
+      "data": {
+        "stories": [
+          {
+            "title": "Claude Design",
+            "points": 423
+          },
+          {
+            "title": "Claude Opus 4.7 costs 20\u201330% more per session",
+            "points": 230
+          },
+          {
+            "title": "Isaac Asimov: The Last Question (1956)",
+            "points": 450
+          },
+          {
+            "title": "Middle schooler finds coin from Troy in Berlin",
+            "points": 107
+          },
+          {
+            "title": "It Is Time to Ban the Sale of Precise Geolocation",
+            "points": 332
+          },
+          {
+            "title": "Claude Opus 4.7",
+            "points": 1918
+          },
+          {
+            "title": "Codex for almost everything",
+            "points": 966
+          },
+          {
+            "title": "FIM \u2013 Linux framebuffer image viewer",
+            "points": 116
+          },
+          {
+            "title": "Ada, Its Design, and the Language That Built the Languages",
+            "points": 209
+          },
+          {
+            "title": "CadQuery is an open-source Python library for building 3D CAD models",
+            "points": 201
+          },
+          {
+            "title": "A Python Interpreter Written in Python",
+            "points": 123
+          },
+          {
+            "title": "Official Clojure Documentary page with Video, Shownotes, and Links",
+            "points": 308
+          },
+          {
+            "title": "Android CLI: Build Android apps 3x faster using any agent",
+            "points": 295
+          },
+          {
+            "title": "Playdate\u2019s handheld changed how Duke University teaches game design",
+            "points": 243
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "73-w3schools-css-colors",
+      "taskUrl": "https://www.w3schools.com/cssref/css_colors.php",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 47588,
+      "data": {
+        "colors": [
+          {
+            "name": "AliceBlue",
+            "hex": "#F0F8FF"
+          },
+          {
+            "name": "AntiqueWhite",
+            "hex": "#FAEBD7"
+          },
+          {
+            "name": "Aqua",
+            "hex": "#00FFFF"
+          },
+          {
+            "name": "Aquamarine",
+            "hex": "#7FFFD4"
+          },
+          {
+            "name": "Azure",
+            "hex": "#F0FFFF"
+          }
+        ]
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "08-stackoverflow-git-undo",
+      "taskUrl": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+      "success": true,
+      "successReason": "votes=608",
+      "wallTimeMs": 51442,
+      "data": {
+        "title": "How do I undo the most recent local commits in Git?",
+        "votes": 608,
+        "acceptedAnswer": "Undo a commit & redo"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "53-books-click-and-detail",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "title+price",
+      "wallTimeMs": 59867,
+      "data": {
+        "title": "A Light in the Attic",
+        "price": "\u00a351.77",
+        "upc": "a897fe39b1053632",
+        "stock": "In stock (22 available)"
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "06-coingecko-btc-price",
+      "taskUrl": "https://www.coingecko.com/en/coins/bitcoin",
+      "success": true,
+      "successReason": "$77599.43",
+      "wallTimeMs": 67068,
+      "data": {
+        "priceUSD": 77599.43
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "44-turnstile-login",
+      "taskUrl": "https://demo.turnstile.workers.dev/",
+      "success": true,
+      "successReason": "turnstile ok",
+      "wallTimeMs": 78103,
+      "data": {
+        "loggedIn": true
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "predev",
+      "tool": "predev",
+      "model": "gemini-2.5-flash-lite",
+      "taskName": "60-wikipedia-references-count",
+      "taskUrl": "https://en.wikipedia.org/wiki/HTTP",
+      "success": true,
+      "successReason": "69 refs",
+      "wallTimeMs": 82851,
+      "data": {
+        "count": 69
+      },
+      "creditsUsed": 0.1,
+      "totalCostUsd": 0.010000000000000002
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "49-books-toscrape-details",
+      "taskUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+      "success": true,
+      "successReason": "A Light in the Attic",
+      "wallTimeMs": 14490,
+      "data": {
+        "title": "A Light in the Attic",
+        "price": "\u00a351.77",
+        "availability": "In stock (22 available)",
+        "reviews": 0
+      },
+      "inputTokens": 28544,
+      "outputTokens": 230,
+      "totalCostUsd": 0.059879
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "11-github-react-stats",
+      "taskUrl": "https://github.com/facebook/react",
+      "success": true,
+      "successReason": "lang=javascript",
+      "wallTimeMs": 15037,
+      "data": {
+        "stars": 245000,
+        "language": "JavaScript"
+      },
+      "inputTokens": 48587,
+      "outputTokens": 157,
+      "totalCostUsd": 0.155721
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "03-npm-react-version",
+      "taskUrl": "https://www.npmjs.com/package/react",
+      "success": true,
+      "successReason": "v19.2.5",
+      "wallTimeMs": 15897,
+      "data": {
+        "version": "19.2.5",
+        "weeklyDownloads": "122,367,092"
+      },
+      "inputTokens": 26110,
+      "outputTokens": 195,
+      "totalCostUsd": 0.09253700000000001
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "27-scrapethissite-hockey",
+      "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+      "success": true,
+      "successReason": "5 teams",
+      "wallTimeMs": 16845,
+      "data": {
+        "teams": [
+          {
+            "name": "Boston Bruins",
+            "wins": 44
+          },
+          {
+            "name": "Buffalo Sabres",
+            "wins": 31
+          },
+          {
+            "name": "Calgary Flames",
+            "wins": 46
+          },
+          {
+            "name": "Chicago Blackhawks",
+            "wins": 49
+          },
+          {
+            "name": "Detroit Red Wings",
+            "wins": 34
+          }
+        ]
+      },
+      "inputTokens": 31092,
+      "outputTokens": 364,
+      "totalCostUsd": 0.075092
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "06-coingecko-btc-price",
+      "taskUrl": "https://www.coingecko.com/en/coins/bitcoin",
+      "success": true,
+      "successReason": "$78210.27",
+      "wallTimeMs": 16858,
+      "data": {
+        "priceUSD": 78210.27
+      },
+      "inputTokens": 52237,
+      "outputTokens": 190,
+      "totalCostUsd": 0.174199
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "10-books-toscrape",
+      "taskUrl": "https://books.toscrape.com",
+      "success": true,
+      "successReason": "5 books",
+      "wallTimeMs": 16866,
+      "data": {
+        "books": [
+          {
+            "title": "A Light in the Attic",
+            "price": "\u00a351.77"
+          },
+          {
+            "title": "Tipping the Velvet",
+            "price": "\u00a353.74"
+          },
+          {
+            "title": "Soumission",
+            "price": "\u00a350.10"
+          },
+          {
+            "title": "Sharp Objects",
+            "price": "\u00a347.82"
+          },
+          {
+            "title": "Sapiens: A Brief History of Humankind",
+            "price": "\u00a354.23"
+          }
+        ]
+      },
+      "inputTokens": 38258,
+      "outputTokens": 356,
+      "totalCostUsd": 0.109736
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "41-example-com",
+      "taskUrl": "https://example.com",
+      "success": true,
+      "successReason": "example domain",
+      "wallTimeMs": 17177,
+      "data": {
+        "heading": "Example Domain",
+        "paragraph": "This domain is for use in documentation examples without needing permission. Avoid use in operations."
+      },
+      "inputTokens": 26999,
+      "outputTokens": 225,
+      "totalCostUsd": 0.052266
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "50-quotes-toscrape-specific",
+      "taskUrl": "https://quotes.toscrape.com/page/1/",
+      "success": true,
+      "successReason": "3 quotes",
+      "wallTimeMs": 17939,
+      "data": {
+        "quotes": [
+          {
+            "text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking."
+          },
+          {
+            "text": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle."
+          },
+          {
+            "text": "Try not to become a man of success. Rather become a man of value."
+          }
+        ]
+      },
+      "inputTokens": 29819,
+      "outputTokens": 309,
+      "totalCostUsd": 0.067645
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "05-github-typescript-stats",
+      "taskUrl": "https://github.com/microsoft/typescript",
+      "success": true,
+      "successReason": "lang=typescript",
+      "wallTimeMs": 17969,
+      "data": {
+        "stars": 109000,
+        "language": "TypeScript",
+        "latestRelease": "TypeScript 6.0.3"
+      },
+      "inputTokens": 44288,
+      "outputTokens": 258,
+      "totalCostUsd": 0.136998
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "13-scrapethissite-countries",
+      "taskUrl": "https://www.scrapethissite.com/pages/simple/",
+      "success": true,
+      "successReason": "5 countries",
+      "wallTimeMs": 17980,
+      "data": {
+        "countries": [
+          {
+            "name": "Andorra",
+            "capital": "Andorra la Vella"
+          },
+          {
+            "name": "United Arab Emirates",
+            "capital": "Abu Dhabi"
+          },
+          {
+            "name": "Afghanistan",
+            "capital": "Kabul"
+          },
+          {
+            "name": "Antigua and Barbuda",
+            "capital": "St. John's"
+          },
+          {
+            "name": "Anguilla",
+            "capital": "The Valley"
+          }
+        ]
+      },
+      "inputTokens": 53210,
+      "outputTokens": 349,
+      "totalCostUsd": 0.182282
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "25-npm-search-express",
+      "taskUrl": "https://www.npmjs.com/search?q=express",
+      "success": true,
+      "successReason": "3 packages",
+      "wallTimeMs": 18041,
+      "data": {
+        "packages": [
+          {
+            "name": "express",
+            "description": "Fast, unopinionated, minimalist web framework"
+          },
+          {
+            "name": "@types/express",
+            "description": "TypeScript definitions for express"
+          },
+          {
+            "name": "swagger-ui-express",
+            "description": "Swagger UI Express"
+          }
+        ]
+      },
+      "inputTokens": 52793,
+      "outputTokens": 254,
+      "totalCostUsd": 0.17819800000000002
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "29-httpbin-pizza",
+      "taskUrl": "https://httpbin.org/forms/post",
+      "success": true,
+      "successReason": "echoed",
+      "wallTimeMs": 18105,
+      "data": {
+        "submittedName": "Test User"
+      },
+      "inputTokens": 44878,
+      "outputTokens": 330,
+      "totalCostUsd": 0.068534
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "18-github-releases",
+      "taskUrl": "https://github.com/denoland/deno/releases",
+      "success": true,
+      "successReason": "3 releases",
+      "wallTimeMs": 18381,
+      "data": {
+        "releases": [
+          {
+            "title": "v2.7.12",
+            "date": "2026-04-09"
+          },
+          {
+            "title": "v2.7.11",
+            "date": "2026-04-01"
+          },
+          {
+            "title": "v2.7.10",
+            "date": "2026-03-31"
+          }
+        ]
+      },
+      "inputTokens": 59705,
+      "outputTokens": 276,
+      "totalCostUsd": 0.21222100000000002
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "15-the-internet-tables",
+      "taskUrl": "https://the-internet.herokuapp.com/tables",
+      "success": true,
+      "successReason": "4 rows",
+      "wallTimeMs": 18756,
+      "data": {
+        "rows": [
+          {
+            "lastName": "Smith",
+            "firstName": "John",
+            "email": "jsmith@gmail.com"
+          },
+          {
+            "lastName": "Bach",
+            "firstName": "Frank",
+            "email": "fbach@yahoo.com"
+          },
+          {
+            "lastName": "Doe",
+            "firstName": "Jason",
+            "email": "jdoe@hotmail.com"
+          },
+          {
+            "lastName": "Conway",
+            "firstName": "Tim",
+            "email": "tconway@earthlink.net"
+          }
+        ]
+      },
+      "inputTokens": 28885,
+      "outputTokens": 330,
+      "totalCostUsd": 0.063683
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "48-github-deno-releases",
+      "taskUrl": "https://github.com/denoland/deno/releases",
+      "success": true,
+      "successReason": "v2.7.12",
+      "wallTimeMs": 18932,
+      "data": {
+        "version": "v2.7.12",
+        "title": "2.7.12 / 2026.04.09"
+      },
+      "inputTokens": 26110,
+      "outputTokens": 222,
+      "totalCostUsd": 0.349765
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "47-quotes-all-tags",
+      "taskUrl": "https://quotes.toscrape.com",
+      "success": true,
+      "successReason": "10 tags",
+      "wallTimeMs": 18950,
+      "data": {
+        "tags": [
+          "love",
+          "inspirational",
+          "life",
+          "humor",
+          "books",
+          "reading",
+          "friendship",
+          "friends",
+          "truth",
+          "simile"
+        ]
+      },
+      "inputTokens": 29746,
+      "outputTokens": 185,
+      "totalCostUsd": 0.064763
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "04-wikipedia-linus-nationality",
+      "taskUrl": "https://en.wikipedia.org/wiki/Linus_Torvalds",
+      "success": true,
+      "successReason": "Finnish and American",
+      "wallTimeMs": 19159,
+      "data": {
+        "nationality": "Finnish and American"
+      },
+      "inputTokens": 69144,
+      "outputTokens": 210,
+      "totalCostUsd": 0.256776
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "40-wikipedia-js-intro",
+      "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+      "success": true,
+      "successReason": "245 chars",
+      "wallTimeMs": 19568,
+      "data": {
+        "intro": "JavaScript (JS) is a programming language and core technology of the Web, alongside HTML and CSS. It was created by Brendan Eich in 1995. As of 2025, the overwhelming majority of websites (98.9%) uses JavaScript for client side webpage behavior."
+      },
+      "inputTokens": 60744,
+      "outputTokens": 289,
+      "totalCostUsd": 0.217595
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "14-npm-express-info",
+      "taskUrl": "https://www.npmjs.com/package/express",
+      "success": true,
+      "successReason": "v5.2.1",
+      "wallTimeMs": 19614,
+      "data": {
+        "version": "5.2.1",
+        "description": "Fast, unopinionated, minimalist web framework for Node.js."
+      },
+      "inputTokens": 44039,
+      "outputTokens": 227,
+      "totalCostUsd": 0.13516999999999998
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "23-wikipedia-search-openai",
+      "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+      "success": true,
+      "successReason": "3 results",
+      "wallTimeMs": 19969,
+      "data": {
+        "results": [
+          {
+            "title": "OpenAI"
+          },
+          {
+            "title": "OpenAI Codex (AI agent)"
+          },
+          {
+            "title": "Products and applications of OpenAI"
+          }
+        ]
+      },
+      "inputTokens": 59057,
+      "outputTokens": 366,
+      "totalCostUsd": 0.110464
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "07-mdn-html-elements",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+      "success": true,
+      "successReason": "5 elements",
+      "wallTimeMs": 19986,
+      "data": {
+        "elements": [
+          "div",
+          "span",
+          "p",
+          "a",
+          "img"
+        ]
+      },
+      "inputTokens": 52737,
+      "outputTokens": 192,
+      "totalCostUsd": 0.17666099999999998
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "42-jsonplaceholder-users",
+      "taskUrl": "https://jsonplaceholder.typicode.com/users",
+      "success": true,
+      "successReason": "3 users",
+      "wallTimeMs": 20004,
+      "data": {
+        "users": [
+          {
+            "name": "Leanne Graham",
+            "email": "Sincere@april.biz"
+          },
+          {
+            "name": "Ervin Howell",
+            "email": "Shanna@melissa.tv"
+          },
+          {
+            "name": "Clementine Bauch",
+            "email": "Nathan@yesenia.net"
+          }
+        ]
+      },
+      "inputTokens": 33651,
+      "outputTokens": 310,
+      "totalCostUsd": 0.08634099999999999
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "17-github-issues",
+      "taskUrl": "https://github.com/microsoft/typescript/issues",
+      "success": true,
+      "successReason": "5 issues",
+      "wallTimeMs": 20247,
+      "data": {
+        "issues": [
+          {
+            "title": "TS incorrectly downgrades class fields"
+          },
+          {
+            "title": "VSCode's TypeScript Language Server Keeps Crashing on a Project"
+          },
+          {
+            "title": "skipLibChecks specificity"
+          },
+          {
+            "title": "Review/update https://typescriptlang.org/tsconfig for TS 6.0"
+          },
+          {
+            "title": "The module namespace object returned by __importStar is not the same when import the same module multiple times"
+          }
+        ]
+      },
+      "inputTokens": 42835,
+      "outputTokens": 339,
+      "totalCostUsd": 0.13153299999999998
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "16-hn-comments",
+      "taskUrl": "https://news.ycombinator.com",
+      "success": true,
+      "successReason": "Claude Design",
+      "wallTimeMs": 20468,
+      "data": {
+        "storyTitle": "Claude Design"
+      },
+      "inputTokens": 77465,
+      "outputTokens": 356,
+      "totalCostUsd": 0.16303299999999998
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "38-github-nextjs-stats",
+      "taskUrl": "https://github.com/vercel/next.js",
+      "success": true,
+      "successReason": "lang=JavaScript",
+      "wallTimeMs": 20751,
+      "data": {
+        "stars": 139000,
+        "language": "JavaScript",
+        "description": "The React Framework"
+      },
+      "inputTokens": 51245,
+      "outputTokens": 294,
+      "totalCostUsd": 0.092584
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "02-wikipedia-intro",
+      "taskUrl": "https://en.wikipedia.org/wiki/Web_scraping",
+      "success": true,
+      "successReason": "548 chars",
+      "wallTimeMs": 21094,
+      "data": {
+        "intro": "Web scraping, web harvesting, or web data extraction is data scraping used for extracting data from websites. Web scraping software may directly access the World Wide Web using the Hypertext Transfer Protocol or a web browser. While web scraping can be done manually by a software user, the term typically refers to automated processes implemented using a bot or web crawler. It is a form of copying in which specific data is gathered and copied from the web, typically into a central local database or spreadsheet, for later retrieval or analysis."
+      },
+      "inputTokens": 53005,
+      "outputTokens": 397,
+      "totalCostUsd": 0.182158
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "20-mdn-array-methods",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "success": true,
+      "successReason": "5 methods",
+      "wallTimeMs": 21291,
+      "data": {
+        "methods": [
+          "map",
+          "filter",
+          "reduce",
+          "forEach",
+          "find"
+        ]
+      },
+      "inputTokens": 54142,
+      "outputTokens": 198,
+      "totalCostUsd": 0.183663
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "36-wikipedia-search-submit-extract",
+      "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+      "success": true,
+      "successReason": "3 results",
+      "wallTimeMs": 22130,
+      "data": {
+        "results": [
+          {
+            "title": "Machine learning"
+          },
+          {
+            "title": "Attention (machine learning)"
+          },
+          {
+            "title": "Neural network (machine learning)"
+          }
+        ]
+      },
+      "inputTokens": 58026,
+      "outputTokens": 367,
+      "totalCostUsd": 0.10750900000000001
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "34-the-internet-dropdown",
+      "taskUrl": "https://the-internet.herokuapp.com/dropdown",
+      "success": true,
+      "successReason": "option 2",
+      "wallTimeMs": 22273,
+      "data": {
+        "selected": "Option 2"
+      },
+      "inputTokens": 64652,
+      "outputTokens": 333,
+      "totalCostUsd": 0.073165
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "22-books-science-category",
+      "taskUrl": "https://books.toscrape.com",
+      "success": true,
+      "successReason": "3 books",
+      "wallTimeMs": 22302,
+      "data": {
+        "books": [
+          {
+            "title": "The Most Perfect Thing: Inside (and Outside) a Bird's Egg",
+            "price": "\u00a342.96"
+          },
+          {
+            "title": "Immunity: How Elie Metchnikoff Changed the Course of Modern Medicine",
+            "price": "\u00a357.36"
+          },
+          {
+            "title": "Sorting the Beef from the Bull: The Science of Food Fraud Forensics",
+            "price": "\u00a344.74"
+          }
+        ]
+      },
+      "inputTokens": 70726,
+      "outputTokens": 446,
+      "totalCostUsd": 0.139098
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "24-wikipedia-search-rust",
+      "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+      "success": true,
+      "successReason": "3 results",
+      "wallTimeMs": 23180,
+      "data": {
+        "results": [
+          {
+            "title": "Rust programming language"
+          },
+          {
+            "title": "Rust (programming language)"
+          },
+          {
+            "title": "Outline of the Rust programming language"
+          }
+        ]
+      },
+      "inputTokens": 58812,
+      "outputTokens": 608,
+      "totalCostUsd": 0.11483800000000001
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "19-books-page2",
+      "taskUrl": "https://books.toscrape.com",
+      "success": true,
+      "successReason": "3 books",
+      "wallTimeMs": 23227,
+      "data": {
+        "books": [
+          {
+            "title": "In Her Wake"
+          },
+          {
+            "title": "How Music Works"
+          },
+          {
+            "title": "Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More"
+          }
+        ]
+      },
+      "inputTokens": 71356,
+      "outputTokens": 406,
+      "totalCostUsd": 0.140944
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "31-quotes-login",
+      "taskUrl": "https://quotes.toscrape.com/login",
+      "success": true,
+      "successReason": "login ok",
+      "wallTimeMs": 23257,
+      "data": {
+        "loggedIn": true
+      },
+      "inputTokens": 63320,
+      "outputTokens": 370,
+      "totalCostUsd": 0.070322
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "09-lobsters-stories",
+      "taskUrl": "https://lobste.rs",
+      "success": true,
+      "successReason": "5 stories",
+      "wallTimeMs": 23278,
+      "data": {
+        "stories": [
+          {
+            "title": "Okay, what actually uses Rust",
+            "score": 35
+          },
+          {
+            "title": "The Claude Coding Vibes Are Getting Worse",
+            "score": 36
+          },
+          {
+            "title": "HTTP desync in Discord's media proxy: Spying on a whole platform",
+            "score": 17
+          },
+          {
+            "title": "tangled newsletter 01 \u2014 hello",
+            "score": 15
+          },
+          {
+            "title": "We beat Google's zero-knowledge proof of quantum cryptanalysis",
+            "score": 11
+          }
+        ]
+      },
+      "inputTokens": 50474,
+      "outputTokens": 488,
+      "totalCostUsd": 0.171934
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "39-npm-zod-info",
+      "taskUrl": "https://www.npmjs.com/package/zod",
+      "success": true,
+      "successReason": "v4.3.6",
+      "wallTimeMs": 23293,
+      "data": {
+        "version": "4.3.6",
+        "description": "TypeScript-first schema validation with static type inference"
+      },
+      "inputTokens": 36294,
+      "outputTokens": 207,
+      "totalCostUsd": 0.09709
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "01-hn-top-stories",
+      "taskUrl": "https://news.ycombinator.com",
+      "success": true,
+      "successReason": "5 stories",
+      "wallTimeMs": 23492,
+      "data": {
+        "stories": [
+          {
+            "title": "Claude Design",
+            "points": 252
+          },
+          {
+            "title": "Claude Opus 4.7 costs 20\u201330% more per session",
+            "points": 57
+          },
+          {
+            "title": "Isaac Asimov: The Last Question (1956)",
+            "points": 388
+          },
+          {
+            "title": "Middle schooler finds coin from Troy in Berlin",
+            "points": 72
+          },
+          {
+            "title": "NIST gives up enriching most CVEs",
+            "points": 43
+          }
+        ]
+      },
+      "inputTokens": 39751,
+      "outputTokens": 469,
+      "totalCostUsd": 0.119451
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "21-quotes-tag-page",
+      "taskUrl": "https://quotes.toscrape.com",
+      "success": true,
+      "successReason": "3 quotes",
+      "wallTimeMs": 24677,
+      "data": {
+        "quotes": [
+          {
+            "text": "It is better to be hated for what you are than to be loved for what you are not.",
+            "author": "Andr\u00e9 Gide"
+          },
+          {
+            "text": "This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.",
+            "author": "Marilyn Monroe"
+          },
+          {
+            "text": "You may not be her first, her last, or her only. She loved before she may love again. But if she loves you now, what else matters? She's not perfect\u2014you aren't either, and the two of you may never be perfect together but if she can make you laugh, cause you to think twice, and admit to being human and making mistakes, hold onto her and give her the most you can. She may not be thinking about you every second of the day, but she will give you a part of her that she knows you can break\u2014her heart. So don't hurt her, don't change her, don't analyze and don't expect more than she can give. Smile when she makes you happy, let her know when she makes you mad, and miss her when she's not there.",
+            "author": "Bob Marley"
+          }
+        ]
+      },
+      "inputTokens": 52137,
+      "outputTokens": 858,
+      "totalCostUsd": 0.09561
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "46-mdn-css-display",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+      "success": true,
+      "successReason": "31 values",
+      "wallTimeMs": 25096,
+      "data": {
+        "values": [
+          "block",
+          "inline",
+          "run-in",
+          "flow",
+          "flow-root",
+          "table",
+          "flex",
+          "grid",
+          "ruby",
+          "list-item",
+          "table-row-group",
+          "table-header-group",
+          "table-footer-group",
+          "table-row",
+          "table-cell",
+          "table-column-group",
+          "table-column",
+          "table-caption",
+          "ruby-base",
+          "ruby-text",
+          "ruby-base-container",
+          "ruby-text-container",
+          "contents",
+          "none",
+          "inline-block",
+          "inline-table",
+          "inline-flex",
+          "inline-grid",
+          "grid-lanes",
+          "inline-grid-lanes",
+          "math"
+        ]
+      },
+      "inputTokens": 53849,
+      "outputTokens": 732,
+      "totalCostUsd": 0.193517
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "37-quotes-login-then-scrape",
+      "taskUrl": "https://quotes.toscrape.com/login",
+      "success": true,
+      "successReason": "3 quotes",
+      "wallTimeMs": 28918,
+      "data": {
+        "quotes": [
+          {
+            "text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.",
+            "author": "Albert Einstein"
+          },
+          {
+            "text": "It is our choices, Harry, that show what we truly are, far more than our abilities.",
+            "author": "J.K. Rowling"
+          },
+          {
+            "text": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.",
+            "author": "Albert Einstein"
+          }
+        ]
+      },
+      "inputTokens": 64939,
+      "outputTokens": 825,
+      "totalCostUsd": 0.082699
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "28-weather-gov-sf",
+      "taskUrl": "https://forecast.weather.gov/MapClick.php?CityName=San+Francisco&state=CA&site=MTR",
+      "success": true,
+      "successReason": "temp=58\u00b0F",
+      "wallTimeMs": 29042,
+      "data": {
+        "temperature": "58\u00b0F",
+        "conditions": "NA"
+      },
+      "inputTokens": 63915,
+      "outputTokens": 387,
+      "totalCostUsd": 0.075004
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "08-stackoverflow-git-undo",
+      "taskUrl": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+      "success": true,
+      "successReason": "votes=27209",
+      "wallTimeMs": 29108,
+      "data": {
+        "title": "How do I undo the most recent local commits in Git?",
+        "votes": 27209,
+        "acceptedAnswer": "git reset is the command responsible for the undo ."
+      },
+      "inputTokens": 65543,
+      "outputTokens": 607,
+      "totalCostUsd": 0.079857
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "26-quotes-pagination",
+      "taskUrl": "https://quotes.toscrape.com",
+      "success": true,
+      "successReason": "3 quotes",
+      "wallTimeMs": 29524,
+      "data": {
+        "quotes": [
+          {
+            "text": "This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about.",
+            "author": "Marilyn Monroe"
+          },
+          {
+            "text": "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends.",
+            "author": "J.K. Rowling"
+          },
+          {
+            "text": "If you can't explain it to a six year old, you don't understand it yourself.",
+            "author": "Albert Einstein"
+          }
+        ]
+      },
+      "inputTokens": 52130,
+      "outputTokens": 703,
+      "totalCostUsd": 0.092109
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "54-books-paginate-count",
+      "taskUrl": "https://books.toscrape.com/catalogue/page-1.html",
+      "success": true,
+      "successReason": "20 books",
+      "wallTimeMs": 15073,
+      "data": {
+        "count": 20
+      },
+      "inputTokens": 37719,
+      "outputTokens": 180,
+      "totalCostUsd": 0.103411
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "63-hn-user-profile",
+      "taskUrl": "https://news.ycombinator.com/user?id=dang",
+      "success": true,
+      "successReason": "karma 38940",
+      "wallTimeMs": 15054,
+      "data": {
+        "karma": 38940,
+        "createdDate": "August 18, 2007"
+      },
+      "inputTokens": 28095,
+      "outputTokens": 199,
+      "totalCostUsd": 0.057048
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "61-hn-comments-navigate",
+      "taskUrl": "https://news.ycombinator.com/",
+      "success": true,
+      "successReason": "got both",
+      "wallTimeMs": 15257,
+      "data": {
+        "title": "Claude Design",
+        "commentCount": 136
+      },
+      "inputTokens": 39704,
+      "outputTokens": 193,
+      "totalCostUsd": 0.113342
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "53-books-click-and-detail",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "title+price",
+      "wallTimeMs": 18205,
+      "data": {
+        "title": "A Light in the Attic",
+        "price": "\u00a351.77",
+        "upc": "a897fe39b1053632",
+        "stock": "In stock (22 available)"
+      },
+      "inputTokens": 68252,
+      "outputTokens": 372,
+      "totalCostUsd": 0.125273
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "68-npm-package-version",
+      "taskUrl": "https://www.npmjs.com/package/react",
+      "success": true,
+      "successReason": "v19.2.5",
+      "wallTimeMs": 14503,
+      "data": {
+        "version": "19.2.5",
+        "weeklyDownloads": "122,367,092"
+      },
+      "inputTokens": 9299,
+      "outputTokens": 198,
+      "totalCostUsd": 0.162219
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "52-books-mystery-category",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "5 books",
+      "wallTimeMs": 19758,
+      "data": {
+        "books": [
+          {
+            "title": "Sharp Objects",
+            "price": "\u00a347.82"
+          },
+          {
+            "title": "In a Dark, Dark Wood",
+            "price": "\u00a319.63"
+          },
+          {
+            "title": "The Past Never Ends",
+            "price": "\u00a356.50"
+          },
+          {
+            "title": "A Murder in Time",
+            "price": "\u00a316.64"
+          },
+          {
+            "title": "The Murder of Roger Ackroyd (Hercule Poirot #4)",
+            "price": "\u00a344.10"
+          }
+        ]
+      },
+      "inputTokens": 71221,
+      "outputTokens": 441,
+      "totalCostUsd": 0.14162
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "69-npm-lodash-dependencies",
+      "taskUrl": "https://www.npmjs.com/package/lodash",
+      "success": true,
+      "successReason": "MIT",
+      "wallTimeMs": 14771,
+      "data": {
+        "maintainer": "jdalton",
+        "license": "MIT"
+      },
+      "inputTokens": 26112,
+      "outputTokens": 187,
+      "totalCostUsd": 0.08982
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "71-httpbin-html-table",
+      "taskUrl": "https://httpbin.org/html",
+      "success": true,
+      "successReason": "found",
+      "wallTimeMs": 14752,
+      "data": {
+        "author": "Herman Melville",
+        "title": "Moby-Dick"
+      },
+      "inputTokens": 29589,
+      "outputTokens": 206,
+      "totalCostUsd": 0.064522
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "64-github-repo-readme-header",
+      "taskUrl": "https://github.com/microsoft/TypeScript",
+      "success": true,
+      "successReason": "typescript",
+      "wallTimeMs": 16902,
+      "data": {
+        "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+        "language": "TypeScript"
+      },
+      "inputTokens": 44264,
+      "outputTokens": 252,
+      "totalCostUsd": 0.136777
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "12-wikipedia-python",
+      "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+      "success": true,
+      "successReason": "multi-paradigm: object-oriented, procedu",
+      "wallTimeMs": 35357,
+      "data": {
+        "paradigms": "multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective"
+      },
+      "inputTokens": 145944,
+      "outputTokens": 897,
+      "totalCostUsd": 0.192873
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "67-mdn-fetch-parameters",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/API/fetch",
+      "success": true,
+      "successReason": "2",
+      "wallTimeMs": 17517,
+      "data": {
+        "parameters": [
+          "resource",
+          "options"
+        ]
+      },
+      "inputTokens": 58511,
+      "outputTokens": 233,
+      "totalCostUsd": 0.205433
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "56-quotes-author-page",
+      "taskUrl": "https://quotes.toscrape.com/",
+      "success": true,
+      "successReason": "got data",
+      "wallTimeMs": 19685,
+      "data": {
+        "bornDate": "March 14, 1879",
+        "bornPlace": "Ulm, Germany"
+      },
+      "inputTokens": 72102,
+      "outputTokens": 361,
+      "totalCostUsd": 0.088779
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "60-wikipedia-references-count",
+      "taskUrl": "https://en.wikipedia.org/wiki/HTTP",
+      "success": true,
+      "successReason": "71 refs",
+      "wallTimeMs": 19456,
+      "data": {
+        "count": 71
+      },
+      "inputTokens": 118886,
+      "outputTokens": 297,
+      "totalCostUsd": 0.253706
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "51-books-category-extract",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "11 books",
+      "wallTimeMs": 37602,
+      "data": {
+        "books": [
+          {
+            "title": "It's Only the Himalayas"
+          },
+          {
+            "title": "Full Moon over Noah\u2019s Ark: An Odyssey to Mount Ararat and Beyond"
+          },
+          {
+            "title": "See America: A Celebration of Our National Parks & Treasured Sites"
+          },
+          {
+            "title": "Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel"
+          },
+          {
+            "title": "Under the Tuscan Sun"
+          },
+          {
+            "title": "A Summer In Europe"
+          },
+          {
+            "title": "The Great Railway Bazaar"
+          },
+          {
+            "title": "A Year in Provence (Provence #1)"
+          },
+          {
+            "title": "The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)"
+          },
+          {
+            "title": "Neither Here nor There: Travels in Europe"
+          },
+          {
+            "title": "1,000 Places to See Before You Die"
+          }
+        ]
+      },
+      "inputTokens": 180169,
+      "outputTokens": 968,
+      "totalCostUsd": 0.204369
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "35-the-internet-checkboxes",
+      "taskUrl": "https://the-internet.herokuapp.com/checkboxes",
+      "success": true,
+      "successReason": "cb1=true, cb2=false",
+      "wallTimeMs": 38071,
+      "data": {
+        "checkbox1": true,
+        "checkbox2": false
+      },
+      "inputTokens": 65025,
+      "outputTokens": 432,
+      "totalCostUsd": 0.075176
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "57-quotes-tag-filter",
+      "taskUrl": "https://quotes.toscrape.com/",
+      "success": true,
+      "successReason": "14",
+      "wallTimeMs": 21634,
+      "data": {
+        "count": 14
+      },
+      "inputTokens": 50374,
+      "outputTokens": 344,
+      "totalCostUsd": 0.075772
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "65-github-navigate-to-issues",
+      "taskUrl": "https://github.com/nodejs/node",
+      "success": true,
+      "successReason": "3 issues",
+      "wallTimeMs": 22855,
+      "data": {
+        "issues": [
+          {
+            "title": "AIX: clang libc++ std::filesystem::remove_all() Returns Wrong Error Code"
+          },
+          {
+            "title": "Nightly macos15-release-pkg builds failing to build libffi"
+          },
+          {
+            "title": "require.extensions is undefined on synthetic require for CJS loaded through ESM loader (regression in v24.15.0)"
+          }
+        ]
+      },
+      "inputTokens": 116005,
+      "outputTokens": 544,
+      "totalCostUsd": 0.266719
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "62-hn-newest-stories",
+      "taskUrl": "https://news.ycombinator.com/",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 23768,
+      "data": {
+        "stories": [
+          {
+            "title": "AI's Mainframe Moment"
+          },
+          {
+            "title": "Where Enterprises Are Adopting AI"
+          },
+          {
+            "title": "Apple's Mac Mini Went Viral. Why Can't You Buy One?"
+          }
+        ]
+      },
+      "inputTokens": 77785,
+      "outputTokens": 467,
+      "totalCostUsd": 0.166735
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "55-quotes-next-page",
+      "taskUrl": "https://quotes.toscrape.com/",
+      "success": true,
+      "successReason": "3 quotes",
+      "wallTimeMs": 25838,
+      "data": {
+        "quotes": [
+          {
+            "text": "This life is what you make it. No matter what, you're going to mess up sometimes, it's a universal truth. But the good part is you get to decide how you're going to mess it up. Girls will be your friends - they'll act like it anyway. But just remember, some come, some go. The ones that stay with you through everything - they're your true best friends. Don't let go of them. Also remember, sisters make the best friends in the world. As for lovers, well, they'll come and go too. And baby, I hate to say it, most of them - actually pretty much all of them are going to break your heart, but you can't give up because if you give up, you'll never find your soulmate. You'll never find that half who makes you whole and that goes for everything. Just because you fail once, doesn't mean you're gonna fail at everything. Keep trying, hold on, and always, always, always believe in yourself, because if you don't, then who will, sweetie? So keep your head high, keep your chin up, and most importantly, keep smiling, because life's a beautiful thing and there's so much to smile about."
+          },
+          {
+            "text": "It takes a great deal of bravery to stand up to our enemies, but just as much to stand up to our friends."
+          },
+          {
+            "text": "If you can't explain it to a six year old, you don't understand it yourself."
+          }
+        ]
+      },
+      "inputTokens": 52081,
+      "outputTokens": 655,
+      "totalCostUsd": 0.09087200000000001
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "45-wikipedia-rust-intro",
+      "taskUrl": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+      "success": true,
+      "successReason": "137 chars",
+      "wallTimeMs": 43679,
+      "data": {
+        "intro": "Rust is a general-purpose programming language. It is noted for its emphasis on performance, type safety, concurrency, and memory safety."
+      },
+      "inputTokens": 210717,
+      "outputTokens": 1260,
+      "totalCostUsd": 0.218242
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "94-hn-ask-stories",
+      "taskUrl": "https://news.ycombinator.com/ask",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 15189,
+      "data": {
+        "stories": [
+          {
+            "title": "Ask HN: Building a solo business is impossible",
+            "points": 25
+          },
+          {
+            "title": "Ask HN: Who is using OpenClaw?",
+            "points": 330
+          },
+          {
+            "title": "Ask HN: Getting depressed day by day, how to cope?",
+            "points": 7
+          }
+        ]
+      },
+      "inputTokens": 35784,
+      "outputTokens": 390,
+      "totalCostUsd": 0.098477
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "trivial-example-h1",
+      "taskUrl": "https://example.com",
+      "success": true,
+      "successReason": "Example Domain",
+      "wallTimeMs": 10732,
+      "data": {
+        "heading": "Example Domain"
+      },
+      "inputTokens": 26970,
+      "outputTokens": 157,
+      "totalCostUsd": 0.050745
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "95-hn-show-stories",
+      "taskUrl": "https://news.ycombinator.com/show",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 14926,
+      "data": {
+        "stories": [
+          {
+            "title": "Show HN: Stage \u2013 Putting humans back in control of code review"
+          },
+          {
+            "title": "Show HN: SPICE simulation \u2192 oscilloscope \u2192 verification with Claude Code"
+          },
+          {
+            "title": "Show HN: React Email 6.0 \u2013 An open-source email editor you can embed in your app"
+          }
+        ]
+      },
+      "inputTokens": 38371,
+      "outputTokens": 320,
+      "totalCostUsd": 0.109496
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "99-jsonplaceholder-todos",
+      "taskUrl": "https://jsonplaceholder.typicode.com/todos",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 12823,
+      "data": {
+        "todos": [
+          "delectus aut autem",
+          "quis ut nam facilis et officia qui",
+          "fugiat veniam minus"
+        ]
+      },
+      "inputTokens": 26112,
+      "outputTokens": 201,
+      "totalCostUsd": 0.312781
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "trivial-jsonplaceholder-user",
+      "taskUrl": "https://jsonplaceholder.typicode.com/users/1",
+      "success": true,
+      "successReason": "Leanne Graham",
+      "wallTimeMs": 12867,
+      "data": {
+        "name": "Leanne Graham"
+      },
+      "inputTokens": 26112,
+      "outputTokens": 167,
+      "totalCostUsd": 0.059967
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "98-books-add-to-cart-not",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": true,
+      "successReason": "found \"The...\"",
+      "wallTimeMs": 14926,
+      "data": {
+        "title": "The Requiem Red",
+        "price": "\u00a322.65"
+      },
+      "inputTokens": 38202,
+      "outputTokens": 221,
+      "totalCostUsd": 0.106614
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "96-github-trending-like",
+      "taskUrl": "https://github.com/explore",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 15053,
+      "data": {
+        "repos": [
+          "EvoMap/evolver",
+          "lsdefine/GenericAgent",
+          "SimoneAvogadro/android-reverse-engineering-skill"
+        ]
+      },
+      "inputTokens": 50321,
+      "outputTokens": 255,
+      "totalCostUsd": 0.166296
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "91-example-domain-extract",
+      "taskUrl": "https://example.com/",
+      "success": true,
+      "successReason": "example",
+      "wallTimeMs": 19327,
+      "data": {
+        "heading": "Example Domain",
+        "linkUrl": "https://iana.org/domains/example"
+      },
+      "inputTokens": 63006,
+      "outputTokens": 370,
+      "totalCostUsd": 0.069665
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "97-mdn-html-elements",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 15212,
+      "data": {
+        "elements": [
+          "<html>",
+          "<base>",
+          "<head>",
+          "<link>",
+          "<meta>"
+        ]
+      },
+      "inputTokens": 26112,
+      "outputTokens": 256,
+      "totalCostUsd": 0.28815799999999997
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "72-jsonplaceholder-nav-post",
+      "taskUrl": "https://jsonplaceholder.typicode.com/",
+      "success": false,
+      "successReason": "no title",
+      "wallTimeMs": 30002,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "73-w3schools-css-colors",
+      "taskUrl": "https://www.w3schools.com/cssref/css_colors.php",
+      "success": false,
+      "successReason": "few",
+      "wallTimeMs": 30000,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "74-scrapethissite-countries",
+      "taskUrl": "https://www.scrapethissite.com/pages/simple/",
+      "success": false,
+      "successReason": "few",
+      "wallTimeMs": 30003,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "75-scrapethissite-hockey-table",
+      "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+      "success": false,
+      "successReason": "few",
+      "wallTimeMs": 30000,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "76-the-internet-dropdown",
+      "taskUrl": "https://the-internet.herokuapp.com/dropdown",
+      "success": false,
+      "successReason": "no option",
+      "wallTimeMs": 30000,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "77-the-internet-checkboxes",
+      "taskUrl": "https://the-internet.herokuapp.com/checkboxes",
+      "success": false,
+      "successReason": "no bools",
+      "wallTimeMs": 30002,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "78-the-internet-dynamic-content",
+      "taskUrl": "https://the-internet.herokuapp.com/dynamic_content",
+      "success": false,
+      "successReason": "few",
+      "wallTimeMs": 30001,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "79-the-internet-add-remove",
+      "taskUrl": "https://the-internet.herokuapp.com/add_remove_elements/",
+      "success": false,
+      "successReason": "too few",
+      "wallTimeMs": 30002,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "100-scrapethissite-ajax",
+      "taskUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 17189,
+      "data": {
+        "films": [
+          {
+            "title": "Spotlight",
+            "oscars": 2
+          },
+          {
+            "title": "Mad Max: Fury Road",
+            "oscars": 6
+          },
+          {
+            "title": "The Revenant",
+            "oscars": 3
+          }
+        ]
+      },
+      "inputTokens": 48590,
+      "outputTokens": 340,
+      "totalCostUsd": 0.07307999999999999
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "80-the-internet-iframe",
+      "taskUrl": "https://the-internet.herokuapp.com/iframe",
+      "success": false,
+      "successReason": "missing",
+      "wallTimeMs": 30002,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "92-quotes-scroll-mode",
+      "taskUrl": "https://quotes.toscrape.com/scroll",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 23199,
+      "data": {
+        "quotes": [
+          "\u201cThe world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.\u201d",
+          "\u201cIt is our choices, Harry, that show what we truly are, far more than our abilities.\u201d",
+          "\u201cThere are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.\u201d",
+          "\u201cThe person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.\u201d",
+          "\u201cImperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.\u201d"
+        ]
+      },
+      "inputTokens": 46159,
+      "outputTokens": 993,
+      "totalCostUsd": 0.082144
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "81-books-home-to-category-to-book",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": false,
+      "successReason": "no upc",
+      "wallTimeMs": 30001,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "82-wikipedia-search-result",
+      "taskUrl": "https://en.wikipedia.org/wiki/Main_Page",
+      "success": false,
+      "successReason": "wrong year",
+      "wallTimeMs": 30002,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "93-quotes-js-rendered",
+      "taskUrl": "https://quotes.toscrape.com/js",
+      "success": true,
+      "successReason": "3",
+      "wallTimeMs": 23370,
+      "data": {
+        "authors": [
+          "Albert Einstein",
+          "J.K. Rowling",
+          "Albert Einstein"
+        ]
+      },
+      "inputTokens": 62327,
+      "outputTokens": 405,
+      "totalCostUsd": 0.070189
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "83-quotes-login-and-scrape",
+      "taskUrl": "https://quotes.toscrape.com/login",
+      "success": false,
+      "successReason": "no quotes",
+      "wallTimeMs": 30002,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "84-books-sort-or-filter",
+      "taskUrl": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+      "success": false,
+      "successReason": "missing",
+      "wallTimeMs": 30003,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "85-scrapethissite-paginate",
+      "taskUrl": "https://www.scrapethissite.com/pages/",
+      "success": false,
+      "successReason": "few",
+      "wallTimeMs": 30000,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "86-hn-filter-by-points",
+      "taskUrl": "https://news.ycombinator.com/",
+      "success": false,
+      "successReason": "none",
+      "wallTimeMs": 30001,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "87-books-price-under",
+      "taskUrl": "https://books.toscrape.com/",
+      "success": false,
+      "successReason": "none",
+      "wallTimeMs": 30002,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "88-wikipedia-list-items",
+      "taskUrl": "https://en.wikipedia.org/wiki/List_of_programming_languages",
+      "success": false,
+      "successReason": "few",
+      "wallTimeMs": 30002,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "33-httpbin-anything",
+      "taskUrl": "https://httpbin.org/forms/post",
+      "success": true,
+      "successReason": "bob found",
+      "wallTimeMs": 53854,
+      "data": {
+        "customer": "Bob Jones"
+      },
+      "inputTokens": 105053,
+      "outputTokens": 1283,
+      "totalCostUsd": 0.126761
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "89-wikipedia-table-data",
+      "taskUrl": "https://en.wikipedia.org/wiki/List_of_tallest_buildings",
+      "success": false,
+      "successReason": "few",
+      "wallTimeMs": 30001,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "90-wikipedia-category-listing",
+      "taskUrl": "https://en.wikipedia.org/wiki/Category:Web_frameworks",
+      "success": false,
+      "successReason": "few",
+      "wallTimeMs": 30001,
+      "error": "This operation was aborted",
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "totalCostUsd": 0
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "58-wikipedia-follow-link",
+      "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+      "success": true,
+      "successReason": "310 chars",
+      "wallTimeMs": 39086,
+      "data": {
+        "intro": "ECMAScript (/\u02c8\u025bkm\u0259skr\u026apt/; ES) is a standard for scripting languages including JavaScript, JScript, and ActionScript. It is best known as a JavaScript standard intended to ensure the interoperability of web pages across different web browsers. It is standardized by Ecma International in the document ECMA-262."
+      },
+      "inputTokens": 310320,
+      "outputTokens": 1101,
+      "totalCostUsd": 0.394206
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "59-wikipedia-infobox-data",
+      "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+      "success": true,
+      "successReason": "found designer",
+      "wallTimeMs": 41013,
+      "data": {
+        "designer": "Guido van Rossum",
+        "firstAppeared": "20 February 1991",
+        "stableRelease": "3.14.4"
+      },
+      "inputTokens": 146592,
+      "outputTokens": 1009,
+      "totalCostUsd": 0.198701
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "44-turnstile-login",
+      "taskUrl": "https://demo.turnstile.workers.dev/",
+      "success": true,
+      "successReason": "turnstile ok",
+      "wallTimeMs": 76742,
+      "data": {
+        "loggedIn": true
+      },
+      "inputTokens": 231410,
+      "outputTokens": 2126,
+      "totalCostUsd": 0.211484
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "66-mdn-javascript-array-methods",
+      "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+      "success": true,
+      "successReason": "5",
+      "wallTimeMs": 69878,
+      "data": {
+        "methods": [
+          "at()",
+          "concat()",
+          "copyWithin()",
+          "entries()",
+          "every()"
+        ]
+      },
+      "inputTokens": 656062,
+      "outputTokens": 2483,
+      "totalCostUsd": 0.720842
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "30-demoqa-textbox",
+      "taskUrl": "https://demoqa.com/text-box",
+      "success": true,
+      "successReason": "alice found",
+      "wallTimeMs": 93318,
+      "data": {
+        "name": "Alice Smith",
+        "email": "alice@example.com"
+      },
+      "inputTokens": 289596,
+      "outputTokens": 2165,
+      "totalCostUsd": 0.227509
+    },
+    {
+      "configId": "browser-use-cloud",
+      "tool": "browser-use-cloud",
+      "model": "bu-mini",
+      "taskName": "32-the-internet-login",
+      "taskUrl": "https://the-internet.herokuapp.com/login",
+      "success": true,
+      "successReason": "login ok",
+      "wallTimeMs": 165171,
+      "data": {
+        "loggedIn": true
+      },
+      "inputTokens": 429363,
+      "outputTokens": 4679,
+      "totalCostUsd": 0.352904
+    }
+  ],
+  "note": "predev results from 2026-04-17T17-51-44; browser-use-cloud results from 2026-04-17T16-28-07"
+}

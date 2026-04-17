@@ -1,0 +1,85 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "46-mdn-css-display",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+  "success": true,
+  "successReason": "31 values",
+  "wallTimeMs": 25096,
+  "data": {
+    "values": [
+      "block",
+      "inline",
+      "run-in",
+      "flow",
+      "flow-root",
+      "table",
+      "flex",
+      "grid",
+      "ruby",
+      "list-item",
+      "table-row-group",
+      "table-header-group",
+      "table-footer-group",
+      "table-row",
+      "table-cell",
+      "table-column-group",
+      "table-column",
+      "table-caption",
+      "ruby-base",
+      "ruby-text",
+      "ruby-base-container",
+      "ruby-text-container",
+      "contents",
+      "none",
+      "inline-block",
+      "inline-table",
+      "inline-flex",
+      "inline-grid",
+      "grid-lanes",
+      "inline-grid-lanes",
+      "math"
+    ]
+  },
+  "inputTokens": 53849,
+  "outputTokens": 732,
+  "totalCostUsd": 0.193517,
+  "trace": [
+    {
+      "t": 1776443297455,
+      "type": "step",
+      "title": "Extract the formal syntax values for the CSS display property (e.g. \"block\", \"inline\", \"flex\", \"grid\", \"none\"). Return JSON: { \"values\": string[] }\n\nStart by na"
+    },
+    {
+      "t": 1776443297862,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443298972,
+      "type": "step",
+      "title": "Fetch: Fetched https://developer.mozilla.org/en-US/docs/Web/CSS/display (HTTP 200, 137512 chars)\n\n- [Skip to main content](#content)\n- [Skip to search](#s..."
+    },
+    {
+      "t": 1776443305439,
+      "type": "step",
+      "title": "Running Python code"
+    },
+    {
+      "t": 1776443305505,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\nTotal values: 31\n"
+    },
+    {
+      "t": 1776443309925,
+      "type": "step",
+      "title": "Done: Extracted 31 formal syntax values for the CSS `display` property from MDN, covering all categories defined in the Formal Syntax section:\n\n- **displ..."
+    },
+    {
+      "t": 1776443309988,
+      "type": "step",
+      "title": "Extracted 31 formal syntax values for the CSS `display` property from MDN, covering all categories defined in the Formal Syntax section:\n\n- **display-outside**:"
+    }
+  ]
+}

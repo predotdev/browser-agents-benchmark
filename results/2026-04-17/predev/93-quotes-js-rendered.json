@@ -1,0 +1,62 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "93-quotes-js-rendered",
+  "taskUrl": "https://quotes.toscrape.com/js",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 21067,
+  "data": {
+    "authors": [
+      "Albert Einstein",
+      "J.K. Rowling",
+      "Albert Einstein"
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308730,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448315376,
+      "type": "navigation",
+      "title": "navigate → https://quotes.toscrape.com/js"
+    },
+    {
+      "t": 1776448316138,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a32c/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448316138,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a32c/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448319362,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: The page is fully rendered and visible. The first 3 quote authors are: Albert Einstein (1st quote), J.K. Rowling (2nd quote), and Albert Einstein (3rd quote). Extracted directly from the visible DOM."
+    },
+    {
+      "t": 1776448319363,
+      "type": "validation",
+      "iter": 1,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448321435,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

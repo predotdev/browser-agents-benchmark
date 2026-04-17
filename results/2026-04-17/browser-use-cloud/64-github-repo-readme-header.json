@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "64-github-repo-readme-header",
+  "taskUrl": "https://github.com/microsoft/TypeScript",
+  "success": true,
+  "successReason": "typescript",
+  "wallTimeMs": 16902,
+  "data": {
+    "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+    "language": "TypeScript"
+  },
+  "inputTokens": 44264,
+  "outputTokens": 252,
+  "totalCostUsd": 0.136777,
+  "trace": [
+    {
+      "t": 1776443311918,
+      "type": "step",
+      "title": "Extract the repository description (the tagline at the top) and the programming language used. Return JSON: { \"description\": string, \"language\": string }\n\nStart"
+    },
+    {
+      "t": 1776443312381,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776443313670,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/microsoft/TypeScript (HTTP 200, 18538 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle navigatio..."
+    },
+    {
+      "t": 1776443317788,
+      "type": "step",
+      "title": "Python: save_output_json({"
+    },
+    {
+      "t": 1776443318079,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776443320757,
+      "type": "step",
+      "title": "Done: Extracted from https://github.com/microsoft/TypeScript:\n- **Description**: \"TypeScript is a superset of JavaScript that compiles to clean JavaScrip..."
+    },
+    {
+      "t": 1776443320784,
+      "type": "step",
+      "title": "Extracted from https://github.com/microsoft/TypeScript:\n- **Description**: \"TypeScript is a superset of JavaScript that compiles to clean JavaScript output.\"\n- "
+    }
+  ]
+}

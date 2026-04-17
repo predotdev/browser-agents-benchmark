@@ -1,0 +1,79 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "20-mdn-array-methods",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+  "success": true,
+  "successReason": "5 methods",
+  "wallTimeMs": 22595,
+  "data": {
+    "methods": [
+      "at()",
+      "concat()",
+      "copyWithin()",
+      "entries()",
+      "every()"
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308738,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448318729,
+      "type": "navigation",
+      "title": "navigate → https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+    },
+    {
+      "t": 1776448319969,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a313/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448319970,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a313/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448319971,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a313/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448319972,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a313/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448319973,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a313/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448324194,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : The page contains a list of instance methods in the left sidebar under 'Instance methods'. I can see at least 5 methods: at(), concat(), copyWithin(), entries(), and every(). I will extract these 5 method names as requested."
+    },
+    {
+      "t": 1776448324195,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "52-books-mystery-category",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "5 books",
+  "wallTimeMs": 44223,
+  "data": {
+    "books": [
+      {
+        "title": "Sharp Objects",
+        "price": "£47.82"
+      },
+      {
+        "title": "In a Dark, Dark ...",
+        "price": "£19.63"
+      },
+      {
+        "title": "The Past Never Ends",
+        "price": "£56.50"
+      },
+      {
+        "title": "A Murder in Time",
+        "price": "£16.64"
+      },
+      {
+        "title": "The Murder of Roger Ackroyd",
+        "price": "£44.10"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308817,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448320910,
+      "type": "navigation",
+      "title": "navigate → https://books.toscrape.com/"
+    },
+    {
+      "t": 1776448321889,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a336/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448321890,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a336/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448321890,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a336/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448335082,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 1 actions: Navigating to the Mystery category page. The first 5 books on this page are: The Requiem Red (£22.65), The Dirty Little Secrets ... (£33.34), The Coming Woman: A ... (£17.93), The Boys in the ... (£22.60), and The Black Maria (£52.15).",
+      "detail": "click li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(2) > a:nth-of-type(1)"
+    },
+    {
+      "t": 1776448335925,
+      "type": "action",
+      "iter": 1,
+      "title": "action: click li:nth-of-type(1) > ul:nth-of-type(1) > li:nth-of-type(2) > a:nth-of-type(1)"
+    },
+    {
+      "t": 1776448337151,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a336/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448337151,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a336/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448337152,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a336/task-0/iter-2-c2.jpg"
+    },
+    {
+      "t": 1776448341486,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · done · EXTRACTED PAYLOAD EMPTY: Already on the Mystery category page. Extracted the first 5 book titles and prices from the visible listing."
+    },
+    {
+      "t": 1776448341487,
+      "type": "validation",
+      "iter": 2,
+      "title": "schema validated ✓"
+    },
+    {
+      "t": 1776448345512,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

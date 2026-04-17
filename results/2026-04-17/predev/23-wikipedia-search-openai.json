@@ -1,0 +1,95 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "23-wikipedia-search-openai",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 27570,
+  "data": {
+    "results": [
+      {
+        "title": "OpenAI"
+      },
+      {
+        "title": "OpenAI Codex (AI agent)"
+      },
+      {
+        "title": "OpenAI o1"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308687,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448313131,
+      "type": "navigation",
+      "title": "navigate → https://en.wikipedia.org/wiki/Special:Search"
+    },
+    {
+      "t": 1776448314172,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30f/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448314172,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30f/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448320784,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · 2 actions: I will type 'OpenAI' into the search field and press Enter to submit the search. Then I will extract the first 3 result titles from the search results page.",
+      "detail": "fill #searchInput = \"OpenAI\"\npress #searchInput = \"Enter\""
+    },
+    {
+      "t": 1776448323750,
+      "type": "action",
+      "iter": 1,
+      "title": "action: fill #searchInput"
+    },
+    {
+      "t": 1776448323750,
+      "type": "action",
+      "iter": 1,
+      "title": "action: press #searchInput"
+    },
+    {
+      "t": 1776448324939,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30f/task-0/iter-2-c0.jpg"
+    },
+    {
+      "t": 1776448324939,
+      "type": "screenshot",
+      "iter": 2,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273333c35fe72d194a30f/task-0/iter-2-c1.jpg"
+    },
+    {
+      "t": 1776448328538,
+      "type": "plan",
+      "iter": 2,
+      "title": "plan · : The search field already contains 'OpenAI' and the dropdown shows the first 3 results. I can extract the titles directly from the visible text blocks: 'OpenAI', 'OpenAI Codex (AI agent)', and 'OpenAI o1'."
+    },
+    {
+      "t": 1776448328539,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

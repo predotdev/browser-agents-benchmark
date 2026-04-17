@@ -1,0 +1,27 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "06-coingecko-btc-price",
+  "taskUrl": "https://www.coingecko.com/en/coins/bitcoin",
+  "success": true,
+  "successReason": "$77599.43",
+  "wallTimeMs": 67068,
+  "data": {
+    "priceUSD": 77599.43
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448311536,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448330908,
+      "type": "navigation",
+      "title": "navigate → https://www.coingecko.com/en/coins/bitcoin"
+    }
+  ]
+}

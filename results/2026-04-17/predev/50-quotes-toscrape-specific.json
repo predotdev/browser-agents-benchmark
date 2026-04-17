@@ -1,0 +1,59 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "50-quotes-toscrape-specific",
+  "taskUrl": "https://quotes.toscrape.com/page/1/",
+  "success": true,
+  "successReason": "2 quotes",
+  "wallTimeMs": 26415,
+  "data": {
+    "quotes": [
+      {
+        "text": "The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking."
+      },
+      {
+        "text": "There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle."
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308837,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448318033,
+      "type": "navigation",
+      "title": "navigate → https://quotes.toscrape.com/page/1/"
+    },
+    {
+      "t": 1776448318837,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a35b/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448318837,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a35b/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448328083,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : Extracted 2 quotes by Albert Einstein from the visible quotes on the page. The first quote is by Albert Einstein, and the third quote is also by Albert Einstein. The other quotes are by J.K. Rowling, Jane Austen, and Marilyn Monroe."
+    },
+    {
+      "t": 1776448328085,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

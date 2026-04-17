@@ -1,0 +1,86 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "89-wikipedia-table-data",
+  "taskUrl": "https://en.wikipedia.org/wiki/List_of_tallest_buildings",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 29565,
+  "data": {
+    "buildings": [
+      {
+        "name": "Burj Khalifa",
+        "heightM": 828
+      },
+      {
+        "name": "Merdeka 118",
+        "heightM": 678.9
+      },
+      {
+        "name": "Shanghai Tower",
+        "heightM": 632
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308817,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448323106,
+      "type": "navigation",
+      "title": "navigate → https://en.wikipedia.org/wiki/List_of_tallest_buildings"
+    },
+    {
+      "t": 1776448324479,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a399/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448324480,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a399/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448324481,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a399/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448324481,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a399/task-0/iter-1-c3.jpg"
+    },
+    {
+      "t": 1776448324482,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a399/task-0/iter-1-c4.jpg"
+    },
+    {
+      "t": 1776448330401,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : The page shows the top 3 tallest buildings: Burj Khalifa (828m), Merdeka 118 (678.9m), and Shanghai Tower (632m). These values are visible in the visible text blocks and match the schema. No further navigation or extraction is needed."
+    },
+    {
+      "t": 1776448330402,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}

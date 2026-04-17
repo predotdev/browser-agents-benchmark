@@ -1,0 +1,72 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "87-books-price-under",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 24925,
+  "data": {
+    "books": [
+      {
+        "title": "Starving Hearts (Triangular Trade ...",
+        "price": "£13.99"
+      },
+      {
+        "title": "Set Me Free",
+        "price": "£17.46"
+      },
+      {
+        "title": "The Coming Woman: A ...",
+        "price": "£17.93"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": [
+    {
+      "t": 1776448308838,
+      "type": "sandbox",
+      "title": "sandbox started"
+    },
+    {
+      "t": 1776448317851,
+      "type": "navigation",
+      "title": "navigate → https://books.toscrape.com/"
+    },
+    {
+      "t": 1776448318768,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a375/task-0/iter-1-c0.jpg"
+    },
+    {
+      "t": 1776448318768,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a375/task-0/iter-1-c1.jpg"
+    },
+    {
+      "t": 1776448318769,
+      "type": "screenshot",
+      "iter": 1,
+      "title": "screenshot",
+      "screenshotUrl": "https://predev-images.s3.us-west-2.amazonaws.com/browser-tasks/69e273343c35fe72d194a375/task-0/iter-1-c2.jpg"
+    },
+    {
+      "t": 1776448325888,
+      "type": "plan",
+      "iter": 1,
+      "title": "plan · : I have identified the first 3 books with prices under £20 from the visible list: Starving Hearts (£13.99), Set Me Free (£17.46), and The Coming Woman (£17.93). These are the first three in DOM order that meet the price criteria. I will now extract them using the extractQuery mechanism."
+    },
+    {
+      "t": 1776448325890,
+      "type": "done",
+      "title": "done"
+    }
+  ]
+}
