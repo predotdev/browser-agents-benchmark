@@ -2,7 +2,7 @@
 
 Reproducible head-to-head benchmark of browser-automation services across **100 real-world web tasks** — scraping, multi-step navigation, login flows, form fills, pagination.
 
-> **pre.dev Browser Agents passes 100 / 100 tasks at ~36× lower cost AND ~1.8× faster than Browser Use Cloud.**
+> **pre.dev Browser Agents passes 100 / 100 tasks at ~12× lower cost AND ~1.8× faster than Browser Use Cloud.**
 
 ---
 
@@ -10,7 +10,7 @@ Reproducible head-to-head benchmark of browser-automation services across **100 
 
 | Provider | Pass rate | Avg time / task | $ / task | Total $ for 100 tasks |
 |---|---:|---:|---:|---:|
-| **🏆 [pre.dev Browser Agents](https://pre.dev/browser-agents)** | **100 / 100** | **14.4 s** | **$0.0033** | **$0.33** |
+| **🏆 [pre.dev Browser Agents](https://pre.dev/browser-agents)** | **100 / 100** | **14.4 s** | **$0.0100** | **$1.00** |
 | [Browser Use Cloud](https://cloud.browser-use.com) | 81 / 100 | 26.3 s | $0.1199 | $11.99 |
 
 Same 100 tasks. Same JSON output schemas. Same uniform `successCheck` predicate. Browser agents are stochastic — individual runs on cheap-tier models vary by a few tasks per suite; the full per-task JSON + trace from this run is in `results/2026-04-17/` so the data can be re-scored independently.
