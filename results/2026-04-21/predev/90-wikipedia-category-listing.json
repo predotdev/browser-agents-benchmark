@@ -1,0 +1,22 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "90-wikipedia-category-listing",
+  "taskUrl": "https://en.wikipedia.org/wiki/Category:Web_frameworks",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 6161,
+  "data": {
+    "frameworks": [
+      "List of Ajax frameworks",
+      "Microframework",
+      "Web framework",
+      "Comparison of server-side web frameworks",
+      "AIDA/Web"
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

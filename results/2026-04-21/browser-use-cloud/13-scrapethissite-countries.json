@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "13-scrapethissite-countries",
+  "taskUrl": "https://www.scrapethissite.com/pages/simple/",
+  "success": true,
+  "successReason": "5 countries",
+  "wallTimeMs": 19805,
+  "data": {
+    "countries": [
+      {
+        "name": "Andorra",
+        "capital": "Andorra la Vella"
+      },
+      {
+        "name": "United Arab Emirates",
+        "capital": "Abu Dhabi"
+      },
+      {
+        "name": "Afghanistan",
+        "capital": "Kabul"
+      },
+      {
+        "name": "Antigua and Barbuda",
+        "capital": "St. John's"
+      },
+      {
+        "name": "Anguilla",
+        "capital": "The Valley"
+      }
+    ]
+  },
+  "inputTokens": 91669,
+  "outputTokens": 542,
+  "totalCostUsd": 0.030520000000000002,
+  "trace": [
+    {
+      "t": 1776802756387,
+      "type": "step",
+      "title": "Extract the first 5 country names and their capitals. Return JSON: { \"countries\": [{ \"name\": string, \"capital\": string }] }\n\nStart by navigating to: https://www"
+    },
+    {
+      "t": 1776802756865,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802757636,
+      "type": "step",
+      "title": "Fetch: Fetched https://www.scrapethissite.com/pages/simple/ (HTTP 200, 23318 chars)\n\n- [![](/static/images/scraper-icon.png) Scrape This Site](/)\n- [Sandb..."
+    },
+    {
+      "t": 1776802763048,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802763120,
+      "type": "step",
+      "title": "Python: Data written to output.json\n"
+    },
+    {
+      "t": 1776802766408,
+      "type": "step",
+      "title": "Done: I have extracted the first 5 countries and their capitals from the page. The results have been saved to output.json.\n\nCountries extracted:\n1. Andor..."
+    },
+    {
+      "t": 1776802766428,
+      "type": "step",
+      "title": "I have extracted the first 5 countries and their capitals from the page. The results have been saved to output.json.\n\nCountries extracted:\n1. Andorra (Capital: "
+    }
+  ]
+}

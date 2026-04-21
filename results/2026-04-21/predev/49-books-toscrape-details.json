@@ -1,0 +1,19 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "49-books-toscrape-details",
+  "taskUrl": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html",
+  "success": true,
+  "successReason": "A Light in the Attic",
+  "wallTimeMs": 13624,
+  "data": {
+    "title": "A Light in the Attic",
+    "price": "£51.77",
+    "availability": "In stock (22 available)",
+    "reviews": 0
+  },
+  "creditsUsed": 0.065008,
+  "totalCostUsd": 0.0065008,
+  "trace": []
+}

@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "18-github-releases",
+  "taskUrl": "https://github.com/denoland/deno/releases",
+  "success": true,
+  "successReason": "3 releases",
+  "wallTimeMs": 11184,
+  "data": {
+    "releases": [
+      {
+        "title": "v2.7.12",
+        "date": "2026.04.09"
+      },
+      {
+        "title": "v2.7.11",
+        "date": "2026.04.01"
+      },
+      {
+        "title": "v2.7.10",
+        "date": "2026.03.31"
+      }
+    ]
+  },
+  "creditsUsed": 0.147476,
+  "totalCostUsd": 0.0147476,
+  "trace": []
+}

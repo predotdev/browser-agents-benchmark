@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "36-wikipedia-search-submit-extract",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 21103,
+  "data": {
+    "results": [
+      {
+        "title": "Machine learning"
+      },
+      {
+        "title": "Statistical learning"
+      },
+      {
+        "title": "Artificial intelligence"
+      }
+    ]
+  },
+  "creditsUsed": 0.225896,
+  "totalCostUsd": 0.0225896,
+  "trace": []
+}

@@ -1,0 +1,73 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "62-hn-newest-stories",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 19403,
+  "data": {
+    "stories": [
+      {
+        "title": "Wearable health tech might be Tim Cook's greatest legacy"
+      },
+      {
+        "title": "The Fossils 1969"
+      },
+      {
+        "title": "Amtrak's \"1MB\" National Route Map PDF Is a 574MB File"
+      }
+    ]
+  },
+  "inputTokens": 105382,
+  "outputTokens": 481,
+  "totalCostUsd": 0.029761,
+  "trace": [
+    {
+      "t": 1776802772301,
+      "type": "step",
+      "title": "Click the \"new\" link in the top navigation, then extract the top 3 story titles. Return JSON: { \"stories\": [{ \"title\": string }] }\n\nStart by navigating to: http"
+    },
+    {
+      "t": 1776802772753,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802773742,
+      "type": "step",
+      "title": "Fetch: Fetched https://news.ycombinator.com/ (HTTP 200, 10796 chars)\n\n[![](y18.svg)](https://news.ycombinator.com)[**Hacker News**](news)[new](newest) | [..."
+    },
+    {
+      "t": 1776802777468,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802778296,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 16423, \"text\": \"[![](y18.svg)](https://news.ycombinator.com)[**Hacker News**](news)[new](newest) | [pas..."
+    },
+    {
+      "t": 1776802781079,
+      "type": "step",
+      "title": "Running: echo '{\"stories\": [{\"title\": \"Wearable health t..."
+    },
+    {
+      "t": 1776802781215,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802784327,
+      "type": "step",
+      "title": "Done: Extracted the top 3 story titles from the \"new\" section of Hacker News and saved them to output.json."
+    },
+    {
+      "t": 1776802784351,
+      "type": "step",
+      "title": "Extracted the top 3 story titles from the \"new\" section of Hacker News and saved them to output.json."
+    }
+  ]
+}

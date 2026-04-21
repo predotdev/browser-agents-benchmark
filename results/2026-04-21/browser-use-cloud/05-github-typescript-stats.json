@@ -1,0 +1,55 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "05-github-typescript-stats",
+  "taskUrl": "https://github.com/microsoft/typescript",
+  "success": true,
+  "successReason": "lang=typescript",
+  "wallTimeMs": 20945,
+  "data": {
+    "stars": 109000,
+    "language": "TypeScript",
+    "latestRelease": "v6.0.3"
+  },
+  "inputTokens": 67261,
+  "outputTokens": 567,
+  "totalCostUsd": 0.020403,
+  "trace": [
+    {
+      "t": 1776802757812,
+      "type": "step",
+      "title": "Extract star count, primary language, and latest release. Return JSON: { \"stars\": string | number, \"language\": string, \"latestRelease\": string | null }\n\nStart b"
+    },
+    {
+      "t": 1776802758272,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802759632,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/microsoft/typescript (HTTP 200, 19171 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle navigatio..."
+    },
+    {
+      "t": 1776802766467,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802766538,
+      "type": "step",
+      "title": "Python: [No output. Variables created: f, output]"
+    },
+    {
+      "t": 1776802768282,
+      "type": "step",
+      "title": "Done: Extracted data for microsoft/TypeScript: 109k stars, primary language TypeScript, and latest release v6.0.3. Results saved to output.json."
+    },
+    {
+      "t": 1776802768309,
+      "type": "step",
+      "title": "Extracted data for microsoft/TypeScript: 109k stars, primary language TypeScript, and latest release v6.0.3. Results saved to output.json."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "51-books-category-extract",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "11 books",
+  "wallTimeMs": 11086,
+  "data": {
+    "books": [
+      {
+        "title": "It's Only the Himalayas"
+      },
+      {
+        "title": "Full Moon over Noah’s ..."
+      },
+      {
+        "title": "See America: A Celebration ..."
+      },
+      {
+        "title": "Vagabonding: An Uncommon Guide ..."
+      },
+      {
+        "title": "Under the Tuscan Sun"
+      },
+      {
+        "title": "A Summer In Europe"
+      },
+      {
+        "title": "The Great Railway Bazaar"
+      },
+      {
+        "title": "A Year in Provence ..."
+      },
+      {
+        "title": "The Road to Little ..."
+      },
+      {
+        "title": "Neither Here nor There: ..."
+      },
+      {
+        "title": "1,000 Places to See ..."
+      }
+    ]
+  },
+  "creditsUsed": 0.208973,
+  "totalCostUsd": 0.0208973,
+  "trace": []
+}

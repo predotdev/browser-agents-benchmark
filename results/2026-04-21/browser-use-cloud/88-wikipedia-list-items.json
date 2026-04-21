@@ -1,0 +1,94 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "88-wikipedia-list-items",
+  "taskUrl": "https://en.wikipedia.org/wiki/List_of_programming_languages",
+  "success": true,
+  "successReason": "10",
+  "wallTimeMs": 37997,
+  "data": {
+    "languages": [
+      "A.NET (A#/A sharp)",
+      "A-0 System",
+      "A+ (A plus)",
+      "ABAP",
+      "ABC",
+      "ACC",
+      "Accent (Rational Synergy)",
+      "Action!",
+      "ActionScript",
+      "Actor"
+    ]
+  },
+  "inputTokens": 258021,
+  "outputTokens": 3168,
+  "totalCostUsd": 0.056063,
+  "trace": [
+    {
+      "t": 1776802785201,
+      "type": "step",
+      "title": "Extract the first 10 programming language names from the list. Return JSON: { \"languages\": [string] }\n\nStart by navigating to: https://en.wikipedia.org/wiki/Lis"
+    },
+    {
+      "t": 1776802785643,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802786189,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/List_of_programming_languages (HTTP 200, 70634 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n..."
+    },
+    {
+      "t": 1776802794985,
+      "type": "step",
+      "title": "Python: from bs4 import BeautifulSoup"
+    },
+    {
+      "t": 1776802795890,
+      "type": "step",
+      "title": "Python: ['A.NET (A#/A sharp)', 'A-0 System', 'A+ (A plus)', 'ABAP', 'ABC', 'ACC', 'Accent (Rational Synergy)', 'Action!', 'ActionScript', 'Actor']\n✓ Wrote ..."
+    },
+    {
+      "t": 1776802802571,
+      "type": "step",
+      "title": "Python: from bs4 import BeautifulSoup"
+    },
+    {
+      "t": 1776802803293,
+      "type": "step",
+      "title": "Python: ['A.NET (A#/A sharp)', 'A-0 System', 'A+ (A plus)', 'ABAP', 'ABC', 'ACC', 'Accent (Rational Synergy)', 'Action!', 'ActionScript', 'Actor']\n✓ Wrote ..."
+    },
+    {
+      "t": 1776802806676,
+      "type": "step",
+      "title": "Python: from bs4 import BeautifulSoup"
+    },
+    {
+      "t": 1776802807748,
+      "type": "step",
+      "title": "Python: Tag: div, Class: ['noprint']\nTag: div, Class: ['mw-heading', 'mw-heading2']\nTag: div, Class: ['div-col']\nFirst div-col item: A.NET (A#/A sharp)\nTag..."
+    },
+    {
+      "t": 1776802810428,
+      "type": "step",
+      "title": "Python: from bs4 import BeautifulSoup"
+    },
+    {
+      "t": 1776802811722,
+      "type": "step",
+      "title": "Python: A[edit]\nB[edit]\nC[edit]\nD[edit]\nE[edit]\nF[edit]\nG[edit]\nH[edit]\nI[edit]\nJ[edit]\nK[edit]\nL[edit]\nM[edit]\nN[edit]\nO[edit]\nP[edit]\nQ[edit]\nR[edit]\nS[e..."
+    },
+    {
+      "t": 1776802816835,
+      "type": "step",
+      "title": "Done: The first 10 programming languages from the Wikipedia list are extracted and saved to output.json.\n\nResults:\n1. A.NET (A#/A sharp)\n2. A-0 System\n3...."
+    },
+    {
+      "t": 1776802816855,
+      "type": "step",
+      "title": "The first 10 programming languages from the Wikipedia list are extracted and saved to output.json.\n\nResults:\n1. A.NET (A#/A sharp)\n2. A-0 System\n3. A+ (A plus)\n"
+    }
+  ]
+}

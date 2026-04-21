@@ -1,0 +1,84 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "52-books-mystery-category",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "5 books",
+  "wallTimeMs": 19198,
+  "data": {
+    "books": [
+      {
+        "title": "Sharp Objects",
+        "price": "£47.82"
+      },
+      {
+        "title": "In a Dark, Dark Wood",
+        "price": "£19.63"
+      },
+      {
+        "title": "The Past Never Ends",
+        "price": "£56.50"
+      },
+      {
+        "title": "A Murder in Time",
+        "price": "£16.64"
+      },
+      {
+        "title": "The Murder of Roger Ackroyd (Hercule Poirot #4)",
+        "price": "£44.10"
+      }
+    ]
+  },
+  "inputTokens": 92910,
+  "outputTokens": 697,
+  "totalCostUsd": 0.027479,
+  "trace": [
+    {
+      "t": 1776802765454,
+      "type": "step",
+      "title": "Navigate to the Mystery category and extract the first 5 book titles and prices. Return JSON: { \"books\": [{ \"title\": string, \"price\": string }] }\n\nStart by navi"
+    },
+    {
+      "t": 1776802765946,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802767356,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com/ (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produ..."
+    },
+    {
+      "t": 1776802770253,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802771006,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 9452, \"text\": \"[Books to Scrape](../../../../index.html) We love being scraped!\\n\\n- [Home](../../../....."
+    },
+    {
+      "t": 1776802775445,
+      "type": "step",
+      "title": "Running: echo '{\"books\": [{\"title\": \"Sharp Objects\", \"pr..."
+    },
+    {
+      "t": 1776802775529,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802778699,
+      "type": "step",
+      "title": "Done: Extracted the first 5 books from the Mystery category and saved them to output.json."
+    },
+    {
+      "t": 1776802778721,
+      "type": "step",
+      "title": "Extracted the first 5 books from the Mystery category and saved them to output.json."
+    }
+  ]
+}

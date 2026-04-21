@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "76-the-internet-dropdown",
+  "taskUrl": "https://the-internet.herokuapp.com/dropdown",
+  "success": true,
+  "successReason": "option 2",
+  "wallTimeMs": 11663,
+  "data": {
+    "selected": "Option 2"
+  },
+  "creditsUsed": 0.140928,
+  "totalCostUsd": 0.0140928,
+  "trace": []
+}

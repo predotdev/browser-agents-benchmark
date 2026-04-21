@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "61-hn-comments-navigate",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "got both",
+  "wallTimeMs": 4776,
+  "data": {
+    "title": "Laws of Software Engineering",
+    "commentCount": 379
+  },
+  "creditsUsed": 0.09279,
+  "totalCostUsd": 0.009279,
+  "trace": []
+}

@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "45-wikipedia-rust-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+  "success": true,
+  "successReason": "137 chars",
+  "wallTimeMs": 8943,
+  "data": {
+    "intro": "Rust is a general-purpose programming language. It is noted for its emphasis on performance, type safety, concurrency, and memory safety."
+  },
+  "creditsUsed": 0.108955,
+  "totalCostUsd": 0.0108955,
+  "trace": []
+}

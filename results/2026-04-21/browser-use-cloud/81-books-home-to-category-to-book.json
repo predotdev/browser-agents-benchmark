@@ -1,0 +1,73 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "81-books-home-to-category-to-book",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "got upc",
+  "wallTimeMs": 21433,
+  "data": {
+    "upc": "a22124811bfa8350"
+  },
+  "inputTokens": 124334,
+  "outputTokens": 721,
+  "totalCostUsd": 0.028842,
+  "trace": [
+    {
+      "t": 1776802779676,
+      "type": "step",
+      "title": "Click the Travel category, then click the first book, then extract its UPC code. Return JSON: { \"upc\": string }\n\nStart by navigating to: https://books.toscrape."
+    },
+    {
+      "t": 1776802780097,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802780742,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com/ (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produ..."
+    },
+    {
+      "t": 1776802784348,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802785239,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 6846, \"text\": \"[Books to Scrape](../../../../index.html) We love being scraped!\\n\\n- [Home](../../../....."
+    },
+    {
+      "t": 1776802788072,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802788545,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 4223, \"text\": \"[Books to Scrape](../../index.html) We love being scraped!\\n\\n- [Home](../../index.html)..."
+    },
+    {
+      "t": 1776802791366,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802791444,
+      "type": "step",
+      "title": "Python: [No output. Variables created: f, upc]"
+    },
+    {
+      "t": 1776802794161,
+      "type": "step",
+      "title": "Done: The UPC code for the first book \"It's Only the Himalayas\" in the Travel category is a22124811bfa8350. The result has been saved to output.json."
+    },
+    {
+      "t": 1776802794178,
+      "type": "step",
+      "title": "The UPC code for the first book \"It's Only the Himalayas\" in the Travel category is a22124811bfa8350. The result has been saved to output.json."
+    }
+  ]
+}

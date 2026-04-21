@@ -1,0 +1,128 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "86-hn-filter-by-points",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "16",
+  "wallTimeMs": 23483,
+  "data": {
+    "stories": [
+      {
+        "title": "The Vercel breach: OAuth attack exposes risk in platform environment variables",
+        "points": 158
+      },
+      {
+        "title": "Britannica11.org – a structured edition of the 1911 Encyclopædia Britannica",
+        "points": 115
+      },
+      {
+        "title": "Framework Laptop 13 Pro",
+        "points": 433
+      },
+      {
+        "title": "Laws of Software Engineering",
+        "points": 705
+      },
+      {
+        "title": "Edit store price tags using Flipper Zero",
+        "points": 203
+      },
+      {
+        "title": "Fusion Power Plant Simulator",
+        "points": 113
+      },
+      {
+        "title": "Show HN: GoModel – an open-source AI gateway in Go",
+        "points": 131
+      },
+      {
+        "title": "Running a Minecraft Server and More on a 1960s Univac Computer",
+        "points": 151
+      },
+      {
+        "title": "Show HN: VidStudio, a browser based video editor that doesn't upload your files",
+        "points": 208
+      },
+      {
+        "title": "Anthropic says OpenClaw-style Claude CLI usage is allowed again",
+        "points": 446
+      },
+      {
+        "title": "A type-safe, realtime collaborative Graph Database in a CRDT",
+        "points": 125
+      },
+      {
+        "title": "MNT Reform is an open hardware laptop, designed and assembled in Germany",
+        "points": 242
+      },
+      {
+        "title": "Meta capturing employee mouse movements, keystrokes for AI training data",
+        "points": 102
+      },
+      {
+        "title": "Clojure: Transducers",
+        "points": 111
+      },
+      {
+        "title": "Show HN: Mediator.ai – Using Nash bargaining and LLMs to systematize fairness",
+        "points": 136
+      },
+      {
+        "title": "Tim Cook's Impeccable Timing",
+        "points": 255
+      }
+    ]
+  },
+  "inputTokens": 93252,
+  "outputTokens": 1857,
+  "totalCostUsd": 0.031862999999999995,
+  "trace": [
+    {
+      "t": 1776802784864,
+      "type": "step",
+      "title": "Extract the titles of stories that have more than 100 points. Return JSON: { \"stories\": [{ \"title\": string, \"points\": number }] }\n\nStart by navigating to: https"
+    },
+    {
+      "t": 1776802785283,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802785948,
+      "type": "step",
+      "title": "Fetch: Fetched https://news.ycombinator.com/ (HTTP 200, 10796 chars)\n\n[![](y18.svg)](https://news.ycombinator.com)[**Hacker News**](news)[new](newest) | [..."
+    },
+    {
+      "t": 1776802793327,
+      "type": "step",
+      "title": "Python: from bs4 import BeautifulSoup"
+    },
+    {
+      "t": 1776802793425,
+      "type": "step",
+      "title": "Python failed: Error executing tool: RuntimeError: asyncio.run() cannot be called from a running event loop\nTraceback (most recent call last):\n  File \"/usr/loca"
+    },
+    {
+      "t": 1776802796618,
+      "type": "step",
+      "title": "Python: from bs4 import BeautifulSoup"
+    },
+    {
+      "t": 1776802797489,
+      "type": "step",
+      "title": "Python: Extracted 16 stories.\n"
+    },
+    {
+      "t": 1776802800669,
+      "type": "step",
+      "title": "Done: I have extracted the titles and points of stories with more than 100 points from Hacker News. A total of 16 stories were found and the results have..."
+    },
+    {
+      "t": 1776802800697,
+      "type": "step",
+      "title": "I have extracted the titles and points of stories with more than 100 points from Hacker News. A total of 16 stories were found and the results have been saved t"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "98-books-add-to-cart-not",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "found \"The...\"",
+  "wallTimeMs": 4238,
+  "data": {
+    "title": "The Requiem Red",
+    "price": "£22.65"
+  },
+  "creditsUsed": 0.095554,
+  "totalCostUsd": 0.0095554,
+  "trace": []
+}

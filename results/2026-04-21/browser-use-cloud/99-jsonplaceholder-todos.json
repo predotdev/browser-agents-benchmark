@@ -1,0 +1,57 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "99-jsonplaceholder-todos",
+  "taskUrl": "https://jsonplaceholder.typicode.com/todos",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 13243,
+  "data": {
+    "todos": [
+      "delectus aut autem",
+      "quis ut nam facilis et officia qui",
+      "fugiat veniam minus"
+    ]
+  },
+  "inputTokens": 85546,
+  "outputTokens": 405,
+  "totalCostUsd": 0.026359999999999998,
+  "trace": [
+    {
+      "t": 1776802792933,
+      "type": "step",
+      "title": "Extract the titles of the first 3 todos from the JSON response displayed. Return JSON: { \"todos\": [string] }\n\nStart by navigating to: https://jsonplaceholder.ty"
+    },
+    {
+      "t": 1776802793394,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802793859,
+      "type": "step",
+      "title": "Fetch: Fetched https://jsonplaceholder.typicode.com/todos (HTTP 200, 24311 chars)\n\n[\n  {\n    \"userId\": 1,\n    \"id\": 1,\n    \"title\": \"delectus aut autem\",\n..."
+    },
+    {
+      "t": 1776802797680,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802797747,
+      "type": "step",
+      "title": "Python: [No output. Variables created: data, f]"
+    },
+    {
+      "t": 1776802799749,
+      "type": "step",
+      "title": "Done: The titles of the first 3 todos have been extracted and saved to output.json.\nTitles:\n1. delectus aut autem\n2. quis ut nam facilis et officia qui\n3..."
+    },
+    {
+      "t": 1776802799764,
+      "type": "step",
+      "title": "The titles of the first 3 todos have been extracted and saved to output.json.\nTitles:\n1. delectus aut autem\n2. quis ut nam facilis et officia qui\n3. fugiat veni"
+    }
+  ]
+}

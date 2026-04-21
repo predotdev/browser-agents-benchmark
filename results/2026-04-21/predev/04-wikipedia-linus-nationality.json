@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "04-wikipedia-linus-nationality",
+  "taskUrl": "https://en.wikipedia.org/wiki/Linus_Torvalds",
+  "success": true,
+  "successReason": "finnish/american",
+  "wallTimeMs": 26045,
+  "data": {
+    "nationality": "Finnish and American"
+  },
+  "creditsUsed": 0.1176,
+  "totalCostUsd": 0.01176,
+  "trace": []
+}

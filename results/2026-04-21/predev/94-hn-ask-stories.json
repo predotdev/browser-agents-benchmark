@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "94-hn-ask-stories",
+  "taskUrl": "https://news.ycombinator.com/ask",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 10030,
+  "data": {
+    "stories": [
+      {
+        "title": "Ask HN: How to solve the cold start problem for a two-sided marketplace?",
+        "points": 140
+      },
+      {
+        "title": "Ask HN: How did you land your first projects as a solo engineer/consultant?",
+        "points": 294
+      },
+      {
+        "title": "Ask HN: Building a solo business is impossible?",
+        "points": 70
+      }
+    ]
+  },
+  "creditsUsed": 0.096895,
+  "totalCostUsd": 0.0096895,
+  "trace": []
+}

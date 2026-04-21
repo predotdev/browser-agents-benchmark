@@ -1,0 +1,76 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "22-books-science-category",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "3 books",
+  "wallTimeMs": 22745,
+  "data": {
+    "books": [
+      {
+        "title": "The Most Perfect Thing: Inside (and Outside) a Bird's Egg",
+        "price": "£42.96"
+      },
+      {
+        "title": "Immunity: How Elie Metchnikoff Changed the Course of Modern Medicine",
+        "price": "£57.36"
+      },
+      {
+        "title": "Sorting the Beef from the Bull: The Science of Food Fraud Forensics",
+        "price": "£44.74"
+      }
+    ]
+  },
+  "inputTokens": 91927,
+  "outputTokens": 798,
+  "totalCostUsd": 0.027256000000000002,
+  "trace": [
+    {
+      "t": 1776802757342,
+      "type": "step",
+      "title": "Click on the \"Science\" category link in the sidebar, then extract the first 3 book titles and prices from the Science category page. Return JSON: { \"books\": [{ "
+    },
+    {
+      "t": 1776802757758,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802758320,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produc..."
+    },
+    {
+      "t": 1776802763556,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802764389,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 8879, \"text\": \"[Books to Scrape](../../../../index.html) We love being scraped!\\n\\n- [Home](../../../....."
+    },
+    {
+      "t": 1776802768267,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802768357,
+      "type": "step",
+      "title": "Python: [No output. Variables created: books, f]"
+    },
+    {
+      "t": 1776802770445,
+      "type": "step",
+      "title": "Done: I have extracted the first 3 book titles and prices from the Science category on books.toscrape.com and saved them to output.json.\n\nThe books extra..."
+    },
+    {
+      "t": 1776802770520,
+      "type": "step",
+      "title": "I have extracted the first 3 book titles and prices from the Science category on books.toscrape.com and saved them to output.json.\n\nThe books extracted are:\n1. "
+    }
+  ]
+}

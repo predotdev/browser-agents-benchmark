@@ -1,0 +1,56 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "67-mdn-fetch-parameters",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/API/fetch",
+  "success": true,
+  "successReason": "2",
+  "wallTimeMs": 13960,
+  "data": {
+    "parameters": [
+      "resource",
+      "options"
+    ]
+  },
+  "inputTokens": 92650,
+  "outputTokens": 169,
+  "totalCostUsd": 0.029765,
+  "trace": [
+    {
+      "t": 1776802774595,
+      "type": "step",
+      "title": "Extract the parameters listed for the fetch() function. Return JSON: { \"parameters\": [string] }\n\nStart by navigating to: https://developer.mozilla.org/en-US/doc"
+    },
+    {
+      "t": 1776802775056,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802775400,
+      "type": "step",
+      "title": "Fetch: Fetched https://developer.mozilla.org/en-US/docs/Web/API/fetch (HTTP 200, 29149 chars)\n\n- [Skip to main content](#content)\n- [Skip to search](#sear..."
+    },
+    {
+      "t": 1776802779020,
+      "type": "step",
+      "title": "Running: echo '{\"parameters\": [\"resource\", \"options\"]}' ..."
+    },
+    {
+      "t": 1776802779096,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802780843,
+      "type": "step",
+      "title": "Done: Extracted the parameters for the fetch() function: resource and options. The result is saved to output.json."
+    },
+    {
+      "t": 1776802780918,
+      "type": "step",
+      "title": "Extracted the parameters for the fetch() function: resource and options. The result is saved to output.json."
+    }
+  ]
+}

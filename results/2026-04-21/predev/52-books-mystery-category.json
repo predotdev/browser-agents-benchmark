@@ -1,0 +1,37 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "52-books-mystery-category",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "5 books",
+  "wallTimeMs": 8695,
+  "data": {
+    "books": [
+      {
+        "title": "Sharp Objects",
+        "price": "£47.82"
+      },
+      {
+        "title": "In a Dark, Dark ...",
+        "price": "£19.63"
+      },
+      {
+        "title": "The Past Never Ends",
+        "price": "£56.50"
+      },
+      {
+        "title": "A Murder in Time",
+        "price": "£16.64"
+      },
+      {
+        "title": "The Murder of Roger ...",
+        "price": "£44.10"
+      }
+    ]
+  },
+  "creditsUsed": 0.215215,
+  "totalCostUsd": 0.0215215,
+  "trace": []
+}

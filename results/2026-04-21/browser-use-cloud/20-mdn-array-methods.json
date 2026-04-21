@@ -1,0 +1,59 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "20-mdn-array-methods",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+  "success": true,
+  "successReason": "5 methods",
+  "wallTimeMs": 19854,
+  "data": {
+    "methods": [
+      "map",
+      "filter",
+      "reduce",
+      "push",
+      "pop"
+    ]
+  },
+  "inputTokens": 84395,
+  "outputTokens": 557,
+  "totalCostUsd": 0.02622,
+  "trace": [
+    {
+      "t": 1776802756411,
+      "type": "step",
+      "title": "Extract 5 Array instance method names from this page (like \"map\", \"filter\", \"reduce\"). Return JSON: { \"methods\": string[] }\n\nStart by navigating to: https://dev"
+    },
+    {
+      "t": 1776802757039,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802757651,
+      "type": "step",
+      "title": "Fetch: Fetched https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array (HTTP 200, 75135 chars)\n\n- [Skip to main content](#c..."
+    },
+    {
+      "t": 1776802763617,
+      "type": "step",
+      "title": "Running: echo '{\"methods\": [\"map\", \"filter\", \"reduce\", \"..."
+    },
+    {
+      "t": 1776802763695,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802766723,
+      "type": "step",
+      "title": "Done: Extracted 5 Array instance method names: map, filter, reduce, push, pop. Results saved to output.json."
+    },
+    {
+      "t": 1776802766767,
+      "type": "step",
+      "title": "Extracted 5 Array instance method names: map, filter, reduce, push, pop. Results saved to output.json."
+    }
+  ]
+}

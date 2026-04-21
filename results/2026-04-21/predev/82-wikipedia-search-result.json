@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "82-wikipedia-search-result",
+  "taskUrl": "https://en.wikipedia.org/wiki/Main_Page",
+  "success": true,
+  "successReason": "2012",
+  "wallTimeMs": 16753,
+  "data": {
+    "designedYear": 2012
+  },
+  "creditsUsed": 0.2282,
+  "totalCostUsd": 0.02282,
+  "trace": []
+}

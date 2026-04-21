@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "80-the-internet-iframe",
+  "taskUrl": "https://the-internet.herokuapp.com/iframe",
+  "success": true,
+  "successReason": "ok",
+  "wallTimeMs": 9099,
+  "data": {
+    "heading": "An iFrame containing the TinyMCE WYSIWYG Editor"
+  },
+  "creditsUsed": 0.055669,
+  "totalCostUsd": 0.0055669000000000005,
+  "trace": []
+}

@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "64-github-repo-readme-header",
+  "taskUrl": "https://github.com/microsoft/TypeScript",
+  "success": true,
+  "successReason": "typescript",
+  "wallTimeMs": 7606,
+  "data": {
+    "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+    "language": "TypeScript"
+  },
+  "creditsUsed": 0.099818,
+  "totalCostUsd": 0.0099818,
+  "trace": []
+}

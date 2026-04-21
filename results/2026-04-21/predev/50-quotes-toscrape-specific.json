@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "50-quotes-toscrape-specific",
+  "taskUrl": "https://quotes.toscrape.com/page/1/",
+  "success": true,
+  "successReason": "3 quotes",
+  "wallTimeMs": 10097,
+  "data": {
+    "quotes": [
+      {
+        "text": "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”"
+      },
+      {
+        "text": "“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”"
+      },
+      {
+        "text": "“I have not failed. I've just found 10,000 ways that won't work.”"
+      }
+    ]
+  },
+  "creditsUsed": 0.084325,
+  "totalCostUsd": 0.0084325,
+  "trace": []
+}

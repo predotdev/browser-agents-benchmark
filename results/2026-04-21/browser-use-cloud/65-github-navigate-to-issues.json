@@ -1,0 +1,73 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "65-github-navigate-to-issues",
+  "taskUrl": "https://github.com/nodejs/node",
+  "success": true,
+  "successReason": "3 issues",
+  "wallTimeMs": 25614,
+  "data": {
+    "issues": [
+      {
+        "title": "Upcoming Node.js Major Release (v26)"
+      },
+      {
+        "title": "Requiring Signed-off-by moving forward"
+      },
+      {
+        "title": "Hard crash in generateKeyPair on bad type"
+      }
+    ]
+  },
+  "inputTokens": 149402,
+  "outputTokens": 1386,
+  "totalCostUsd": 0.041750999999999996,
+  "trace": [
+    {
+      "t": 1776802773847,
+      "type": "step",
+      "title": "Click on the Issues tab and extract the titles of the top 3 open issues. Return JSON: { \"issues\": [{ \"title\": string }] }\n\nStart by navigating to: https://githu"
+    },
+    {
+      "t": 1776802774286,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802776753,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/nodejs/node (HTTP 200, 69801 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle navigation\n\n[](/)\n..."
+    },
+    {
+      "t": 1776802779798,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802780880,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 14850, \"text\": \"[Skip to content](#start-of-content)\\n\\n## Navigation Menu\\n\\nToggle navigation\\n\\n[](/..."
+    },
+    {
+      "t": 1776802789590,
+      "type": "step",
+      "title": "Running: echo '{\"issues\": [{\"title\": \"Upcoming Node.js M..."
+    },
+    {
+      "t": 1776802789666,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802792626,
+      "type": "step",
+      "title": "Done: Extracted the top 3 open issues from the nodejs/node repository. The issues are: \n1. Upcoming Node.js Major Release (v26)\n2. Requiring Signed-off-b..."
+    },
+    {
+      "t": 1776802792655,
+      "type": "step",
+      "title": "Extracted the top 3 open issues from the nodejs/node repository. The issues are: \n1. Upcoming Node.js Major Release (v26)\n2. Requiring Signed-off-by moving forw"
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "17-github-issues",
+  "taskUrl": "https://github.com/microsoft/typescript/issues",
+  "success": true,
+  "successReason": "5 issues",
+  "wallTimeMs": 20756,
+  "data": {
+    "issues": [
+      {
+        "title": "union of pattern template literals intersected with optional brand mutually assignable to one with incompatible brand"
+      },
+      {
+        "title": "Transformer that updates an ambient property declaration is emitted as non-ambient"
+      },
+      {
+        "title": "JSDoc parser treats `@foo` inside fenced code blocks as a tag, breaking hover previews"
+      },
+      {
+        "title": "skipLibChecks specificity"
+      },
+      {
+        "title": "Review/update https://typescriptlang.org/tsconfig for TS 6.0"
+      }
+    ]
+  },
+  "inputTokens": 62172,
+  "outputTokens": 1686,
+  "totalCostUsd": 0.025784,
+  "trace": [
+    {
+      "t": 1776802754638,
+      "type": "step",
+      "title": "Extract the titles of the first 5 open issues. Return JSON: { \"issues\": [{ \"title\": string }] }\n\nStart by navigating to: https://github.com/microsoft/typescript"
+    },
+    {
+      "t": 1776802755103,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802756863,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/microsoft/typescript/issues (HTTP 200, 15746 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle na..."
+    },
+    {
+      "t": 1776802766785,
+      "type": "step",
+      "title": "Running: echo '{\"issues\": [{\"title\": \"union of pattern t..."
+    },
+    {
+      "t": 1776802766859,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802768828,
+      "type": "step",
+      "title": "Done: The titles of the first 5 open issues from the Microsoft TypeScript repository have been extracted and saved to output.json.\n\n1. union of pattern t..."
+    },
+    {
+      "t": 1776802768851,
+      "type": "step",
+      "title": "The titles of the first 5 open issues from the Microsoft TypeScript repository have been extracted and saved to output.json.\n\n1. union of pattern template liter"
+    }
+  ]
+}

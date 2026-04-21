@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "41-example-com",
+  "taskUrl": "https://example.com",
+  "success": true,
+  "successReason": "example domain",
+  "wallTimeMs": 7775,
+  "data": {
+    "heading": "Example Domain",
+    "paragraph": "This domain is for use in documentation examples without needing permission. Avoid use in operations."
+  },
+  "creditsUsed": 0.057582,
+  "totalCostUsd": 0.005758200000000001,
+  "trace": []
+}

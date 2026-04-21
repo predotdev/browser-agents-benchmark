@@ -1,0 +1,66 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "18-github-releases",
+  "taskUrl": "https://github.com/denoland/deno/releases",
+  "success": true,
+  "successReason": "3 releases",
+  "wallTimeMs": 23501,
+  "data": {
+    "releases": [
+      {
+        "title": "v2.7.12",
+        "date": "2026-04-09"
+      },
+      {
+        "title": "v2.7.11",
+        "date": "2026-04-01"
+      },
+      {
+        "title": "v2.7.10",
+        "date": "2026-03-31"
+      }
+    ]
+  },
+  "inputTokens": 101285,
+  "outputTokens": 1476,
+  "totalCostUsd": 0.035234,
+  "trace": [
+    {
+      "t": 1776802756017,
+      "type": "step",
+      "title": "Extract the title and date of the 3 most recent releases. Return JSON: { \"releases\": [{ \"title\": string, \"date\": string }] }\n\nStart by navigating to: https://gi"
+    },
+    {
+      "t": 1776802756465,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802758550,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/denoland/deno/releases (HTTP 200, 61924 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle navigat..."
+    },
+    {
+      "t": 1776802768218,
+      "type": "step",
+      "title": "Running: cat << 'EOF' > output.json\n{\n  \"releases\": [\n  ..."
+    },
+    {
+      "t": 1776802768347,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802770975,
+      "type": "step",
+      "title": "Done: Extracted the 3 most recent Deno releases: v2.7.12 (2026-04-09), v2.7.11 (2026-04-01), and v2.7.10 (2026-03-31). The results have been saved to out..."
+    },
+    {
+      "t": 1776802771004,
+      "type": "step",
+      "title": "Extracted the 3 most recent Deno releases: v2.7.12 (2026-04-09), v2.7.11 (2026-04-01), and v2.7.10 (2026-03-31). The results have been saved to output.json."
+    }
+  ]
+}

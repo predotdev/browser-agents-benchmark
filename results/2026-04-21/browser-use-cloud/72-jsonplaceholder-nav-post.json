@@ -1,0 +1,64 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "72-jsonplaceholder-nav-post",
+  "taskUrl": "https://jsonplaceholder.typicode.com/",
+  "success": true,
+  "successReason": "ok",
+  "wallTimeMs": 17608,
+  "data": {
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  "inputTokens": 54880,
+  "outputTokens": 394,
+  "totalCostUsd": 0.01246,
+  "trace": [
+    {
+      "t": 1776802775171,
+      "type": "step",
+      "title": "Navigate to /posts/1 and extract the title and body. Return JSON: { \"title\": string, \"body\": string }\n\nStart by navigating to: https://jsonplaceholder.typicode."
+    },
+    {
+      "t": 1776802775658,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802776138,
+      "type": "step",
+      "title": "Fetch: Fetched https://jsonplaceholder.typicode.com/ (HTTP 200, 2788 chars)\n\n[Check my new project **💧 MistCSS** write React components with 50% less code..."
+    },
+    {
+      "t": 1776802779665,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802780190,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 292, \"text\": \"{\\n  \\\"userId\\\": 1,\\n  \\\"id\\\": 1,\\n  \\\"title\\\": \\\"sunt aut facere repellat provident occa..."
+    },
+    {
+      "t": 1776802783572,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802783645,
+      "type": "step",
+      "title": "Python: [No output. Variables created: data, f]"
+    },
+    {
+      "t": 1776802785913,
+      "type": "step",
+      "title": "Done: Extracted title and body from https://jsonplaceholder.typicode.com/posts/1 and saved to output.json."
+    },
+    {
+      "t": 1776802785951,
+      "type": "step",
+      "title": "Extracted title and body from https://jsonplaceholder.typicode.com/posts/1 and saved to output.json."
+    }
+  ]
+}

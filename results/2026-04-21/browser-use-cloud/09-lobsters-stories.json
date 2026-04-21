@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "09-lobsters-stories",
+  "taskUrl": "https://lobste.rs",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 19559,
+  "data": {
+    "stories": [
+      {
+        "title": "grasp: a simple protocol for decentralized git",
+        "score": 19
+      },
+      {
+        "title": "What is your go-to project for learning a new language?",
+        "score": 35
+      },
+      {
+        "title": "How To Make a Fast Dynamic Language Interpreter",
+        "score": 32
+      },
+      {
+        "title": "Jujutsu megamerges for fun and profit",
+        "score": 73
+      },
+      {
+        "title": "Emacs is my browser",
+        "score": 12
+      }
+    ]
+  },
+  "inputTokens": 75059,
+  "outputTokens": 557,
+  "totalCostUsd": 0.025034,
+  "trace": [
+    {
+      "t": 1776802756131,
+      "type": "step",
+      "title": "Extract the top 5 story titles and scores. Return JSON: { \"stories\": [{ \"title\": string, \"score\": number }] }\n\nStart by navigating to: https://lobste.rs"
+    },
+    {
+      "t": 1776802756566,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802757307,
+      "type": "step",
+      "title": "Fetch: Fetched https://lobste.rs (HTTP 200, 18855 chars)\n\n[](/ \"Lobsters (Current traffic: 28%)\")\n\n[Active](/active) [Recent](/recent) [Comments](/comment..."
+    },
+    {
+      "t": 1776802762323,
+      "type": "step",
+      "title": "Running: cat << 'EOF' > output.json\n{\n  \"stories\": [\n   ..."
+    },
+    {
+      "t": 1776802762401,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802765932,
+      "type": "step",
+      "title": "Done: The top 5 stories and their scores have been extracted from Lobsters and saved to output.json."
+    },
+    {
+      "t": 1776802766082,
+      "type": "step",
+      "title": "The top 5 stories and their scores have been extracted from Lobsters and saved to output.json."
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "15-the-internet-tables",
+  "taskUrl": "https://the-internet.herokuapp.com/tables",
+  "success": true,
+  "successReason": "4 rows",
+  "wallTimeMs": 16362,
+  "data": {
+    "rows": [
+      {
+        "lastName": "Smith",
+        "firstName": "John",
+        "email": "jsmith@gmail.com"
+      },
+      {
+        "lastName": "Bach",
+        "firstName": "Frank",
+        "email": "fbach@yahoo.com"
+      },
+      {
+        "lastName": "Doe",
+        "firstName": "Jason",
+        "email": "jdoe@hotmail.com"
+      },
+      {
+        "lastName": "Conway",
+        "firstName": "Tim",
+        "email": "tconway@earthlink.net"
+      }
+    ]
+  },
+  "inputTokens": 34050,
+  "outputTokens": 201,
+  "totalCostUsd": 0.012403,
+  "trace": [
+    {
+      "t": 1776802755007,
+      "type": "step",
+      "title": "Extract the data from the first table (Table 1). Return JSON: { \"rows\": [{ \"lastName\": string, \"firstName\": string, \"email\": string }] } for the first 4 rows.\n\n"
+    },
+    {
+      "t": 1776802755456,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802755896,
+      "type": "step",
+      "title": "Fetch: Fetched https://the-internet.herokuapp.com/tables (HTTP 200, 1437 chars)\n\n[![Fork me on GitHub](/img/forkme_right_green_007200.png)](https://github..."
+    },
+    {
+      "t": 1776802759130,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802759452,
+      "type": "step",
+      "title": "Python: [No output. Variables created: data, f]"
+    },
+    {
+      "t": 1776802764883,
+      "type": "step",
+      "title": "Done: Extracted the first 4 rows from Table 1 on the-internet.herokuapp.com/tables and saved the results to output.json."
+    },
+    {
+      "t": 1776802764905,
+      "type": "step",
+      "title": "Extracted the first 4 rows from Table 1 on the-internet.herokuapp.com/tables and saved the results to output.json."
+    }
+  ]
+}

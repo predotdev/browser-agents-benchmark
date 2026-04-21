@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "100-scrapethissite-ajax",
+  "taskUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 7698,
+  "data": {
+    "films": [
+      {
+        "title": "Mad Max: Fury Road",
+        "oscars": 2
+      },
+      {
+        "title": "The Martian",
+        "oscars": 0
+      },
+      {
+        "title": "The Revenant",
+        "oscars": 3
+      }
+    ]
+  },
+  "creditsUsed": 0.157445,
+  "totalCostUsd": 0.0157445,
+  "trace": []
+}

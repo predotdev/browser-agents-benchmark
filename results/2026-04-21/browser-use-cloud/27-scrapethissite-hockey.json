@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "27-scrapethissite-hockey",
+  "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+  "success": true,
+  "successReason": "5 teams",
+  "wallTimeMs": 19749,
+  "data": {
+    "teams": [
+      {
+        "name": "Boston Bruins",
+        "wins": 44
+      },
+      {
+        "name": "Buffalo Sabres",
+        "wins": 31
+      },
+      {
+        "name": "Calgary Flames",
+        "wins": 46
+      },
+      {
+        "name": "Chicago Blackhawks",
+        "wins": 49
+      },
+      {
+        "name": "Detroit Red Wings",
+        "wins": 34
+      }
+    ]
+  },
+  "inputTokens": 40199,
+  "outputTokens": 660,
+  "totalCostUsd": 0.013347,
+  "trace": [
+    {
+      "t": 1776802756341,
+      "type": "step",
+      "title": "This page has a table of hockey teams. Extract the first 5 team names and their wins. Return JSON: { \"teams\": [{ \"name\": string, \"wins\": number }] }\n\nStart by n"
+    },
+    {
+      "t": 1776802756768,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802757427,
+      "type": "step",
+      "title": "Fetch: Fetched https://www.scrapethissite.com/pages/forms/ (HTTP 200, 2835 chars)\n\n- [![](/static/images/scraper-icon.png) Scrape This Site](/)\n- [Sandbox..."
+    },
+    {
+      "t": 1776802761710,
+      "type": "step",
+      "title": "Python: from bs4 import BeautifulSoup"
+    },
+    {
+      "t": 1776802762349,
+      "type": "step",
+      "title": "Python: {\n  \"teams\": [\n    {\n      \"name\": \"Boston Bruins\",\n      \"wins\": 44\n    },\n    {\n      \"name\": \"Buffalo Sabres\",\n      \"wins\": 31\n    },\n    {\n   ..."
+    },
+    {
+      "t": 1776802766288,
+      "type": "step",
+      "title": "Done: The first 5 hockey team names and their wins have been extracted from the website and saved to output.json.\n\nTeams:\n1. Boston Bruins: 44 wins\n2. Bu..."
+    },
+    {
+      "t": 1776802766324,
+      "type": "step",
+      "title": "The first 5 hockey team names and their wins have been extracted from the website and saved to output.json.\n\nTeams:\n1. Boston Bruins: 44 wins\n2. Buffalo Sabres:"
+    }
+  ]
+}

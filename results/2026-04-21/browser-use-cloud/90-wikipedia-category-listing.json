@@ -1,0 +1,59 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "90-wikipedia-category-listing",
+  "taskUrl": "https://en.wikipedia.org/wiki/Category:Web_frameworks",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 27569,
+  "data": {
+    "frameworks": [
+      "AIDA/Web",
+      "Ametys CMS",
+      "Anaconda (Python distribution)",
+      "Apache Cocoon",
+      "Apache Shale"
+    ]
+  },
+  "inputTokens": 86286,
+  "outputTokens": 2641,
+  "totalCostUsd": 0.034852,
+  "trace": [
+    {
+      "t": 1776802787019,
+      "type": "step",
+      "title": "Extract the first 5 framework names listed on the category page. Return JSON: { \"frameworks\": [string] }\n\nStart by navigating to: https://en.wikipedia.org/wiki/"
+    },
+    {
+      "t": 1776802787439,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802788698,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/Category:Web_frameworks (HTTP 200, 24647 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmove ..."
+    },
+    {
+      "t": 1776802804741,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802804864,
+      "type": "step",
+      "title": "Python: [No output. Variables created: BeautifulSoup, f, frameworks, html]"
+    },
+    {
+      "t": 1776802807435,
+      "type": "step",
+      "title": "Done: The first 5 framework names listed on the Wikipedia category page \"Web frameworks\" (excluding meta-pages like lists and general concepts) are AIDA/..."
+    },
+    {
+      "t": 1776802807466,
+      "type": "step",
+      "title": "The first 5 framework names listed on the Wikipedia category page \"Web frameworks\" (excluding meta-pages like lists and general concepts) are AIDA/Web, Ametys C"
+    }
+  ]
+}

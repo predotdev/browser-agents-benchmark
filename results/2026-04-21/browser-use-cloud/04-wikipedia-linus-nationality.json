@@ -1,0 +1,53 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "04-wikipedia-linus-nationality",
+  "taskUrl": "https://en.wikipedia.org/wiki/Linus_Torvalds",
+  "success": true,
+  "successReason": "finnish/american",
+  "wallTimeMs": 19995,
+  "data": {
+    "nationality": "Finnish, American"
+  },
+  "inputTokens": 109959,
+  "outputTokens": 440,
+  "totalCostUsd": 0.036699999999999997,
+  "trace": [
+    {
+      "t": 1776802756375,
+      "type": "step",
+      "title": "From the infobox, extract Linus Torvalds' nationality. Return JSON: { \"nationality\": string }\n\nStart by navigating to: https://en.wikipedia.org/wiki/Linus_Torva"
+    },
+    {
+      "t": 1776802756800,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802758046,
+      "type": "step",
+      "title": "Fetch: Fetched https://en.wikipedia.org/wiki/Linus_Torvalds (HTTP 200, 136886 chars)\n\n[Jump to content](#bodyContent)\n\nMain menu\n\nMain menu\n\nmove to sideb..."
+    },
+    {
+      "t": 1776802765161,
+      "type": "step",
+      "title": "Running: echo '{\"nationality\": \"Finnish, American\"}' > o..."
+    },
+    {
+      "t": 1776802765227,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802767808,
+      "type": "step",
+      "title": "Done: Linus Torvalds' nationality is Finnish and American, as indicated by his citizenship in both Finland and the United States in the Wikipedia infobox..."
+    },
+    {
+      "t": 1776802767904,
+      "type": "step",
+      "title": "Linus Torvalds' nationality is Finnish and American, as indicated by his citizenship in both Finland and the United States in the Wikipedia infobox. The extract"
+    }
+  ]
+}

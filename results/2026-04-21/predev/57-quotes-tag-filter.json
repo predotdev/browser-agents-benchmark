@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "57-quotes-tag-filter",
+  "taskUrl": "https://quotes.toscrape.com/",
+  "success": true,
+  "successReason": "10",
+  "wallTimeMs": 5122,
+  "data": {
+    "count": 10
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

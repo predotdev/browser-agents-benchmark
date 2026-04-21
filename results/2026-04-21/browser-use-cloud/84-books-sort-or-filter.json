@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "84-books-sort-or-filter",
+  "taskUrl": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+  "success": true,
+  "successReason": "got both",
+  "wallTimeMs": 19672,
+  "data": {
+    "count": 65,
+    "cheapestTitle": "I Am Pilgrim (Pilgrim #1)"
+  },
+  "inputTokens": 52962,
+  "outputTokens": 1019,
+  "totalCostUsd": 0.017877,
+  "trace": [
+    {
+      "t": 1776802783741,
+      "type": "step",
+      "title": "Extract the total number of fiction books shown and the lowest-priced book title. Return JSON: { \"count\": number, \"cheapestTitle\": string }\n\nStart by navigating"
+    },
+    {
+      "t": 1776802784152,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802785021,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com/catalogue/category/books/fiction_10/index.html (HTTP 200, 8747 chars)\n\n[Books to Scrape](../../../../index.html)..."
+    },
+    {
+      "t": 1776802790729,
+      "type": "step",
+      "title": "Python: import asyncio"
+    },
+    {
+      "t": 1776802793546,
+      "type": "step",
+      "title": "Python: {\"count\": 65, \"cheapestTitle\": \"I Am Pilgrim (Pilgrim #1)\"}\n"
+    },
+    {
+      "t": 1776802797068,
+      "type": "step",
+      "title": "Done: The total number of fiction books is 65. The lowest-priced fiction book is \"I Am Pilgrim (Pilgrim #1)\" with a price of £10.60. Results have been sa..."
+    },
+    {
+      "t": 1776802797094,
+      "type": "step",
+      "title": "The total number of fiction books is 65. The lowest-priced fiction book is \"I Am Pilgrim (Pilgrim #1)\" with a price of £10.60. Results have been saved to output"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "trivial-jsonplaceholder-user",
+  "taskUrl": "https://jsonplaceholder.typicode.com/users/1",
+  "success": true,
+  "successReason": "Leanne Graham",
+  "wallTimeMs": 11316,
+  "data": {
+    "name": "Leanne Graham"
+  },
+  "inputTokens": 16198,
+  "outputTokens": 301,
+  "totalCostUsd": 0.006428,
+  "trace": [
+    {
+      "t": 1776802794279,
+      "type": "step",
+      "title": "Extract the user's name from the JSON response. Return JSON: { \"name\": string }\n\nStart by navigating to: https://jsonplaceholder.typicode.com/users/1"
+    },
+    {
+      "t": 1776802794724,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802795352,
+      "type": "step",
+      "title": "Fetch: Fetched https://jsonplaceholder.typicode.com/users/1 (HTTP 200, 509 chars)\n\n{\n  \"id\": 1,\n  \"name\": \"Leanne Graham\",\n  \"username\": \"Bret\",\n  \"email\"..."
+    },
+    {
+      "t": 1776802799246,
+      "type": "step",
+      "title": "Python: import json; Completing task"
+    },
+    {
+      "t": 1776802799357,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776802799430,
+      "type": "step",
+      "title": "Done: Extracted the name \"Leanne Graham\" and saved it to output.json."
+    },
+    {
+      "t": 1776802799452,
+      "type": "step",
+      "title": "Extracted the name \"Leanne Graham\" and saved it to output.json."
+    }
+  ]
+}

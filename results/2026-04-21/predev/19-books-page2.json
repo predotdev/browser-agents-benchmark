@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "19-books-page2",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "3 books",
+  "wallTimeMs": 10667,
+  "data": {
+    "books": [
+      {
+        "title": "In Her Wake"
+      },
+      {
+        "title": "How Music Works"
+      },
+      {
+        "title": "Foolproof Preserving: A Guide ..."
+      }
+    ]
+  },
+  "creditsUsed": 0.213978,
+  "totalCostUsd": 0.0213978,
+  "trace": []
+}

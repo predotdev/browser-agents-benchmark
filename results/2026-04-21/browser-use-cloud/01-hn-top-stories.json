@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "01-hn-top-stories",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 22858,
+  "data": {
+    "stories": [
+      {
+        "title": "The Vercel breach: OAuth attack exposes risk in platform environment variables",
+        "points": 158
+      },
+      {
+        "title": "Britannica11.org – a structured edition of the 1911 Encyclopædia Britannica",
+        "points": 115
+      },
+      {
+        "title": "Cal.diy: open-source community edition of cal.com",
+        "points": 67
+      },
+      {
+        "title": "Framework Laptop 13 Pro",
+        "points": 433
+      },
+      {
+        "title": "Laws of Software Engineering",
+        "points": 705
+      }
+    ]
+  },
+  "inputTokens": 60558,
+  "outputTokens": 524,
+  "totalCostUsd": 0.020638,
+  "trace": [
+    {
+      "t": 1776802759474,
+      "type": "step",
+      "title": "Extract the top 5 story titles and their point counts. Return JSON: { \"stories\": [{ \"title\": string, \"points\": number }] }\n\nStart by navigating to: https://news"
+    },
+    {
+      "t": 1776802760123,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802760919,
+      "type": "step",
+      "title": "Fetch: Fetched https://news.ycombinator.com (HTTP 200, 10796 chars)\n\n[![](y18.svg)](https://news.ycombinator.com)[**Hacker News**](news)[new](newest) | [p..."
+    },
+    {
+      "t": 1776802767399,
+      "type": "step",
+      "title": "Running: echo '{\"stories\": [{\"title\": \"The Vercel breach..."
+    },
+    {
+      "t": 1776802767723,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802769710,
+      "type": "step",
+      "title": "Done: Extracted the top 5 stories from Hacker News. Results saved to output.json."
+    },
+    {
+      "t": 1776802769750,
+      "type": "step",
+      "title": "Extracted the top 5 stories from Hacker News. Results saved to output.json."
+    }
+  ]
+}

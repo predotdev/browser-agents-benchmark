@@ -1,0 +1,32 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "17-github-issues",
+  "taskUrl": "https://github.com/microsoft/typescript/issues",
+  "success": true,
+  "successReason": "5 issues",
+  "wallTimeMs": 12189,
+  "data": {
+    "issues": [
+      {
+        "title": "union of pattern template literals intersected with optional"
+      },
+      {
+        "title": "TypeScript 6.0 Iteration Plan"
+      },
+      {
+        "title": "Transition to 6.0 Maintenance Mode"
+      },
+      {
+        "title": "Closing TS 6.0 LS issues"
+      },
+      {
+        "title": "Fix: Improve error message for invalid type arguments"
+      }
+    ]
+  },
+  "creditsUsed": 0.092412,
+  "totalCostUsd": 0.0092412,
+  "trace": []
+}

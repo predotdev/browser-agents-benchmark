@@ -1,0 +1,53 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "80-the-internet-iframe",
+  "taskUrl": "https://the-internet.herokuapp.com/iframe",
+  "success": true,
+  "successReason": "ok",
+  "wallTimeMs": 13123,
+  "data": {
+    "heading": "An iFrame containing the TinyMCE WYSIWYG Editor"
+  },
+  "inputTokens": 31690,
+  "outputTokens": 298,
+  "totalCostUsd": 0.011342000000000001,
+  "trace": [
+    {
+      "t": 1776802778883,
+      "type": "step",
+      "title": "Extract the heading text from the page. Return JSON: { \"heading\": string }\n\nStart by navigating to: https://the-internet.herokuapp.com/iframe"
+    },
+    {
+      "t": 1776802779348,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802780303,
+      "type": "step",
+      "title": "Fetch: Fetched https://the-internet.herokuapp.com/iframe (HTTP 200, 226 chars)\n\n[![Fork me on GitHub](/img/forkme_right_green_007200.png)](https://github...."
+    },
+    {
+      "t": 1776802784050,
+      "type": "step",
+      "title": "Python: save_output_json({\"heading\": \"An iFrame contain..."
+    },
+    {
+      "t": 1776802784128,
+      "type": "step",
+      "title": "Python: ✓ Wrote final output.json\n"
+    },
+    {
+      "t": 1776802786026,
+      "type": "step",
+      "title": "Done: The heading text has been extracted and saved to output.json. Heading: \"An iFrame containing the TinyMCE WYSIWYG Editor\""
+    },
+    {
+      "t": 1776802786069,
+      "type": "step",
+      "title": "The heading text has been extracted and saved to output.json. Heading: \"An iFrame containing the TinyMCE WYSIWYG Editor\""
+    }
+  ]
+}

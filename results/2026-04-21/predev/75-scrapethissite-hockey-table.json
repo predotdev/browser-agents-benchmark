@@ -1,0 +1,37 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "75-scrapethissite-hockey-table",
+  "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 4677,
+  "data": {
+    "teams": [
+      {
+        "name": "Boston Bruins",
+        "year": 2013
+      },
+      {
+        "name": "Buffalo Sabres",
+        "year": 2013
+      },
+      {
+        "name": "Calgary Flames",
+        "year": 2013
+      },
+      {
+        "name": "Chicago Blackhawks",
+        "year": 2013
+      },
+      {
+        "name": "Detroit Red Wings",
+        "year": 2013
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

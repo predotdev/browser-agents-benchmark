@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "91-example-domain-extract",
+  "taskUrl": "https://example.com/",
+  "success": true,
+  "successReason": "example",
+  "wallTimeMs": 9056,
+  "data": {
+    "heading": "Example Domain",
+    "linkUrl": "https://www.iana.org/domains/example"
+  },
+  "inputTokens": 15618,
+  "outputTokens": 112,
+  "totalCostUsd": 0.005401,
+  "trace": [
+    {
+      "t": 1776802787338,
+      "type": "step",
+      "title": "Extract the h1 text and the URL in the \"More information...\" link. Return JSON: { \"heading\": string, \"linkUrl\": string }\n\nStart by navigating to: https://exampl"
+    },
+    {
+      "t": 1776802787797,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802788421,
+      "type": "step",
+      "title": "Fetch: Fetched https://example.com/ (HTTP 200, 167 chars)\n\n# Example Domain\n\nThis domain is for use in documentation examples without needing permission. ..."
+    },
+    {
+      "t": 1776802790285,
+      "type": "step",
+      "title": "Python: import json; Completing task"
+    },
+    {
+      "t": 1776802790566,
+      "type": "step",
+      "title": "Python: [No output. Variables created: data, f]"
+    },
+    {
+      "t": 1776802790815,
+      "type": "step",
+      "title": "Done: Extracted h1 text and link URL from example.com. Results saved to output.json."
+    },
+    {
+      "t": 1776802790890,
+      "type": "step",
+      "title": "Extracted h1 text and link URL from example.com. Results saved to output.json."
+    }
+  ]
+}

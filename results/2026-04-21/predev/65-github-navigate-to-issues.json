@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "65-github-navigate-to-issues",
+  "taskUrl": "https://github.com/nodejs/node",
+  "success": true,
+  "successReason": "3 issues",
+  "wallTimeMs": 11647,
+  "data": {
+    "issues": [
+      {
+        "title": "Hard crash in generateKeyPair on bad type"
+      },
+      {
+        "title": "OOB read in Buffer.prototype.indexOf"
+      },
+      {
+        "title": "test-wasm-allocation-memory64-failures with V8 14.6 in worker thread"
+      }
+    ]
+  },
+  "creditsUsed": 0.202396,
+  "totalCostUsd": 0.0202396,
+  "trace": []
+}

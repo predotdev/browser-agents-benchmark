@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "24-wikipedia-search-rust",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 20043,
+  "data": {
+    "results": [
+      {
+        "title": "Rust (programming language)"
+      },
+      {
+        "title": "Rust programming language"
+      },
+      {
+        "title": "Rust"
+      }
+    ]
+  },
+  "creditsUsed": 0.20906,
+  "totalCostUsd": 0.020906,
+  "trace": []
+}

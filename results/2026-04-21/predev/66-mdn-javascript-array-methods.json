@@ -1,0 +1,22 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "66-mdn-javascript-array-methods",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 10067,
+  "data": {
+    "methods": [
+      "at",
+      "concat",
+      "copyWithin",
+      "entries",
+      "fill"
+    ]
+  },
+  "creditsUsed": 0.192172,
+  "totalCostUsd": 0.019217200000000004,
+  "trace": []
+}

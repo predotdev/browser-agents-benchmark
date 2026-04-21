@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "11-github-react-stats",
+  "taskUrl": "https://github.com/facebook/react",
+  "success": true,
+  "successReason": "lang=javascript",
+  "wallTimeMs": 13305,
+  "data": {
+    "stars": 245000,
+    "language": "JavaScript"
+  },
+  "creditsUsed": 0.102307,
+  "totalCostUsd": 0.0102307,
+  "trace": []
+}

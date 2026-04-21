@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "35-the-internet-checkboxes",
+  "taskUrl": "https://the-internet.herokuapp.com/checkboxes",
+  "success": true,
+  "successReason": "cb1=true, cb2=false",
+  "wallTimeMs": 27069,
+  "data": {
+    "checkbox1": true,
+    "checkbox2": false
+  },
+  "creditsUsed": 0.163094,
+  "totalCostUsd": 0.016309399999999998,
+  "trace": []
+}

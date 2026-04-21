@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "95-hn-show-stories",
+  "taskUrl": "https://news.ycombinator.com/show",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 5789,
+  "data": {
+    "stories": [
+      {
+        "title": "Show HN: GoModel – an open-source AI gateway in Go"
+      },
+      {
+        "title": "Show HN: VidStudio, a browser based video editor that doesn't upload your files"
+      },
+      {
+        "title": "Show HN: Ctx – a /resume that works across Claude Code and Codex"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

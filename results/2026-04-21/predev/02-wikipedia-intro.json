@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "02-wikipedia-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/Web_scraping",
+  "success": true,
+  "successReason": "385 chars",
+  "wallTimeMs": 14798,
+  "data": {
+    "intro": "Web scraping is the process of designing and developing a software program that interfaces with the World Wide Web to extract data from web pages. The data is then converted into a more useful format, such as a spreadsheet, XML, or JSON, for further use. Web scraping can be used for a variety of purposes, including data mining, price comparison, lead generation, and market research."
+  },
+  "creditsUsed": 0.119193,
+  "totalCostUsd": 0.0119193,
+  "trace": []
+}

@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "39-npm-zod-info",
+  "taskUrl": "https://www.npmjs.com/package/zod",
+  "success": true,
+  "successReason": "v4.3.6",
+  "wallTimeMs": 10437,
+  "data": {
+    "version": "4.3.6",
+    "description": "TypeScript-first schema validation with static type inference"
+  },
+  "creditsUsed": 0.08949,
+  "totalCostUsd": 0.008949,
+  "trace": []
+}

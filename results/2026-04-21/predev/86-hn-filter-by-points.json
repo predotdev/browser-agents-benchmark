@@ -1,0 +1,53 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "86-hn-filter-by-points",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "9",
+  "wallTimeMs": 5620,
+  "data": {
+    "stories": [
+      {
+        "title": "The Vercel breach: OAuth attack exposes risk in platform environment variables",
+        "points": 205
+      },
+      {
+        "title": "Britannica11.org – a structured edition of the 1911 Encyclopædia Britannica",
+        "points": 159
+      },
+      {
+        "title": "Cal.diy: open-source community edition of cal.com",
+        "points": 103
+      },
+      {
+        "title": "Framework Laptop 13 Pro",
+        "points": 645
+      },
+      {
+        "title": "Laws of Software Engineering",
+        "points": 750
+      },
+      {
+        "title": "A Periodic Map of Cheese",
+        "points": 130
+      },
+      {
+        "title": "Edit store price tags using Flipper Zero",
+        "points": 237
+      },
+      {
+        "title": "Show HN: GoModel – an open-source AI gateway in Go",
+        "points": 146
+      },
+      {
+        "title": "Fusion Power Plant Simulator",
+        "points": 126
+      }
+    ]
+  },
+  "creditsUsed": 0.103604,
+  "totalCostUsd": 0.0103604,
+  "trace": []
+}

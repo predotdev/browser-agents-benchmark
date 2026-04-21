@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "98-books-add-to-cart-not",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "found \"The...\"",
+  "wallTimeMs": 17525,
+  "data": {
+    "title": "The Requiem Red",
+    "price": "£22.65"
+  },
+  "inputTokens": 56697,
+  "outputTokens": 575,
+  "totalCostUsd": 0.018511,
+  "trace": [
+    {
+      "t": 1776802791953,
+      "type": "step",
+      "title": "Find the first book whose title starts with \"The\" and return its title and price. Return JSON: { \"title\": string, \"price\": string }\n\nStart by navigating to: htt"
+    },
+    {
+      "t": 1776802792364,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802794417,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com/ (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produ..."
+    },
+    {
+      "t": 1776802799344,
+      "type": "step",
+      "title": "Running: echo '{\"title\": \"The Requiem Red\", \"price\": \"£2..."
+    },
+    {
+      "t": 1776802799422,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802801400,
+      "type": "step",
+      "title": "Done: Found the first book whose title starts with \"The\": \"The Requiem Red\" with a price of £22.65. The result has been saved to output.json."
+    },
+    {
+      "t": 1776802801421,
+      "type": "step",
+      "title": "Found the first book whose title starts with \"The\": \"The Requiem Red\" with a price of £22.65. The result has been saved to output.json."
+    }
+  ]
+}

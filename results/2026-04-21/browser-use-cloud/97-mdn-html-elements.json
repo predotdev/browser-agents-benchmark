@@ -1,0 +1,59 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "97-mdn-html-elements",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 17405,
+  "data": {
+    "elements": [
+      "html",
+      "base",
+      "head",
+      "link",
+      "meta"
+    ]
+  },
+  "inputTokens": 80933,
+  "outputTokens": 967,
+  "totalCostUsd": 0.030025999999999997,
+  "trace": [
+    {
+      "t": 1776802791281,
+      "type": "step",
+      "title": "Extract the first 5 HTML element names listed in the reference. Return JSON: { \"elements\": [string] }\n\nStart by navigating to: https://developer.mozilla.org/en-"
+    },
+    {
+      "t": 1776802791688,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802792832,
+      "type": "step",
+      "title": "Fetch: Fetched https://developer.mozilla.org/en-US/docs/Web/HTML/Element (HTTP 200, 70104 chars)\n\n- [Skip to main content](#content)\n- [Skip to search](#s..."
+    },
+    {
+      "t": 1776802795924,
+      "type": "step",
+      "title": "Running: echo '{\"elements\": [\"html\", \"base\", \"head\", \"li..."
+    },
+    {
+      "t": 1776802796023,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802802973,
+      "type": "step",
+      "title": "Done: I have extracted the first 5 HTML element names from the MDN reference: html, base, head, link, and meta. The results have been saved to output.json."
+    },
+    {
+      "t": 1776802803258,
+      "type": "step",
+      "title": "I have extracted the first 5 HTML element names from the MDN reference: html, base, head, link, and meta. The results have been saved to output.json."
+    }
+  ]
+}

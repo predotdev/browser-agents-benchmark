@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "16-hn-comments",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "I don't want your PRs anymore",
+  "wallTimeMs": 15275,
+  "data": {
+    "storyTitle": "I don't want your PRs anymore"
+  },
+  "creditsUsed": 0.216544,
+  "totalCostUsd": 0.0216544,
+  "trace": []
+}

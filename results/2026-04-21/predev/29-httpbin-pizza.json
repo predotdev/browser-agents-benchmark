@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "29-httpbin-pizza",
+  "taskUrl": "https://httpbin.org/forms/post",
+  "success": true,
+  "successReason": "echoed",
+  "wallTimeMs": 17684,
+  "data": {
+    "submittedName": "Test User"
+  },
+  "creditsUsed": 0.165135,
+  "totalCostUsd": 0.0165135,
+  "trace": []
+}

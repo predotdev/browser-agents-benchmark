@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "30-demoqa-textbox",
+  "taskUrl": "https://demoqa.com/text-box",
+  "success": true,
+  "successReason": "alice found",
+  "wallTimeMs": 14532,
+  "data": {
+    "name": "Alice Smith",
+    "email": "alice@example.com"
+  },
+  "creditsUsed": 0.156067,
+  "totalCostUsd": 0.015606700000000001,
+  "trace": []
+}

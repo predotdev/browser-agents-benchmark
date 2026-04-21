@@ -1,0 +1,85 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "46-mdn-css-display",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/CSS/display",
+  "success": true,
+  "successReason": "31 values",
+  "wallTimeMs": 26130,
+  "data": {
+    "values": [
+      "block",
+      "inline",
+      "run-in",
+      "flow",
+      "flow-root",
+      "table",
+      "flex",
+      "grid",
+      "ruby",
+      "list-item",
+      "table-row-group",
+      "table-header-group",
+      "table-footer-group",
+      "table-row",
+      "table-cell",
+      "table-column-group",
+      "table-column",
+      "table-caption",
+      "ruby-base",
+      "ruby-text",
+      "ruby-base-container",
+      "ruby-text-container",
+      "contents",
+      "none",
+      "inline-block",
+      "inline-table",
+      "inline-flex",
+      "inline-grid",
+      "grid-lanes",
+      "inline-grid-lanes",
+      "math"
+    ]
+  },
+  "inputTokens": 84892,
+  "outputTokens": 2085,
+  "totalCostUsd": 0.032015999999999996,
+  "trace": [
+    {
+      "t": 1776802756879,
+      "type": "step",
+      "title": "Extract the formal syntax values for the CSS display property (e.g. \"block\", \"inline\", \"flex\", \"grid\", \"none\"). Return JSON: { \"values\": string[] }\n\nStart by na"
+    },
+    {
+      "t": 1776802757597,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802758286,
+      "type": "step",
+      "title": "Fetch: Fetched https://developer.mozilla.org/en-US/docs/Web/CSS/display (HTTP 200, 137386 chars)\n\n- [Skip to main content](#content)\n- [Skip to search](#s..."
+    },
+    {
+      "t": 1776802771270,
+      "type": "step",
+      "title": "Running: cat << 'EOF' > output.json\n{\n  \"values\": [\n    ..."
+    },
+    {
+      "t": 1776802771350,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802774578,
+      "type": "step",
+      "title": "Done: Extracted 31 formal syntax values for the CSS display property from MDN. The values include outer/inner display types, list-item, internal table/ru..."
+    },
+    {
+      "t": 1776802774673,
+      "type": "step",
+      "title": "Extracted 31 formal syntax values for the CSS display property from MDN. The values include outer/inner display types, list-item, internal table/ruby roles, box"
+    }
+  ]
+}

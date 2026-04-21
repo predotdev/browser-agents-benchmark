@@ -1,0 +1,33 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "09-lobsters-stories",
+  "taskUrl": "https://lobste.rs",
+  "success": true,
+  "successReason": "4 stories",
+  "wallTimeMs": 6428,
+  "data": {
+    "stories": [
+      {
+        "title": "grasp: a simple protocol for decentralized git",
+        "score": 20
+      },
+      {
+        "title": "What is your go-to project for learning a new language?",
+        "score": 37
+      },
+      {
+        "title": "The zero-days are numbered",
+        "score": 20
+      },
+      {
+        "title": "Highlights from Git 2.54",
+        "score": 15
+      }
+    ]
+  },
+  "creditsUsed": 0.082197,
+  "totalCostUsd": 0.008219700000000002,
+  "trace": []
+}

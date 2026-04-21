@@ -1,0 +1,66 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "87-books-price-under",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 15354,
+  "data": {
+    "books": [
+      {
+        "title": "The Coming Woman: A Novel Based on the Life of the Infamous Feminist, Victoria Woodhull",
+        "price": "£17.93"
+      },
+      {
+        "title": "Starving Hearts (Triangular Trade Trilogy, #1)",
+        "price": "£13.99"
+      },
+      {
+        "title": "Set Me Free",
+        "price": "£17.46"
+      }
+    ]
+  },
+  "inputTokens": 57030,
+  "outputTokens": 736,
+  "totalCostUsd": 0.01929,
+  "trace": [
+    {
+      "t": 1776802785113,
+      "type": "step",
+      "title": "Extract the titles and prices of the first 3 books with a price under £20. Return JSON: { \"books\": [{ \"title\": string, \"price\": string }] }\n\nStart by navigating"
+    },
+    {
+      "t": 1776802785607,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802786068,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com/ (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produ..."
+    },
+    {
+      "t": 1776802790989,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802791074,
+      "type": "step",
+      "title": "Python: [No output. Variables created: books, f]"
+    },
+    {
+      "t": 1776802793944,
+      "type": "step",
+      "title": "Done: Extracted the first 3 books with a price under £20 from Books to Scrape. Results saved to output.json."
+    },
+    {
+      "t": 1776802793964,
+      "type": "step",
+      "title": "Extracted the first 3 books with a price under £20 from Books to Scrape. Results saved to output.json."
+    }
+  ]
+}

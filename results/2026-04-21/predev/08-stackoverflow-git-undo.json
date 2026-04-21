@@ -1,0 +1,18 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "08-stackoverflow-git-undo",
+  "taskUrl": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+  "success": true,
+  "successReason": "votes=27210",
+  "wallTimeMs": 19362,
+  "data": {
+    "title": "How do I undo the most recent local commits in Git?",
+    "votes": 27210,
+    "acceptedAnswer": "Undoing a commit is a little scary if you don't know how it works. But it's actually amazingly easy if you do understand. I'll show you the 4 different ways you can undo a commit."
+  },
+  "creditsUsed": 0.133399,
+  "totalCostUsd": 0.0133399,
+  "trace": []
+}

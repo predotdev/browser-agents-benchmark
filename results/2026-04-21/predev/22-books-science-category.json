@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "22-books-science-category",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "3 books",
+  "wallTimeMs": 33474,
+  "data": {
+    "books": [
+      {
+        "title": "Mesaerion: The Best Science",
+        "price": "£37.59"
+      },
+      {
+        "title": "Join",
+        "price": "£35.67"
+      },
+      {
+        "title": "William Shakespeare's Star Wars: ...",
+        "price": "£43.30"
+      }
+    ]
+  },
+  "creditsUsed": 0.218123,
+  "totalCostUsd": 0.021812300000000003,
+  "trace": []
+}

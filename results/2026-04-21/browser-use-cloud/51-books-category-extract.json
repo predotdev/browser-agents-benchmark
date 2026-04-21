@@ -1,0 +1,107 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "51-books-category-extract",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "11 books",
+  "wallTimeMs": 23857,
+  "data": {
+    "books": [
+      {
+        "title": "It's Only the Himalayas"
+      },
+      {
+        "title": "Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond"
+      },
+      {
+        "title": "See America: A Celebration of Our National Parks & Treasured Sites"
+      },
+      {
+        "title": "Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel"
+      },
+      {
+        "title": "Under the Tuscan Sun"
+      },
+      {
+        "title": "A Summer In Europe"
+      },
+      {
+        "title": "The Great Railway Bazaar"
+      },
+      {
+        "title": "A Year in Provence (Provence #1)"
+      },
+      {
+        "title": "The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)"
+      },
+      {
+        "title": "Neither Here nor There: Travels in Europe"
+      },
+      {
+        "title": "1,000 Places to See Before You Die"
+      }
+    ]
+  },
+  "inputTokens": 122242,
+  "outputTokens": 804,
+  "totalCostUsd": 0.032285,
+  "trace": [
+    {
+      "t": 1776802756396,
+      "type": "step",
+      "title": "Click on the \"Travel\" category in the sidebar, then extract all book titles listed. Return JSON: { \"books\": [{ \"title\": string }] }\n\nStart by navigating to: htt"
+    },
+    {
+      "t": 1776802756817,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802757310,
+      "type": "step",
+      "title": "Fetch: Fetched https://books.toscrape.com/ (HTTP 200, 10556 chars)\n\n[Books to Scrape](index.html) We love being scraped!\n\n- [Home](index.html)\n- All produ..."
+    },
+    {
+      "t": 1776802760911,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802761536,
+      "type": "step",
+      "title": "Fetch: {\"status\": 200, \"content_type\": \"\", \"size\": 6846, \"text\": \"[Books to Scrape](../../../../index.html) We love being scraped!\\n\\n- [Home](../../../....."
+    },
+    {
+      "t": 1776802767402,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802767722,
+      "type": "step",
+      "title": "Python: [No output. Variables created: books, f]"
+    },
+    {
+      "t": 1776802769137,
+      "type": "step",
+      "title": "Running: cat output.json"
+    },
+    {
+      "t": 1776802769205,
+      "type": "step",
+      "title": "Bash: {\"books\": [{\"title\": \"It's Only the Himalayas\"}, {\"title\": \"Full Moon over Noah\\u2019s Ark: An Odyssey to Mount Ararat and Beyond\"}, {\"title\": \"See..."
+    },
+    {
+      "t": 1776802771111,
+      "type": "step",
+      "title": "Done: I have extracted all book titles from the \"Travel\" category at https://books.toscrape.com/ and saved them to output.json. There are 11 books in total."
+    },
+    {
+      "t": 1776802771133,
+      "type": "step",
+      "title": "I have extracted all book titles from the \"Travel\" category at https://books.toscrape.com/ and saved them to output.json. There are 11 books in total."
+    }
+  ]
+}

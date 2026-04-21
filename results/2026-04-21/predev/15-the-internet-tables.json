@@ -1,0 +1,37 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "15-the-internet-tables",
+  "taskUrl": "https://the-internet.herokuapp.com/tables",
+  "success": true,
+  "successReason": "4 rows",
+  "wallTimeMs": 12183,
+  "data": {
+    "rows": [
+      {
+        "lastName": "Smith",
+        "firstName": "John",
+        "email": "jsmith@gmail.com"
+      },
+      {
+        "lastName": "Bach",
+        "firstName": "Frank",
+        "email": "fbach@yahoo.com"
+      },
+      {
+        "lastName": "Doe",
+        "firstName": "Jason",
+        "email": "jdoe@hotmail.com"
+      },
+      {
+        "lastName": "Conway",
+        "firstName": "Tim",
+        "email": "tconway@earthlink.net"
+      }
+    ]
+  },
+  "creditsUsed": 0.081497,
+  "totalCostUsd": 0.008149700000000001,
+  "trace": []
+}

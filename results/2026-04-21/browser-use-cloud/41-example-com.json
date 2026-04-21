@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "41-example-com",
+  "taskUrl": "https://example.com",
+  "success": true,
+  "successReason": "example domain",
+  "wallTimeMs": 11793,
+  "data": {
+    "heading": "Example Domain",
+    "paragraph": "This domain is for use in documentation examples without needing permission. Avoid use in operations."
+  },
+  "inputTokens": 15604,
+  "outputTokens": 202,
+  "totalCostUsd": 0.005717,
+  "trace": [
+    {
+      "t": 1776802754437,
+      "type": "step",
+      "title": "Extract the main heading text and the first paragraph text. Return JSON: { \"heading\": string, \"paragraph\": string }\n\nStart by navigating to: https://example.com"
+    },
+    {
+      "t": 1776802754858,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802755361,
+      "type": "step",
+      "title": "Fetch: Fetched https://example.com (HTTP 200, 167 chars)\n\n# Example Domain\n\nThis domain is for use in documentation examples without needing permission. A..."
+    },
+    {
+      "t": 1776802758300,
+      "type": "step",
+      "title": "Python: import json; Completing task"
+    },
+    {
+      "t": 1776802758380,
+      "type": "step",
+      "title": "Python: [No output. Variables created: f, output]"
+    },
+    {
+      "t": 1776802758447,
+      "type": "step",
+      "title": "Done: Extracted the heading and first paragraph from example.com and saved to output.json."
+    },
+    {
+      "t": 1776802758473,
+      "type": "step",
+      "title": "Extracted the heading and first paragraph from example.com and saved to output.json."
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "53-books-click-and-detail",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "title+price",
+  "wallTimeMs": 12238,
+  "data": {
+    "title": "A Light in the Attic",
+    "price": "£51.77",
+    "upc": "978-1-4919-1853-4",
+    "stock": "In stock"
+  },
+  "creditsUsed": 0.22399,
+  "totalCostUsd": 0.022399000000000002,
+  "trace": []
+}

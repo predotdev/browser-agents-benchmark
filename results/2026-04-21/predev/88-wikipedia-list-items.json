@@ -1,0 +1,27 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "88-wikipedia-list-items",
+  "taskUrl": "https://en.wikipedia.org/wiki/List_of_programming_languages",
+  "success": true,
+  "successReason": "10",
+  "wallTimeMs": 4932,
+  "data": {
+    "languages": [
+      "A.NET (A#/A sharp)",
+      "A-0 System",
+      "A+ (A plus)",
+      "Accent (Rational Synergy)",
+      "Action!",
+      "ActionScript",
+      "Actor",
+      "Ada – ISO/IEC 8652",
+      "Adenine (Haystack)",
+      "AdvPL"
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

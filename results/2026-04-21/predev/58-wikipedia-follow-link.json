@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "58-wikipedia-follow-link",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "599 chars",
+  "wallTimeMs": 9583,
+  "data": {
+    "intro": "ECMAScript is a general-purpose programming language. It is a high-level, interpreted, or just-in-time compiled, multi-paradigm language with dynamic typing and weak typing. It is prototype-based, object-oriented, and has first-class functions. It is a scripting language that conforms to the ECMAScript specification. ECMAScript is most widely known as the language specification for JavaScript. ECMAScript is a trademark of Oracle Corporation in the United States. The trademark was originally issued to Sun Microsystems on 6 May 1997, and was transferred to Oracle when they acquired Sun in 2009."
+  },
+  "creditsUsed": 0.114995,
+  "totalCostUsd": 0.011499500000000001,
+  "trace": []
+}

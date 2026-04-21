@@ -1,0 +1,74 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "74-scrapethissite-countries",
+  "taskUrl": "https://www.scrapethissite.com/pages/simple/",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 16475,
+  "data": {
+    "countries": [
+      {
+        "name": "Andorra",
+        "capital": "Andorra la Vella"
+      },
+      {
+        "name": "United Arab Emirates",
+        "capital": "Abu Dhabi"
+      },
+      {
+        "name": "Afghanistan",
+        "capital": "Kabul"
+      },
+      {
+        "name": "Antigua and Barbuda",
+        "capital": "St. John's"
+      },
+      {
+        "name": "Anguilla",
+        "capital": "The Valley"
+      }
+    ]
+  },
+  "inputTokens": 91679,
+  "outputTokens": 463,
+  "totalCostUsd": 0.030242,
+  "trace": [
+    {
+      "t": 1776802778129,
+      "type": "step",
+      "title": "Extract the first 5 country names and their capitals from the list. Return JSON: { \"countries\": [{ \"name\": string, \"capital\": string }] }\n\nStart by navigating t"
+    },
+    {
+      "t": 1776802778533,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802779887,
+      "type": "step",
+      "title": "Fetch: Fetched https://www.scrapethissite.com/pages/simple/ (HTTP 200, 23318 chars)\n\n- [![](/static/images/scraper-icon.png) Scrape This Site](/)\n- [Sandb..."
+    },
+    {
+      "t": 1776802784358,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802784425,
+      "type": "step",
+      "title": "Python: [No output. Variables created: data, f]"
+    },
+    {
+      "t": 1776802786220,
+      "type": "step",
+      "title": "Done: Extracted the first 5 countries and their capitals from the list. Results saved to output.json."
+    },
+    {
+      "t": 1776802786245,
+      "type": "step",
+      "title": "Extracted the first 5 countries and their capitals from the list. Results saved to output.json."
+    }
+  ]
+}

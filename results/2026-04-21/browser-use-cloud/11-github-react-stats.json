@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "11-github-react-stats",
+  "taskUrl": "https://github.com/facebook/react",
+  "success": true,
+  "successReason": "lang=javascript",
+  "wallTimeMs": 25048,
+  "data": {
+    "stars": 245000,
+    "language": "JavaScript"
+  },
+  "inputTokens": 70492,
+  "outputTokens": 906,
+  "totalCostUsd": 0.023556,
+  "trace": [
+    {
+      "t": 1776802757685,
+      "type": "step",
+      "title": "Extract star count and primary language. Return JSON: { \"stars\": string | number, \"language\": string }\n\nStart by navigating to: https://github.com/facebook/reac"
+    },
+    {
+      "t": 1776802758128,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802759187,
+      "type": "step",
+      "title": "Fetch: Fetched https://github.com/facebook/react (HTTP 200, 20895 chars)\n\n[Skip to content](#start-of-content)\n\n## Navigation Menu\n\nToggle navigation\n\n[](..."
+    },
+    {
+      "t": 1776802769512,
+      "type": "step",
+      "title": "Running: echo '{\"stars\": 245000, \"language\": \"JavaScript..."
+    },
+    {
+      "t": 1776802769579,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802772289,
+      "type": "step",
+      "title": "Done: Extracted star count (245,000) and primary language (JavaScript) from the facebook/react repository. Data saved to output.json."
+    },
+    {
+      "t": 1776802772325,
+      "type": "step",
+      "title": "Extracted star count (245,000) and primary language (JavaScript) from the facebook/react repository. Data saved to output.json."
+    }
+  ]
+}

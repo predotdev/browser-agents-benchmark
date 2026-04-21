@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "40-wikipedia-js-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "255 chars",
+  "wallTimeMs": 13517,
+  "data": {
+    "intro": "JavaScript (JS)[a] is a programming language and core technology of the Web, alongside HTML and CSS. It was created by Brendan Eich in 1995.[6] As of 2025, the overwhelming majority of websites (98.9%) uses JavaScript for client side webpage behavior.[10]"
+  },
+  "creditsUsed": 0.113932,
+  "totalCostUsd": 0.011393200000000001,
+  "trace": []
+}

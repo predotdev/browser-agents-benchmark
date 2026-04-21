@@ -1,0 +1,18 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "38-github-nextjs-stats",
+  "taskUrl": "https://github.com/vercel/next.js",
+  "success": true,
+  "successReason": "lang=TypeScript",
+  "wallTimeMs": 13030,
+  "data": {
+    "stars": 139000,
+    "language": "TypeScript",
+    "description": "The React Framework"
+  },
+  "creditsUsed": 0.104466,
+  "totalCostUsd": 0.0104466,
+  "trace": []
+}

@@ -1,0 +1,54 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "03-npm-react-version",
+  "taskUrl": "https://www.npmjs.com/package/react",
+  "success": true,
+  "successReason": "v19.2.5",
+  "wallTimeMs": 16663,
+  "data": {
+    "version": "19.2.5",
+    "weeklyDownloads": "126,813,503"
+  },
+  "inputTokens": 39155,
+  "outputTokens": 382,
+  "totalCostUsd": 0.011724,
+  "trace": [
+    {
+      "t": 1776802754702,
+      "type": "step",
+      "title": "Extract the current version and weekly downloads. Return JSON: { \"version\": string, \"weeklyDownloads\": string | number }\n\nStart by navigating to: https://www.np"
+    },
+    {
+      "t": 1776802755142,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802756253,
+      "type": "step",
+      "title": "Fetch: Fetched https://www.npmjs.com/package/react (HTTP 200, 3793 chars)\n\nskip to:[content](#main)[package search](#search)[sign in](#signin)\n\n- [Pro](/p..."
+    },
+    {
+      "t": 1776802760404,
+      "type": "step",
+      "title": "Running: echo '{\"version\": \"19.2.5\", \"weeklyDownloads\": ..."
+    },
+    {
+      "t": 1776802760601,
+      "type": "step",
+      "title": "Bash completed"
+    },
+    {
+      "t": 1776802765038,
+      "type": "step",
+      "title": "Done: Extracted React package version (19.2.5) and weekly downloads (126,813,503) from npm. Results saved to output.json."
+    },
+    {
+      "t": 1776802765060,
+      "type": "step",
+      "title": "Extracted React package version (19.2.5) and weekly downloads (126,813,503) from npm. Results saved to output.json."
+    }
+  ]
+}

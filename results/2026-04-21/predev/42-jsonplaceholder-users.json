@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "42-jsonplaceholder-users",
+  "taskUrl": "https://jsonplaceholder.typicode.com/users",
+  "success": true,
+  "successReason": "3 users",
+  "wallTimeMs": 10753,
+  "data": {
+    "users": [
+      {
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz"
+      },
+      {
+        "name": "Ervin Howell",
+        "email": "Shanna@melissa.tv"
+      },
+      {
+        "name": "Clementine Bauch",
+        "email": "Nathan@yesenia.net"
+      }
+    ]
+  },
+  "creditsUsed": 0.081525,
+  "totalCostUsd": 0.0081525,
+  "trace": []
+}

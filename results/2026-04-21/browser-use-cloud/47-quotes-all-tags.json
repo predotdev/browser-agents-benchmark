@@ -1,0 +1,64 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "47-quotes-all-tags",
+  "taskUrl": "https://quotes.toscrape.com",
+  "success": true,
+  "successReason": "10 tags",
+  "wallTimeMs": 19827,
+  "data": {
+    "tags": [
+      "love",
+      "inspirational",
+      "life",
+      "humor",
+      "books",
+      "reading",
+      "friendship",
+      "friends",
+      "truth",
+      "simile"
+    ]
+  },
+  "inputTokens": 36946,
+  "outputTokens": 356,
+  "totalCostUsd": 0.010313000000000001,
+  "trace": [
+    {
+      "t": 1776802756366,
+      "type": "step",
+      "title": "Extract the top 10 tags shown in the sidebar tag cloud. Return JSON: { \"tags\": string[] }\n\nStart by navigating to: https://quotes.toscrape.com"
+    },
+    {
+      "t": 1776802756860,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802757830,
+      "type": "step",
+      "title": "Fetch: Fetched https://quotes.toscrape.com (HTTP 200, 2964 chars)\n\n# [Quotes to Scrape](/)\n\n[Login](/login)\n\n“The world as we have created it is a process..."
+    },
+    {
+      "t": 1776802764543,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802764615,
+      "type": "step",
+      "title": "Python: [No output. Variables created: data, f]"
+    },
+    {
+      "t": 1776802767136,
+      "type": "step",
+      "title": "Done: The top 10 tags from the sidebar tag cloud have been extracted and saved to output.json. The tags are: love, inspirational, life, humor, books, rea..."
+    },
+    {
+      "t": 1776802767152,
+      "type": "step",
+      "title": "The top 10 tags from the sidebar tag cloud have been extracted and saved to output.json. The tags are: love, inspirational, life, humor, books, reading, friends"
+    }
+  ]
+}

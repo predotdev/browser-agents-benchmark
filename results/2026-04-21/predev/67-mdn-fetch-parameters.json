@@ -1,0 +1,19 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "67-mdn-fetch-parameters",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/API/fetch",
+  "success": true,
+  "successReason": "2",
+  "wallTimeMs": 9803,
+  "data": {
+    "parameters": [
+      "resource",
+      "options"
+    ]
+  },
+  "creditsUsed": 0.082647,
+  "totalCostUsd": 0.0082647,
+  "trace": []
+}

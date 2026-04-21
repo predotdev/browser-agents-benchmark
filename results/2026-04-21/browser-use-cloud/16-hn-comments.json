@@ -1,0 +1,63 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "gemini-3-flash",
+  "taskName": "16-hn-comments",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "The Vercel breach: OAuth attack exposes risk in pl",
+  "wallTimeMs": 24880,
+  "data": {
+    "storyTitle": "The Vercel breach: OAuth attack exposes risk in platform environment variables"
+  },
+  "inputTokens": 109156,
+  "outputTokens": 657,
+  "totalCostUsd": 0.032651,
+  "trace": [
+    {
+      "t": 1776802757231,
+      "type": "step",
+      "title": "Click on the \"comments\" link of the first story. After the comments page loads, extract the story title. Return JSON: { \"storyTitle\": string }\n\nStart by navigat"
+    },
+    {
+      "t": 1776802757638,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802758676,
+      "type": "step",
+      "title": "Fetch: Fetched https://news.ycombinator.com (HTTP 200, 10796 chars)\n\n[![](y18.svg)](https://news.ycombinator.com)[**Hacker News**](news)[new](newest) | [p..."
+    },
+    {
+      "t": 1776802765825,
+      "type": "step",
+      "title": "Fetch"
+    },
+    {
+      "t": 1776802767402,
+      "type": "step",
+      "title": "Fetch: [Output truncated: 8829 tokens exceeded limit of 5000. Full output: /workspace/.ephemeral/truncated-85fcfcde.log]\n\n{\"status\": 200, \"content_type\": ..."
+    },
+    {
+      "t": 1776802769640,
+      "type": "step",
+      "title": "Python: import json"
+    },
+    {
+      "t": 1776802769717,
+      "type": "step",
+      "title": "Python: [No output. Variables created: f, result]"
+    },
+    {
+      "t": 1776802771550,
+      "type": "step",
+      "title": "Done: The story title has been extracted and saved to output.json."
+    },
+    {
+      "t": 1776802771567,
+      "type": "step",
+      "title": "The story title has been extracted and saved to output.json."
+    }
+  ]
+}

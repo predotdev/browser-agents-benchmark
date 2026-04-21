@@ -1,0 +1,20 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "93-quotes-js-rendered",
+  "taskUrl": "https://quotes.toscrape.com/js",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 5866,
+  "data": {
+    "authors": [
+      "Albert Einstein",
+      "J.K. Rowling",
+      "Albert Einstein"
+    ]
+  },
+  "creditsUsed": 0.064325,
+  "totalCostUsd": 0.0064325,
+  "trace": []
+}
