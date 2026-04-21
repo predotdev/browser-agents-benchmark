@@ -52,6 +52,12 @@ const ALL_CONFIGS: ConfigDef[] = [
 		id: 'browser-use-cloud',
 		tool: 'browser-use',
 		run: runBrowserUse,
+		// `bu-mini` is browser-use's own cheapest tier — their dashboard
+		// routes this to GPT-5.4 mini. We compare against it (rather than
+		// gemini-3-flash or claude) because it's what real customers get
+		// when they pick the "mini" tier in their SDK. The LLM-family
+		// asymmetry vs pre.dev's Gemini Flash Lite is part of the
+		// comparison, not a bug we correct for.
 		cfg: { configId: 'browser-use-cloud', model: 'bu-mini' },
 	},
 ];

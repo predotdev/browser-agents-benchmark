@@ -5,8 +5,21 @@
  * cost numbers (totalCostUsd, llmCostUsd, browserCostUsd, totalInput/Output
  * Tokens) so we don't have to estimate.
  *
- * Default model `bu-mini` (= gemini-3-flash) keeps the comparison fair —
- * we benchmark cheap-tier vs cheap-tier across all three tools.
+ * Default model `gemini-3-flash`. Intentionally NOT `bu-mini`: despite the
+ * name, browser-use's dashboard confirms `bu-mini` is routed to Claude
+ * Opus 4.7 (their own premium tier), which makes any cheap-tier-vs-
+ * cheap-tier comparison accidentally pit pre.dev's Gemini Flash Lite
+ * against browser-use's most expensive model — a ~20× cost skew that
+ * would misrepresent both products. Per the SDK's own comment:
+ *
+ *   BuModel: "bu-mini" | "bu-max" | "bu-ultra" | "gemini-3-flash" |
+ *            "claude-sonnet-4.6" | "claude-opus-4.6" | "gpt-5.4-mini"
+ *   "gemini-3-flash" is fast and cheap, "claude-sonnet-4.6" is balanced,
+ *   "claude-opus-4.6" is most capable.
+ *
+ * `gemini-3-flash` is the closest sibling to pre.dev's default
+ * `gemini-2.5-flash-lite` — same family, same tier. Override via
+ * `cfg.model` if you want a head-to-head with a different tier.
  *
  * Env:
  *   BROWSER_USE_API_KEY
@@ -16,7 +29,7 @@ import { BrowserUse } from 'browser-use-sdk/v3';
 import type { BenchmarkResult, BenchmarkTask } from '../types.js';
 
 const TOOL = 'browser-use-cloud' as const;
-const DEFAULT_MODEL = 'bu-mini';
+const DEFAULT_MODEL = 'gemini-3-flash';
 
 export interface BrowserUseConfig {
 	configId: string;
@@ -57,7 +70,16 @@ export async function runBrowserUse(
 			// receives. Without this, pre.dev gets schema-guided extraction
 			// while browser-use doesn't — which is the kind of asymmetry a
 			// head-to-head bench must avoid.
-			const runOptions: any = { llm: model };
+			//
+			// The SDK's RunTaskRequest takes `model` (BuModel), NOT `llm`.
+			// We were passing `{ llm: model }` — silently dropped as an
+			// unknown key, falling back to the server-side default. Every
+			// previous bench run actually executed on whatever their
+			// default is (Claude Opus 4.7 per cloud.browser-use.com UI)
+			// rather than the tier we thought we selected. This alone
+			// explains the ~23× cost vs pre.dev's Gemini Flash Lite —
+			// the param name was wrong the whole time.
+			const runOptions: any = { model };
 			if (task.output) runOptions.outputSchema = task.output;
 			const runHandle: any = (client as any).run(fullTask, runOptions);
 			response = await Promise.race([

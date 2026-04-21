@@ -2,7 +2,7 @@
 
 Reproducible head-to-head benchmark of browser-automation services across **100 real-world web tasks** — scraping, multi-step navigation, login flows, form fills, pagination.
 
-> **pre.dev Browser Agents passes 100 / 100 tasks at ~12× lower cost AND ~1.8× faster than Browser Use Cloud.**
+> **pre.dev Browser Agents passes 100 / 100 tasks at ~2.9× lower cost AND ~2.8× faster than Browser Use Cloud.**
 
 ---
 
@@ -10,10 +10,10 @@ Reproducible head-to-head benchmark of browser-automation services across **100 
 
 | Provider | Pass rate | Avg time / task | $ / task | Total $ for 100 tasks |
 |---|---:|---:|---:|---:|
-| **🏆 [pre.dev Browser Agents](https://pre.dev/browser-agents)** | **100 / 100** | **14.4 s** | **$0.0100** | **$1.00** |
-| [Browser Use Cloud](https://cloud.browser-use.com) | 81 / 100 | 26.3 s | $0.1199 | $11.99 |
+| **🏆 [pre.dev Browser Agents](https://pre.dev/browser-agents)** | **100 / 100** | **12.7 s** | **$0.0129** | **$1.29** |
+| [Browser Use Cloud](https://cloud.browser-use.com) | 97 / 100 | 35.7 s | $0.0372 | $3.72 |
 
-Same 100 tasks. Same JSON output schemas. Same uniform `successCheck` predicate. Browser agents are stochastic — individual runs on cheap-tier models vary by a few tasks per suite; the full per-task JSON + trace from this run is in `results/2026-04-17/` so the data can be re-scored independently.
+Same 100 tasks. Same JSON output schemas. Same uniform `successCheck` predicate. Browser agents are stochastic — individual runs on cheap-tier models vary by a few tasks per suite; the full per-task JSON + trace from this run is in `results/2026-04-21/` so the data can be re-scored independently.
 
 ### Cost per task
 
@@ -65,13 +65,15 @@ tsx run.ts --limit 25 --parallel --concurrency 10
 
 **Models used**
 - pre.dev: `gemini-2.5-flash-lite` (the default low-cost tier on pre.dev Browser Agents)
-- browser-use Cloud: `bu-mini` (the default low-cost tier on cloud.browser-use.com, backed by a Gemini Flash–class model at the time of this run)
+- browser-use Cloud: `bu-mini` (the default low-cost tier on cloud.browser-use.com — currently routed to GPT-5.4 mini on their backend)
 
 Both are each provider's cheapest published tier. If you want to rerun against a different tier, pass it through the adapter config in `run.ts`.
 
+> **Note on the SDK `model` parameter.** The official `browser-use-sdk` v3 client expects `model`, not `llm`, in the run-options. Our adapter passed `llm` through v0.1.0, which browser-use's backend silently dropped — falling back to the server default (Claude Opus 4.7 at the time), NOT the `bu-mini` we thought we were selecting. We've since fixed the adapter so the model param actually reaches their router; the numbers above are all from post-fix runs.
+
 Headline times are **mean** across all 100 tasks.
 
-The numbers in this README come from `results/2026-04-17/`. That directory is committed so anyone can audit the raw data without re-running.
+The numbers in this README come from `results/2026-04-21/`. That directory is committed so anyone can audit the raw data without re-running.
 
 ---
 
