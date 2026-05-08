@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "95-hn-show-stories",
+  "taskUrl": "https://news.ycombinator.com/show",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 2640,
+  "data": {
+    "stories": [
+      {
+        "title": "Show HN: Git for AI Agents"
+      },
+      {
+        "title": "Show HN: Crit – local review tool for agent plans and code diffs"
+      },
+      {
+        "title": "Show HN: TRUST – Coding Rust like it's 1989"
+      }
+    ]
+  },
+  "creditsUsed": 0.065484,
+  "totalCostUsd": 0.0065484,
+  "trace": []
+}

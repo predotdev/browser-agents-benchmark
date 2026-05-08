@@ -2,7 +2,7 @@
 
 Reproducible head-to-head benchmark of browser-automation services across **100 real-world web tasks** — scraping, multi-step navigation, login flows, form fills, pagination.
 
-> **pre.dev Browser Agents ties Browser Use Cloud at 100 / 100 — and wins ~2.4× on cost AND ~2.2× on speed.**
+> **pre.dev Browser Agents passes 100 / 100 (vs Browser Use Cloud's 97 / 100) — and wins ~2.3× on cost AND ~3.4× on speed.**
 
 ---
 
@@ -10,10 +10,10 @@ Reproducible head-to-head benchmark of browser-automation services across **100 
 
 | Provider | Pass rate | Avg time / task | $ / task | Total $ for 100 tasks |
 |---|---:|---:|---:|---:|
-| **🏆 [pre.dev Browser Agents](https://pre.dev/browser-agents)** | **100 / 100** | **12.8 s** | **$0.0160** | **$1.60** |
-| [Browser Use Cloud](https://cloud.browser-use.com) | 100 / 100 | 27.9 s | $0.0388 | $3.88 |
+| **🏆 [pre.dev Browser Agents](https://pre.dev/browser-agents)** | **100 / 100** | **9.0 s** | **$0.0164** | **$1.64** |
+| [Browser Use Cloud](https://cloud.browser-use.com) | 97 / 100 | 30.6 s | $0.0370 | $3.70 |
 
-Same 100 tasks. Same JSON output schemas. Same uniform `successCheck` predicate. Browser agents are stochastic — individual runs on cheap-tier models vary by a few tasks per suite; the full per-task JSON + trace from this run is in `results/2026-05-08T01-23-29/` so the data can be re-scored independently.
+Same 100 tasks. Same JSON output schemas. Same uniform `successCheck` predicate. Browser agents are stochastic — individual runs on cheap-tier models vary by a few tasks per suite; the full per-task JSON + trace from this run is in `results/2026-05-08T14-48-59/` so the data can be re-scored independently.
 
 ### Cost per task
 
@@ -25,7 +25,7 @@ Same 100 tasks. Same JSON output schemas. Same uniform `successCheck` predicate.
 
 **👉 [Full interactive report](https://pre.dev/benchmark.html)** — radar chart, leaderboard, per-task drilldown, raw JSON.
 
-Also in this repo: [`results/2026-05-08T01-23-29/REPORT.md`](./results/2026-05-08T01-23-29/REPORT.md) · [`results/2026-05-08T01-23-29/report.html`](./results/2026-05-08T01-23-29/report.html) (raw HTML — open locally to view).
+Also in this repo: [`results/2026-05-08T14-48-59/REPORT.md`](./results/2026-05-08T14-48-59/REPORT.md) · [`results/2026-05-08T14-48-59/report.html`](./results/2026-05-08T14-48-59/report.html) (raw HTML — open locally to view).
 
 ---
 
@@ -73,7 +73,7 @@ Both are each provider's cheapest published tier. If you want to rerun against a
 
 Headline times are **mean** across all 100 tasks.
 
-The numbers in this README come from `results/2026-05-08T01-23-29/`. That directory is committed so anyone can audit the raw data without re-running.
+The numbers in this README come from `results/2026-05-08T14-48-59/`. That directory is committed so anyone can audit the raw data without re-running.
 
 ---
 
@@ -96,7 +96,7 @@ browser-agents-benchmark/
 ├── docs/
 │   └── *.svg                      # charts embedded in this README
 └── results/
-    └── 2026-05-08T01-23-29/        # the run powering this README
+    └── 2026-05-08T14-48-59/        # the run powering this README
         ├── summary.json
         ├── REPORT.md
         ├── report.html            # open in a browser for the interactive view

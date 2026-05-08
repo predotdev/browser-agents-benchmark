@@ -1,0 +1,37 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "01-hn-top-stories",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 19260,
+  "data": {
+    "stories": [
+      {
+        "title": "Poland is now among the 20 largest economies. How it happened",
+        "points": 495
+      },
+      {
+        "title": "An Introduction to Meshtastic",
+        "points": 173
+      },
+      {
+        "title": "PC Engine CPU",
+        "points": 35
+      },
+      {
+        "title": "Podman rootless containers and the Copy Fail exploit",
+        "points": 32
+      },
+      {
+        "title": "Serving a Website on a Raspberry Pi Zero Running in RAM",
+        "points": 10
+      }
+    ]
+  },
+  "inputTokens": 60415,
+  "outputTokens": 1058,
+  "totalCostUsd": 0.022472000000000002
+}

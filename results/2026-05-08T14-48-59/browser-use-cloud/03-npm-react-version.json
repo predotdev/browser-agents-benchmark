@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "03-npm-react-version",
+  "taskUrl": "https://www.npmjs.com/package/react",
+  "success": true,
+  "successReason": "v19.2.6",
+  "wallTimeMs": 16829,
+  "data": {
+    "version": "19.2.6",
+    "weeklyDownloads": "121,618,158"
+  },
+  "inputTokens": 38512,
+  "outputTokens": 249,
+  "totalCostUsd": 0.010862
+}

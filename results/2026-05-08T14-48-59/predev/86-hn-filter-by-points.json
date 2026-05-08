@@ -1,0 +1,93 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "86-hn-filter-by-points",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "19",
+  "wallTimeMs": 4754,
+  "data": {
+    "stories": [
+      {
+        "title": "Poland is now among the 20 largest economies. How it happened",
+        "points": 370
+      },
+      {
+        "title": "An Introduction to Meshtastic",
+        "points": 127
+      },
+      {
+        "title": "Canvas is down as ShinyHunters threatens to leak schools’ data",
+        "points": 817
+      },
+      {
+        "title": "Cloudflare to cut about 20% workforce",
+        "points": 1031
+      },
+      {
+        "title": "Maybe you shouldn't install new software for a bit",
+        "points": 685
+      },
+      {
+        "title": "ClojureScript Gets Async/Await",
+        "points": 177
+      },
+      {
+        "title": "Dirtyfrag: Universal Linux LPE",
+        "points": 718
+      },
+      {
+        "title": "Rumors of my death are slightly exaggerated",
+        "points": 635
+      },
+      {
+        "title": "The map that keeps Burning Man honest",
+        "points": 697
+      },
+      {
+        "title": "Pinocchio is weirder than you remembered",
+        "points": 229
+      },
+      {
+        "title": "Agents need control flow, not more prompts",
+        "points": 526
+      },
+      {
+        "title": "Nintendo announces price increases for Nintendo Switch 2",
+        "points": 176
+      },
+      {
+        "title": "DeepSeek 4 Flash local inference engine for Metal",
+        "points": 444
+      },
+      {
+        "title": "Singapore introduces caning for boys who bully others at school",
+        "points": 263
+      },
+      {
+        "title": "GPT-5.5 Price Increase: What It Costs",
+        "points": 128
+      },
+      {
+        "title": "Natural Language Autoencoders: Turning Claude's Thoughts into Text",
+        "points": 331
+      },
+      {
+        "title": "Hardening Firefox with Claude Mythos Preview",
+        "points": 283
+      },
+      {
+        "title": "Blaise – A modern self-hosting zero-legacy Object Pascal compiler targeting QBE",
+        "points": 75
+      },
+      {
+        "title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
+        "points": 313
+      }
+    ]
+  },
+  "creditsUsed": 0.093303,
+  "totalCostUsd": 0.0093303,
+  "trace": []
+}

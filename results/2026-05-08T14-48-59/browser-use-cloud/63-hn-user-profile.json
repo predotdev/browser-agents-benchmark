@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "63-hn-user-profile",
+  "taskUrl": "https://news.ycombinator.com/user?id=dang",
+  "success": true,
+  "successReason": "karma 39317",
+  "wallTimeMs": 12857,
+  "data": {
+    "karma": 39317,
+    "createdDate": "August 18, 2007"
+  },
+  "inputTokens": 33007,
+  "outputTokens": 259,
+  "totalCostUsd": 0.007616
+}

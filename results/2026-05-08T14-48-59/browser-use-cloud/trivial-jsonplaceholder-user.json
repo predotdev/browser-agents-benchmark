@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "trivial-jsonplaceholder-user",
+  "taskUrl": "https://jsonplaceholder.typicode.com/users/1",
+  "success": true,
+  "successReason": "Leanne Graham",
+  "wallTimeMs": 10684,
+  "data": {
+    "name": "Leanne Graham"
+  },
+  "inputTokens": 31944,
+  "outputTokens": 74,
+  "totalCostUsd": 0.010689
+}

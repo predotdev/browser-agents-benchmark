@@ -1,0 +1,20 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "78-the-internet-dynamic-content",
+  "taskUrl": "https://the-internet.herokuapp.com/dynamic_content",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 4302,
+  "data": {
+    "paragraphs": [
+      "Delectus quisquam atque doloremque molestiae sint quasi iste tempora dolorem sapiente non consequatur itaque repellendus assumenda aliquid a recusandae veritatis sed architecto minima nihil sunt omnis et tenetur fugit officiis numquam rem iure.",
+      "Repudiandae doloremque illo corporis qui cupiditate dolorum possimus eum laboriosam quisquam nesciunt necessitatibus occaecati ullam maiores quaerat officia quia voluptatibus placeat corrupti explicabo et ea voluptas aliquam sed sed enim ratione ut ipsa quos.",
+      "Omnis eligendi similique minima optio non aut dolores quo qui est ratione explicabo corporis voluptas inventore dolorum omnis autem et ea perferendis rerum veritatis excepturi repudiandae veniam repellendus odio maiores quia tenetur cupiditate."
+    ]
+  },
+  "creditsUsed": 0.019804,
+  "totalCostUsd": 0.0019803999999999998,
+  "trace": []
+}

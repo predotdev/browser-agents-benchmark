@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "64-github-repo-readme-header",
+  "taskUrl": "https://github.com/microsoft/TypeScript",
+  "success": true,
+  "successReason": "typescript",
+  "wallTimeMs": 6816,
+  "data": {
+    "description": "TypeScript is a language for application-scale JavaScript. TypeScript adds optional types to JavaScript that support tools for large-scale JavaScript applications for any browser, for any host, on any OS. TypeScript compiles to readable, standards-based JavaScript. Try it out at the playground, and stay up to date via our blog and Twitter account.",
+    "language": "TypeScript"
+  },
+  "creditsUsed": 0.08533,
+  "totalCostUsd": 0.008533,
+  "trace": []
+}

@@ -1,0 +1,37 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "09-lobsters-stories",
+  "taskUrl": "https://lobste.rs",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 15614,
+  "data": {
+    "stories": [
+      {
+        "title": "Just Fucking Use Go",
+        "score": 40
+      },
+      {
+        "title": "Dirty Frag: Universal Linux LPE",
+        "score": 107
+      },
+      {
+        "title": "Stop MITM on the first SSH connection, on any VPS or cloud provider",
+        "score": 10
+      },
+      {
+        "title": "Why Don’t Lowercase Letters Come Right After Uppercase Letters in ASCII?",
+        "score": 38
+      },
+      {
+        "title": "jj v0.41.0 is out",
+        "score": 65
+      }
+    ]
+  },
+  "inputTokens": 76125,
+  "outputTokens": 566,
+  "totalCostUsd": 0.025704
+}

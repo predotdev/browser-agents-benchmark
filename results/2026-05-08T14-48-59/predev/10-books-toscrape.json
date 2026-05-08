@@ -1,0 +1,37 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "10-books-toscrape",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "5 books",
+  "wallTimeMs": 4372,
+  "data": {
+    "books": [
+      {
+        "title": "A Light in the ...",
+        "price": "£51.77"
+      },
+      {
+        "title": "Tipping the Velvet",
+        "price": "£53.74"
+      },
+      {
+        "title": "Soumission",
+        "price": "£50.10"
+      },
+      {
+        "title": "Sharp Objects",
+        "price": "£47.82"
+      },
+      {
+        "title": "Sapiens: A Brief History ...",
+        "price": "£54.23"
+      }
+    ]
+  },
+  "creditsUsed": 0.047652,
+  "totalCostUsd": 0.004765200000000001,
+  "trace": []
+}

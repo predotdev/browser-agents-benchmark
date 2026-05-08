@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "32-the-internet-login",
+  "taskUrl": "https://the-internet.herokuapp.com/login",
+  "success": true,
+  "successReason": "login ok",
+  "wallTimeMs": 62206,
+  "data": {
+    "loggedIn": true
+  },
+  "inputTokens": 204825,
+  "outputTokens": 2364,
+  "totalCostUsd": 0.051842
+}

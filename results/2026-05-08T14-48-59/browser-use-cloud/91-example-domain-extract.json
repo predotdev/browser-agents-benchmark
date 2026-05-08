@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "91-example-domain-extract",
+  "taskUrl": "https://example.com/",
+  "success": true,
+  "successReason": "example",
+  "wallTimeMs": 10589,
+  "data": {
+    "heading": "Example Domain",
+    "linkUrl": "https://www.iana.org/domains/example"
+  },
+  "inputTokens": 30831,
+  "outputTokens": 133,
+  "totalCostUsd": 0.010236
+}

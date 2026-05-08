@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "61-hn-comments-navigate",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "got both",
+  "wallTimeMs": 18987,
+  "data": {
+    "title": "Poland is now among the 20 largest economies. How it happened",
+    "commentCount": 401
+  },
+  "inputTokens": 137125,
+  "outputTokens": 697,
+  "totalCostUsd": 0.036400999999999996
+}

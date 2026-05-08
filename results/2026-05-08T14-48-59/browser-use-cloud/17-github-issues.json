@@ -1,0 +1,32 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "17-github-issues",
+  "taskUrl": "https://github.com/microsoft/typescript/issues",
+  "success": true,
+  "successReason": "5 issues",
+  "wallTimeMs": 21557,
+  "data": {
+    "issues": [
+      {
+        "title": "[6.x] Getting'unassingable to type' when returning value from method that needs to infer generic from parameters"
+      },
+      {
+        "title": "String.split() method's separator argument should allow undefined"
+      },
+      {
+        "title": "`new super()` in static method does not cause error"
+      },
+      {
+        "title": "`libReplacement: true` lookup folder should be configurable (via `typeRoots` ?)"
+      },
+      {
+        "title": "`symbolToNode` stack overflow when using recursive types and functions with type parameters"
+      }
+    ]
+  },
+  "inputTokens": 94110,
+  "outputTokens": 1631,
+  "totalCostUsd": 0.031562
+}

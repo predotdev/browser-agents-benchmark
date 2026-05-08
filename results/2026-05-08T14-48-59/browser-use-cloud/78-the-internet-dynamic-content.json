@@ -1,0 +1,20 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "78-the-internet-dynamic-content",
+  "taskUrl": "https://the-internet.herokuapp.com/dynamic_content",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 16760,
+  "data": {
+    "paragraphs": [
+      "Nam est aut quidem a dolor atque consequatur quo nostrum vitae ad reprehenderit consequuntur in facilis inventore doloribus odio voluptatem repellendus porro expedita voluptatem quas placeat nemo dolorem quae ab cumque voluptates.",
+      "Ab exercitationem perferendis voluptatem aut temporibus eius sequi hic sed qui voluptates voluptas ea possimus et sit iste architecto repellendus fuga ut et similique ut placeat odio esse consequatur rerum aut quia.",
+      "Aliquid aperiam sunt facilis ut et id beatae quaerat consequatur laudantium explicabo natus sequi quia a iste sunt totam et blanditiis voluptatibus est laboriosam nisi odio delectus autem non doloribus hic."
+    ]
+  },
+  "inputTokens": 34568,
+  "outputTokens": 973,
+  "totalCostUsd": 0.011115000000000002
+}

@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "19-books-page2",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "3 books",
+  "wallTimeMs": 14239,
+  "data": {
+    "books": [
+      {
+        "title": "Burning"
+      },
+      {
+        "title": "A Fierce and Subtle ..."
+      },
+      {
+        "title": "Scarlett Epstein Hates It ..."
+      }
+    ]
+  },
+  "creditsUsed": 0.231656,
+  "totalCostUsd": 0.0231656,
+  "trace": []
+}

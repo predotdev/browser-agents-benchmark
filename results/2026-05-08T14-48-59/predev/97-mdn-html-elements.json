@@ -1,0 +1,22 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "97-mdn-html-elements",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 4649,
+  "data": {
+    "elements": [
+      "html",
+      "base",
+      "head",
+      "link",
+      "meta"
+    ]
+  },
+  "creditsUsed": 0.155626,
+  "totalCostUsd": 0.0155626,
+  "trace": []
+}

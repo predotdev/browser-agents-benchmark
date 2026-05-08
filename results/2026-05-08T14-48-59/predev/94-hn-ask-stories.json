@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "94-hn-ask-stories",
+  "taskUrl": "https://news.ycombinator.com/ask",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 3205,
+  "data": {
+    "stories": [
+      {
+        "title": "Ask HN: How are you handling QA being bottlenecked with more AI-generated PRs?",
+        "points": 3
+      },
+      {
+        "title": "Ask HN: What will happen as AI costs increase?",
+        "points": 12
+      },
+      {
+        "title": "Ask HN: What is your go-to solution for a personal wiki in 2026?",
+        "points": 13
+      }
+    ]
+  },
+  "creditsUsed": 0.039876,
+  "totalCostUsd": 0.0039876,
+  "trace": []
+}

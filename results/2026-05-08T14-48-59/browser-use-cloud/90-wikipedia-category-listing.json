@@ -1,0 +1,22 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "90-wikipedia-category-listing",
+  "taskUrl": "https://en.wikipedia.org/wiki/Category:Web_frameworks",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 54902,
+  "data": {
+    "frameworks": [
+      "AIDA/Web",
+      "Ametys CMS",
+      "Anaconda (Python distribution)",
+      "Apache Cocoon",
+      "Apache Shale"
+    ]
+  },
+  "inputTokens": 227412,
+  "outputTokens": 5205,
+  "totalCostUsd": 0.081324
+}

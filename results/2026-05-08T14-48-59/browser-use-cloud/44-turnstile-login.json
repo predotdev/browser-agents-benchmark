@@ -1,0 +1,14 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "44-turnstile-login",
+  "taskUrl": "https://demo.turnstile.workers.dev/",
+  "success": false,
+  "successReason": "no confirm",
+  "wallTimeMs": 120003,
+  "error": "TIMEOUT",
+  "inputTokens": 0,
+  "outputTokens": 0,
+  "totalCostUsd": 0
+}

@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "58-wikipedia-follow-link",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "432 chars",
+  "wallTimeMs": 5597,
+  "data": {
+    "intro": "JavaScript is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2023 JavaScript is the programming language of the web. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior. JavaScript enables interactive web pages and is an essential component of web applications, including desktop applications, mobile apps, web servers, and even games."
+  },
+  "creditsUsed": 0.119326,
+  "totalCostUsd": 0.011932600000000002,
+  "trace": []
+}

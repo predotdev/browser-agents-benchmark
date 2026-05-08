@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "64-github-repo-readme-header",
+  "taskUrl": "https://github.com/microsoft/TypeScript",
+  "success": true,
+  "successReason": "typescript",
+  "wallTimeMs": 14720,
+  "data": {
+    "description": "TypeScript is a superset of JavaScript that compiles to clean JavaScript output.",
+    "language": "TypeScript"
+  },
+  "inputTokens": 65047,
+  "outputTokens": 599,
+  "totalCostUsd": 0.023594
+}

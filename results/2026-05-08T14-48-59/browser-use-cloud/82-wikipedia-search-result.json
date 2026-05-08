@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "82-wikipedia-search-result",
+  "taskUrl": "https://en.wikipedia.org/wiki/Main_Page",
+  "success": true,
+  "successReason": "2006",
+  "wallTimeMs": 82322,
+  "data": {
+    "designedYear": 2006
+  },
+  "inputTokens": 1351608,
+  "outputTokens": 5683,
+  "totalCostUsd": 0.243487
+}

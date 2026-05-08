@@ -1,0 +1,29 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "94-hn-ask-stories",
+  "taskUrl": "https://news.ycombinator.com/ask",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 18859,
+  "data": {
+    "stories": [
+      {
+        "title": "Rumors of my death are slightly exaggerated",
+        "points": 747
+      },
+      {
+        "title": "Ask HN: How do we handle the rise of low quality \"This is LLM\" comments?",
+        "points": 4
+      },
+      {
+        "title": "Reflections on NetBSD 11",
+        "points": 3
+      }
+    ]
+  },
+  "inputTokens": 48436,
+  "outputTokens": 1590,
+  "totalCostUsd": 0.026007
+}

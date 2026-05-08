@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "12-wikipedia-python",
+  "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "success": true,
+  "successReason": "Multi-paradigm: object-oriented, procedu",
+  "wallTimeMs": 4824,
+  "data": {
+    "paradigms": "Multi-paradigm: object-oriented, procedural (imperative), functional, structured, reflective"
+  },
+  "creditsUsed": 0.259862,
+  "totalCostUsd": 0.0259862,
+  "trace": []
+}

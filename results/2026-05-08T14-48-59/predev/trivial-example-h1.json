@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "trivial-example-h1",
+  "taskUrl": "https://example.com",
+  "success": true,
+  "successReason": "Example Domain",
+  "wallTimeMs": 2549,
+  "data": {
+    "heading": "Example Domain"
+  },
+  "creditsUsed": 0.0089,
+  "totalCostUsd": 0.0008900000000000001,
+  "trace": []
+}

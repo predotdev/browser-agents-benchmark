@@ -1,0 +1,18 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "05-github-typescript-stats",
+  "taskUrl": "https://github.com/microsoft/typescript",
+  "success": true,
+  "successReason": "lang=typescript",
+  "wallTimeMs": 6614,
+  "data": {
+    "stars": 109000,
+    "language": "TypeScript",
+    "latestRelease": "TypeScript 6.0.3"
+  },
+  "creditsUsed": 0.060418,
+  "totalCostUsd": 0.0060418,
+  "trace": []
+}

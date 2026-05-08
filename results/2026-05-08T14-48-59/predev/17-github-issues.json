@@ -1,0 +1,32 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "17-github-issues",
+  "taskUrl": "https://github.com/microsoft/typescript/issues",
+  "success": true,
+  "successReason": "5 issues",
+  "wallTimeMs": 6897,
+  "data": {
+    "issues": [
+      {
+        "title": "[6.x] Getting'unassingable to type' when returning value from method that needs to infer generic from parameters"
+      },
+      {
+        "title": "String.split() method's separator argument should allow undefined"
+      },
+      {
+        "title": "new super() in static method does not cause error"
+      },
+      {
+        "title": "libReplacement: true lookup folder should be configurable (via typeRoots ?)"
+      },
+      {
+        "title": "symbolToNode stack overflow when using recursive types and functions with type parameters"
+      }
+    ]
+  },
+  "creditsUsed": 0.064365,
+  "totalCostUsd": 0.006436500000000001,
+  "trace": []
+}

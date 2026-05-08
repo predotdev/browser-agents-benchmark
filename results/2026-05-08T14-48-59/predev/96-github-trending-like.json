@@ -1,0 +1,20 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "96-github-trending-like",
+  "taskUrl": "https://github.com/explore",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 5912,
+  "data": {
+    "repos": [
+      "anthropics / financial-services",
+      "addyosmani / agent-skills",
+      "Hmbown / DeepSeek-TUI"
+    ]
+  },
+  "creditsUsed": 0.077446,
+  "totalCostUsd": 0.007744600000000001,
+  "trace": []
+}

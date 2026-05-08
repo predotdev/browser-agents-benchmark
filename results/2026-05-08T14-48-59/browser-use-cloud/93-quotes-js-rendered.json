@@ -1,0 +1,20 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "93-quotes-js-rendered",
+  "taskUrl": "https://quotes.toscrape.com/js",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 18852,
+  "data": {
+    "authors": [
+      "Albert Einstein",
+      "J.K. Rowling",
+      "Albert Einstein"
+    ]
+  },
+  "inputTokens": 45967,
+  "outputTokens": 198,
+  "totalCostUsd": 0.016186
+}

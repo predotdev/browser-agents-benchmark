@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "91-example-domain-extract",
+  "taskUrl": "https://example.com/",
+  "success": true,
+  "successReason": "example",
+  "wallTimeMs": 2399,
+  "data": {
+    "heading": "Example Domain",
+    "linkUrl": "https://iana.org/domains/example"
+  },
+  "creditsUsed": 0.009785,
+  "totalCostUsd": 0.0009785,
+  "trace": []
+}

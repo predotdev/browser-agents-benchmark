@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "41-example-com",
+  "taskUrl": "https://example.com",
+  "success": true,
+  "successReason": "example domain",
+  "wallTimeMs": 10917,
+  "data": {
+    "heading": "Example Domain",
+    "paragraph": "This domain is for use in documentation examples without needing permission. Avoid use in operations."
+  },
+  "inputTokens": 30778,
+  "outputTokens": 96,
+  "totalCostUsd": 0.010072000000000001
+}

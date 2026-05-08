@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "100-scrapethissite-ajax",
+  "taskUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 8423,
+  "data": {
+    "films": [
+      {
+        "title": "Birdman",
+        "oscars": 4
+      },
+      {
+        "title": "The Grand Budapest Hotel",
+        "oscars": 4
+      },
+      {
+        "title": "Whiplash",
+        "oscars": 3
+      }
+    ]
+  },
+  "creditsUsed": 0.172899,
+  "totalCostUsd": 0.0172899,
+  "trace": []
+}

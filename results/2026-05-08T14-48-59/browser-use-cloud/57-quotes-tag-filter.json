@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "57-quotes-tag-filter",
+  "taskUrl": "https://quotes.toscrape.com/",
+  "success": true,
+  "successReason": "14",
+  "wallTimeMs": 27079,
+  "data": {
+    "count": 14
+  },
+  "inputTokens": 103211,
+  "outputTokens": 1531,
+  "totalCostUsd": 0.028012
+}

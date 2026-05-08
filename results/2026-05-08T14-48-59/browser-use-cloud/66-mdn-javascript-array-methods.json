@@ -1,0 +1,22 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "66-mdn-javascript-array-methods",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 43220,
+  "data": {
+    "methods": [
+      "at",
+      "concat",
+      "copyWithin",
+      "entries",
+      "every"
+    ]
+  },
+  "inputTokens": 261718,
+  "outputTokens": 2857,
+  "totalCostUsd": 0.053850999999999996
+}

@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "68-npm-package-version",
+  "taskUrl": "https://www.npmjs.com/package/react",
+  "success": true,
+  "successReason": "v19.2.6",
+  "wallTimeMs": 3260,
+  "data": {
+    "version": "19.2.6",
+    "weeklyDownloads": "121,618,158"
+  },
+  "creditsUsed": 0.021985,
+  "totalCostUsd": 0.0021985000000000004,
+  "trace": []
+}

@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "60-wikipedia-references-count",
+  "taskUrl": "https://en.wikipedia.org/wiki/HTTP",
+  "success": true,
+  "successReason": "69 refs",
+  "wallTimeMs": 70385,
+  "data": {
+    "count": 69
+  },
+  "inputTokens": 880490,
+  "outputTokens": 5811,
+  "totalCostUsd": 0.180286
+}
