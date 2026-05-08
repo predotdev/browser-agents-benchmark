@@ -1,0 +1,29 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "94-hn-ask-stories",
+  "taskUrl": "https://news.ycombinator.com/ask",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 12632,
+  "data": {
+    "stories": [
+      {
+        "title": "\"Surface\" a Governed AI-Agentic Surface",
+        "points": 2
+      },
+      {
+        "title": "Ask HN: What will happen as AI costs increase?",
+        "points": 5
+      },
+      {
+        "title": "Ask HN: What is your go-to solution for a personal wiki in 2026?",
+        "points": 8
+      }
+    ]
+  },
+  "inputTokens": 46257,
+  "outputTokens": 505,
+  "totalCostUsd": 0.016406999999999998
+}

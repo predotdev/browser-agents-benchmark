@@ -1,0 +1,37 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "01-hn-top-stories",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 17192,
+  "data": {
+    "stories": [
+      {
+        "title": "Canvas (Instructure) LMS Down in Ongoing Ransomware Attack",
+        "points": 180
+      },
+      {
+        "title": "Dirtyfrag: Universal Linux LPE",
+        "points": 392
+      },
+      {
+        "title": "Maybe you shouldn't install new software for a bit",
+        "points": 97
+      },
+      {
+        "title": "Nonprofit hospitals spend billions on consultants with no clear effect",
+        "points": 40
+      },
+      {
+        "title": "The Burning Man MOOP Map",
+        "points": 532
+      }
+    ]
+  },
+  "inputTokens": 90843,
+  "outputTokens": 640,
+  "totalCostUsd": 0.026042
+}

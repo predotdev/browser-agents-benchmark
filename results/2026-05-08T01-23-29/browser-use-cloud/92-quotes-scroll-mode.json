@@ -1,0 +1,22 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "92-quotes-scroll-mode",
+  "taskUrl": "https://quotes.toscrape.com/scroll",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 22742,
+  "data": {
+    "quotes": [
+      "“The world as we have created it is a process of our thinking. It cannot be changed without changing our thinking.”",
+      "“It is our choices, Harry, that show what we truly are, far more than our abilities.”",
+      "“There are only two ways to live your life. One is as though nothing is a miracle. The other is as though everything is a miracle.”",
+      "“The person, be it gentleman or lady, who has not pleasure in a good novel, must be intolerably stupid.”",
+      "“Imperfection is beauty, madness is genius and it's better to be absolutely ridiculous than absolutely boring.”"
+    ]
+  },
+  "inputTokens": 47755,
+  "outputTokens": 228,
+  "totalCostUsd": 0.017360999999999998
+}

@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "33-httpbin-anything",
+  "taskUrl": "https://httpbin.org/forms/post",
+  "success": true,
+  "successReason": "bob found",
+  "wallTimeMs": 20814,
+  "data": {
+    "customer": "Bob Jones"
+  },
+  "creditsUsed": 0.177272,
+  "totalCostUsd": 0.017727200000000002,
+  "trace": []
+}

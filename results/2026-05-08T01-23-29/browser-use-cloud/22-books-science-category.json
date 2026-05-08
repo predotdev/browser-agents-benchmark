@@ -1,0 +1,29 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "22-books-science-category",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "3 books",
+  "wallTimeMs": 18086,
+  "data": {
+    "books": [
+      {
+        "title": "The Most Perfect Thing: Inside (and Outside) a Bird's Egg",
+        "price": "£42.96"
+      },
+      {
+        "title": "Immunity: How Elie Metchnikoff Changed the Course of Modern Medicine",
+        "price": "£57.36"
+      },
+      {
+        "title": "Sorting the Beef from the Bull: The Science of Food Fraud Forensics",
+        "price": "£44.74"
+      }
+    ]
+  },
+  "inputTokens": 90991,
+  "outputTokens": 680,
+  "totalCostUsd": 0.026269999999999998
+}

@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "45-wikipedia-rust-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/Rust_(programming_language)",
+  "success": true,
+  "successReason": "121 chars",
+  "wallTimeMs": 121522,
+  "data": {
+    "intro": "Rust is a general-purpose programming language which emphasizes performance, type safety, concurrency, and memory safety."
+  },
+  "inputTokens": 1030687,
+  "outputTokens": 10359,
+  "totalCostUsd": 0.183853
+}

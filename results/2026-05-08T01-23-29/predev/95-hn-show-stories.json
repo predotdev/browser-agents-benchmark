@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "95-hn-show-stories",
+  "taskUrl": "https://news.ycombinator.com/show",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 3629,
+  "data": {
+    "stories": [
+      {
+        "title": "Show HN: TRUST – Coding Rust like it's 1989"
+      },
+      {
+        "title": "Show HN: Stage CLI – An easier way of reading your AI generated changes locally"
+      },
+      {
+        "title": "Show HN: Kstack – Skill pack for monitoring/troubleshooting K8s in Claude Code"
+      }
+    ]
+  },
+  "creditsUsed": 0.068596,
+  "totalCostUsd": 0.0068596,
+  "trace": []
+}

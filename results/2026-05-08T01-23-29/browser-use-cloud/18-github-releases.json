@@ -1,0 +1,29 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "18-github-releases",
+  "taskUrl": "https://github.com/denoland/deno/releases",
+  "success": true,
+  "successReason": "3 releases",
+  "wallTimeMs": 87107,
+  "data": {
+    "releases": [
+      {
+        "title": "2.7.14 / 2026.04.28",
+        "date": "2026-04-28T16:49:55Z"
+      },
+      {
+        "title": "2.7.13 / 2026.04.22",
+        "date": "2026-04-22T13:26:00Z"
+      },
+      {
+        "title": "2.7.12 / 2026.04.09",
+        "date": "2026-04-09T14:45:00Z"
+      }
+    ]
+  },
+  "inputTokens": 854441,
+  "outputTokens": 9750,
+  "totalCostUsd": 0.192955
+}

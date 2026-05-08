@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "16-hn-comments",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "Canvas (Instructure) LMS Down in Ongoing Ransomwar",
+  "wallTimeMs": 18480,
+  "data": {
+    "storyTitle": "Canvas (Instructure) LMS Down in Ongoing Ransomware Attack"
+  },
+  "creditsUsed": 0.234457,
+  "totalCostUsd": 0.0234457,
+  "trace": []
+}

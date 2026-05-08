@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "54-books-paginate-count",
+  "taskUrl": "https://books.toscrape.com/catalogue/page-1.html",
+  "success": true,
+  "successReason": "20 books",
+  "wallTimeMs": 10408,
+  "data": {
+    "count": 20
+  },
+  "inputTokens": 54216,
+  "outputTokens": 218,
+  "totalCostUsd": 0.015743
+}

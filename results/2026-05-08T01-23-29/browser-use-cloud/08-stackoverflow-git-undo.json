@@ -1,0 +1,18 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "08-stackoverflow-git-undo",
+  "taskUrl": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+  "success": true,
+  "successReason": "votes=27211",
+  "wallTimeMs": 68680,
+  "data": {
+    "title": "How do I undo the most recent local commits in Git?",
+    "votes": 27211,
+    "acceptedAnswer": "git reset is the command responsible for the undo."
+  },
+  "inputTokens": 557338,
+  "outputTokens": 6116,
+  "totalCostUsd": 0.123943
+}

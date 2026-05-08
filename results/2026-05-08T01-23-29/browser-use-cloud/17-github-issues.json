@@ -1,0 +1,32 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "17-github-issues",
+  "taskUrl": "https://github.com/microsoft/typescript/issues",
+  "success": true,
+  "successReason": "5 issues",
+  "wallTimeMs": 33379,
+  "data": {
+    "issues": [
+      {
+        "title": "Equals<T, U> used inside of generic type gets simplified to false immediately if only T or only U depends on a type variable"
+      },
+      {
+        "title": "String.split() method's separator argument should allow undefined"
+      },
+      {
+        "title": "new super() in static method does not cause error"
+      },
+      {
+        "title": "libReplacement: true lookup folder should be configurable (via typeRoots ?)"
+      },
+      {
+        "title": "symbolToNode stack overflow when using recursive types and functions with type parameters"
+      }
+    ]
+  },
+  "inputTokens": 164570,
+  "outputTokens": 2187,
+  "totalCostUsd": 0.046062
+}

@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "65-github-navigate-to-issues",
+  "taskUrl": "https://github.com/nodejs/node",
+  "success": true,
+  "successReason": "3 issues",
+  "wallTimeMs": 13115,
+  "data": {
+    "issues": [
+      {
+        "title": "node:sqlite segfaults when db.close() is called from a user-defined function callback during query execution"
+      },
+      {
+        "title": "fs.cpSync copies symlinks without permission check on target"
+      },
+      {
+        "title": "assert: ERR_INVALID_ARG_TYPE on failing assert(value) under --enable-source-maps (v26 regression)"
+      }
+    ]
+  },
+  "creditsUsed": 0.215664,
+  "totalCostUsd": 0.0215664,
+  "trace": []
+}

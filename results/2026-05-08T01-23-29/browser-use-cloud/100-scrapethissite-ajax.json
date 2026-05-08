@@ -1,0 +1,29 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "100-scrapethissite-ajax",
+  "taskUrl": "https://www.scrapethissite.com/pages/ajax-javascript/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 33242,
+  "data": {
+    "films": [
+      {
+        "title": "Spotlight",
+        "oscars": 2
+      },
+      {
+        "title": "Mad Max: Fury Road",
+        "oscars": 6
+      },
+      {
+        "title": "The Revenant",
+        "oscars": 3
+      }
+    ]
+  },
+  "inputTokens": 110770,
+  "outputTokens": 2196,
+  "totalCostUsd": 0.026217
+}

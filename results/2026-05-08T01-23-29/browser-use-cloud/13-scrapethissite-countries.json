@@ -1,0 +1,37 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "13-scrapethissite-countries",
+  "taskUrl": "https://www.scrapethissite.com/pages/simple/",
+  "success": true,
+  "successReason": "5 countries",
+  "wallTimeMs": 15843,
+  "data": {
+    "countries": [
+      {
+        "name": "Andorra",
+        "capital": "Andorra la Vella"
+      },
+      {
+        "name": "United Arab Emirates",
+        "capital": "Abu Dhabi"
+      },
+      {
+        "name": "Afghanistan",
+        "capital": "Kabul"
+      },
+      {
+        "name": "Antigua and Barbuda",
+        "capital": "St. John's"
+      },
+      {
+        "name": "Anguilla",
+        "capital": "The Valley"
+      }
+    ]
+  },
+  "inputTokens": 91106,
+  "outputTokens": 428,
+  "totalCostUsd": 0.029773
+}

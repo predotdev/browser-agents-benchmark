@@ -1,0 +1,20 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "96-github-trending-like",
+  "taskUrl": "https://github.com/explore",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 7747,
+  "data": {
+    "repos": [
+      "anthropics / financial-services",
+      "Hmbown / DeepSeek-TUI",
+      "z-lab / dflash"
+    ]
+  },
+  "creditsUsed": 0.082375,
+  "totalCostUsd": 0.0082375,
+  "trace": []
+}

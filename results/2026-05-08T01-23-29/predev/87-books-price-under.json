@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "87-books-price-under",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 6137,
+  "data": {
+    "books": [
+      {
+        "title": "The Coming Woman: A ...",
+        "price": "£17.93"
+      },
+      {
+        "title": "Starving Hearts (Triangular Trade ...",
+        "price": "£13.99"
+      },
+      {
+        "title": "Set Me Free",
+        "price": "£17.46"
+      }
+    ]
+  },
+  "creditsUsed": 0.048376,
+  "totalCostUsd": 0.004837600000000001,
+  "trace": []
+}

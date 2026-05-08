@@ -1,0 +1,37 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "09-lobsters-stories",
+  "taskUrl": "https://lobste.rs",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 15158,
+  "data": {
+    "stories": [
+      {
+        "title": "Dirty Frag: Universal Linux LPE",
+        "score": 47
+      },
+      {
+        "title": "jj v0.41.0 is out",
+        "score": 42
+      },
+      {
+        "title": "AI Slop is Killing Online Communities",
+        "score": 35
+      },
+      {
+        "title": "Behind the Scenes Hardening Firefox with Claude Mythos Preview",
+        "score": 32
+      },
+      {
+        "title": "Ploopy Bean - external trackpoint",
+        "score": 23
+      }
+    ]
+  },
+  "inputTokens": 76931,
+  "outputTokens": 549,
+  "totalCostUsd": 0.026125
+}

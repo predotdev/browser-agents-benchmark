@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "06-coingecko-btc-price",
+  "taskUrl": "https://www.coingecko.com/en/coins/bitcoin",
+  "success": true,
+  "successReason": "$79732.62",
+  "wallTimeMs": 34430,
+  "data": {
+    "priceUSD": 79732.62
+  },
+  "creditsUsed": 0.194221,
+  "totalCostUsd": 0.0194221,
+  "trace": []
+}

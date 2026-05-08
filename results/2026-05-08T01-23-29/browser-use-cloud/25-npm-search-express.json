@@ -1,0 +1,29 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "25-npm-search-express",
+  "taskUrl": "https://www.npmjs.com/search?q=express",
+  "success": true,
+  "successReason": "3 packages",
+  "wallTimeMs": 16352,
+  "data": {
+    "packages": [
+      {
+        "name": "express",
+        "description": "Fast, unopinionated, minimalist web framework"
+      },
+      {
+        "name": "@types/express",
+        "description": "TypeScript definitions for express"
+      },
+      {
+        "name": "swagger-ui-express",
+        "description": "Swagger UI Express"
+      }
+    ]
+  },
+  "inputTokens": 77124,
+  "outputTokens": 404,
+  "totalCostUsd": 0.025719
+}

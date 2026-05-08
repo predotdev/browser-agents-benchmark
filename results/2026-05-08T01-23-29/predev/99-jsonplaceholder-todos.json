@@ -1,0 +1,20 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "99-jsonplaceholder-todos",
+  "taskUrl": "https://jsonplaceholder.typicode.com/todos",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 2890,
+  "data": {
+    "todos": [
+      "delectus aut autem",
+      "quis ut nam facilis et officia qui",
+      "fugiat veniam minus"
+    ]
+  },
+  "creditsUsed": 0.101012,
+  "totalCostUsd": 0.010101200000000001,
+  "trace": []
+}

@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "58-wikipedia-follow-link",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "316 chars",
+  "wallTimeMs": 23142,
+  "data": {
+    "intro": "ECMAScript (/ˈɛkməskrɪpt/; ES) is the standard for the JavaScript language, intended to ensure the interoperability of web pages across different web browsers. It is standardized by Ecma International's TC39 technical committee in the document ECMA-262, with i18n (\"Intl\") APIs standardized in the document ECMA-402."
+  },
+  "inputTokens": 218543,
+  "outputTokens": 1613,
+  "totalCostUsd": 0.053183
+}

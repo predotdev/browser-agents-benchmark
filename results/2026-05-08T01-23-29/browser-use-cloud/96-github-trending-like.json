@@ -1,0 +1,20 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "96-github-trending-like",
+  "taskUrl": "https://github.com/explore",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 12861,
+  "data": {
+    "repos": [
+      "anthropics/financial-services",
+      "Hmbown/DeepSeek-TUI",
+      "z-lab/dflash"
+    ]
+  },
+  "inputTokens": 76142,
+  "outputTokens": 455,
+  "totalCostUsd": 0.025315
+}

@@ -1,0 +1,37 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "52-books-mystery-category",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "5 books",
+  "wallTimeMs": 14661,
+  "data": {
+    "books": [
+      {
+        "title": "Sharp Objects",
+        "price": "£47.82"
+      },
+      {
+        "title": "In a Dark, Dark Wood",
+        "price": "£19.63"
+      },
+      {
+        "title": "The Past Never Ends",
+        "price": "£56.50"
+      },
+      {
+        "title": "A Murder in Time",
+        "price": "£16.64"
+      },
+      {
+        "title": "The Murder of Roger Ackroyd (Hercule Poirot #4)",
+        "price": "£44.10"
+      }
+    ]
+  },
+  "inputTokens": 56335,
+  "outputTokens": 551,
+  "totalCostUsd": 0.018209
+}

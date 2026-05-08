@@ -1,0 +1,81 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "86-hn-filter-by-points",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "16",
+  "wallTimeMs": 7478,
+  "data": {
+    "stories": [
+      {
+        "title": "Canvas (Instructure) LMS Down in Ongoing Ransomware Attack",
+        "points": 180
+      },
+      {
+        "title": "Dirtyfrag: Universal Linux LPE",
+        "points": 392
+      },
+      {
+        "title": "The Burning Man MOOP Map",
+        "points": 532
+      },
+      {
+        "title": "Agents need control flow, not more prompts",
+        "points": 317
+      },
+      {
+        "title": "Building for the Future",
+        "points": 241
+      },
+      {
+        "title": "Natural Language Autoencoders: Turning Claude's Thoughts into Text",
+        "points": 189
+      },
+      {
+        "title": "AlphaEvolve: Gemini-powered coding agent scaling impact across fields",
+        "points": 240
+      },
+      {
+        "title": "DeepSeek 4 Flash local inference engine for Metal",
+        "points": 281
+      },
+      {
+        "title": "AI slop is killing online communities",
+        "points": 435
+      },
+      {
+        "title": "I want to live like Costco people",
+        "points": 226
+      },
+      {
+        "title": "Chrome removes claim of On-device Al not sending data to Google Servers",
+        "points": 457
+      },
+      {
+        "title": "RaTeX: KaTeX-compatible LaTeX rendering engine in pure Rust",
+        "points": 158
+      },
+      {
+        "title": "The Self-Cancelling Subscription",
+        "points": 144
+      },
+      {
+        "title": "Show HN: TRUST – Coding Rust like it's 1989",
+        "points": 122
+      },
+      {
+        "title": "OurCar: What I learned making an app for my family",
+        "points": 100
+      },
+      {
+        "title": "Boris Cherny: TI-83 Plus Basic Programming Tutorial (2004)",
+        "points": 186
+      }
+    ]
+  },
+  "creditsUsed": 0.093111,
+  "totalCostUsd": 0.009311100000000001,
+  "trace": []
+}

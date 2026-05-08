@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "77-the-internet-checkboxes",
+  "taskUrl": "https://the-internet.herokuapp.com/checkboxes",
+  "success": true,
+  "successReason": "bools",
+  "wallTimeMs": 22715,
+  "data": {
+    "first": true,
+    "second": false
+  },
+  "inputTokens": 48955,
+  "outputTokens": 271,
+  "totalCostUsd": 0.00949
+}

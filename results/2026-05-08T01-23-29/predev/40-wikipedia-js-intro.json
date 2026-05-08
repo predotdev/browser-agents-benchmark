@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "40-wikipedia-js-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "361 chars",
+  "wallTimeMs": 13645,
+  "data": {
+    "intro": "JavaScript\n\nJavaScript (JS)[a] is a programming language and core technology of the Web, alongside HTML and CSS. Created by Brendan Eich in 1995,[6] it is maintained by Ecma International's TC39 technical committee,[10] with related Web APIs maintained by W3C and WHATWG.[11] As of 2025, JavaScript is the most widely used programming language on GitHub.[b][12]"
+  },
+  "creditsUsed": 0.2444,
+  "totalCostUsd": 0.024440000000000003,
+  "trace": []
+}

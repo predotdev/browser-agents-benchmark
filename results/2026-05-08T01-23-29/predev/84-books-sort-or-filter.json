@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "84-books-sort-or-filter",
+  "taskUrl": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html",
+  "success": true,
+  "successReason": "got both",
+  "wallTimeMs": 6786,
+  "data": {
+    "count": 20,
+    "cheapestTitle": "I Am Pilgrim (Pilgrim ..."
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

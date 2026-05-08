@@ -1,0 +1,37 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "27-scrapethissite-hockey",
+  "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+  "success": true,
+  "successReason": "5 teams",
+  "wallTimeMs": 15174,
+  "data": {
+    "teams": [
+      {
+        "name": "Boston Bruins",
+        "wins": 44
+      },
+      {
+        "name": "Buffalo Sabres",
+        "wins": 31
+      },
+      {
+        "name": "Calgary Flames",
+        "wins": 46
+      },
+      {
+        "name": "Chicago Blackhawks",
+        "wins": 49
+      },
+      {
+        "name": "Detroit Red Wings",
+        "wins": 34
+      }
+    ]
+  },
+  "creditsUsed": 0.035538,
+  "totalCostUsd": 0.0035538,
+  "trace": []
+}

@@ -1,0 +1,37 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "75-scrapethissite-hockey-table",
+  "taskUrl": "https://www.scrapethissite.com/pages/forms/",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 6890,
+  "data": {
+    "teams": [
+      {
+        "name": "Boston Bruins",
+        "year": 1990
+      },
+      {
+        "name": "Buffalo Sabres",
+        "year": 1990
+      },
+      {
+        "name": "Calgary Flames",
+        "year": 1990
+      },
+      {
+        "name": "Chicago Blackhawks",
+        "year": 1990
+      },
+      {
+        "name": "Detroit Red Wings",
+        "year": 1990
+      }
+    ]
+  },
+  "creditsUsed": 0.034329,
+  "totalCostUsd": 0.0034329,
+  "trace": []
+}

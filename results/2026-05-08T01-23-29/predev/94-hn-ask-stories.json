@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "94-hn-ask-stories",
+  "taskUrl": "https://news.ycombinator.com/ask",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 5022,
+  "data": {
+    "stories": [
+      {
+        "title": "Ask HN: What will happen as AI costs increase?",
+        "points": 5
+      },
+      {
+        "title": "Ask HN: What is your go-to solution for a personal wiki in 2026?",
+        "points": 8
+      },
+      {
+        "title": "Ask HN: Are we gonna back less powerful local LLMs",
+        "points": 5
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

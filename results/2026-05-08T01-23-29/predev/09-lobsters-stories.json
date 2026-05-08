@@ -1,0 +1,37 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "09-lobsters-stories",
+  "taskUrl": "https://lobste.rs",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 11877,
+  "data": {
+    "stories": [
+      {
+        "title": "Dirty Frag: Universal Linux LPE",
+        "score": 47
+      },
+      {
+        "title": "jj v0.41.0 is out",
+        "score": 42
+      },
+      {
+        "title": "AI Slop is Killing Online Communities",
+        "score": 35
+      },
+      {
+        "title": "Ploopy Bean - external trackpoint",
+        "score": 23
+      },
+      {
+        "title": "Behind the Scenes Hardening Firefox with Claude Mythos Preview",
+        "score": 32
+      }
+    ]
+  },
+  "creditsUsed": 0.092542,
+  "totalCostUsd": 0.0092542,
+  "trace": []
+}

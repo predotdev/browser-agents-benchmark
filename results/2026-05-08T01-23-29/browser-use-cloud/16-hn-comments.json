@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "16-hn-comments",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "Canvas (Instructure) LMS Down in Ongoing Ransomwar",
+  "wallTimeMs": 17943,
+  "data": {
+    "storyTitle": "Canvas (Instructure) LMS Down in Ongoing Ransomware Attack"
+  },
+  "inputTokens": 108074,
+  "outputTokens": 381,
+  "totalCostUsd": 0.03101
+}

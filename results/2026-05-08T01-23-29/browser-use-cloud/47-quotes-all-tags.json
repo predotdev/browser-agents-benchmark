@@ -1,0 +1,27 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "47-quotes-all-tags",
+  "taskUrl": "https://quotes.toscrape.com",
+  "success": true,
+  "successReason": "10 tags",
+  "wallTimeMs": 10508,
+  "data": {
+    "tags": [
+      "love",
+      "inspirational",
+      "life",
+      "humor",
+      "books",
+      "reading",
+      "friendship",
+      "friends",
+      "truth",
+      "simile"
+    ]
+  },
+  "inputTokens": 36370,
+  "outputTokens": 291,
+  "totalCostUsd": 0.009735
+}

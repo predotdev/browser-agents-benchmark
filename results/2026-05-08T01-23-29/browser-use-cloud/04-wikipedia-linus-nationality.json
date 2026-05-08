@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "04-wikipedia-linus-nationality",
+  "taskUrl": "https://en.wikipedia.org/wiki/Linus_Torvalds",
+  "success": true,
+  "successReason": "finnish/american",
+  "wallTimeMs": 13313,
+  "data": {
+    "nationality": "Finnish and American"
+  },
+  "inputTokens": 110732,
+  "outputTokens": 549,
+  "totalCostUsd": 0.041965
+}

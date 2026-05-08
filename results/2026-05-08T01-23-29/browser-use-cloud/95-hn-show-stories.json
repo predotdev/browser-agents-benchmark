@@ -1,0 +1,26 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "95-hn-show-stories",
+  "taskUrl": "https://news.ycombinator.com/show",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 12656,
+  "data": {
+    "stories": [
+      {
+        "title": "Show HN: TRUST – Coding Rust like it's 1989"
+      },
+      {
+        "title": "Show HN: Kstack – Skill pack for monitoring/troubleshooting K8s in Claude Code"
+      },
+      {
+        "title": "Show HN: Stage CLI – An easier way of reading your AI generated changes locally"
+      }
+    ]
+  },
+  "inputTokens": 56305,
+  "outputTokens": 657,
+  "totalCostUsd": 0.018571
+}

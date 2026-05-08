@@ -1,0 +1,26 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "36-wikipedia-search-submit-extract",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 60053,
+  "data": {
+    "results": [
+      {
+        "title": "Machine learning"
+      },
+      {
+        "title": "Outline of machine learning"
+      },
+      {
+        "title": "Neural network (machine learning)"
+      }
+    ]
+  },
+  "inputTokens": 334097,
+  "outputTokens": 3553,
+  "totalCostUsd": 0.087452
+}

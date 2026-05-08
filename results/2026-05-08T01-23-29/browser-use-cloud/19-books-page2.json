@@ -1,0 +1,26 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "19-books-page2",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "3 books",
+  "wallTimeMs": 17144,
+  "data": {
+    "books": [
+      {
+        "title": "In Her Wake"
+      },
+      {
+        "title": "How Music Works"
+      },
+      {
+        "title": "Foolproof Preserving: A Guide to Small Batch Jams, Jellies, Pickles, Condiments, and More: A Foolproof Guide to Making Small Batch Jams, Jellies, Pickles, Condiments, and More"
+      }
+    ]
+  },
+  "inputTokens": 92210,
+  "outputTokens": 524,
+  "totalCostUsd": 0.026437
+}

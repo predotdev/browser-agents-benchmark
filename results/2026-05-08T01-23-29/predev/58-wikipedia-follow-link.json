@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "58-wikipedia-follow-link",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "379 chars",
+  "wallTimeMs": 18259,
+  "data": {
+    "intro": "ECMAScript (/ˈɛk.smə.skrɪpt/ ˈɛk.smə.skrɪpt/), also known as ECMAScript, is the standard for the JavaScript programming language, intended to ensure the interoperability of web pages across different web browsers.[2][3] It is standardized by Ecma International's TC39 technical committee in the document ECMA-262, with i18n (\"Intl\") APIs standardized in the document ECMA-402.[3]"
+  },
+  "creditsUsed": 0.268829,
+  "totalCostUsd": 0.0268829,
+  "trace": []
+}

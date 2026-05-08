@@ -1,0 +1,26 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "24-wikipedia-search-rust",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 60284,
+  "data": {
+    "results": [
+      {
+        "title": "Rust (programming language)"
+      },
+      {
+        "title": "Outline of the Rust programming language"
+      },
+      {
+        "title": "Functional programming"
+      }
+    ]
+  },
+  "inputTokens": 220724,
+  "outputTokens": 3741,
+  "totalCostUsd": 0.063755
+}

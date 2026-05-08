@@ -38,33 +38,48 @@ export async function runPredev(
 	const timeoutMs = task.timeoutMs ?? DEFAULT_TIMEOUT_MS;
 	const deadline = t0 + timeoutMs;
 
-	// 1. Submit (async → returns batch id).
-	let batchId: string;
-	try {
-		const res = await fetch(`${apiUrl}/browser-agent`, {
-			method: 'POST',
-			headers,
-			body: JSON.stringify({
-				tasks: [
-					{
-						url: task.url,
-						instruction: task.instruction,
-						input: task.input,
-						output: task.output,
-					},
-				],
-				concurrency: 1,
-				async: true,
-			}),
-		});
-		if (!res.ok) {
+	// 1. Submit (async → returns batch id). Retry on 429 (rate limit).
+	let batchId: string = '';
+	let submitErr = '';
+	for (let attempt = 0; attempt < 8; attempt++) {
+		try {
+			const res = await fetch(`${apiUrl}/browser-agent`, {
+				method: 'POST',
+				headers,
+				body: JSON.stringify({
+					tasks: [
+						{
+							url: task.url,
+							instruction: task.instruction,
+							input: task.input,
+							output: task.output,
+						},
+					],
+					concurrency: 1,
+					async: true,
+				}),
+			});
+			if (res.ok) {
+				batchId = ((await res.json()) as any).id;
+				submitErr = '';
+				break;
+			}
 			const body = await res.text().catch(() => '');
-			return failure(task, cfg, t0, `submit ${res.status}: ${body.slice(0, 200)}`);
+			submitErr = `submit ${res.status}: ${body.slice(0, 200)}`;
+			if (res.status === 429) {
+				// Honor the API's "try again in a minute" but jitter to spread out load
+				const wait = 5000 + Math.floor(Math.random() * 25_000);
+				if (Date.now() + wait > deadline) break;
+				await new Promise((r) => setTimeout(r, wait));
+				continue;
+			}
+			break;
+		} catch (err: any) {
+			submitErr = err?.message || String(err);
+			break;
 		}
-		batchId = ((await res.json()) as any).id;
-	} catch (err: any) {
-		return failure(task, cfg, t0, err?.message || String(err));
 	}
+	if (!batchId) return failure(task, cfg, t0, submitErr || 'submit failed');
 
 	// 2. Prefer SSE (task_result fires the instant the row hits `completed`
 	//    in Mongo — which is now the runner's own doneAt timestamp, so
