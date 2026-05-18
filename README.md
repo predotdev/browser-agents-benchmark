@@ -23,7 +23,7 @@ Same 100 tasks. Same JSON output schemas. Same uniform `successCheck` predicate.
 
 ![speed](docs/speed.svg)
 
-**👉 [Full interactive report](https://pre.dev/benchmark.html)** — radar chart, leaderboard, per-task drilldown, raw JSON.
+**👉 [Full interactive report](https://pre.dev/browser-agents-benchmark.html)** — radar chart, leaderboard, per-task drilldown, raw JSON.
 
 Also in this repo: [`results/2026-05-08T14-48-59/REPORT.md`](./results/2026-05-08T14-48-59/REPORT.md) · [`results/2026-05-08T14-48-59/report.html`](./results/2026-05-08T14-48-59/report.html) (raw HTML — open locally to view).
 
