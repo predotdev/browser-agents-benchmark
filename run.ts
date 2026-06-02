@@ -11,6 +11,8 @@
  *   tsx run.ts --task 01,02,03                  # specific task names (prefix match)
  *   tsx run.ts --config predev                  # specific config(s)
  *   tsx run.ts --parallel --concurrency 5       # 5 tasks at once per config
+ *   tsx run.ts --hard                           # adversarial HARD tier (tasks-hard.ts)
+ *   tsx run.ts --suite all                      # easy 100 + hard tier concatenated
  *
  * Required env (load via .env or shell):
  *   PREDEV_API_KEY              — pre.dev API key (from pre.dev/projects/playground)
@@ -38,6 +40,7 @@ import { join } from 'node:path';
 })();
 
 import { TASKS } from './tasks.js';
+import { HARD_TASKS } from './tasks-hard.js';
 import type { BenchmarkResult, RunSummary } from './types.js';
 import { runPredev } from './adapters/predev.js';
 import { runBrowserUse } from './adapters/browser-use.js';
@@ -77,7 +80,15 @@ async function main() {
 	const parallel = hasFlag('parallel');
 	const concurrency = parseInt(getArg('concurrency') || '5', 10);
 
-	let tasks = TASKS.slice();
+	// Suite selector. Default = the easy 100-task `tasks.json` suite.
+	// `--hard` (or `--suite hard`) swaps in the adversarial HARD_TASKS tier.
+	// `--suite all` concatenates both.
+	const suite = (getArg('suite') || (hasFlag('hard') ? 'hard' : 'easy')).toLowerCase();
+	const sourceTasks =
+		suite === 'hard' ? HARD_TASKS : suite === 'all' ? [...TASKS, ...HARD_TASKS] : TASKS;
+	console.log(`Suite: ${suite} (${sourceTasks.length} tasks available)`);
+
+	let tasks = sourceTasks.slice();
 	if (limit > 0) tasks = tasks.slice(0, limit);
 	if (taskFilter?.length) {
 		tasks = tasks.filter((t) =>
