@@ -41,6 +41,7 @@ import { join } from 'node:path';
 
 import { TASKS } from './tasks.js';
 import { HARD_TASKS } from './tasks-hard.js';
+import { VARIETY_TASKS } from './tasks-variety.js';
 import type { BenchmarkResult, RunSummary } from './types.js';
 import { runPredev } from './adapters/predev.js';
 import { runBrowserUse } from './adapters/browser-use.js';
@@ -83,9 +84,12 @@ async function main() {
 	// Suite selector. Default = the easy 100-task `tasks.json` suite.
 	// `--hard` (or `--suite hard`) swaps in the adversarial HARD_TASKS tier.
 	// `--suite all` concatenates both.
-	const suite = (getArg('suite') || (hasFlag('hard') ? 'hard' : 'easy')).toLowerCase();
+	const suite = (getArg('suite') || (hasFlag('variety') ? 'variety' : hasFlag('hard') ? 'hard' : 'easy')).toLowerCase();
 	const sourceTasks =
-		suite === 'hard' ? HARD_TASKS : suite === 'all' ? [...TASKS, ...HARD_TASKS] : TASKS;
+		suite === 'hard' ? HARD_TASKS
+		: suite === 'variety' ? VARIETY_TASKS
+		: suite === 'all' ? [...TASKS, ...HARD_TASKS, ...VARIETY_TASKS]
+		: TASKS;
 	console.log(`Suite: ${suite} (${sourceTasks.length} tasks available)`);
 
 	let tasks = sourceTasks.slice();
