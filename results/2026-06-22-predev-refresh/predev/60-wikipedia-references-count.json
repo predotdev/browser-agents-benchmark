@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "60-wikipedia-references-count",
+  "taskUrl": "https://en.wikipedia.org/wiki/HTTP",
+  "success": true,
+  "successReason": "194 refs",
+  "wallTimeMs": 5158,
+  "data": {
+    "count": 194
+  },
+  "creditsUsed": 0.114172,
+  "totalCostUsd": 0.0114172,
+  "trace": []
+}

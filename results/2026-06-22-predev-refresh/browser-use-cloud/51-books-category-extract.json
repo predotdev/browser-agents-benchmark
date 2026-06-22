@@ -1,0 +1,50 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "51-books-category-extract",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "11 books",
+  "wallTimeMs": 15354,
+  "data": {
+    "books": [
+      {
+        "title": "It's Only the Himalayas"
+      },
+      {
+        "title": "Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond"
+      },
+      {
+        "title": "See America: A Celebration of Our National Parks & Treasured Sites"
+      },
+      {
+        "title": "Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel"
+      },
+      {
+        "title": "Under the Tuscan Sun"
+      },
+      {
+        "title": "A Summer In Europe"
+      },
+      {
+        "title": "The Great Railway Bazaar"
+      },
+      {
+        "title": "A Year in Provence (Provence #1)"
+      },
+      {
+        "title": "The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2)"
+      },
+      {
+        "title": "Neither Here nor There: Travels in Europe"
+      },
+      {
+        "title": "1,000 Places to See Before You Die"
+      }
+    ]
+  },
+  "inputTokens": 56299,
+  "outputTokens": 577,
+  "totalCostUsd": 0.018279
+}

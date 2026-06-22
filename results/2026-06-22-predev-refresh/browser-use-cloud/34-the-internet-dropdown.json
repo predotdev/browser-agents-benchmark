@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "34-the-internet-dropdown",
+  "taskUrl": "https://the-internet.herokuapp.com/dropdown",
+  "success": true,
+  "successReason": "option 2",
+  "wallTimeMs": 25055,
+  "data": {
+    "selected": "Option 2"
+  },
+  "inputTokens": 49481,
+  "outputTokens": 277,
+  "totalCostUsd": 0.009824999999999999
+}

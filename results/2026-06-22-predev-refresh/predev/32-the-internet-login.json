@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "32-the-internet-login",
+  "taskUrl": "https://the-internet.herokuapp.com/login",
+  "success": true,
+  "successReason": "login ok",
+  "wallTimeMs": 17833,
+  "data": {
+    "loggedIn": true
+  },
+  "creditsUsed": 0.206771,
+  "totalCostUsd": 0.020677100000000004,
+  "trace": []
+}

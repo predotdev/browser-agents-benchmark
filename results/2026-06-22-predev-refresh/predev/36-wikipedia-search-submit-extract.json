@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "36-wikipedia-search-submit-extract",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 17111,
+  "data": {
+    "results": [
+      {
+        "title": "Machine learning"
+      },
+      {
+        "title": "Quantum machine learning"
+      },
+      {
+        "title": "Neural network (machine learning)"
+      }
+    ]
+  },
+  "creditsUsed": 0.152935,
+  "totalCostUsd": 0.0152935,
+  "trace": []
+}

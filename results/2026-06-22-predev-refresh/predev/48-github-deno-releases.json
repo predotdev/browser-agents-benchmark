@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "48-github-deno-releases",
+  "taskUrl": "https://github.com/denoland/deno/releases",
+  "success": true,
+  "successReason": "v2.8.3",
+  "wallTimeMs": 6959,
+  "data": {
+    "version": "v2.8.3",
+    "title": "feat(cli): suggest DENO_TLS_CA_STORE on untrusted TLS certificate (#34756)"
+  },
+  "creditsUsed": 0.270524,
+  "totalCostUsd": 0.0270524,
+  "trace": []
+}

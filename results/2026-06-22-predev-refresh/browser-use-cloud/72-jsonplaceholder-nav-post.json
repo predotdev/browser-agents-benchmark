@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "72-jsonplaceholder-nav-post",
+  "taskUrl": "https://jsonplaceholder.typicode.com/",
+  "success": true,
+  "successReason": "ok",
+  "wallTimeMs": 12517,
+  "data": {
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+  },
+  "inputTokens": 54013,
+  "outputTokens": 340,
+  "totalCostUsd": 0.011748999999999999
+}

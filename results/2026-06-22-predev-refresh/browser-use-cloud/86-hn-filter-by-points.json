@@ -1,0 +1,93 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "86-hn-filter-by-points",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "19",
+  "wallTimeMs": 35649,
+  "data": {
+    "stories": [
+      {
+        "title": "Poland is now among the 20 largest economies. How it happened",
+        "points": 499
+      },
+      {
+        "title": "An Introduction to Meshtastic",
+        "points": 174
+      },
+      {
+        "title": "Cloudflare to cut about 20% workforce",
+        "points": 1089
+      },
+      {
+        "title": "Canvas is down as ShinyHunters threatens to leak schools’ data",
+        "points": 842
+      },
+      {
+        "title": "Maybe you shouldn't install new software for a bit",
+        "points": 710
+      },
+      {
+        "title": "ClojureScript Gets Async/Await",
+        "points": 210
+      },
+      {
+        "title": "Rumors of my death are slightly exaggerated",
+        "points": 747
+      },
+      {
+        "title": "Dirtyfrag: Universal Linux LPE",
+        "points": 728
+      },
+      {
+        "title": "The map that keeps Burning Man honest",
+        "points": 710
+      },
+      {
+        "title": "Pinocchio is weirder than you remembered",
+        "points": 244
+      },
+      {
+        "title": "Tesla is recalling its cheaper Cybertruck because the wheels might fall off",
+        "points": 115
+      },
+      {
+        "title": "Agents need control flow, not more prompts",
+        "points": 539
+      },
+      {
+        "title": "GPT-5.5 Price Increase: What It Costs",
+        "points": 143
+      },
+      {
+        "title": "Brazil's Pix payment system faces pressure from Visa and Mastercard",
+        "points": 328
+      },
+      {
+        "title": "Singapore introduces caning for boys who bully others at school",
+        "points": 279
+      },
+      {
+        "title": "Hardening Firefox with Claude Mythos Preview",
+        "points": 296
+      },
+      {
+        "title": "Nintendo announces price increases for Nintendo Switch 2",
+        "points": 200
+      },
+      {
+        "title": "Natural Language Autoencoders: Turning Claude's Thoughts into Text",
+        "points": 342
+      },
+      {
+        "title": "DeepSeek 4 Flash local inference engine for Metal",
+        "points": 455
+      }
+    ]
+  },
+  "inputTokens": 122836,
+  "outputTokens": 2065,
+  "totalCostUsd": 0.038185000000000004
+}

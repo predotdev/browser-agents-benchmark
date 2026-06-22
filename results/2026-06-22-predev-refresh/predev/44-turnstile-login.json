@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "44-turnstile-login",
+  "taskUrl": "https://demo.turnstile.workers.dev/",
+  "success": true,
+  "successReason": "turnstile ok",
+  "wallTimeMs": 30522,
+  "data": {
+    "loggedIn": "Success!"
+  },
+  "creditsUsed": 0.241636,
+  "totalCostUsd": 0.0241636,
+  "trace": []
+}

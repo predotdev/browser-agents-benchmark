@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "95-hn-show-stories",
+  "taskUrl": "https://news.ycombinator.com/show",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 2950,
+  "data": {
+    "stories": [
+      {
+        "title": "Show HN: Oak – Git replacement designed for agents"
+      },
+      {
+        "title": "Show HN: Got sick of ads, so I made my own logic puzzle site"
+      },
+      {
+        "title": "Show HN: Selector Forge – browser extension for AI-generated resilient selectors"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

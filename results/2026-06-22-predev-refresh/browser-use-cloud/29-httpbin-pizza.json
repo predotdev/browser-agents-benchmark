@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "29-httpbin-pizza",
+  "taskUrl": "https://httpbin.org/forms/post",
+  "success": true,
+  "successReason": "echoed",
+  "wallTimeMs": 79805,
+  "data": {
+    "submittedName": "Test User"
+  },
+  "inputTokens": 224827,
+  "outputTokens": 4983,
+  "totalCostUsd": 0.064284
+}

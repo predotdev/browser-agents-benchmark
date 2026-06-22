@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "80-the-internet-iframe",
+  "taskUrl": "https://the-internet.herokuapp.com/iframe",
+  "success": true,
+  "successReason": "ok",
+  "wallTimeMs": 24356,
+  "data": {
+    "heading": "An iFrame containing the TinyMCE WYSIWYG Editor"
+  },
+  "inputTokens": 66580,
+  "outputTokens": 869,
+  "totalCostUsd": 0.017848
+}

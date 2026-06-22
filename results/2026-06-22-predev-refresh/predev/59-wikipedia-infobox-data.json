@@ -1,0 +1,18 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "59-wikipedia-infobox-data",
+  "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "success": true,
+  "successReason": "found designer",
+  "wallTimeMs": 3161,
+  "data": {
+    "designer": "Guido van Rossum",
+    "firstAppeared": "20 February 1991",
+    "stableRelease": "3.14.6"
+  },
+  "creditsUsed": 0.261078,
+  "totalCostUsd": 0.0261078,
+  "trace": []
+}

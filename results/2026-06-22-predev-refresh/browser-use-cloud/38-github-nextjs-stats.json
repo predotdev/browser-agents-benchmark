@@ -1,0 +1,18 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "38-github-nextjs-stats",
+  "taskUrl": "https://github.com/vercel/next.js",
+  "success": true,
+  "successReason": "lang=JavaScript",
+  "wallTimeMs": 65880,
+  "data": {
+    "stars": 139335,
+    "language": "JavaScript",
+    "description": "The React Framework"
+  },
+  "inputTokens": 236021,
+  "outputTokens": 5415,
+  "totalCostUsd": 0.083422
+}

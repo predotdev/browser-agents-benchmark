@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "39-npm-zod-info",
+  "taskUrl": "https://www.npmjs.com/package/zod",
+  "success": true,
+  "successReason": "v4.4.3",
+  "wallTimeMs": 12533,
+  "data": {
+    "version": "4.4.3",
+    "description": "TypeScript-first schema validation with static type inference"
+  },
+  "inputTokens": 49747,
+  "outputTokens": 231,
+  "totalCostUsd": 0.013119
+}

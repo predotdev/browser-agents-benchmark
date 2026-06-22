@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "81-books-home-to-category-to-book",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "got upc",
+  "wallTimeMs": 22703,
+  "data": {
+    "upc": "978-1-4088-5565-2"
+  },
+  "creditsUsed": 0.404931,
+  "totalCostUsd": 0.040493100000000004,
+  "trace": []
+}

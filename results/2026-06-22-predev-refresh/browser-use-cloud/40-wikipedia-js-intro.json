@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "40-wikipedia-js-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": false,
+  "successReason": "no intro",
+  "wallTimeMs": 29020,
+  "data": {
+    "intro": ""
+  },
+  "inputTokens": 196279,
+  "outputTokens": 2167,
+  "totalCostUsd": 0.069294
+}

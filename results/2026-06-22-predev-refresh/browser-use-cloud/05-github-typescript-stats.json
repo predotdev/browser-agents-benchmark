@@ -1,0 +1,18 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "05-github-typescript-stats",
+  "taskUrl": "https://github.com/microsoft/typescript",
+  "success": true,
+  "successReason": "lang=typescript",
+  "wallTimeMs": 41534,
+  "data": {
+    "stars": 108784,
+    "language": "TypeScript",
+    "latestRelease": "v6.0.3"
+  },
+  "inputTokens": 133734,
+  "outputTokens": 1891,
+  "totalCostUsd": 0.048469
+}

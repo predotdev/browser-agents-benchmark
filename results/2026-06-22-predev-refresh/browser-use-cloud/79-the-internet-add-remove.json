@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "79-the-internet-add-remove",
+  "taskUrl": "https://the-internet.herokuapp.com/add_remove_elements/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 49895,
+  "data": {
+    "count": 3
+  },
+  "inputTokens": 146462,
+  "outputTokens": 3067,
+  "totalCostUsd": 0.050726
+}

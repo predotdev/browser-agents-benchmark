@@ -1,0 +1,18 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "59-wikipedia-infobox-data",
+  "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "success": true,
+  "successReason": "found designer",
+  "wallTimeMs": 61755,
+  "data": {
+    "designer": "Guido van Rossum",
+    "firstAppeared": "20 February 1991",
+    "stableRelease": "3.14.4 / 7 April 2026"
+  },
+  "inputTokens": 318208,
+  "outputTokens": 4204,
+  "totalCostUsd": 0.07963100000000001
+}

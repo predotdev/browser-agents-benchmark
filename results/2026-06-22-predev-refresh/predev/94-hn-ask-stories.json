@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "94-hn-ask-stories",
+  "taskUrl": "https://news.ycombinator.com/ask",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 2061,
+  "data": {
+    "stories": [
+      {
+        "title": "Ask HN: Fda.gov Down for You?",
+        "points": 2
+      },
+      {
+        "title": "Tell HN: Happy Fathers Day",
+        "points": 326
+      },
+      {
+        "title": "Ask HN: Do you have an unusual income source",
+        "points": 36
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

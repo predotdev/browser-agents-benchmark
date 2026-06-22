@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "71-httpbin-html-table",
+  "taskUrl": "https://httpbin.org/html",
+  "success": true,
+  "successReason": "found",
+  "wallTimeMs": 2935,
+  "data": {
+    "author": "Herman Melville",
+    "title": "Moby-Dick"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

@@ -169,7 +169,7 @@ function renderMarkdown(
 ): string {
 	const leader = stats[0] ?? null;
 	const lines: string[] = [];
-	lines.push(`# Benchmark Report — ${summary.runStamp}`);
+	lines.push(`# Benchmark Report: ${summary.runStamp}`);
 	lines.push("");
 	lines.push(`- **Tasks**: ${summary.taskCount}`);
 	lines.push(`- **Configurations**: ${summary.configIds.join(", ")}`);
@@ -411,7 +411,7 @@ function renderHtml(
 
     <h2>leaderboard</h2>
     ${headlineTable}
-    <p class="methodology">Browser agents are stochastic — individual runs on cheap-tier models vary by a few tasks per suite. The full per-task JSON and trace for this run is committed so the data can be re-scored independently.</p>
+    <p class="methodology">Browser agents are stochastic: individual runs on cheap-tier models vary by a few tasks per suite. The full per-task JSON and trace for this run is committed so the data can be re-scored independently.</p>
 
     <div class="radarSection">${radar}</div>
 

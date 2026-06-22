@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "24-wikipedia-search-rust",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 6197,
+  "data": {
+    "results": [
+      {
+        "title": "Rust (programming language)"
+      },
+      {
+        "title": "Outline of the Rust programming language"
+      },
+      {
+        "title": "List of programming languages by type"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

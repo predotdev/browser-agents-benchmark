@@ -1,0 +1,16 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "81-books-home-to-category-to-book",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "got upc",
+  "wallTimeMs": 19621,
+  "data": {
+    "upc": "a22124811bfa8350"
+  },
+  "inputTokens": 123285,
+  "outputTokens": 732,
+  "totalCostUsd": 0.03265
+}

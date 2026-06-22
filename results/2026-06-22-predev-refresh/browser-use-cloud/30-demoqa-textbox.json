@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "30-demoqa-textbox",
+  "taskUrl": "https://demoqa.com/text-box",
+  "success": true,
+  "successReason": "alice found",
+  "wallTimeMs": 27446,
+  "data": {
+    "name": "Alice Smith",
+    "email": "alice@example.com"
+  },
+  "inputTokens": 48819,
+  "outputTokens": 568,
+  "totalCostUsd": 0.019221
+}

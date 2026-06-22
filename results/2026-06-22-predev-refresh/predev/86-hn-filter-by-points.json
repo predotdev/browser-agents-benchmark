@@ -1,0 +1,65 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "86-hn-filter-by-points",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "12",
+  "wallTimeMs": 7710,
+  "data": {
+    "stories": [
+      {
+        "title": "Steam Machine",
+        "points": 373
+      },
+      {
+        "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+        "points": 143
+      },
+      {
+        "title": "Deno Desktop",
+        "points": 910
+      },
+      {
+        "title": "Codex logging bug may write TBs to local SSDs",
+        "points": 377
+      },
+      {
+        "title": "Pledging another $400k to the Zig software foundation",
+        "points": 584
+      },
+      {
+        "title": "The text in Claude Code’s “Extended Thinking” output",
+        "points": 212
+      },
+      {
+        "title": "GLM 5.2 vs. Opus",
+        "points": 404
+      },
+      {
+        "title": "Help I accidentally a wigglegram",
+        "points": 438
+      },
+      {
+        "title": "Alan Greenspan has died",
+        "points": 147
+      },
+      {
+        "title": "NSF slashes research programs to support new tech initiative, insiders say",
+        "points": 102
+      },
+      {
+        "title": "DHL Set to Transport Goods on New Wind-Powered Cargo Ships",
+        "points": 103
+      },
+      {
+        "title": "There is minimal downside to switching to open models",
+        "points": 364
+      }
+    ]
+  },
+  "creditsUsed": 0.115453,
+  "totalCostUsd": 0.011545300000000001,
+  "trace": []
+}

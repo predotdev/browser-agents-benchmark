@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "28-weather-gov-sf",
+  "taskUrl": "https://forecast.weather.gov/MapClick.php?CityName=San+Francisco&state=CA&site=MTR",
+  "success": true,
+  "successReason": "temp=52°F",
+  "wallTimeMs": 33591,
+  "data": {
+    "temperature": "52°F",
+    "conditions": "Sunny"
+  },
+  "inputTokens": 124058,
+  "outputTokens": 1434,
+  "totalCostUsd": 0.036883
+}

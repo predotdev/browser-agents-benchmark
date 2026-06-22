@@ -1,0 +1,20 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "96-github-trending-like",
+  "taskUrl": "https://github.com/explore",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 14456,
+  "data": {
+    "repos": [
+      "anthropics/financial-services",
+      "addyosmani/agent-skills",
+      "Hmbown/DeepSeek-TUI"
+    ]
+  },
+  "inputTokens": 73478,
+  "outputTokens": 645,
+  "totalCostUsd": 0.037607
+}

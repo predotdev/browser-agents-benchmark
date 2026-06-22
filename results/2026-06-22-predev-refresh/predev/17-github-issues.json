@@ -1,0 +1,32 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "17-github-issues",
+  "taskUrl": "https://github.com/microsoft/typescript/issues",
+  "success": true,
+  "successReason": "5 issues",
+  "wallTimeMs": 6079,
+  "data": {
+    "issues": [
+      {
+        "title": "Hover documentation for parameters documented with jsdoc renders improperly"
+      },
+      {
+        "title": "Switch Expression"
+      },
+      {
+        "title": "Regression: 7.0.1-RC Unable to Satisfy Recursive Mapped Type Constraint"
+      },
+      {
+        "title": "TypeScript doesn't consider contravariance in member functions even with strictFunctionTypes"
+      },
+      {
+        "title": "export modifier on enum disables This condition will always return * ts2845"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

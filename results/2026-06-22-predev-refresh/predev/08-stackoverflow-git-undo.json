@@ -1,0 +1,18 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "08-stackoverflow-git-undo",
+  "taskUrl": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+  "success": true,
+  "successReason": "votes=10000",
+  "wallTimeMs": 61521,
+  "data": {
+    "title": "How do I undo the most recent local commits in Git?",
+    "votes": 10000,
+    "acceptedAnswer": "To undo the most recent local commits in Git, you can use the `git reset` command. There are a few options depending on what you want to achieve:\n\n1.  **`git reset --soft HEAD~1`**: This will move the HEAD pointer back by one commit, but it will keep all your changes staged. This is useful if you want to re-commit with a different message or combine it with other changes.\n\n2.  **`git reset --mixed HEAD~1`** (this is the default if you don't specify `--soft` or `--hard`): This will move the HEAD pointer back by one commit and unstage the changes. The changes will be in your working directory, but not staged for commit. This is useful if you want to modify the changes before committing them again.\n\n3.  **`git reset --hard HEAD~1`**: This will move the HEAD pointer back by one commit and discard all changes in both the staging area and the working directory. **Use this with caution, as it will permanently delete your most recent commits and any changes associated with them.**\n\n**Explanation:**\n\n*   `HEAD~1`: This refers to the commit before the current HEAD (i.e., the most recent commit).\n*   `--soft`: Keeps changes staged.\n*   `--mixed`: Unstages changes, keeps them in the working directory.\n*   `--hard`: Discards all changes.\n\n**Example:**\n\nIf you want to undo the last commit and keep the changes in your working directory, you would run:\n\n```bash\ngit reset --mixed HEAD~1\n```\n\nIf you want to undo the last commit and discard the changes entirely, you would run:\n\n```bash\ngit reset --hard HEAD~1\n```\n\n**Important Note:** If you have already pushed your commits to a remote repository, using `git reset --hard` can cause problems for collaborators. In such cases, it's generally better to use `git revert` to create a new commit that undoes the changes of a previous commit."
+  },
+  "creditsUsed": 0.316334,
+  "totalCostUsd": 0.0316334,
+  "trace": []
+}

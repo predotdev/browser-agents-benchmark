@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "31-quotes-login",
+  "taskUrl": "https://quotes.toscrape.com/login",
+  "success": true,
+  "successReason": "login ok",
+  "wallTimeMs": 12870,
+  "data": {
+    "loggedIn": false
+  },
+  "creditsUsed": 0.201559,
+  "totalCostUsd": 0.0201559,
+  "trace": []
+}

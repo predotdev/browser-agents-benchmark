@@ -1,0 +1,26 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "62-hn-newest-stories",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 14984,
+  "data": {
+    "stories": [
+      {
+        "title": "Plus Codes"
+      },
+      {
+        "title": "iPhone Launch – Studio C (Comedy Sketch) [video]"
+      },
+      {
+        "title": "Show HN: AI Fluency Diagnostic"
+      }
+    ]
+  },
+  "inputTokens": 103821,
+  "outputTokens": 364,
+  "totalCostUsd": 0.028406
+}

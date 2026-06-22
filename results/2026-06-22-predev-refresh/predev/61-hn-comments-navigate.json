@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "61-hn-comments-navigate",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "got both",
+  "wallTimeMs": 6635,
+  "data": {
+    "title": "Steam Machine",
+    "commentCount": 329
+  },
+  "creditsUsed": 0.115845,
+  "totalCostUsd": 0.011584500000000001,
+  "trace": []
+}
