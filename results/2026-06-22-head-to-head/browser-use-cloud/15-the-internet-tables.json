@@ -1,0 +1,38 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "15-the-internet-tables",
+  "taskUrl": "https://the-internet.herokuapp.com/tables",
+  "success": true,
+  "successReason": "4 rows",
+  "wallTimeMs": 13007,
+  "data": {
+    "rows": [
+      {
+        "lastName": "Smith",
+        "firstName": "John",
+        "email": "jsmith@gmail.com"
+      },
+      {
+        "lastName": "Bach",
+        "firstName": "Frank",
+        "email": "fbach@yahoo.com"
+      },
+      {
+        "lastName": "Doe",
+        "firstName": "Jason",
+        "email": "jdoe@hotmail.com"
+      },
+      {
+        "lastName": "Conway",
+        "firstName": "Tim",
+        "email": "tconway@earthlink.net"
+      }
+    ]
+  },
+  "inputTokens": 33678,
+  "outputTokens": 343,
+  "totalCostUsd": 0.008317999999999999,
+  "trace": []
+}

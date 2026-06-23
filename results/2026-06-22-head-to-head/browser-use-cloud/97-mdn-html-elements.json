@@ -1,0 +1,23 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "97-mdn-html-elements",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element",
+  "success": true,
+  "successReason": "5",
+  "wallTimeMs": 88780,
+  "data": {
+    "elements": [
+      "<html>",
+      "<base>",
+      "<head>",
+      "<link>",
+      "<meta>"
+    ]
+  },
+  "inputTokens": 435427,
+  "outputTokens": 9402,
+  "totalCostUsd": 0.12370533333333333,
+  "trace": []
+}

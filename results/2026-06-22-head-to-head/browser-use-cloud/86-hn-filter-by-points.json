@@ -1,0 +1,62 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "86-hn-filter-by-points",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "11",
+  "wallTimeMs": 15176,
+  "data": {
+    "stories": [
+      {
+        "title": "Steam Machine",
+        "points": 624
+      },
+      {
+        "title": "Deno Desktop",
+        "points": 941
+      },
+      {
+        "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+        "points": 165
+      },
+      {
+        "title": "Codex logging bug may write TBs to local SSDs",
+        "points": 402
+      },
+      {
+        "title": "GLM 5.2 vs. Opus",
+        "points": 428
+      },
+      {
+        "title": "Pledging another $400k to the Zig software foundation",
+        "points": 620
+      },
+      {
+        "title": "The text in Claude Code’s “Extended Thinking” output",
+        "points": 226
+      },
+      {
+        "title": "Mexican government unveils a prototype for a new homegrown, ultra-affordable EV",
+        "points": 114
+      },
+      {
+        "title": "Help I accidentally a wigglegram",
+        "points": 445
+      },
+      {
+        "title": "NSF slashes research programs to support new tech initiative, insiders say",
+        "points": 125
+      },
+      {
+        "title": "Alan Greenspan has died",
+        "points": 168
+      }
+    ]
+  },
+  "inputTokens": 60703,
+  "outputTokens": 799,
+  "totalCostUsd": 0.021713,
+  "trace": []
+}

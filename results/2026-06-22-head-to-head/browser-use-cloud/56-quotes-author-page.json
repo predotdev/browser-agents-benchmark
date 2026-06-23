@@ -1,0 +1,18 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "56-quotes-author-page",
+  "taskUrl": "https://quotes.toscrape.com/",
+  "success": true,
+  "successReason": "got data",
+  "wallTimeMs": 21396,
+  "data": {
+    "bornDate": "March 14, 1879",
+    "bornPlace": "in Ulm, Germany"
+  },
+  "inputTokens": 75417,
+  "outputTokens": 660,
+  "totalCostUsd": 0.016982,
+  "trace": []
+}

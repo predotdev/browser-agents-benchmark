@@ -1,0 +1,20 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "67-mdn-fetch-parameters",
+  "taskUrl": "https://developer.mozilla.org/en-US/docs/Web/API/fetch",
+  "success": true,
+  "successReason": "2",
+  "wallTimeMs": 12890,
+  "data": {
+    "parameters": [
+      "resource",
+      "options"
+    ]
+  },
+  "inputTokens": 91969,
+  "outputTokens": 394,
+  "totalCostUsd": 0.030167000000000003,
+  "trace": []
+}

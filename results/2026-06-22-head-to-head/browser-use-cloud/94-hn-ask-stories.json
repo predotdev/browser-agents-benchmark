@@ -1,0 +1,30 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "94-hn-ask-stories",
+  "taskUrl": "https://news.ycombinator.com/ask",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 38244,
+  "data": {
+    "stories": [
+      {
+        "title": "Ask HN: Fda.gov Down for You?",
+        "points": 2
+      },
+      {
+        "title": "Ask HN: Do you have an unusual income source",
+        "points": 36
+      },
+      {
+        "title": "Ask HN: How close are we to local LLMs being useful? What's the impact?",
+        "points": 6
+      }
+    ]
+  },
+  "inputTokens": 110410,
+  "outputTokens": 3081,
+  "totalCostUsd": 0.03374833333333333,
+  "trace": []
+}

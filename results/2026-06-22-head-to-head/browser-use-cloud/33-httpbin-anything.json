@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "33-httpbin-anything",
+  "taskUrl": "https://httpbin.org/forms/post",
+  "success": true,
+  "successReason": "bob found",
+  "wallTimeMs": 80954,
+  "data": {
+    "customer": "Bob Jones"
+  },
+  "inputTokens": 255332,
+  "outputTokens": 3739,
+  "totalCostUsd": 0.06019533333333333,
+  "trace": []
+}

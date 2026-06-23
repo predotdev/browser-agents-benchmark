@@ -1,0 +1,28 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "88-wikipedia-list-items",
+  "taskUrl": "https://en.wikipedia.org/wiki/List_of_programming_languages",
+  "success": true,
+  "successReason": "10",
+  "wallTimeMs": 70081,
+  "data": {
+    "languages": [
+      "A.NET",
+      "A",
+      "A+",
+      "ABAP",
+      "ABC",
+      "ACC",
+      "Accent",
+      "Action!",
+      "ActionScript",
+      "Actor"
+    ]
+  },
+  "inputTokens": 497015,
+  "outputTokens": 6975,
+  "totalCostUsd": 0.12341533333333334,
+  "trace": []
+}

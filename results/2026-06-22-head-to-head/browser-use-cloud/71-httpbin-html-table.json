@@ -1,0 +1,18 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "71-httpbin-html-table",
+  "taskUrl": "https://httpbin.org/html",
+  "success": true,
+  "successReason": "found",
+  "wallTimeMs": 10627,
+  "data": {
+    "author": "Herman Melville",
+    "title": "Moby-Dick"
+  },
+  "inputTokens": 35538,
+  "outputTokens": 201,
+  "totalCostUsd": 0.008915,
+  "trace": []
+}

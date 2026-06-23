@@ -1,0 +1,38 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "09-lobsters-stories",
+  "taskUrl": "https://lobste.rs",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 14681,
+  "data": {
+    "stories": [
+      {
+        "title": "Why Drawing Tablet Brands Won't Collaborate on Linux FLOSS Drivers",
+        "score": 55
+      },
+      {
+        "title": "Chesterton's middle finger",
+        "score": 67
+      },
+      {
+        "title": "help i accidentally a wigglegram",
+        "score": 114
+      },
+      {
+        "title": "One year with Codeberg",
+        "score": 33
+      },
+      {
+        "title": "Nix needs relocatable binaries",
+        "score": 23
+      }
+    ]
+  },
+  "inputTokens": 75378,
+  "outputTokens": 731,
+  "totalCostUsd": 0.025849999999999998,
+  "trace": []
+}

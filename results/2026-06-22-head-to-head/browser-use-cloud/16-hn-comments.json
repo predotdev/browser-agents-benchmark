@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "16-hn-comments",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "Steam Machine",
+  "wallTimeMs": 15715,
+  "data": {
+    "storyTitle": "Steam Machine"
+  },
+  "inputTokens": 108076,
+  "outputTokens": 298,
+  "totalCostUsd": 0.030718,
+  "trace": []
+}

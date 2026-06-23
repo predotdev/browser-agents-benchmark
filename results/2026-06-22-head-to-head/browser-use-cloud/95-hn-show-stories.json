@@ -1,0 +1,27 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "95-hn-show-stories",
+  "taskUrl": "https://news.ycombinator.com/show",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 10600,
+  "data": {
+    "stories": [
+      {
+        "title": "Show HN: Oak – Git replacement designed for agents"
+      },
+      {
+        "title": "Show HN: Got sick of ads, so I made my own logic puzzle site"
+      },
+      {
+        "title": "Show HN: Selector Forge – browser extension for AI-generated resilient selectors"
+      }
+    ]
+  },
+  "inputTokens": 55733,
+  "outputTokens": 247,
+  "totalCostUsd": 0.016753,
+  "trace": []
+}

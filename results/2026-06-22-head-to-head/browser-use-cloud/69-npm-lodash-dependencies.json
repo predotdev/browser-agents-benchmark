@@ -1,0 +1,18 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "69-npm-lodash-dependencies",
+  "taskUrl": "https://www.npmjs.com/package/lodash",
+  "success": true,
+  "successReason": "MIT",
+  "wallTimeMs": 13108,
+  "data": {
+    "maintainer": "jdalton",
+    "license": "MIT"
+  },
+  "inputTokens": 38077,
+  "outputTokens": 178,
+  "totalCostUsd": 0.010347,
+  "trace": []
+}

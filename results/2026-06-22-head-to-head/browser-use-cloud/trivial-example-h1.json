@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "trivial-example-h1",
+  "taskUrl": "https://example.com",
+  "success": true,
+  "successReason": "Example Domain",
+  "wallTimeMs": 10827,
+  "data": {
+    "heading": "Example Domain"
+  },
+  "inputTokens": 30697,
+  "outputTokens": 67,
+  "totalCostUsd": 0.009918999999999999,
+  "trace": []
+}

@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "31-quotes-login",
+  "taskUrl": "https://quotes.toscrape.com/login",
+  "success": true,
+  "successReason": "login ok",
+  "wallTimeMs": 65543,
+  "data": {
+    "loggedIn": true
+  },
+  "inputTokens": 99212,
+  "outputTokens": 1615,
+  "totalCostUsd": 0.030752333333333333,
+  "trace": []
+}

@@ -1,0 +1,27 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "36-wikipedia-search-submit-extract",
+  "taskUrl": "https://en.wikipedia.org/wiki/Special:Search",
+  "success": true,
+  "successReason": "3 results",
+  "wallTimeMs": 47495,
+  "data": {
+    "results": [
+      {
+        "title": "Machine learning"
+      },
+      {
+        "title": "Quantum machine learning"
+      },
+      {
+        "title": "Attention ( machine learning )"
+      }
+    ]
+  },
+  "inputTokens": 80716,
+  "outputTokens": 758,
+  "totalCostUsd": 0.02082933333333333,
+  "trace": []
+}

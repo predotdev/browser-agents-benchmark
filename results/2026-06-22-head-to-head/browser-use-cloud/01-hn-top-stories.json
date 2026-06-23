@@ -1,0 +1,38 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "01-hn-top-stories",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "5 stories",
+  "wallTimeMs": 30594,
+  "data": {
+    "stories": [
+      {
+        "title": "Steam Machine",
+        "points": 586
+      },
+      {
+        "title": "My Mathematical Regression",
+        "points": 83
+      },
+      {
+        "title": "Moebius: 0.2B image inpainting model with 10B-level performance",
+        "points": 161
+      },
+      {
+        "title": "Deno Desktop",
+        "points": 935
+      },
+      {
+        "title": "Linux and Secure Boot certificate expiration",
+        "points": 19
+      }
+    ]
+  },
+  "inputTokens": 61009,
+  "outputTokens": 1285,
+  "totalCostUsd": 0.023978333333333334,
+  "trace": []
+}

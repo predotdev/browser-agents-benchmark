@@ -1,0 +1,27 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "65-github-navigate-to-issues",
+  "taskUrl": "https://github.com/nodejs/node",
+  "success": true,
+  "successReason": "3 issues",
+  "wallTimeMs": 65573,
+  "data": {
+    "issues": [
+      {
+        "title": "stream/iter consumers do not reject on abort while async iterator is pending"
+      },
+      {
+        "title": "\"connection\" event on TLS server does not seem to execute"
+      },
+      {
+        "title": "Error: Unable to deserialize cloned data due to invalid or unsupported version"
+      }
+    ]
+  },
+  "inputTokens": 728098,
+  "outputTokens": 4748,
+  "totalCostUsd": 0.13724133333333333,
+  "trace": []
+}

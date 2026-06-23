@@ -1,0 +1,21 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "85-scrapethissite-paginate",
+  "taskUrl": "https://www.scrapethissite.com/pages/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 19625,
+  "data": {
+    "teams": [
+      "Boston Bruins",
+      "Buffalo Sabres",
+      "Calgary Flames"
+    ]
+  },
+  "inputTokens": 71033,
+  "outputTokens": 642,
+  "totalCostUsd": 0.014306000000000001,
+  "trace": []
+}

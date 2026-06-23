@@ -1,0 +1,20 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "53-books-click-and-detail",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "title+price",
+  "wallTimeMs": 19523,
+  "data": {
+    "title": "A Light in the Attic",
+    "price": "£51.77",
+    "upc": "a897fe39b1053632",
+    "stock": "In stock (22 available)"
+  },
+  "inputTokens": 85945,
+  "outputTokens": 1027,
+  "totalCostUsd": 0.024840333333333332,
+  "trace": []
+}

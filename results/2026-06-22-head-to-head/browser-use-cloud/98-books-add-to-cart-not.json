@@ -1,0 +1,18 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "98-books-add-to-cart-not",
+  "taskUrl": "https://books.toscrape.com/",
+  "success": true,
+  "successReason": "found \"The...\"",
+  "wallTimeMs": 16939,
+  "data": {
+    "title": "The Requiem Red",
+    "price": "£22.65"
+  },
+  "inputTokens": 56419,
+  "outputTokens": 803,
+  "totalCostUsd": 0.019167,
+  "trace": []
+}

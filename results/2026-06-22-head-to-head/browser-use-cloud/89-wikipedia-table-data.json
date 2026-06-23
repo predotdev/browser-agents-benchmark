@@ -1,0 +1,30 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "89-wikipedia-table-data",
+  "taskUrl": "https://en.wikipedia.org/wiki/List_of_tallest_buildings",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 75897,
+  "data": {
+    "buildings": [
+      {
+        "name": "Burj Khalifa",
+        "heightM": 828
+      },
+      {
+        "name": "Merdeka 118",
+        "heightM": 678.9
+      },
+      {
+        "name": "Shanghai Tower",
+        "heightM": 632
+      }
+    ]
+  },
+  "inputTokens": 696248,
+  "outputTokens": 6417,
+  "totalCostUsd": 0.14597133333333331,
+  "trace": []
+}

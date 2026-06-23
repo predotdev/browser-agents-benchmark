@@ -1,0 +1,30 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "42-jsonplaceholder-users",
+  "taskUrl": "https://jsonplaceholder.typicode.com/users",
+  "success": true,
+  "successReason": "3 users",
+  "wallTimeMs": 29158,
+  "data": {
+    "users": [
+      {
+        "name": "Leanne Graham",
+        "email": "Sincere@april.biz"
+      },
+      {
+        "name": "Ervin Howell",
+        "email": "Shanna@melissa.tv"
+      },
+      {
+        "name": "Clementine Bauch",
+        "email": "Nathan@yesenia.net"
+      }
+    ]
+  },
+  "inputTokens": 22193,
+  "outputTokens": 349,
+  "totalCostUsd": 0.010184,
+  "trace": []
+}

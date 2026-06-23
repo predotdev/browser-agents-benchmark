@@ -1,0 +1,17 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "12-wikipedia-python",
+  "taskUrl": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+  "success": true,
+  "successReason": "Multi-paradigm, object-oriented, procedu",
+  "wallTimeMs": 33940,
+  "data": {
+    "paradigms": "Multi-paradigm, object-oriented, procedural, imperative, functional, structured, reflective"
+  },
+  "inputTokens": 126154,
+  "outputTokens": 1635,
+  "totalCostUsd": 0.024866333333333334,
+  "trace": []
+}

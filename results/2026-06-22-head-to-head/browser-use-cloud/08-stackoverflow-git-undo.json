@@ -1,0 +1,19 @@
+{
+  "configId": "browser-use-cloud",
+  "tool": "browser-use-cloud",
+  "model": "bu-mini",
+  "taskName": "08-stackoverflow-git-undo",
+  "taskUrl": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+  "success": true,
+  "successReason": "votes=27218",
+  "wallTimeMs": 25798,
+  "data": {
+    "title": "How do I undo the most recent local commits in Git?",
+    "votes": 27218,
+    "acceptedAnswer": "Alternatively, to edit the previous commit (or just its commit message),commit --amendwill add changes within the current index to the previous commit."
+  },
+  "inputTokens": 84891,
+  "outputTokens": 1204,
+  "totalCostUsd": 0.029371333333333333,
+  "trace": []
+}
