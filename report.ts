@@ -45,6 +45,7 @@ interface ConfigStats {
 	id: string;
 	total: number;
 	avgTimeS: number;
+	medianTimeS: number;
 	avgCostUsd: number;
 	totalCostUsd: number;
 	// Quality = pass-rate %, where pass means judge score == 100.
@@ -66,6 +67,17 @@ function statsByConfig(
 		const total = cfgResults.length;
 		const avgT =
 			cfgResults.reduce((s, r) => s + r.wallTimeMs, 0) / total / 1000;
+		// Median wall time — the headline speed metric. More robust than the
+		// mean to the long unlock/CF tail (a handful of 20-80s BrightData
+		// unlock rescues drag the mean well above the typical experience).
+		const sortedT = cfgResults
+			.map((r) => r.wallTimeMs)
+			.sort((a, b) => a - b);
+		const medianT = total
+			? (total % 2
+				? sortedT[(total - 1) / 2]
+				: (sortedT[total / 2 - 1] + sortedT[total / 2]) / 2) / 1000
+			: 0;
 		const totalCost = cfgResults.reduce((s, r) => s + r.totalCostUsd, 0);
 		const avgCost = totalCost / total;
 		let passCount = 0;
@@ -90,6 +102,7 @@ function statsByConfig(
 			id,
 			total,
 			avgTimeS: avgT,
+			medianTimeS: medianT,
 			avgCostUsd: avgCost,
 			totalCostUsd: totalCost,
 			quality,
@@ -103,7 +116,7 @@ function statsByConfig(
 	return base.sort((a, b) => {
 		if (b.quality !== a.quality) return b.quality - a.quality;
 		if (a.avgCostUsd !== b.avgCostUsd) return a.avgCostUsd - b.avgCostUsd;
-		return a.avgTimeS - b.avgTimeS;
+		return a.medianTimeS - b.medianTimeS;
 	});
 }
 
@@ -183,13 +196,13 @@ function renderMarkdown(
 
 	lines.push("## Leaderboard (ranked by quality)");
 	lines.push("");
-	lines.push("| Config | Quality | Avg time/task | $/task | $ total |");
+	lines.push("| Config | Quality | Median time/task | $/task | $ total |");
 	lines.push("|---|---:|---:|---:|---:|");
 	for (const s of stats) {
 		const isLeader = leader && s.id === leader.id;
 		const name = isLeader ? `**${s.id}** 🏆` : s.id;
 		lines.push(
-			`| ${name} | ${s.quality.toFixed(1)} | ${s.avgTimeS.toFixed(1)}s | $${s.avgCostUsd.toFixed(4)} | $${s.totalCostUsd.toFixed(2)} |`,
+			`| ${name} | ${s.quality.toFixed(1)} | ${s.medianTimeS.toFixed(1)}s | $${s.avgCostUsd.toFixed(4)} | $${s.totalCostUsd.toFixed(2)} |`,
 		);
 	}
 	lines.push("");
@@ -430,11 +443,11 @@ function renderHeadlineTable(
 	stats: ConfigStats[],
 	leaderId: string | undefined,
 ): string {
-	const thead = `<thead><tr><th>Provider</th><th class="num">Pass rate</th><th class="num">Avg time/task</th><th class="num">$/task</th><th class="num">$ total</th></tr></thead>`;
+	const thead = `<thead><tr><th>Provider</th><th class="num">Pass rate</th><th class="num">Median time/task</th><th class="num">Avg time/task</th><th class="num">$/task</th><th class="num">$ total</th></tr></thead>`;
 	const tbody = stats
 		.map((s) => {
 			const cls = s.id === leaderId ? "leader" : "norm";
-			return `<tr class="${cls}"><td>${providerCell(s.id)}</td><td class="num">${s.passCount}/${s.judgedCount} (${s.quality.toFixed(0)}%)</td><td class="num">${s.avgTimeS.toFixed(1)}s</td><td class="num">$${s.avgCostUsd.toFixed(4)}</td><td class="num">$${s.totalCostUsd.toFixed(2)}</td></tr>`;
+			return `<tr class="${cls}"><td>${providerCell(s.id)}</td><td class="num">${s.passCount}/${s.judgedCount} (${s.quality.toFixed(0)}%)</td><td class="num">${s.medianTimeS.toFixed(1)}s</td><td class="num">${s.avgTimeS.toFixed(1)}s</td><td class="num">$${s.avgCostUsd.toFixed(4)}</td><td class="num">$${s.totalCostUsd.toFixed(2)}</td></tr>`;
 		})
 		.join("");
 	return `<table class="headline">${thead}<tbody>${tbody}</tbody></table>`;
@@ -714,7 +727,7 @@ function renderRadar(stats: ConfigStats[], leaderId: string | undefined): string
 	// Best (lowest) wall-time and cost across providers — these are the
 	// reference points that sit at the outer 100 ring so the axis labels
 	// can show viewers what "100 = X" actually means.
-	const bestTime = Math.min(...stats.map((s) => s.avgTimeS), Infinity);
+	const bestTime = Math.min(...stats.map((s) => s.medianTimeS), Infinity);
 	const bestCost = Math.min(
 		...stats.map((s) => s.avgCostUsd).filter((c) => c > 0),
 		Infinity,
@@ -736,10 +749,10 @@ function renderRadar(stats: ConfigStats[], leaderId: string | undefined): string
 		},
 		{
 			label: 'speed',
-			sub: isFinite(bestTime) ? `best ${bestTime.toFixed(1)}s/task` : '—',
+			sub: isFinite(bestTime) ? `best ${bestTime.toFixed(1)}s/task median` : '—',
 			angle: -Math.PI / 2 + (4 * Math.PI) / 3,
 			norm: (s: ConfigStats) =>
-				s.avgTimeS > 0 ? (bestTime / s.avgTimeS) * 100 : 100,
+				s.medianTimeS > 0 ? (bestTime / s.medianTimeS) * 100 : 100,
 		},
 	];
 	const axisPt = (angle: number, pct: number) => {

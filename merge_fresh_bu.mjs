@@ -7,7 +7,7 @@ import { readFileSync, writeFileSync, mkdirSync, cpSync, readdirSync } from 'nod
 import { join } from 'node:path';
 
 const freshBuDir = join('results', process.argv[2]);
-const PREDEV_REFRESH = 'results/2026-06-22-predev-refresh';
+const PREDEV_REFRESH = 'results/2026-07-08-predev-refresh';
 const newDir = join('results', process.argv[3]);
 
 const buSummary = JSON.parse(readFileSync(join(freshBuDir, 'summary.json'), 'utf8'));
@@ -20,10 +20,10 @@ const freshByName = new Map(freshBu.map((r) => [r.taskName, r]));
 const predevEntries = summary.results.filter((r) => r.configId === 'predev');
 const mergedBu = predevEntries.map((p) => freshByName.get(p.taskName)).filter(Boolean);
 summary.results = [...predevEntries, ...mergedBu];
-summary.runStamp = '2026-06-22 head-to-head';
+summary.runStamp = '2026-07-08 head-to-head';
 delete summary.predevRefreshedAt;
 delete summary.browserUseBaseline;
-summary.headToHeadDate = '2026-06-22';
+summary.headToHeadDate = '2026-07-08';
 
 // New dir: start from the predev-refresh (keeps fresh predev per-task files),
 // then overwrite the BU per-task files from the fresh run.
