@@ -65,9 +65,9 @@ tsx run.ts --limit 25 --parallel --concurrency 10
 
 **Models used**
 - pre.dev: `gemini-2.5-flash-lite` (the default low-cost tier on pre.dev Browser Agents)
-- browser-use Cloud: `bu-mini` (the default low-cost tier on cloud.browser-use.com — currently routed to GPT-5.4 mini on their backend)
+- browser-use Cloud: `bu-mini` (browser-use's named budget tier on cloud.browser-use.com)
 
-Both are each provider's cheapest published tier. If you want to rerun against a different tier, pass it through the adapter config in `run.ts`.
+Both are each provider's default cheapest *named* tier, so this is a default-vs-default run. One caveat we disclose up front: despite the "mini" name, browser-use's dashboard shows `bu-mini` backed by a **Claude-family model**, not a Gemini/GPT-mini — so the cost gap partly reflects that pricier backend, not just efficiency. For a strict **same-family** cost comparison, browser-use's `gemini-3-flash` is the closest sibling to pre.dev's Gemini Flash Lite (set `cfg.model` in `run.ts` and rerun); that narrows the cost multiple but the **speed and accuracy results hold regardless of tier**.
 
 > **Note on the SDK `model` parameter.** The official `browser-use-sdk` v3 client expects `model`, not `llm`, in the run-options. Our adapter passed `llm` through v0.1.0, which browser-use's backend silently dropped — falling back to the server default (Claude Opus 4.7 at the time), NOT the `bu-mini` we thought we were selecting. We've since fixed the adapter so the model param actually reaches their router; the numbers above are all from post-fix runs.
 
