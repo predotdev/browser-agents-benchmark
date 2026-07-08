@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "94-hn-ask-stories",
+  "taskUrl": "https://news.ycombinator.com/ask",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 2950,
+  "data": {
+    "stories": [
+      {
+        "title": "Ask HN: Where are the good search engines for mathematical formulas?",
+        "points": 54
+      },
+      {
+        "title": "Ask HN: Is GitHub preparing to go behind a login wall?",
+        "points": 50
+      },
+      {
+        "title": "Tell HN: Who wants to be hired\" posts outpace \"Who's hiring\" 2 to 1",
+        "points": 53
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

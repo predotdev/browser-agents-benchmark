@@ -2,30 +2,30 @@
 
 Reproducible head-to-head benchmark of browser-automation services across **100 real-world web tasks** — scraping, multi-step navigation, login flows, form fills, pagination.
 
-> **pre.dev Browser Agents passes 100 / 100 (vs Browser Use Cloud's 97 / 100) — and wins ~2.3× on cost AND ~3.4× on speed.**
+> **pre.dev Browser Agents and Browser Use Cloud both pass 100 / 100 this run — pre.dev wins ~2.6× on cost AND ~5.1× on speed (median).**
 
 ---
 
 ## Headline result
 
-| Provider | Pass rate | Avg time / task | $ / task | Total $ for 100 tasks |
-|---|---:|---:|---:|---:|
-| **🏆 [pre.dev Browser Agents](https://pre.dev/browser-agents)** | **100 / 100** | **9.0 s** | **$0.0164** | **$1.64** |
-| [Browser Use Cloud](https://cloud.browser-use.com) | 97 / 100 | 30.6 s | $0.0370 | $3.70 |
+| Provider | Pass rate | Median time / task | Avg time / task | $ / task | Total $ for 100 tasks |
+|---|---:|---:|---:|---:|---:|
+| **🏆 [pre.dev Browser Agents](https://pre.dev/browser-agents)** | **100 / 100** | **4.9 s** | 9.1 s | **$0.0159** | **$1.59** |
+| [Browser Use Cloud](https://cloud.browser-use.com) | 100 / 100 | 25.0 s | 35.7 s | $0.0415 | $4.15 |
 
-Same 100 tasks. Same JSON output schemas. Same uniform `successCheck` predicate. Browser agents are stochastic — individual runs on cheap-tier models vary by a few tasks per suite; the full per-task JSON + trace from this run is in `results/2026-05-08T14-48-59/` so the data can be re-scored independently.
+Same 100 tasks. Same JSON output schemas. Same uniform `successCheck` predicate. Headline speed is the **median** wall time per task: on the cheap tiers a handful of hard anti-bot sites hit a 20–80 s unlock/CAPTCHA-clear path that drags the *mean* well above the typical task, so the median is the honest representative number (the mean is shown alongside, and the full report page carries both). Browser agents are stochastic — individual runs on cheap-tier models vary by a few tasks per suite; the full per-task JSON + trace from this run is in `results/2026-07-08-head-to-head/` so the data can be re-scored independently.
 
 ### Cost per task
 
 ![cost per task](docs/cost-per-task.svg)
 
-### Average time per task
+### Median time per task
 
 ![speed](docs/speed.svg)
 
 **👉 [Full interactive report](https://pre.dev/browser-agents-benchmark.html)** — radar chart, leaderboard, per-task drilldown, raw JSON.
 
-Also in this repo: [`results/2026-05-08T14-48-59/REPORT.md`](./results/2026-05-08T14-48-59/REPORT.md) · [`results/2026-05-08T14-48-59/report.html`](./results/2026-05-08T14-48-59/report.html) (raw HTML — open locally to view).
+Also in this repo: [`results/2026-07-08-head-to-head/REPORT.md`](./results/2026-07-08-head-to-head/REPORT.md) · [`results/2026-07-08-head-to-head/report.html`](./results/2026-07-08-head-to-head/report.html) (raw HTML — open locally to view).
 
 ---
 
@@ -42,7 +42,7 @@ bun run report <runStamp>    # generate REPORT.md + report.html
 
 API keys:
 - **pre.dev** → https://pre.dev/projects/playground (suite runs ~$1 on an active Plus/Premium/Pro plan; free Trial only covers 1 task)
-- **Browser Use Cloud** → https://cloud.browser-use.com/api-keys (suite runs ~$12; check their current free credit allotment)
+- **Browser Use Cloud** → https://cloud.browser-use.com/api-keys (suite runs ~$4 on `bu-mini`; check their current free credit allotment)
 
 ### Narrow runs
 
@@ -71,9 +71,9 @@ Both are each provider's cheapest published tier. If you want to rerun against a
 
 > **Note on the SDK `model` parameter.** The official `browser-use-sdk` v3 client expects `model`, not `llm`, in the run-options. Our adapter passed `llm` through v0.1.0, which browser-use's backend silently dropped — falling back to the server default (Claude Opus 4.7 at the time), NOT the `bu-mini` we thought we were selecting. We've since fixed the adapter so the model param actually reaches their router; the numbers above are all from post-fix runs.
 
-Headline times are **mean** across all 100 tasks.
+Headline speed is the **median** wall time across all 100 tasks (mean shown alongside). The median is reported because the mean on both providers is skewed by a small tail of hard anti-bot sites that fall back to a slow unlock/CAPTCHA-clear path; the median reflects the typical task. Both the median and the mean are in the report.
 
-The numbers in this README come from `results/2026-05-08T14-48-59/`. That directory is committed so anyone can audit the raw data without re-running.
+The numbers in this README come from `results/2026-07-08-head-to-head/`. That directory is committed so anyone can audit the raw data without re-running.
 
 ---
 
@@ -96,7 +96,7 @@ browser-agents-benchmark/
 ├── docs/
 │   └── *.svg                      # charts embedded in this README
 └── results/
-    └── 2026-05-08T14-48-59/        # the run powering this README
+    └── 2026-07-08-head-to-head/    # the run powering this README
         ├── summary.json
         ├── REPORT.md
         ├── report.html            # open in a browser for the interactive view

@@ -1,0 +1,20 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "78-the-internet-dynamic-content",
+  "taskUrl": "https://the-internet.herokuapp.com/dynamic_content",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 6946,
+  "data": {
+    "paragraphs": [
+      "This example demonstrates the ever-evolving nature of content by loading new text and images on each page refresh.",
+      "To make some of the content static append ?with_content=static or click here.",
+      "Modi quisquam ratione et cum ipsum est corrupti doloremque et soluta sit dolores nihil dolorem sint sit nihil aut ex esse facere nostrum qui minus earum et dicta laboriosam voluptas."
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

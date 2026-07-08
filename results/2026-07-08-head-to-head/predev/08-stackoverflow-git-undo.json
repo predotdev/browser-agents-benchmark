@@ -1,0 +1,18 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "08-stackoverflow-git-undo",
+  "taskUrl": "https://stackoverflow.com/questions/927358/how-do-i-undo-the-most-recent-local-commits-in-git",
+  "success": true,
+  "successReason": "votes=13890",
+  "wallTimeMs": 41738,
+  "data": {
+    "title": "How do I undo the most recent local commits in Git?",
+    "votes": 13890,
+    "acceptedAnswer": "To undo the most recent local commits in Git, you can use the `git reset` command. The most common way to do this is with `git reset --hard HEAD~1`. This command will move the HEAD pointer back by one commit and discard all changes in the working directory and staging area that were introduced by that commit. If you want to undo more than one commit, you can replace `1` with the number of commits you want to undo, e.g., `git reset --hard HEAD~3` to undo the last three commits. Be careful with `--hard` as it will discard all changes. If you want to keep the changes but uncommit them, you can use `git reset --soft HEAD~1`. This will move the HEAD pointer back but keep the changes in your staging area. If you want to keep the changes in your working directory but uncommit them, you can use `git reset HEAD~1`. This will move the HEAD pointer back and keep the changes in your working directory, but they will not be staged. After resetting, you can use `git push --force` to update the remote repository if you have already pushed the commits. However, be cautious when force-pushing, especially if others are collaborating on the same branch, as it can overwrite their work."
+  },
+  "creditsUsed": 0.272065,
+  "totalCostUsd": 0.0272065,
+  "trace": []
+}

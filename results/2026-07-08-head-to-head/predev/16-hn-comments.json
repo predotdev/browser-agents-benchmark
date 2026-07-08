@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "16-hn-comments",
+  "taskUrl": "https://news.ycombinator.com",
+  "success": true,
+  "successReason": "Decoding the obfuscated bash script on a Uniqlo t-",
+  "wallTimeMs": 3325,
+  "data": {
+    "storyTitle": "Decoding the obfuscated bash script on a Uniqlo t-shirt"
+  },
+  "creditsUsed": 0.117271,
+  "totalCostUsd": 0.0117271,
+  "trace": []
+}

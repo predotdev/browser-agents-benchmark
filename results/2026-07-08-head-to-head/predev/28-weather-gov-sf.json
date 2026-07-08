@@ -1,0 +1,17 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "28-weather-gov-sf",
+  "taskUrl": "https://forecast.weather.gov/MapClick.php?CityName=San+Francisco&state=CA&site=MTR",
+  "success": true,
+  "successReason": "temp=53°F",
+  "wallTimeMs": 5059,
+  "data": {
+    "temperature": "53°F",
+    "conditions": "NA"
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

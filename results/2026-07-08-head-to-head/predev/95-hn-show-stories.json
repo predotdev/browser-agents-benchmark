@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "95-hn-show-stories",
+  "taskUrl": "https://news.ycombinator.com/show",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 2923,
+  "data": {
+    "stories": [
+      {
+        "title": "Show HN: Davit, a Apple Containers UI"
+      },
+      {
+        "title": "Show HN: Pug.sh – open-source product analytics"
+      },
+      {
+        "title": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

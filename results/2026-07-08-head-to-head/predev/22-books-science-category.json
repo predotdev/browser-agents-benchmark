@@ -1,0 +1,29 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "22-books-science-category",
+  "taskUrl": "https://books.toscrape.com",
+  "success": true,
+  "successReason": "3 books",
+  "wallTimeMs": 5782,
+  "data": {
+    "books": [
+      {
+        "title": "The Most Perfect Thing: ...",
+        "price": "£42.96"
+      },
+      {
+        "title": "Immunity: How Elie Metchnikoff ...",
+        "price": "£57.36"
+      },
+      {
+        "title": "Sorting the Beef from ...",
+        "price": "£44.74"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

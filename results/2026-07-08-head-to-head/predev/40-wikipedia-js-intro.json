@@ -1,0 +1,16 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "40-wikipedia-js-intro",
+  "taskUrl": "https://en.wikipedia.org/wiki/JavaScript",
+  "success": true,
+  "successReason": "668 chars",
+  "wallTimeMs": 3515,
+  "data": {
+    "intro": "JavaScript (/ˈdʒɑːvəskrɪpt/), often abbreviated to JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. As of 2025, JavaScript is the most widely used programming language on GitHub. It is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard. It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM)."
+  },
+  "creditsUsed": 0.239473,
+  "totalCostUsd": 0.0239473,
+  "trace": []
+}

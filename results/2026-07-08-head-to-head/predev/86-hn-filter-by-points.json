@@ -1,0 +1,97 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "86-hn-filter-by-points",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "20",
+  "wallTimeMs": 2793,
+  "data": {
+    "stories": [
+      {
+        "title": "Decoding the obfuscated bash script on a Uniqlo t-shirt",
+        "points": 694
+      },
+      {
+        "title": "Apple to increase spend with Broadcom to produce billions more U.S. chips",
+        "points": 122
+      },
+      {
+        "title": "GitLost: We Tricked GitHub's AI Agent into Leaking Private Repos",
+        "points": 331
+      },
+      {
+        "title": "EVE Online's Carbon engine is now open source: Fenris Creations explains why",
+        "points": 155
+      },
+      {
+        "title": "How to Build a Minimal ZFS NAS Without Synology, QNAP, TrueNAS (2024)",
+        "points": 250
+      },
+      {
+        "title": "Tenda firmware (multiple versions) contains hidden authentication backdoor",
+        "points": 275
+      },
+      {
+        "title": "Chat Control 1.0 and 2.0 Explained",
+        "points": 757
+      },
+      {
+        "title": "Copy That Floppy – Cambridge guide for preserving data from fragile floppy disks",
+        "points": 121
+      },
+      {
+        "title": "Structure and Interpretation of Computer Programs Video Lectures (1986)",
+        "points": 216
+      },
+      {
+        "title": "GAO: DOE Is Prematurely Excluding Less Expensive Options for Nuclear Cleanup",
+        "points": 234
+      },
+      {
+        "title": "Canada's only watchmaking school still ticking after 80 years",
+        "points": 176
+      },
+      {
+        "title": "Local, CPU-Friendly, High-Quality TTS (Text-to-Speech) with Kokoro",
+        "points": 451
+      },
+      {
+        "title": "LineageOS Statistics",
+        "points": 145
+      },
+      {
+        "title": "30papers.com – Ilya's 30 essential ML papers, in a beginner friendly format",
+        "points": 581
+      },
+      {
+        "title": "Herdr: One terminal to rule them all",
+        "points": 332
+      },
+      {
+        "title": "Show HN: Davit, a Apple Containers UI",
+        "points": 341
+      },
+      {
+        "title": "Show HN: Rowboat – Open-source, local-first alternative to Claude Desktop",
+        "points": 190
+      },
+      {
+        "title": "l: A new runtime for k and q",
+        "points": 156
+      },
+      {
+        "title": "Why we built yet another Postgres connection pooler",
+        "points": 230
+      },
+      {
+        "title": "Jim's TrueType QR Code Font",
+        "points": 199
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}

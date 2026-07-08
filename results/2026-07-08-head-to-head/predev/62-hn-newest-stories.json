@@ -1,0 +1,26 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "62-hn-newest-stories",
+  "taskUrl": "https://news.ycombinator.com/",
+  "success": true,
+  "successReason": "3",
+  "wallTimeMs": 5872,
+  "data": {
+    "stories": [
+      {
+        "title": "Valve's Gabe Newell continues spending his billions on an undersea armada"
+      },
+      {
+        "title": "Licensing can be joyful (and legally dubious)"
+      },
+      {
+        "title": "Gunmap – a TUI for building NMAP commands without memorizing flags"
+      }
+    ]
+  },
+  "creditsUsed": 0.118463,
+  "totalCostUsd": 0.0118463,
+  "trace": []
+}

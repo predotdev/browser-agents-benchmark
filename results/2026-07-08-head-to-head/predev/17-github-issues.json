@@ -1,0 +1,32 @@
+{
+  "configId": "predev",
+  "tool": "predev",
+  "model": "gemini-2.5-flash-lite",
+  "taskName": "17-github-issues",
+  "taskUrl": "https://github.com/microsoft/typescript/issues",
+  "success": true,
+  "successReason": "5 issues",
+  "wallTimeMs": 6311,
+  "data": {
+    "issues": [
+      {
+        "title": "TypeScript 6.0 Iteration Plan"
+      },
+      {
+        "title": "Transition to 6.0 Maintenance Mode"
+      },
+      {
+        "title": "Closing TS 6.0 LS issues"
+      },
+      {
+        "title": "Incorrect diagnostic message in TS2814"
+      },
+      {
+        "title": "NoInfer changes behavior for type matching on spread"
+      }
+    ]
+  },
+  "creditsUsed": 0.1,
+  "totalCostUsd": 0.010000000000000002,
+  "trace": []
+}
