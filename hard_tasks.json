@@ -1,0 +1,184 @@
+[
+  {
+    "name": "antibot-bestbuy-title",
+    "url": "https://www.bestbuy.com/",
+    "instruction": "Extract the page title and two top-level shopping category names from the site navigation. Return JSON: { \"title\": string, \"categories\": string[] }",
+    "output": { "type": "object", "properties": { "title": { "type": "string" }, "categories": { "type": "array", "items": { "type": "string" } } }, "required": ["title"] },
+    "successCheckSrc": "r=>{const t=findStr(r.data,'best buy');return t?{success:true,reason:'has bestbuy title/content'}:{success:false,reason:'no bestbuy content'}}"
+  },
+  {
+    "name": "antibot-nike-categories",
+    "url": "https://www.nike.com/",
+    "instruction": "Extract two product category names shown in the top navigation (for example Men, Women, Kids, or Jordan). Return JSON: { \"categories\": string[] }",
+    "output": { "type": "object", "properties": { "categories": { "type": "array", "items": { "type": "string" } } }, "required": ["categories"] },
+    "successCheckSrc": "r=>{const a=findArray(r.data);const ok=a&&a.filter(x=>typeof x==='string'&&x.length>1).length>=2;const kw=findStr(r.data,'men')||findStr(r.data,'jordan')||findStr(r.data,'kids')||findStr(r.data,'women');return (ok&&kw)?{success:true,reason:'>=2 nav categories'}:{success:false,reason:'no category array'}}"
+  },
+  {
+    "name": "antibot-zillow-title",
+    "url": "https://www.zillow.com/",
+    "instruction": "Extract the page title or main heading of the site. Return JSON: { \"title\": string }",
+    "output": { "type": "object", "properties": { "title": { "type": "string" } }, "required": ["title"] },
+    "successCheckSrc": "r=>{const t=findStr(r.data,'zillow');return t?{success:true,reason:'has zillow'}:{success:false,reason:'no zillow content'}}"
+  },
+  {
+    "name": "antibot-wsj-headline",
+    "url": "https://www.wsj.com/",
+    "instruction": "Extract the text of the top news headline on the homepage. Return JSON: { \"headline\": string }",
+    "output": { "type": "object", "properties": { "headline": { "type": "string" } }, "required": ["headline"] },
+    "successCheckSrc": "r=>{const h=findValue(r.data,v=>typeof v==='string'&&v.length>25);return h?{success:true,reason:'headline text'}:{success:false,reason:'no headline'}}"
+  },
+  {
+    "name": "antibot-idealo-title",
+    "url": "https://www.idealo.de/",
+    "instruction": "Extract the page title of the site. Return JSON: { \"title\": string }",
+    "output": { "type": "object", "properties": { "title": { "type": "string" } }, "required": ["title"] },
+    "successCheckSrc": "r=>{const t=findStr(r.data,'idealo');return t?{success:true,reason:'has idealo'}:{success:false,reason:'no idealo content'}}"
+  },
+  {
+    "name": "antibot-nordstrom-categories",
+    "url": "https://www.nordstrom.com/",
+    "instruction": "Extract two department or category names from the site navigation. Return JSON: { \"categories\": string[] }",
+    "output": { "type": "object", "properties": { "categories": { "type": "array", "items": { "type": "string" } } }, "required": ["categories"] },
+    "successCheckSrc": "r=>{const a=findArray(r.data);const ok=a&&a.filter(x=>typeof x==='string'&&x.length>2).length>=2;return ok?{success:true,reason:'>=2 categories'}:{success:false,reason:'no category array'}}"
+  },
+  {
+    "name": "antibot-g2-title",
+    "url": "https://www.g2.com/",
+    "instruction": "Extract the page title or a category of software listed on the page. Return JSON: { \"title\": string }",
+    "output": { "type": "object", "properties": { "title": { "type": "string" } }, "required": ["title"] },
+    "successCheckSrc": "r=>{const t=findStr(r.data,'g2')||findStr(r.data,'software')||findStr(r.data,'review');return t?{success:true,reason:'has g2/software content'}:{success:false,reason:'no g2 content'}}"
+  },
+  {
+    "name": "antibot-seatgeek-event",
+    "url": "https://seatgeek.com/",
+    "instruction": "Extract the name of one event, team, or performer listed on the page. Return JSON: { \"event\": string }",
+    "output": { "type": "object", "properties": { "event": { "type": "string" } }, "required": ["event"] },
+    "successCheckSrc": "r=>{const e=findValue(r.data,v=>typeof v==='string'&&v.length>3&&!/seatgeek/i.test(v));return e?{success:true,reason:'event name'}:{success:false,reason:'no event'}}"
+  },
+  {
+    "name": "multistep-imdb-inception",
+    "url": "https://www.imdb.com/",
+    "instruction": "Search for the movie 'Inception' (the 2010 film), open its page, and extract its director and release year. Return JSON: { \"director\": string, \"year\": string }",
+    "output": { "type": "object", "properties": { "director": { "type": "string" }, "year": { "type": "string" } }, "required": ["director"] },
+    "successCheckSrc": "r=>{const d=findStr(r.data,'nolan');const y=findStr(r.data,'2010');return (d&&y)?{success:true,reason:'Nolan + 2010'}:{success:false,reason:'missing director/year'}}"
+  },
+  {
+    "name": "multistep-github-react-stars",
+    "url": "https://github.com/",
+    "instruction": "Navigate to the facebook/react repository and extract its primary programming language and its star count. Return JSON: { \"language\": string, \"stars\": number }",
+    "output": { "type": "object", "properties": { "language": { "type": "string" }, "stars": { "type": "number" } }, "required": ["stars"] },
+    "successCheckSrc": "r=>{const lang=findStr(r.data,'javascript')||findStr(r.data,'typescript');const n=findValue(r.data,v=>typeof v==='number'&&v>150000)||findValue(r.data,v=>typeof v==='string'&&/2[0-9]{2}[.,]?[0-9]*k/i.test(v));return (lang&&n)?{success:true,reason:'language + >150k stars'}:{success:false,reason:'missing lang or stars'}}"
+  },
+  {
+    "name": "multistep-wiki-turing",
+    "url": "https://en.wikipedia.org/",
+    "instruction": "Find the Wikipedia article for Alan Turing and extract his birth year and the university where he did his undergraduate studies. Return JSON: { \"birthYear\": string, \"university\": string }",
+    "output": { "type": "object", "properties": { "birthYear": { "type": "string" }, "university": { "type": "string" } }, "required": ["birthYear"] },
+    "successCheckSrc": "r=>{const y=findStr(r.data,'1912');const u=findStr(r.data,'cambridge')||findStr(r.data,\"king's\")||findStr(r.data,'kings college');return (y&&u)?{success:true,reason:'1912 + Cambridge'}:{success:false,reason:'missing year/university'}}"
+  },
+  {
+    "name": "multistep-wiki-python-guido",
+    "url": "https://en.wikipedia.org/wiki/Python_(programming_language)",
+    "instruction": "From this article, navigate to the Wikipedia page of the person who created the language, and extract that person's name and nationality. Return JSON: { \"creator\": string, \"nationality\": string }",
+    "output": { "type": "object", "properties": { "creator": { "type": "string" }, "nationality": { "type": "string" } }, "required": ["creator"] },
+    "successCheckSrc": "r=>{const c=findStr(r.data,'rossum');const nat=findStr(r.data,'dutch')||findStr(r.data,'netherlands');return (c&&nat)?{success:true,reason:'Guido + Dutch'}:{success:false,reason:'missing creator/nationality'}}"
+  },
+  {
+    "name": "paginate-books-page3",
+    "url": "https://books.toscrape.com/",
+    "instruction": "Navigate to page 3 of the book catalog and extract the titles of the first two books shown on that page. Return JSON: { \"books\": string[] }",
+    "output": { "type": "object", "properties": { "books": { "type": "array", "items": { "type": "string" } } }, "required": ["books"] },
+    "successCheckSrc": "r=>{const a=findArray(r.data);const ok=a&&a.filter(x=>typeof x==='string'&&x.length>5).length>=2;return ok?{success:true,reason:'>=2 book titles'}:{success:false,reason:'no titles'}}"
+  },
+  {
+    "name": "paginate-hn-page2",
+    "url": "https://news.ycombinator.com/news?p=2",
+    "instruction": "Extract the titles of the first three stories on this second page of Hacker News. Return JSON: { \"stories\": string[] }",
+    "output": { "type": "object", "properties": { "stories": { "type": "array", "items": { "type": "string" } } }, "required": ["stories"] },
+    "successCheckSrc": "r=>{const a=findArray(r.data);const ok=a&&a.filter(x=>typeof x==='string'&&x.length>5).length>=3;return ok?{success:true,reason:'>=3 stories'}:{success:false,reason:'<3 stories'}}"
+  },
+  {
+    "name": "dynamic-quotes-js",
+    "url": "https://quotes.toscrape.com/js/",
+    "instruction": "This page renders its content with JavaScript. Extract the authors of the first three quotes. Return JSON: { \"authors\": string[] }",
+    "output": { "type": "object", "properties": { "authors": { "type": "array", "items": { "type": "string" } } }, "required": ["authors"] },
+    "successCheckSrc": "r=>{const a=findArray(r.data);const e=findStr(r.data,'einstein');const rw=findStr(r.data,'rowling');const ok=a&&a.filter(x=>typeof x==='string'&&x.length>2).length>=3;return (ok&&e&&rw)?{success:true,reason:'3 authors incl Einstein+Rowling'}:{success:false,reason:'JS content not extracted'}}"
+  },
+  {
+    "name": "dynamic-infinite-scroll",
+    "url": "https://the-internet.herokuapp.com/infinite_scroll",
+    "instruction": "This page loads more paragraphs as you scroll down. Scroll to load additional content and extract the text of any paragraph that appears only after scrolling (not visible on initial load). Return JSON: { \"paragraph\": string }",
+    "output": { "type": "object", "properties": { "paragraph": { "type": "string" } }, "required": ["paragraph"] },
+    "successCheckSrc": "r=>{const p=findValue(r.data,v=>typeof v==='string'&&v.length>80);return p?{success:true,reason:'loaded paragraph'}:{success:false,reason:'no scrolled content'}}"
+  },
+  {
+    "name": "login-the-internet",
+    "url": "https://the-internet.herokuapp.com/login",
+    "instruction": "Log in using username 'tomsmith' and password 'SuperSecretPassword!', then extract the confirmation banner message shown after a successful login. Return JSON: { \"message\": string }",
+    "output": { "type": "object", "properties": { "message": { "type": "string" } }, "required": ["message"] },
+    "successCheckSrc": "r=>{const m=findStr(r.data,'secure area')||findStr(r.data,'logged into');return m?{success:true,reason:'login confirmed'}:{success:false,reason:'login not confirmed'}}"
+  },
+  {
+    "name": "form-httpbin-post",
+    "url": "https://httpbin.org/forms/post",
+    "instruction": "Fill the pizza order form with customer name 'Ada Lovelace' and telephone '5559876543', choose pizza size 'Large', then submit the form and extract the 'custname' value echoed back in the resulting JSON response. Return JSON: { \"custname\": string }",
+    "output": { "type": "object", "properties": { "custname": { "type": "string" } }, "required": ["custname"] },
+    "successCheckSrc": "r=>{const m=findStr(r.data,'ada lovelace')||findStr(r.data,'lovelace');return m?{success:true,reason:'form submitted + echoed'}:{success:false,reason:'form not submitted'}}"
+  },
+  {
+    "name": "hop-wiki-linux-creator",
+    "url": "https://en.wikipedia.org/",
+    "instruction": "Find who created the Linux kernel, navigate to that person's Wikipedia page, and extract their name and nationality. Return JSON: { \"creator\": string, \"nationality\": string }",
+    "output": { "type": "object", "properties": { "creator": { "type": "string" }, "nationality": { "type": "string" } }, "required": ["creator"] },
+    "successCheckSrc": "r=>{const c=findStr(r.data,'torvalds');const n=findStr(r.data,'finnish')||findStr(r.data,'finland');return (c&&n)?{success:true,reason:'Torvalds + Finnish'}:{success:false,reason:'wrong creator/nationality'}}"
+  },
+  {
+    "name": "hop-wiki-relativity-birthplace",
+    "url": "https://en.wikipedia.org/",
+    "instruction": "Find the physicist who developed the theory of general relativity, go to their Wikipedia page, and extract the city where they were born. Return JSON: { \"physicist\": string, \"birthCity\": string }",
+    "output": { "type": "object", "properties": { "physicist": { "type": "string" }, "birthCity": { "type": "string" } }, "required": ["birthCity"] },
+    "successCheckSrc": "r=>{const p=findStr(r.data,'einstein');const c=findStr(r.data,'ulm');return (p&&c)?{success:true,reason:'Einstein + Ulm'}:{success:false,reason:'wrong physicist/city'}}"
+  },
+  {
+    "name": "hop-wiki-australia-capital",
+    "url": "https://en.wikipedia.org/",
+    "instruction": "Identify the capital city of Australia (note: it is not the largest city), navigate to that city's Wikipedia page, and extract the city name and its approximate population. Return JSON: { \"capital\": string, \"population\": string }",
+    "output": { "type": "object", "properties": { "capital": { "type": "string" }, "population": { "type": "string" } }, "required": ["capital"] },
+    "successCheckSrc": "r=>{const c=findStr(r.data,'canberra');const notWrong=!findStr(r.data,'sydney')&&!findStr(r.data,'melbourne');return (c&&notWrong)?{success:true,reason:'Canberra (disambiguated)'}:{success:false,reason:'wrong capital (trap)'}}"
+  },
+  {
+    "name": "hop-wiki-spacex-musk-car",
+    "url": "https://en.wikipedia.org/",
+    "instruction": "Find the founder of SpaceX, then determine which electric car company that same person is the CEO of. Return JSON: { \"founder\": string, \"carCompany\": string }",
+    "output": { "type": "object", "properties": { "founder": { "type": "string" }, "carCompany": { "type": "string" } }, "required": ["carCompany"] },
+    "successCheckSrc": "r=>{const f=findStr(r.data,'musk');const t=findStr(r.data,'tesla');return (f&&t)?{success:true,reason:'Musk + Tesla'}:{success:false,reason:'wrong founder/company'}}"
+  },
+  {
+    "name": "hop-imdb-matrix-neo-actor",
+    "url": "https://www.imdb.com/",
+    "instruction": "Find the film 'The Matrix' (1999), then identify and navigate to the actor who played Neo, and extract that actor's name. Return JSON: { \"actor\": string }",
+    "output": { "type": "object", "properties": { "actor": { "type": "string" } }, "required": ["actor"] },
+    "successCheckSrc": "r=>{const a=findStr(r.data,'keanu')||findStr(r.data,'reeves');return a?{success:true,reason:'Keanu Reeves'}:{success:false,reason:'wrong actor'}}"
+  },
+  {
+    "name": "hop-github-pytorch-license",
+    "url": "https://github.com/",
+    "instruction": "Navigate to the pytorch/pytorch repository and extract its open-source license and its primary programming language. Return JSON: { \"license\": string, \"language\": string }",
+    "output": { "type": "object", "properties": { "license": { "type": "string" }, "language": { "type": "string" } }, "required": ["license"] },
+    "successCheckSrc": "r=>{const l=findStr(r.data,'bsd');const lang=findStr(r.data,'python')||findStr(r.data,'c++');return (l&&lang)?{success:true,reason:'BSD + language'}:{success:false,reason:'wrong license/language'}}"
+  },
+  {
+    "name": "hop-wiki-nvidia-ceo",
+    "url": "https://en.wikipedia.org/",
+    "instruction": "Find the company NVIDIA on Wikipedia and extract the name of its current CEO and the year the company was founded. Return JSON: { \"ceo\": string, \"founded\": string }",
+    "output": { "type": "object", "properties": { "ceo": { "type": "string" }, "founded": { "type": "string" } }, "required": ["ceo"] },
+    "successCheckSrc": "r=>{const c=findStr(r.data,'huang');const y=findStr(r.data,'1993');return (c&&y)?{success:true,reason:'Huang + 1993'}:{success:false,reason:'wrong ceo/year'}}"
+  },
+  {
+    "name": "hop-books-detail-price",
+    "url": "https://books.toscrape.com/",
+    "instruction": "Open the detail page of the first book shown on the homepage ('A Light in the Attic') and extract its price and the number of copies in stock. Return JSON: { \"price\": string, \"stock\": string }",
+    "output": { "type": "object", "properties": { "price": { "type": "string" }, "stock": { "type": "string" } }, "required": ["price"] },
+    "successCheckSrc": "r=>{const p=findStr(r.data,'51.77')||findValue(r.data,v=>typeof v==='string'&&/£\\s?\\d/.test(v));const s=findStr(r.data,'stock')||findStr(r.data,'22')||findValue(r.data,v=>typeof v==='number'&&v>0);return (p&&s)?{success:true,reason:'price + stock from detail'}:{success:false,reason:'no detail-page data'}}"
+  }
+]

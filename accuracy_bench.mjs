@@ -8,7 +8,7 @@ import { readFileSync } from 'fs';
 const MONGO = process.env.MONGO_URL, API = 'https://api.pre.dev', KEY = process.env.STEALTH_KEY;
 const INFLIGHT = parseInt(process.env.INFLIGHT || '6', 10);
 const sleep = ms => new Promise(r => setTimeout(r, ms));
-let TASKS = JSON.parse(readFileSync('tasks.json', 'utf8'));
+let TASKS = JSON.parse(readFileSync(process.env.TASKS_FILE || 'tasks.json', 'utf8'));
 TASKS = (Array.isArray(TASKS) ? TASKS : TASKS.tasks).map((t, i) => ({ id: i + 1, ...t }));
 if (process.env.SAMPLE) { const n = parseInt(process.env.SAMPLE, 10); const step = Math.max(1, Math.floor(TASKS.length / n)); TASKS = TASKS.filter((_, i) => i % step === 0).slice(0, n); }
 if (process.env.IDS) { const w = new Set(process.env.IDS.split(',').map(s => parseInt(s, 10))); TASKS = TASKS.filter(t => w.has(t.id)); }
