@@ -13,3 +13,4 @@ results/*
 !results/2026-06-22-head-to-head/**
 !results/2026-07-08-head-to-head
 !results/2026-07-08-head-to-head/**
+predev_fresh_dump.json
