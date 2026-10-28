@@ -17,15 +17,27 @@ const mc = new MongoClient(MONGO); await mc.connect();
 const q = mc.db().collection('browser_agent_queue');
 const ev = mc.db().collection('browser_agent_task_events');
 
+// Since predev-app #2446 (C.18) an unlock event's data is sealed at rest in
+// browser_agent_task_events, so `won` is read through the owner's API, which
+// opens it. Event `type` and the lifecycle types (dispatching,
+// browser_launching) stay plain, so provider, engine and `unlocking` keep the
+// direct Mongo read (the API strips provider).
+async function unlockWonViaApi(batchId) {
+  const res = await fetch(`${API}/browser-agent/${batchId}?includeEvents=true`, { headers:{'Authorization':`Bearer ${KEY}`} }).catch(()=>null);
+  const b = res?.ok ? await res.json().catch(()=>null) : null;
+  return (b?.results || []).some(r => (r?.events || []).some(e => e?.type==='unlock' && e.data?.won));
+}
+
 async function diag(batchId) {
   const docs = await ev.find({ batchId }).toArray();
-  let provider='?', engine='?', unlocked=false, unlocking=false;
+  let provider='?', engine='?', unlocking=false;
   for (const d of docs) { const items = d.events || [d]; for (const e of (Array.isArray(items)?items:[items])) {
     if (e.type==='dispatching' && e.data?.provider) provider=e.data.provider;
     if (e.type==='browser_launching' && e.data?.engine) engine=e.data.engine;
     // 'unlock' is the persisted telemetry event (lp-v84+); 'waiting' is dropped by the sink.
-    if (e.type==='unlock') { unlocking=true; if (e.data?.won) unlocked=true; }
+    if (e.type==='unlock') unlocking=true;
   } }
+  const unlocked = unlocking && await unlockWonViaApi(batchId);
   return { provider, engine, unlocked, unlocking };
 }
 
